@@ -1,0 +1,169 @@
+reStructuredText=reST
+
+$ sphinx-build -b html sourcedir builddir
+
+
+$ sphinx-quickstart
+
+
+$ sphinx-build [options] sourcedir builddir [filenames]
+	-b buildername
+		html, dirhtml, singlehtml, htmlhelp, qthelp, devhelp, epub, latex(pdflatex), man, texinfo, text, gettext, doctest, linkcheck
+	-a
+		write all output files.
+	-d path
+		doctree pickles(like a cache)
+	-c path
+		default is "conf.py"
+
+
+$ sphinx-apidoc [options] -o outputdir packagedir [pathnames]
+	-o outputdir
+用到的时候查看
+
+
+sphinx结构组成
+	.. toctree::
+		:maxdepth: 2
+
+		intro
+		strings
+		datatypes
+		numeric
+		(many more documents listed here)
+其他(.. toctree::下面的)：
+	:numbered:
+	:titlesonly:
+	:glob:
+	:hidden:
+	
+
+
+Special names
+	genindex, modindex, search
+	every name beginning with _(Using _ as a prefix for a custom template direc-tory is fine.)
+
+Paragraph-level markup
+	.. note::
+	.. warning::
+	.. versionadded:: version
+	.. versionchanged:: version
+	.. deprecated:: version
+	.. seealso::
+	.. rubric:: title
+	.. centered::
+	.. hlist::
+	
+Glossary
+	.. glossary::
+	
+Grammar production displays
+	.. productionlist:: [name]
+	
+5.6 Showing code examples
+	.. highlight:: c  #之后一直是c語法高亮直到遇到下一个highlight
+	.. code-block:: ruby
+5.6.1 Line numbers
+	.. highlight:: python
+		:linenothreshold: 5
+
+	.. code-block:: ruby
+		:linenos:
+
+	.. code-block:: python
+		:emphasize-lines: 3,5
+
+5.6.2 Includes
+	格式：.. literalinclude:: filename
+	.. literalinclude:: example.py
+
+	.. literalinclude:: example.rb
+		:language: ruby
+		:emphasize-lines: 12,15-18
+		:linenos:
+
+	.. literalinclude:: example.py
+		:encoding: latin-1
+
+	.. literalinclude:: example.py
+		:pyobject: Timer.start
+
+	.. literalinclude:: example.py
+		:lines: 1,3,5-10,20-
+
+		:rolename:‘content‘
+
+ 表：
+	.. tabularcolumns:: column spec
+
+表的实例:
+---------------------------------------------
+.. _table-1:
+
+.. csv-table:: 表4.1  应用目录下的子目录
+    :widths: 10 90
+    :header: 目录, 描述
+
+    doc,     用于存放文档
+    ebin,    用于存放编译后的代码（.beam文件）
+    include, 用于存放公共头文件
+----------------------------------------------
+
+
+
+注意：
+	格式的前后都要有空格
+1， `链接显示名 <http://blog.programfan.info/>`_
+说明：这是指定链接显示名的格式
+2，.. figure:: picture.png
+   :width: 100%
+说明：这是图片显示的格式
+
+----------------------------------
+3，``usage.rst``
+说明：代码显示格式
+4，**binary catalogs**
+说明：黑体
+5，*text*
+说明：斜体(italics)
+----------------------------------
+List markup
+1,  * This is a bulleted list.
+    * It has two items, the second
+      item uses two lines.
+
+2,  1. This is a numbered list.
+    2. It has two items too.
+
+3,  #. This is a numbered list.
+    #. It has two items too.
+
+说明：嵌套时注意父与子相隔一空行
+
+Line blocks
+| These lines are
+| broken exactly like in
+| the source file.
+
+
+
+
+--------------------------------
+
+5， ::
+	＃这儿是空行
+        msgfmt "usage.po" -o "translated/es/LC_MESSAGES/usage.mo"
+	＃这儿是空行
+说明：代码显示
+
+6，[1]_  #这儿是标的地方，下面是标注的具体说明
+.. rubric:: Footnotes
+
+.. [1] See the `GNU gettext utilites
+说明：标注用！
+7，
+
+
+
+
+

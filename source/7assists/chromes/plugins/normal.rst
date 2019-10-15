@@ -1,0 +1,38 @@
+常用
+########
+
+
+
+1.Octotree插件
+Code tree for GitHub and GitLab
+GitLab code view插件: 专用于gitlab
+
+2.clipboard history插件
+保存你剪切版里面的内容
+
+3.马甲插件
+可快速切换同一网站的多个已登录的帐号，支持豆瓣、知乎、微博、twitter等
+
+4.Context插件
+可以对扩展进行管理
+
+5.Color Tab
+打开一个新标签页，会给你一个4色配色方案，方便设计师思枯意竭时找灵感
+
+6.greate suspender插件
+打开好多tab页时，占内存很多，使用此插件可以让暂时不用的插件处于低内存状态
+
+7.Tampermonkey插件
+Chrome上最流行的脚本管理工具，可以去http://greasyfork.org上安装许多实用脚本
+
+8.Anything to Qrcode插件
+自动把网址转化为二维码
+
+
+广告过滤扩展ABP、ADB、uBlock
+
+
+
+
+
+

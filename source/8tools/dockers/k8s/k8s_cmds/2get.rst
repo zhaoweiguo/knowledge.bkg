@@ -1,0 +1,144 @@
+kubectl get
+####################
+
+用法::
+
+    kubectl get 
+      [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...
+          |go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...]
+      (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+
+
+实例::
+
+    $> kubectl get pods                   # 可简写为 kubectl get po
+    $> kubectl get replicationcontroller  # 可简写为 kubectl get rc
+    $> kubectl get services               # 可简写为 kubectl get svc
+    $> kubectl get nodes
+    $> kubectl get cronjob 
+    $> kubectl get jobs
+
+
+
+
+定时相关::
+
+    // 查看crontab情况
+    $ kubectl get cronjob 
+    $ kubectl get cronjob <cronName>
+
+    // 查看 Job 的执行情况
+    $> kubectl get jobs
+    $> kubectl get jobs <jobName>
+
+    // cron第一次执行job
+    $ kubectl get cronjob 
+    NAME         SCHEDULE     SUSPEND   ACTIVE    LAST SCHEDULE   AGE
+    goanalysis   35 6 * * *   False     0         <none>          2m29s
+    // cron在3分钟多前执行过一次
+    $ kubectl get cronjob 
+    NAME         SCHEDULE     SUSPEND   ACTIVE    LAST SCHEDULE   AGE
+    goanalysis   35 6 * * *   False     0         3m5s            6m57s
+
+
+pod::
+
+    # 列出pods时显示更多信息（如node名,ip等）
+    $> kubectl get pods -o wide
+
+    # 展示出停止状态的信息
+    $> kubectl get jobs --show-all -o wide
+    
+    // --show-labels
+    # 显示label
+    $> kubectl get pods --show-labels
+
+    // -L, --label-columns=[] 
+    # 显示指定label
+    $> kubectl get pods -L labelkey1,labelkey2
+
+    // -l, --selector=''
+    # 过滤指定k/v
+    $> kubectl get po -l labelkey1=labelvalue1
+    $> kubectl get po -l labelkey1!=labelvalue1
+    $> kubectl get po -l labelkey1 in (value1, value2)
+    $> kubectl get po -l labelkey1 notin (value1, value2)
+    # 有key1标签的
+    $> kubectl get po -l key1
+    # 没有key1标签的
+    $> kubectl get po -l '!key1'
+
+    // -o, --output=''
+    # 查看指定pod详情
+    $> kubectl get pods <podName> -o yaml
+
+services::
+
+    # 查看指定services
+    $> kubectl get svc <serviceName> -o yaml
+
+node::
+
+    kubectl get nodes -l labelkey1=labelvalue1
+
+    # 查看node详情
+    $> kubectl get node <nodeName> -o yaml
+
+replicationcontroller::
+
+    # 列出单个rc
+    $ kubectl get replicationcontroller web
+
+namespace::
+
+    # 列出所有ns
+    kubectl get ns
+    # 列出指定ns的pods列表
+    kubectl get po --namespace <nsName>
+    or
+    kubectl get po -n <nsName>
+
+查看configmap::
+
+    $> kubectl get configmap --all-namespaces
+    $> kubectl get configmap <configName>  -o yaml
+
+监听::
+
+    -w, --watch=false
+    # 查看Pod删除和重新创建的过程
+    $ kubectl get pod -w -l app=nginx
+
+
+
+其他::
+
+    # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+    $ kubectl get deployments.v1.apps -o json
+
+    # List a single pod in JSON output format.
+    $ kubectl get -o json pod web-pod-13je7
+
+    # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+    $ kubectl get -f pod.yaml -o json
+
+    # Return only the phase value of the specified pod.
+    $ kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+
+    # List all replication controllers and services together in ps output format.
+    $ kubectl get rc,services
+
+    # List one or more resources by their type and names.
+    $ kubectl get rc/web service/frontend pods/web-pod-13je7
+
+    // 查看各组件信息
+    $ kubectl get componentstatuses
+    NAME                 STATUS    MESSAGE             ERROR
+    controller-manager   Healthy   ok
+    scheduler            Healthy   ok
+    etcd-0               Healthy   {"health":"true"}
+
+
+
+

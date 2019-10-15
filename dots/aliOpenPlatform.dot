@@ -1,0 +1,30 @@
+
+digraph ali {
+
+  Ali开放平台
+  AliGenie平台 [label = "AliGenie平台
+                    | 人工智能实验室(AI-Labs)面向软硬件厂商和开发者推出的
+                    | ASR语音识别, NLP自然语言处理, TTS语音合成
+                    | 语音技能的开发, 智能设备的接入, 云端服务的接入
+                    | 个人内容开发者, 应用开发者, 智能家居开发者, 硬件厂商"]
+  AliGenie硬件接入开放平台 [label="AliGenie Intelligent Devices Platform"]
+  设备研发部分
+  APP开发
+  服务部分
+  私有领域
+
+  Ali开放平台 -> AliGenie平台;
+  AliGenie平台 -> AliGenie硬件接入开放平台;
+
+
+
+
+
+}
+
+
+
+
+
+
+

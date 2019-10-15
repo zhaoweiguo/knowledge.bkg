@@ -1,0 +1,22 @@
+{
+  "name": "新溪API文档",
+  "version": "1.0.0",
+  "description": "新溪API文档",
+  "title": "新溪API文档",
+  "url" : "http://apidoc.zhaoweiguo.com",
+  "order": [
+
+  ],
+  "header": {
+    "title": "接口说明",
+    "filename": "header.md"
+  },
+  "footer": {
+    "title": "其它补充",
+    "filename": "footer.md"
+  },
+  "template": {
+    "forceLanguage": "en"
+  }
+}
+

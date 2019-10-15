@@ -1,0 +1,287 @@
+.. index:: microservice, kubernete
+.. _microservice:
+
+微服务
+########
+
+
+kubernete
+=================
+Kubernetes（常简称为K8s）是用于自动部署、扩展和管理容器化（containerized）应用程序的开源系统。该系统由Google设计并捐赠给Cloud Native Computing Foundation（今属Linux基金会）来使用。
+
+它旨在提供“跨主机集群的自动部署、扩展以及运行应用程序容器的平台”。 它支持一系列容器工具, 包括Docker等。CNCF于2017年宣布首批Kubernetes认证服务提供商（KCSPs），包含IBM、华为、MIRANTIS、inwinSTACK迎栈科技等服务商。
+
+Kubernetes Objects
+------------------------
+
+Kubernetes在设计结构上定义了一系列的构建模块(building blocks)，其目的是为了提供一个基于 CPU, memory or custom metrics可以部署(deploy)、维护(maintain)和扩展(scale)应用程序的机制。
+
+组成Kubernetes的组件设计概念为松耦合和可扩展的，这样可以使之满足多种不同的工作负载。可扩展性在很大程度上由Kubernetes API提供，此API主要被作为扩展的内部组件以及Kubernetes上运行的容器来使用。
+
+etcd, api server, scheduler, controller manager
+
+.. option:: Pod
+
+Kubernetes的基本调度单元称为“pod”。通过该种抽象类别可以把更高级别的抽象内容增加到容器化组件。一个pod一般包含一个或多个容器，这样可以保证它们一直位于主机上，并且可以共享资源。Kubernetes中的每个pod都被分配一个唯一的（在集群内的）IP地址这样就可以允许应用程序使用同一端口，而避免了发生冲突的问题。Pod可以定义一个卷，例如本地磁盘目录或网络磁盘，并将其暴露在pod中的一个容器之中。pod可以通过Kubernetes API手动管理，也可以委托给控制器来实现自动管理。
+
+.. option:: 标签和选择器
+
+Kubernetes使客户端（用户或内部组件）将::
+
+    称为“标签”的键值对附加到系统中的任何API对象，如pod和节点。
+    相应地，“标签选择器”是针对匹配对象的标签的查询方法。
+
+标签和选择器是Kubernetes中的主要分组机制，用于确定操作适用的组件。
+例如::
+    
+    如果应用程序的Pods具有:
+      系统的标签 tier (比如"front-end"、"back-end") 
+      和一个 release_track (比如"canary"、"production")，
+    那么对所有"back-end" 和 "canary" 节点的操作可以使用如下所示的标签选择器：
+    tier=back-end AND release_track=canary
+
+.. option:: Services
+
+如图显示服务如何与Kubernetes集群中的Pod网络进行交互:
+
+.. figure:: /images/microservices/kubernetes_architecture2.png
+   :width: 80%
+
+::
+
+    Kubernetes服务是协同工作的pod集，例如多层应用程序的一层。 
+    根据标签选择器(label selector)中的定义，把pod集组成一个服务。
+    Kubernetes提供两种服务发现模式:
+      1.使用环境变量
+      2.使用Kubernetes DNS。
+    服务发现:
+      为服务分配稳定的IP地址和DNS名称，
+      并以round-robin方式将流量负载均衡到与选择器匹配的容器中的该IP地址的网络连接
+        （即使故障导致容器从一台机器移动到另一台机器）
+    默认情况下，服务在群集内部公开，例如:
+      后端pod可能被分组到一个服务中，前端pod的请求在它们之间进行负载平衡
+    但是服务也可以在群集外部公开，例如:
+      对于客户端请求前端pods
+
+
+.. option:: Volumes
+
+::
+
+    默认情况下，Kubernetes容器中的文件系统提供临时存储。
+    这意味着重新启动容器将消除此类容器上的任何数据，
+    因此，这种形式的存储在除了很不重要的应用程序之外，其他很少使用。
+    Kubernetes卷(Volume)提供持久存储，该存储在pod本身的生命周期中存在。 
+    此存储还可用作pod里面容器间的共享磁盘空间。 
+    卷(Volumes)安装在容器内的特定安装点上，这些安装点由pod配置定义，无法安装到其他卷或链接到其他卷。
+    同一Volume可以被不同的容器安装在文件系统树中的不同点。
+
+.. option:: Namespaces
+
+::
+
+    Kubernetes将其管理的资源划分为非重叠集(non-overlapping sets)。
+    此非重叠集即为命名空间
+    它们旨在用于多个用户分布在多个团队或项目中的环境中，甚至用于开发，测试和生产等分离环境。
+
+
+架构设计
+=========
+
+
+.. figure:: /images/microservices/kubernetes_architecture.png
+   :width: 80%
+
+
+Kubernetes control plane (primary)
+---------------------------------------
+
+.. option:: etcd
+
+::
+
+    etcd 是由CoreOS开发，
+    一种持久性，轻量型的，分布式的键-值数据存储，
+    用于可靠地存储集群的配置数据，
+    表示在任何给定时间点集群的整体状态
+
+    就像Apache ZooKeeper一样，etcd是一个在网络分区的情况下支持一致性而非可用性的系统(参见CAP定理)
+    这种一致性对于正确调度和运营服务至关重要
+
+    Kubernetes API服务器使用etcd的watch API来:
+      监控集群并推出关键配置更改，
+      或者对任何差异只是简单地恢复集群状态，回到deployer声明的状态。
+    例如，如果deployer指定某pod需要三个运行实例，此数据存储在etcd中。
+      如果发现只有两个实例正在运行，则将通过与etcd数据对比发现此不同，
+      Kubernetes根据此不同来安排创建该pod的第3个实例。
+
+.. option:: API服务器(API server)
+
+::
+
+    API服务器是一个关键组件并提供Kubernetes API 服务
+      Kubernetes API是JSON格式数据的HTTP接口
+      Kubernetes API提供了Kubernetes的内部和外部接口。
+      API服务器处理并验证REST请求并更新etcd中的API Object状态数据
+    从而允许客户端在Worker节点之间配置工作负载和容器。
+
+.. option:: 调度器(Scheduler)
+
+::
+
+    调度程序是可插拔式组件，基于资源可用性来选择未调度的pod应该运行哪个节点。
+    调度程序跟踪每个节点上的资源利用率，以确保工作负载不会超过可用资源。
+    为此，调度程序必须知道:
+        资源需求，
+        资源可用性
+        以及各种其他用户提供的约束和策略指令，例如:
+            服务质量，关联性/反关联性要求，数据位置等
+    调度器的本质作用是将资源“供应”匹配给工作负载“需求”
+
+.. option:: 控制器管理(Controller Manager)
+
+::
+
+    控制器管理器：控制器是一个协调循环(reconciliation loop)，
+      通过管理一组控制器来实现，它将实际的集群状态驱动到所需的集群状态。。
+
+    复制控制器(replication controller):
+      它通过在集群中运行指定数量的pod副本来处理复制和扩展。
+      如果底层节点出现故障，它还会处理创建替换pod的问题。
+
+    DaemonSet Controller(核心Kubernetes系统一部分):
+      用于在每台机器（或某些机器的子集）上运行一个pod
+
+    Job Controller(核心Kubernetes系统一部分):
+      作为批处理工作的一部分，用于运行到完成。
+
+    控制器管理的pod集由标签选择器确定，这些标签选择器是控制器定义的一部分。
+
+    控制器管理器是核心Kubernetes控制器的一个进程，
+      其包括DaemonSet控制器和复制控制器等。
+      该控制器可与API服务器进行通信以在需要时:
+        创建，更新和删除他们管理的资源（pod，服务端点等）
+
+Kubernetes node
+---------------------
+
+Node也称为Worker或Minion，是部署容器（工作负载）的单机器（或虚拟机）。集群中的每个节点都必须具备容器的运行环境（runtime）——比如 Docker，以及下面提到的其他组件，以便与这些容器的网络配置进行通信。
+
+.. option:: Kubelet
+
+::
+
+    Kubelet负责每个节点的运行状态（即确保节点上的所有容器都正常运行）。
+    它按照控制面板的指示来处理启动，停止和维护应用程序容器（按组织到pod中）。
+
+    Kubelet会监视pod的状态，如果pod没有处在所需状态，则此pod将被重新部署到此节点。
+    节点状态每隔几秒通过消息中继到主控器。
+    一旦主控器检测到节点故障后，复制控制器监控此状态更改，就会在其他健康节点上启动pod。
+
+.. option:: 容器(Container runtime)
+
+::
+
+    容器从属于pod。在运行应用、库及其依赖的微服务中，容器是最低层级的。
+    通过绑定一个外部IP，容器可以被外网访问。
+    Kubernetes从第一个版本开始就支持Docker容器，并在2016年7月添加了rkt容器引擎。
+
+
+.. option:: Kube代理(Kube-proxy)
+
+::
+
+    Kube代理是网络代理和负载均衡的实现，支持服务抽象以及其他网络操作。
+    根据传入请求的IP和端口，该组件会将流量路由到合适的容器中。
+
+.. option:: cAdvisor
+
+::
+
+    是监视和收集例如每个节点上的容器的CPU，内存，文件和网络使用情况等的资源使用情况和性能指标的代理组件
+
+附加组件(Add-ons)
+--------------------
+
+附加组件的运行方式与集群中运行的任何其他应用程序类似，都通过pod和服务实现，只是附加组件实现的是Kubernetes集群的功能。可以通过Deployments，ReplicationControllers等管理pod。附加组件还在增加中，其中最重要的几个组件是:
+
+
+.. option:: DNS
+
+::
+
+    所有Kubernetes集群都应具有集群DNS;这是一项强制性功能。
+    集群DNS是DNS服务器，为Kubernetes服务提供DNS记录。 Kubernetes启动的容器会在DNS搜索中自动包含DNS服务器。
+
+.. option:: Web UI
+
+::
+
+    这是Kubernetes集群的基于Web的通用UI。
+    它允许用户管理和解决运行在集群中的应用程序和集群本身。
+
+.. option:: 容器资源监控
+
+::
+
+    提供可靠的应用程序运行时，并能够根据工作负载进行扩展或缩小，
+      这意味着能够持续有效地监控工作负载性能。
+    容器资源监视通过在中央数据库中记录有关容器的度量标准来提供此功能，
+      并提供用于浏览该数据的UI。 
+    cAdvisor是slave节点上的一个组件，它提供有限的度量监视功能。
+    还有完整的指标管道，如Prometheus，它可以满足大多数监控需求。
+
+.. option:: 集群级日志记录
+
+::
+
+    日志应具有独立于节点(node)，pod或容器(container)的单独存储和生命周期。
+      否则，节点或pod故障可能导致事件数据丢失。
+    执行此操作的能力称为集群级日志记录，此类机制负责将容器日志保存到具有搜索/浏览界面的中央日志存储。
+    
+    Kubernetes没有为日志数据提供本地存储解决方案，
+      但可以将许多现有的日志记录解决方案集成到Kubernetes集群中。
+
+
+
+
+
+
+Docker
+===========
+
+Docker是一个开放源代码软件项目，让应用程序部署在软件货柜下的工作可以自动化进行，借此在Linux操作系统上，提供一个额外的软件抽象层，以及操作系统层虚拟化的自动管理机制。
+
+Docker利用Linux核心中的资源分离机制，例如cgroups，以及Linux核心名字空间（namespaces），来创建独立的容器（containers）。这可以在单一Linux实体下运作，避免引导一个虚拟机造成的额外负担。Linux核心对名字空间的支持完全隔离了工作环境中应用程序的视野，包括行程树、网络、用户ID与挂载文件系统，而核心的cgroup提供资源隔离，包括CPU、存储器、block I/O与网络。从0.9版本起，Dockers在使用抽象虚拟是经由libvirt的LXC与systemd - nspawn提供界面的基础上，开始包括libcontainer库做为以自己的方式开始直接使用由Linux核心提供的虚拟化的设施，
+
+
+namespaces
+-------------
+
+cgroups
+-----------
+cgroups，其名称源自控制组群（control groups）的简写，是Linux内核的一个功能，用来限制、控制与分离一个行程组群的资源（如CPU、内存、磁盘输入输出等）。
+
+这个项目最早是由Google的工程师（主要是Paul Menage和Rohit Seth）在2006年发起，最早的名称为行程容器（process containers）。在2007年时，因为在Linux内核中，容器（container）这个名词有许多不同的意义，为避免混乱，被重命名为cgroup，并且被合并到2.6.24版的内核中去。自那以后，又添加了很多功能。
+
+cgroups的一个设计目标是为不同的应用情况提供统一的接口，从控制单一进程（像nice）到操作系统层虚拟化（像OpenVZ，Linux-VServer，LXC）。cgroups提供：
+
+资源限制：组可以被设置不超过设定的内存限制；这也包括虚拟内存。
+优先级：一些组可能会得到大量的CPU 或磁盘IO吞吐量。
+结算：用来衡量系统确实把多少资源用到适合的目的上。
+控制：冻结组或检查点和重启动。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

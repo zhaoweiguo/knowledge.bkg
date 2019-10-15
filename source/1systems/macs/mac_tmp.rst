@@ -1,0 +1,35 @@
+其他
+========
+
+
+提示
+=======
+
+::
+
+    Last login: Wed Oct  9 14:04:16 on ttys003
+    The default interactive shell is now zsh.
+    To update your account to use zsh, please run `chsh -s /bin/zsh`.
+    For more details, please visit https://support.apple.com/kb/HT208050.
+
+
+
+系统相关::
+
+    xcode-select --install
+    
+
+常见软件::
+
+   mactex:  pdf生成工具
+
+   Proxifier: 1.37版本的sn: SNYVP-2RQK0-0QKR1-AFC77-V2J90(用户名随便填)
+
+安全性相关::
+
+   //第三方应用都无法打开了，提示无法打开或者扔进废纸篓
+   //大家都知道，macOS Sierra之前的系统也是需要手动去打开应用程序-系统偏好设置-安全性和隐私-通用里勾选任何来源，这样操作之后才能打开第三方应用
+   sudo spctl master-disable
+
+
+

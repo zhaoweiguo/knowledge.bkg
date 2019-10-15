@@ -1,0 +1,6 @@
+[submodule "blog/themes/next"]
+	path = blog/themes/next
+	url = https://github.com/iissnan/hexo-theme-next.git
+[submodule "blog/themes/newnext"]
+	path = blog/themes/newnext
+	url = https://github.com/theme-next/hexo-theme-next.git

@@ -1,0 +1,15 @@
+
+digraph alexa {
+
+  alexa开放平台
+  Skills [label="Alexa Skills Kit"]
+  Voice [label="Alexa Voice Service"]
+
+
+  alexa开放平台 -> Skills
+  alexa开放平台 -> Voice
+
+}
+
+
+

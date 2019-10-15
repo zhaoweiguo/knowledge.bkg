@@ -1,0 +1,17 @@
+.. _go_question:
+
+常见问题
+#############
+
+
+
+.. toctree::
+   :maxdepth: 1
+
+   questions/mod
+   questions/os
+   questions/other
+
+
+
+
