@@ -8,11 +8,13 @@
 errno=""
 illegal_contents=()
 
+## 此函数就是读取之前配置的sensitive列表
 function read_all_illegal_contens {
 	if [[ ${#illegal_contents} == 0 ]];then
 		#read global filter values
 		for ((i=0;i>=0;i++))
 		do
+			## 取出之前通过git config --global filter..value0 xxx配置的数据
 			value=`git config --global filter..value$i`
 			if [[ ${#value} > 0 ]];then
 				if [[ ! " ${illegal_contents[@]} " =~ " ${value} " ]]; then
@@ -23,6 +25,7 @@ function read_all_illegal_contens {
 			fi
 		done
 		#read current repository filter values
+		# 如: git@github.com:zhaoweiguo/knowledge.git
 		remoteurl=`git config --get remote.origin.url`
 		#process ssh style.
 		git_regex="^(git@[^:]+)"
@@ -86,11 +89,17 @@ for ((j=0;j<$diff_lines_cnt;j++));do
 	line=${diff_lines[j]}
 	file_prefix="diff --git a/"
 	chunk_regex="^(@@ [-+][0-9]+,[0-9]+ [-+][0-9]+,[0-9]+ @@)"
+	## 第1行类似如下格式:
+	## diff --git a/source/info.rst b/source/info.rst
+	## 得到文件名为: cur_filename=source/info.rst
 	if [[ $line == $file_prefix* ]];then
 		file_prefix_len=${#file_prefix}
 		cur_filename=`echo "$line" | cut -b $((file_prefix_len))-`
 		cur_filename=`echo ${cur_filename/ b\/*/}`
 	fi
+	## 处理如下格式:
+	## @@ -10,7 +10,7 @@ 内容内容sensitive内容内容
+	## 得到: cur_chunk=@@ -31,4 +31,7 @@
 	if [[ $line =~  $chunk_regex ]];then
 		cur_chunk=${BASH_REMATCH[0]}
 		chunk_fromline_from=0
@@ -99,8 +108,8 @@ for ((j=0;j<$diff_lines_cnt;j++));do
 	fi
 	if [[ ${#cur_filename} != 0 ]] && [[ ${#cur_chunk} != 0 ]] && [[ $line == "+"* ]];then
 		line=`echo "$line" | cut -b 2-`
-		## cur_filename: 文件路径, 如:/source/7assists/gits/commands/git_hook.rst
-		## cur_chunk: 行范围, 如: @@ -31,4 +31,7 @@
+		## cur_filename: 文件路径, 如:/source/info.rst
+		## cur_chunk: 行范围, 如: @@ -10,7 +10,7 @@
 		## line: 这一行内容, 如: 内容内容sensitive内容内容
 		check_if_commitline_contains_illegal "$cur_filename" "$cur_chunk" "$line"
 		exists=$?

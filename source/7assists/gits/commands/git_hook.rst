@@ -28,6 +28,7 @@ Git Hook 最常见的使用场景包括::
     pre-push:当远端已经updated，但在所有对象被传输之前执行。可使用它来验证更新引用，返回非零可中断push过程。
     pre-auto-gc: git会时不时在操作中调用git gc --auto执行垃圾收集操作，在垃圾收集之前pre-auto-gc钩子被执行。
 
+
 实例
 ------
 
