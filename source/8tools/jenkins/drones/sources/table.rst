@@ -45,8 +45,8 @@ builds表::
     CREATE INDEX ix_build_incomplete ON builds (build_status)
     WHERE build_status IN ('pending', 'running');
 
-    1|83|@hook|1|0|failure||push||http://gitcodecloud.zhaoweiguo.com.cn/tools/analysis-backend/commit/5e9980fe964afb59bae823664115dc0cccbc10c2|0||整理封装
-    ||5e9980fe964afb59bae823664115dc0cccbc10c2|refs/heads/master||master|master|zhaowg3|zhaowg3||https://www.gravatar.com/avatar/a11d9508187d0744109511002c5dfd26?s=80&d=identicon|zhaowg3||null|1570883277|1570883314|1570883277|1570883277|3|
+    1|83|@hook|1|0|failure||push||http://gitcodecloud.zhaoweiguo.com.cn/tools/analysis-backend/commit/5e9980fe964afb59bae823664115dc0xxxxxx|0||整理封装
+    ||5e9980fe964afb59bae823664115dc0cxxxx|refs/heads/master||master|master|zhaoweiguo|zhaoweiguo||https://www.gravatar.com/avatar/a11d9508187d0744109511002cxxx?s=80&d=identicon|zhaoweiguo||null|1570883277|1570883314|1570883277|1570883277|3|
 
 
 log表::
@@ -61,7 +61,7 @@ log表::
     54|[{"pos":0,"out":"+ go build -o test-drone\n","time":0}]
     55|[{"pos":0,"out":"+ /usr/local/bin/dockerd --data-root /var/lib/docker\n","time":0},{"pos":1,"out":"time=\"2019-10-13T08:50:15Z\" level=fatal msg=\"Error authenticating: exit status 1\"\n","time":1}]
     56|[{"pos":0,"out":"2019/10/13 08:50:20 send message success!\n","time":0}]
-    57|[{"pos":0,"out":"Initialized empty Git repository in /drone/src/.git/\n","time":0},{"pos":1,"out":"+ git fetch origin +refs/heads/master:\n","time":0},{"pos":2,"out":"From http://gitcodecloud.zhaoweiguo.com.cn/zhaowg3/test-drone2\n","time":0},{"pos":3,"out":" * branch            master     -\u003e FETCH_HEAD\n","time":0},{"pos":4,"out":" * [new branch]      master     -\u003e origin/master\n","time":0},{"pos":5,"out":"+ git checkout 2e9cbb1406862bedabfbe853cdd38e10327b2c46 -b master\n","time":0},{"pos":6,"out":"Already on 'master'\n","time":0}]
+    57|[{"pos":0,"out":"Initialized empty Git repository in /drone/src/.git/\n","time":0},{"pos":1,"out":"+ git fetch origin +refs/heads/master:\n","time":0},{"pos":2,"out":"From http://gitcodecloud.zhaoweiguo.com.cn/zhaoweiguo/test-drone2\n","time":0},{"pos":3,"out":" * branch            master     -\u003e FETCH_HEAD\n","time":0},{"pos":4,"out":" * [new branch]      master     -\u003e origin/master\n","time":0},{"pos":5,"out":"+ git checkout 2e9cbb1406862bedabfbe853cddxxxxxx -b master\n","time":0},{"pos":6,"out":"Already on 'master'\n","time":0}]
     58|[{"pos":0,"out":"+ go build -o test-drone\n","time":0}]
 
 node表::
@@ -134,8 +134,8 @@ secrets表::
     CREATE INDEX ix_secret_repo ON secrets (secret_repo_id);
     CREATE INDEX ix_secret_repo_name ON secrets (secret_repo_id, secret_name);
 
-    1|83|dingding|d4a22b306d1c15a9e80504087cde8e637b8c66fa024554ffef0926a4dea1996c|0|0
-    2|83|docker_user|luxl2@14177974xx80447|0|0
+    1|83|dingding|d4a22b306d1c15a9e80504087cde8e637b8c66fa024554ffef0xxxxxx|0|0
+    2|83|docker_user|luxl2@14177974xxxxx|0|0
 
 steps表::
 
@@ -237,16 +237,16 @@ repos表::
         ,repo_created               INTEGER         1570891808
         ,repo_updated               INTEGER         1570954767
         ,repo_version               INTEGER         6
-        ,repo_signer                TEXT            DvNWngbe7SBujanLqd2KtTs3d6hYDOBu
-        ,repo_secret                TEXT            1AlolzhvWHOFQVoTdqm7Yb3jjMxocbB9
+        ,repo_signer                TEXT            DvNWngbe7SBujanLqdxxxxxxxxxxx
+        ,repo_secret                TEXT            1AlolzhvWHOFQVoTdqmxxxxxxxxxx
         ,repo_no_forks BOOLEAN NOT NULL DEFAULT 0   1
         ,repo_no_pulls BOOLEAN NOT NULL DEFAULT 0   1
         ,UNIQUE(repo_slug)
         ,UNIQUE(repo_uid)
     );
 
-    116|117|1|zhaowg3|test-drone|zhaowg3/test-drone||http://gitcodecloud.gitlab.com.cn/zhaowg3/test-drone.git|git@gitcodecloud.gitlab.com.cn:zhaowg3/test-drone.git||1|1|private|master|6|.drone.yml|60|1|0|1570891808|1570891808|1570954767|9|EJQPedjapuBIoDWj4UGKvirxNVB49QFh|OuOm6qe4w3EXuqS2yp2sL0t3UJqBZlbp|1|1
-    117|118|1|zhaowg3|test-drone2|zhaowg3/test-drone2||http://gitcodecloud.gitlab.com.cn/zhaowg3/test-drone2.git|git@gitcodecloud.gitlab.com.cn:zhaowg3/test-drone2.git||1|1|private|master|3|.drone.yml|60|1|0|1570954767|1570954767|1570954767|6|DvNWngbe7SBujanLqd2KtTs3d6hYDOBu|1AlolzhvWHOFQVoTdqm7Yb3jjMxocbB9|1|1
+    116|117|1|zhaoweiguo|test-drone|zhaoweiguo/test-drone||http://gitcodecloud.gitlab.com.cn/zhaoweiguo/test-drone.git|git@gitcodecloud.gitlab.com.cn:zhaoweiguo/test-drone.git||1|1|private|master|6|.drone.yml|60|1|0|1570891808|1570891808|1570954767|9|EJQPedjapuBIoDWj4UGKvirxNVB49QFh|OuOm6qe4w3EXuqS2yxxxxxxxxxxxx|1|1
+    117|118|1|zhaoweiguo|test-drone2|zhaoweiguo/test-drone2||http://gitcodecloud.gitlab.com.cn/zhaoweiguo/test-drone2.git|git@gitcodecloud.gitlab.com.cn:zhaoweiguo/test-drone2.git||1|1|private|master|3|.drone.yml|60|1|0|1570954767|1570954767|1570954767|6|DvNWngbe7SBujanLqd2Kxxxxxxxx|1AlolzhvWHOFQVoTdqm7Ybxxxxxxxx|1|1
 
 stages表::
 
@@ -306,12 +306,12 @@ users表::
         ,user_oauth_token   TEXT            237e2477ca13bf86b5cd965962951cd45xxx
         ,user_oauth_refresh TEXT            6c4f555c0bbe761a1467a481e2e112dfbxxx
         ,user_oauth_expiry  INTEGER         1570952353
-        ,user_hash          TEXT            9j0gPHtP49LTvWUpqJAsTQd5urf9Pmrl
+        ,user_hash          TEXT            9j0gPHtP49LTvWUpqJAsxxxxxxxxx
         ,UNIQUE(user_login COLLATE NOCASE)
         ,UNIQUE(user_hash)
     );
 
-    1|zhaowg3|admin@zhaoweiguo.com|1|0|1|https://www.gravatar.com/avatar/a11d9508187d0744109511002c5dfd26?s=80&d=identicon|0|1570954767|1570864780|1570864780|1570952353|237e2477ca13bf86b5cd965962951cd45c86446120f59d983109278d56a2b500|6c4f555c0bbe761a1467a481e2e112dfb562e37044b27998ade6ae2dcfc7a294|1570952353|9j0gPHtP49LTvWUpqJAsTQd5urf9Pmrl
+    1|zhaoweiguo|admin@zhaoweiguo.com|1|0|1|https://www.gravatar.com/avatar/a11d9508187d0744109511002c5dfd26?s=80&d=identicon|0|1570954767|1570864780|1570864780|1570952353|237e2477ca13bf86b5cd965962951cd45c86446120f59d9831092xxxxxxxxx|6c4f555c0bbe761a1467a481e2e112dfb562e37044b27998ade6aexxxxxxxxx|1570952353|9j0gPHtP49LTvWUpqJAxxxxxxxx
 
 
 

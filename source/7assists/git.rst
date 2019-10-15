@@ -13,6 +13,7 @@ Contents:
    gits/git_introduce
    gits/git_command
    gits/git_ignore
+   gits/git_example
    gits/git_question
 
    gits/git_rev-parse
