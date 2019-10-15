@@ -32,6 +32,7 @@
    normals/split
    normals/tr
    normals/cut
+   normals/read
    normals/tee
 
    normals/du

@@ -72,6 +72,9 @@ fi
 # Redirect output to stderr.
 exec 1>&2
 
+## $diff_content的值与在命令行执行git diff head相同
+## 注: 在命令行直接执行git diff --cached是空, 因为这时还没放入cached中
+##    可以先执行git add再执行git diff --cached
 diff_content=$(git diff --cached)
 IFS=$'\n' read -rd '' -a diff_lines <<<"$diff_content"
 diff_lines_cnt=${#diff_lines[@]}
@@ -96,6 +99,9 @@ for ((j=0;j<$diff_lines_cnt;j++));do
 	fi
 	if [[ ${#cur_filename} != 0 ]] && [[ ${#cur_chunk} != 0 ]] && [[ $line == "+"* ]];then
 		line=`echo "$line" | cut -b 2-`
+		## cur_filename: 文件路径, 如:/source/7assists/gits/commands/git_hook.rst
+		## cur_chunk: 行范围, 如: @@ -31,4 +31,7 @@
+		## line: 这一行内容, 如: 内容内容sensitive内容内容
 		check_if_commitline_contains_illegal "$cur_filename" "$cur_chunk" "$line"
 		exists=$?
 		if [[ $exists == 1 ]];then

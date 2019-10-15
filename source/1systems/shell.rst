@@ -15,6 +15,7 @@ Shell文档
    shells/shell_example
    shells/shell_example2
    shells/shell_normal
+   shells/shell_question
    shells/shell_expect
    shells/shell_make
 
