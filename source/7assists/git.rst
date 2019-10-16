@@ -11,12 +11,12 @@ Contents:
    :maxdepth: 2
 
    gits/git_introduce
-   gits/git_command
+   gits/git_cmd_common
+   gits/git_cmd_special
    gits/git_ignore
    gits/git_example
    gits/git_question
 
-   gits/git_rev-parse
    gits/git_format_type
 
    gits/git_attributes
