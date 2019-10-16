@@ -11,8 +11,9 @@ git实例-敏感信息过滤 [1]_
 
 
 
+.. literalinclude:: /files/gits/commit-guard.sh
 
-
+.. literalinclude:: /files/gits/pre-commit
 
 
 .. [1] https://kangwang1988.github.io/tech/2016/07/08/filter-sensitive-words-pre-git-commit.html

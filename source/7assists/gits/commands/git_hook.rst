@@ -1,6 +1,8 @@
 git hook命令
 ======================
 
+* 官网 [1]_
+
 Git Hook 最常见的使用场景包括::
 
   1.推行提交信息规范
@@ -41,3 +43,5 @@ Git Hook 最常见的使用场景包括::
 
 
 
+
+.. [1] https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks

@@ -137,4 +137,5 @@ EOF
 	fi
 done
 # If there are whitespace errors, print the offending file names and fail.
+# 这一句是不让文件最后有多余的换行
 exec git diff-index --check --cached $against --
