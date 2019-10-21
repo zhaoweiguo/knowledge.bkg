@@ -11,6 +11,7 @@ Kubernetes容器服务
    kubernetes/install
    kubernetes/usage
    kubernetes/volume
+   kubernetes/document
 
 
 

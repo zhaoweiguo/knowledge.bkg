@@ -7,7 +7,6 @@
 图表相关::
 
     xcharts
-    d3.js(入门难一些)
 
     highcharts:
     https://www.highcharts.com/

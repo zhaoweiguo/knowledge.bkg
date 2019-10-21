@@ -1,0 +1,8 @@
+<svg>
+  <switch>
+    <foreignObject x="20" y="0" width="50">
+      <p>测试换行文本，测试换行文本，测试换行文本</p>
+    </foreignObject>
+    <text x="20" y="20">Your SVG viewer cannot display html.</text>
+  </switch>
+</svg>

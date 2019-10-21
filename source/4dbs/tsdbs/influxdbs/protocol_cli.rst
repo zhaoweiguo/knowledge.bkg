@@ -1,6 +1,14 @@
 协议-CLI
 ################
 
+技巧
+-------
+::
+
+    1.直接执行 influx -precision rfc3339
+    2.或者登录到influx cli之后
+        precision rfc3339
+
 登录
 --------
 ::
