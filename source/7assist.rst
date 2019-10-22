@@ -16,5 +16,6 @@
    7assists/sphinxdoc
    7assists/design
    7assists/chrome
+   7assists/tool
    7assists/other
 
