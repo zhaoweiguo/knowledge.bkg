@@ -9,7 +9,6 @@
    designs/omnigraffle
    designs/graphviz
    designs/plantuml
-   designs/svg
 
 
 
