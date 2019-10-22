@@ -11,6 +11,7 @@ d3.js
    :maxdepth: 2
 
    d3s/normal
+   d3s/practice
 
 
 
