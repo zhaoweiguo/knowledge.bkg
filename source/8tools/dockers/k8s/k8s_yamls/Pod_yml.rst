@@ -5,7 +5,7 @@ Pod.yaml
 
 
 
-.. literalinclude:: ./files/pod.yml
+.. literalinclude:: ./files/Pod.yml
    :language: yaml
 
 
