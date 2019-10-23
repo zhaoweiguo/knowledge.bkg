@@ -19,12 +19,5 @@
    5languages/c
    5languages/python
    5languages/java
-   5languages/lua
-   5languages/scala
-   5languages/ruby
-   5languages/lisp
-   5languages/android
-   5languages/ios
-   5languages/perl
-   5languages/groovy
+   5languages/other
 

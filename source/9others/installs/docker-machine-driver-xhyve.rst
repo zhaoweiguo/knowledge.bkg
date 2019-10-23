@@ -22,7 +22,7 @@ docker-machine-driver-xhyve
     Or, if you don't want/need a background service you can just run:
       docker-machine start
     ==> Summary
-    🍺  /usr/local/homebrew/Cellar/docker-machine/0.16.1: 11 files, 35.8MB
+    馃嵑  /usr/local/homebrew/Cellar/docker-machine/0.16.1: 11 files, 35.8MB
     ==> Installing docker-machine-driver-xhyve
     ==> Downloading https://homebrew.bintray.com/bottles/docker-machine-driver-xhyve-0.4.0.mojave.bottle.tar.gz
     ==> Downloading from https://akamai.bintray.com/d6/d64c4216f55e38b2da5ddcdda337133858c678570acd909a0f5c3910c272b8a7?__gda__=exp=15
@@ -34,7 +34,7 @@ docker-machine-driver-xhyve
         sudo chown root:wheel /usr/local/homebrew/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
         sudo chmod u+s /usr/local/homebrew/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
     ==> Summary
-    🍺  /usr/local/homebrew/Cellar/docker-machine-driver-xhyve/0.4.0: 6 files, 9.9MB
+    馃嵑  /usr/local/homebrew/Cellar/docker-machine-driver-xhyve/0.4.0: 6 files, 9.9MB
     ==> `brew cleanup` has not been run in 30 days, running now...
     Removing: /Users/zhaoweiguo/Library/Caches/Homebrew/ddd--3.3.12.tar.gz... (5.4MB)
     Removing: /Users/zhaoweiguo/Library/Caches/Homebrew/ddd--patch--aaacae79ce27446ead3483123abef0f8222ebc13fd61627bfadad96016248af6.php... (418B)

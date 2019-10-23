@@ -16,7 +16,7 @@ minikube
     ==> Verifying SHA-256 checksum for Cask 'minikube'.
     ==> Installing Cask minikube
     ==> Linking Binary 'minikube-darwin-amd64' to '/usr/local/homebrew/bin/minikube'.
-    🍺  minikube was successfully installed!
+    馃嵑  minikube was successfully installed!
 
 
 

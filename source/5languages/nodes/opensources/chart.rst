@@ -9,5 +9,6 @@ chart图表相关
    charts/d3.js
    charts/svg
    charts/canvas
+   charts/webGL
    charts/other
 

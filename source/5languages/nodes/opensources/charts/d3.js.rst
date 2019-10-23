@@ -16,6 +16,10 @@ CDN
 ======
 
 * https://github.com/d3/d3/wiki/Gallery
+* https://github.com/d3/d3/wiki/Tutorials
+* https://bost.ocks.org/mike/
+  
+
 
 
 .. toctree::

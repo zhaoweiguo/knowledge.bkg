@@ -16,7 +16,7 @@ CronJob.yaml
 ========
 
 
-.. literalinclude:: ./files/Cronjob.yml
+.. literalinclude:: ./files/CronJob.yml
    :language: yaml
 
 

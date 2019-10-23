@@ -10,6 +10,7 @@
 
    algorithms/algorithm_encrypt
    algorithms/example
+   algorithms/graph_theory
    algorithms/algorithm_other
 
 
