@@ -6,6 +6,8 @@
 
     从私有docker仓库拉取镜像，部署pod
 
+.. note:: 阿里本帐号的k8s集群使用本帐号下的私有镜像库有更方便的办法，具体参考ali相关资料
+
 创建Secret::
 
     // k8s集群使用类型为docker-registry

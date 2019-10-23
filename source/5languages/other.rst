@@ -13,4 +13,5 @@
    others/ios
    others/perl
    others/groovy
+   others/r
 

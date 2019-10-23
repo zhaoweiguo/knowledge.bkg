@@ -12,6 +12,7 @@ kube基本
    k8s_normals/volume
    k8s_normals/concept
    k8s_normals/cluster_testing
+   k8s_normals/install_kubectl
 
 
 k8s的一个目标是设计功能来帮助应用完全感觉不到k8s的存在，因此让应用民api服务器通信的设计是不允许的

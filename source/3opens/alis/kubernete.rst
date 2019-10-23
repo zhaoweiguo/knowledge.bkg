@@ -12,6 +12,7 @@ Kubernetes容器服务
    kubernetes/usage
    kubernetes/volume
    kubernetes/document
+   kubernetes/practice
 
 
 
