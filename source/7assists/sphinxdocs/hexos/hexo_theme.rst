@@ -18,8 +18,8 @@ hexo主题
     如果出现一些莫名其妙的问题，可以先执行hexo clean来清理一下public的内容，然后再来重新生成和发布。
 
 
-NexT主题
--------------
+NexT主题 [1]_
+----------------
 ::
 
   % git
@@ -30,3 +30,5 @@ NexT主题
   https://github.com/theme-next/theme-next.org
 
 
+
+.. [1] https://www.jianshu.com/p/3a05351a37dc
