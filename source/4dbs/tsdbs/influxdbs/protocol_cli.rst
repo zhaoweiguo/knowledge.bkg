@@ -78,6 +78,14 @@
     SELECT (key1 + key2) - (key3 + key4) AS "some_calculation" 
       FROM "measurement_name" WHERE time < now() - 15m
 
+GroupBy指定时区::
+
+    influx -precision rfc3339 -execute="
+        SELECT count(*) FROM "win_cpu" 
+        WHERE (time >= now() - 15d) 
+        GROUP BY IP,host,customer TZ('Asia/Beijing')"  // 指定东八区
+        -database=telegraf -format=csv
+
 使用Group计算百分比::
 
     SELECT (sum(field_key1) / sum(field_key2)) * 100 AS "calculated_percentage" 

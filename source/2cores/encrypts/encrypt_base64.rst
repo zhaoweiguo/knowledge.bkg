@@ -21,6 +21,9 @@ baseXX命令使用
     base64 <file>
     echo "<str>" | base64
 
+    // 让base64输出在单行上，避免折行
+    cat ~/.docker/config.json |base64 -w 0
+
 
 解密::
 
