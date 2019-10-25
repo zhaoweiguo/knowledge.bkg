@@ -11,7 +11,7 @@ kubectl命令
    k8s_cmds/1create
    k8s_cmds/1expose
    k8s_cmds/1run
-..   kubectl_cmds/1set
+..   k8s_cmds/1set
 
 
 
@@ -60,9 +60,9 @@ kubectl命令
    k8s_cmds/5port-forward
    k8s_cmds/5attach
    k8s_cmds/5exec
-..   kubectl_cmds/5proxy
-   kubectl_cmds/5cp
-   kubectl_cmds/5auth
+..   k8s_cmds/5proxy
+   k8s_cmds/5cp
+   k8s_cmds/5auth
 
 
 .. toctree::
@@ -70,10 +70,10 @@ kubectl命令
    :caption: Advanced Commands
 
    k8s_cmds/6apply
-..   kubectl_cmds/6patch
-   kubectl_cmds/6replace
-   kubectl_cmds/6wait
-   kubectl_cmds/6convert
+   k8s_cmds/6patch
+..   k8s_cmds/6replace
+   k8s_cmds/6wait
+   k8s_cmds/6convert
 
 
 .. toctree::
@@ -82,7 +82,7 @@ kubectl命令
 
    k8s_cmds/7label
    k8s_cmds/7annotate
-..   kubectl_cmds/7completion
+..   k8s_cmds/7completion
 
 
 
@@ -95,8 +95,8 @@ kubectl命令
    k8s_cmds/8api-versions
    k8s_cmds/8version
    k8s_cmds/8api-resources
-..   kubectl_cmds/8alpha
-..   kubectl_cmds/8plugin
+..   k8s_cmds/8alpha
+..   k8s_cmds/8plugin
 
 
 

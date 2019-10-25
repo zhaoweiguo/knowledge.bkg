@@ -28,6 +28,10 @@ iterm2相关
 .. figure:: /images/emacs/iterm2_pic1.png
    :width: 80%
 
+技巧3:高亮当前行
+''''''''''''''''
+.. figure:: /images/emacs/iterm2_pic4.png
+   :width: 80%
 
 
 
