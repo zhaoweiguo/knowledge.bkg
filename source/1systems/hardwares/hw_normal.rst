@@ -38,6 +38,10 @@
   
   杜板线
 
+配置::
+
+    smartconfig
+    softAP
 
 常见::
   

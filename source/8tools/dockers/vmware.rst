@@ -21,12 +21,34 @@ Installing VMware Tools::
 常见问题
 ==============
 
-NAT方式可联网，Birdged方式不可联网::
+不能上网问题
+------------
 
-    1. 可能主机的网络需要身份验证
+现象::
+
+    // 没有ip地址
+    $> ip a
+    ens32: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500 
+    ether 00:0c:29:68:22:e2  txqueuelen 1000  (Ethernet) 
+
+
+解决方案 [1]_ ::
+
+    dhclient –v
+
+
+不能上网问题2 [2]_
+------------------
+
+现象::
+
+    固定ip
+    系统配置经过多次设置肯定没有问题，但就是不能上网
+    原因在宿主机的问题
 
 
 
 
 
-
+.. [1] https://geekflare.com/no-internet-connection-from-vmware-with-centos-7/
+.. [2] https://www.cnblogs.com/qiang-qiang/p/10411100.html

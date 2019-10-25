@@ -3,6 +3,10 @@
 netstat命令使用
 ######################
 
+安装::
+
+    yum install net-tools -y
+
 基本用法::
 
     netstat -nltp   // debain用法

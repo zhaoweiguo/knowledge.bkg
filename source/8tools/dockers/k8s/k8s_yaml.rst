@@ -14,6 +14,7 @@ kubectl yaml文件
    k8s_yamls/Ingress_yml
    k8s_yamls/PersistentVolume_yml
    k8s_yamls/StatefulSet_yml
+   k8s_yamls/Role.yml
 
 
 
