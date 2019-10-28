@@ -74,6 +74,9 @@ Sink Killer::
 
 Runtime loglevel changes::
 
+  // 确定有哪几个event
+  gen_event:which_handlers(lager_event).
+  // 设定指定event到指定级别
   lager:set_loglevel(lager_console_backend, debug).
   lager:set_loglevel(lager_file_backend, "console.log", debug).
 

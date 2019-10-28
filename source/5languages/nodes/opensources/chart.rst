@@ -7,8 +7,5 @@ chart图表相关
 
    charts/echarts
    charts/d3.js
-   charts/svg
-   charts/canvas
-   charts/webGL
    charts/other
 
