@@ -1,12 +1,12 @@
-运行自己的Docker Registry
-------------------------------
+运行自己的Docker私有镜像仓库 Registry
+-------------------------------------
 
-1. 从Docker容器安装一个Registry::
+从Docker容器安装一个Registry::
 
     ## 拉去registry镜像
     # docker pull registry
      
-    ## 搭建本地镜像源
+    ## 搭建本地镜像源()
     # docker run -d -v /opt/registry:/var/lib/registry -p 5000:5000 --restart=always --name registry registry:latest
      
     ## 查看容器状态
@@ -39,6 +39,27 @@
      
     ## 测试我们上传的镜像
     # docker run -it docker.example.com:5000/test/apache2 /bin/bash
+
+
+注意::
+
+    1. 如没有禁用安全模块selinux,要加选项: --privileged=true
+    2. docker默认是https协议,如用http协议要增加
+        insecure-registry选项
+    3. 从docker hub上pull其中的registry镜像时，增加镜像源:
+        registry-mirror
+
+实例::
+
+    $> cat /etc/docker/daemon.json
+    {
+      "registry-mirrors": ["https://bpsifqa9.mirror.aliyuncs.com"],
+      "insecure-registries" : ["192.168.99.10:5000"]
+    }
+
+
+
+
 
 
 

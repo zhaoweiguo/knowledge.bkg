@@ -46,9 +46,12 @@ Installing VMware Tools::
     系统配置经过多次设置肯定没有问题，但就是不能上网
     原因在宿主机的问题
 
-
+如何复制虚拟机 [3]_
+-------------------
+其实本质就是文件复制后再打开，并进行相关配置
 
 
 
 .. [1] https://geekflare.com/no-internet-connection-from-vmware-with-centos-7/
 .. [2] https://www.cnblogs.com/qiang-qiang/p/10411100.html
+.. [3] https://blog.csdn.net/zbrj12345/article/details/81879455

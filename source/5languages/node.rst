@@ -17,4 +17,6 @@ NODE文档
 
    nodes/deployment
 
+   nodes/node
+   nodes/question
    nodes/tmp
