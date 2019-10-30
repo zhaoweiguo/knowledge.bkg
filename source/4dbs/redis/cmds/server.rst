@@ -1,6 +1,4 @@
-.. _redis_commands:
-
-redis命令列表
+Redis 服务器命令
 ====================
 
 server::
@@ -27,30 +25,16 @@ server::
     bgsave:异步存储数据到磁盘
     bgrewriteaof:异步重写只添加文件
 
-lists::
 
-    blpop "key" [key ...] timeout:移除并得到列表的第一个元素，或者阻塞直到其中一个空闲
-    brpop "key" [key ...] timeout:同上，相当于阻塞的rpop
-    brpoplpush "source" "destination" "...":取出数据,然后把数据压入到另一个列表
-    lindex "key" "index":得到列表下第index的值
-    linsert "key" BEFORE｜AFTER:在一个元素前面｜后面插入一个元素
-    llen "key":得到列表的长度
-    lpop "key":移除列表中的第一个元素，然后返回它的值
-    lpush "key" "value":把值压入到列表中
-    lpushx "key" "value":只有当列表存在时，才把值压入列表中
-    lrange "key" "start" "stop":得到列表中从"start"到"stop"的值
-    lrem "key" "count" "value":从列表中移除元素
+删除所有Key::
 
-        "count"为正数时，从头到尾查询移除"count"个等于"value"的值
-        "count"为负数时，从尾到头查询移除|count|个等于"value"的值
-        "count"为零时，移除列表中所有等于"value"的值
+    //删除当前数据库中的所有Key
+    flushdb
+    //删除所有数据库中的key
+    flushall
 
-    lset "key" "index" "value":设定列表中第"index"的值为"value"
-    ltrim "key" "start" "stop":取出列表中从start到stop的值
-    rpop:同上
-    rpoppush:同上
-    rpush:同上
-    rpushx:同上
+
+
 
 
 

@@ -3,7 +3,7 @@
 redis配置文件详解
 ########################
 
-.. literalinclude:: ./files/redis.conf
+.. literalinclude:: /files/redis/redis.conf
    :language: lighty
    :emphasize-lines: 1
    :linenos: 

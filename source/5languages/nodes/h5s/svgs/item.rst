@@ -211,8 +211,12 @@ A命令的参数::
     id：标记ID
 
 
+.. literalinclude:: ./files/item_marker2.svg
+.. image:: ./files/item_marker2.svg
 
 
+.. literalinclude:: ./files/item_marker3.svg
+.. image:: ./files/item_marker3.svg
 
 
 

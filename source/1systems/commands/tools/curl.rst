@@ -220,14 +220,18 @@ HTTP/2
     // ?
     curl -v -r 0-500 http://somefile -o localfile
 
+上传json文件::
 
+    curl -v -i -X POST -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization:Basic <用户名和密码的base64>=" http://localhost:3000/api/dashboards/db -d@1.json
 
+    用户名和密码的base64: base64(user:passwd)
+    $> echo "user:passwd" | base64
+    dXNlcjpwYXNzd2QK
 
+    // 注意最后加个=号
+    curl -v -X POST   http://localhost:3000/api/dashboards/db   -H 'Accept: application/json'   -H 'Authorization: Basic YWRtaW46YWRtaW4='   -H 'Content-Type: application/json'   -d @abc.json
 
-
-
-
-
+.. warning:: 注意，-X后面的POST是大写
 
 
 

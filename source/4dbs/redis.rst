@@ -11,12 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   redis/redis_usage
-   redis/redis_file_config
+   redis/redis_command
    redis/redis_config
-   redis/redis_commands
-   redis/redis_examples
-   redis/redis_slave
    redis/redis_optimize
    redis/redis_question
 
