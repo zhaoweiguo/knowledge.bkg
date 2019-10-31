@@ -1,6 +1,6 @@
 .. _linux_normal:
 
-基本命令
+常用命令
 =========
 
 :作者: 新溪-gordon <programfan.info#gmail.com>
@@ -16,17 +16,16 @@
    normals/crontab
    normals/logrotate
    normals/nohup
-
-   normals/date
-   normals/exec
-   normals/xargs
    normals/ssh
 
+   normals/awk
    normals/grep
    normals/sed
-   normals/awk
-   normals/diff
    normals/find
+   normals/exec
+   normals/xargs
+
+   normals/diff
    normals/sort
    normals/uniq
    normals/split
@@ -38,13 +37,7 @@
    normals/du
    normals/df
 
-   normals/tree
-   normals/ls
-   normals/pwd
-   normals/windows
 
-   normals/linux_cmd_simple
-   normals/linux_cmd_tmp
 
 
 

@@ -11,6 +11,7 @@
    commands/linux_tune
    commands/linux_tool
    commands/linux_network
+   commands/linux_simple
    commands/linux_normal
    commands/linux_system
    commands/linux_compress

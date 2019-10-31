@@ -17,6 +17,7 @@
    tools/screen
    tools/pgrep
    tools/pkill
+   tools/lsof
 
    tools/mtr
    tools/curl

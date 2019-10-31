@@ -11,21 +11,16 @@
    tmps/updatedb
    tmps/locate
    tmps/lsattr
+   tmps/lspci
    tmps/tput
    tmps/dmesg
-   tmps/lspci
    tmps/split
    tmps/cmp
    tmps/set
+   tmps/export
+   tmps/finger
+   tmps/hostname
+   tmps/mount
 
-
-临时
-------
-
-::
-
-  lsof -i :8988 | wc -l
-
-  
 
   

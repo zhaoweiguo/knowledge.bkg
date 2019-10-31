@@ -17,10 +17,15 @@
    networks/tcpcopy
    networks/netperf
 
-   networks/network_simple
-   networks/network_tmp
-   networks/network_other
 
+   networks/ifconfig
+   networks/ip
+   networks/ping
+   networks/route
 
+   networks/host
    networks/dig
+   networks/telnet
    networks/nslookup
+
+   networks/network_other
