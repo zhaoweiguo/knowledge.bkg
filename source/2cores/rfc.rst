@@ -6,6 +6,7 @@ rfc
    :maxdepth: 2
 
    rfcs/rfc1123
+   rfcs/rfc2045
    rfcs/rfc2068
    rfcs/rfc3339
 

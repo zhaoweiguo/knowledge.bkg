@@ -21,5 +21,6 @@
    simples/tail
    simples/touch
    simples/wc
+   simples/echo
 
 
