@@ -47,56 +47,56 @@ baseXX命令使用
 
 Base64::
 
-    $> echo "zhaohang" |openssl base64
-    $> echo "emhhb2hhbmcK" |openssl base64 -d
+    $ echo "zhaohang" |openssl base64
+    $ echo "emhhb2hhbmcK" |openssl base64 -d
 
 
 des 算法::
 
-    $> echo "zhaohang" |openssl enc -des -pass pass:123 -base64
+    $ echo "zhaohang" |openssl enc -des -pass pass:123 -base64
     U2FsdGVkX19j45kavF9gFXUU6uHs2bOC8WyppMHbSNw=
-    $> echo "U2FsdGVkX19j45kavF9gFXUU6uHs2bOC8WyppMHbSNw="|openssl enc -des -pass pass:123 -base64 -d 
+    $ echo "U2FsdGVkX19j45kavF9gFXUU6uHs2bOC8WyppMHbSNw="|openssl enc -des -pass pass:123 -base64 -d 
     zhaohang
 
 aes算法::
 
-    $> echo "zhaohang" | openssl enc -aes-128-cbc -pass pass:123456 -base64
+    $ echo "zhaohang" | openssl enc -aes-128-cbc -pass pass:123456 -base64
     U2FsdGVkX18YLuqf5Puu3JINbRNEKi9+IiThXFP2mCw=
-    $> echo "U2FsdGVkX18YLuqf5Puu3JINbRNEKi9+IiThXFP2mCw=" | openssl enc -aes-128-cbc -pass pass:123456 -base64 -d 
+    $ echo "U2FsdGVkX18YLuqf5Puu3JINbRNEKi9+IiThXFP2mCw=" | openssl enc -aes-128-cbc -pass pass:123456 -base64 -d 
     zhaohang
 
 aes算法对文件::
 
-    $> openssl enc -aes-128-cbc -in <filename.txt> -out <file.bin> -pass pass:123456
-    $> openssl enc -aes-128-cbc -d -in <file.bin> -out <file.out> -pass pass:123456
+    $ openssl enc -aes-128-cbc -in <filename.txt> -out <file.bin> -pass pass:123456
+    $ openssl enc -aes-128-cbc -d -in <file.bin> -out <file.out> -pass pass:123456
 
 使用常用算法进行非对称加密(加密(非对称，不能解密)
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ::
 
-    $> cat filename.txt 
+    $ cat filename.txt 
     zhaohang
 
 sha1对文件或字符串加密::
 
-    $> openssl sha1 filename.txt 
+    $ openssl sha1 filename.txt 
     SHA1(filename.txt)= cf017022db32f04cb57d2ec1ae6b39751a6155e4
 
-    $> echo "zhaohang" |openssl dgst -sha1 
+    $ echo "zhaohang" |openssl dgst -sha1 
     cf017022db32f04cb57d2ec1ae6b39751a6155e4
 
-    $> sha1sum filename.txt 
+    $ sha1sum filename.txt 
     cf017022db32f04cb57d2ec1ae6b39751a6155e4 filename.txt
 
 MD5对文件或字符串加密::
 
-    $> openssl md5 filename.txt 
+    $ openssl md5 filename.txt 
     MD5(filename.txt)= c47df1e95ae452e959fcc73cda1a3e77
 
-    $> echo "zhaohang" |openssl dgst -md5
+    $ echo "zhaohang" |openssl dgst -md5
     c47df1e95ae452e959fcc73cda1a3e77
 
-    $> md5sum filename.txt 
+    $ md5sum filename.txt 
     c47df1e95ae452e959fcc73cda1a3e77 filename.txt
 
 常用算法列举
@@ -104,7 +104,7 @@ MD5对文件或字符串加密::
 
 openssl 各种算法::
 
-    $> openssl -h
+    $ openssl -h
     Standard commands
     asn1parse      ca             ciphers        crl            crl2pkcs7      
     dgst           dh             dhparam        dsa            dsaparam       
@@ -133,7 +133,7 @@ openssl 各种算法::
 
 OpenSSL还能创建非常强壮的随机密语::
 
-    $> openssl rand 15 -base64 
+    $ openssl rand 15 -base64 
     wGcwstkb8Er0g6w1+Dm+ 
 
 * 如果你运行了这个例子，你的输出将与这里的输出不同，因为密语是随机产生的。 

@@ -8,12 +8,25 @@ Usage::
 
 实例::
 
-    docker container ls                                # List all running containers
-    docker container ls -a             # List all containers, even those not running
-    docker container stop <hash>           # Gracefully stop the specified container
-    docker container kill <hash>         # Force shutdown of the specified container
-    docker container rm <hash>        # Remove specified container from this machine
-    docker container rm $(docker container ls -a -q)         # Remove all containers
+    $ docker container ls     // 列出全部运行的container
+    CONTAINER ID         IMAGE     COMMAND      STATUS         PORTS             NAMES
+    1fa450fe1843        grafana    "/run.sh"    Up 47 hours  3000->3000/tcp      grafana
+    // 列出全部container
+    $ docker container ls -a
+    CONTAINER ID           IMAGE     COMMAND       STATUS       PORTS              NAMES
+    1fa450fe1843        grafana     "/run.sh"    Up 47 hours  3000->3000/tcp      grafana
+    6aa48b8ef586        influxdb   "/entrypoint"   Exited                        influxdb
+    // 只列出container的ID
+    $ docker container ls -a -q
+    1fa450fe1843
+    6aa48b8ef586
+
+
+
+    $ docker container stop <hash>           # Gracefully stop the specified container
+    $ docker container kill <hash>         # Force shutdown of the specified container
+    $ docker container rm <hash>        # Remove specified container from this machine
+    $ docker container rm $(docker container ls -a -q)         # Remove all containers
 
 
 Commands::
