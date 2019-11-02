@@ -5,6 +5,8 @@ GIT 文档首页
 :作者: 新溪-gordon <programfan.info#gmail.com>
 :时间: 2012-01-30
 
+* git大文件存储 [1]_
+
 Contents:
 
 .. toctree::
@@ -30,3 +32,5 @@ Contents:
    gits/hg
 
 
+
+.. [1] https://git-lfs.github.com/

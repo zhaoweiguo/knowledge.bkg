@@ -5,8 +5,10 @@ Hugo
 
 * 官网 [1]_
 * netlify官网 [2]_
+* github [3]_
   
 netlify类似gitlab的静态网站托管
 
 .. [1] https://www.gohugo.org/
 .. [2] https://www.netlify.com/
+.. [3] https://github.com/gohugoio/hugo
