@@ -8,6 +8,7 @@
    practices/encrypt_makecert
    practices/encrypt_ca
    practices/ssl_to_ssh
+   practices/disable_tls1.0
    practices/self_signed_cert
 
 
