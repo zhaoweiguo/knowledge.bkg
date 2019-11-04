@@ -13,6 +13,7 @@ Contents:
 
    redis/redis_command
    redis/redis_config
+   redis/redis_normal
    redis/redis_optimize
    redis/redis_question
 
