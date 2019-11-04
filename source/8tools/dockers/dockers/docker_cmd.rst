@@ -14,10 +14,10 @@ docker命令
    docker_cmds/manages/image
 
    docker_cmds/manages/service
+   docker_cmds/manages/network
 
 
 ..   docker_cmds/manages/builder
-..   docker_cmds/manages/network
    docker_cmds/manages/node
    docker_cmds/manages/plugin
    docker_cmds/manages/secret

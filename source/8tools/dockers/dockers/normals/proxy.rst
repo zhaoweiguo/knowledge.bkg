@@ -17,7 +17,10 @@ Docker代理加速
 .. warning:: 注意, systemctl restart docker会重启docker服务
     k8s集群上执行,所有docker服务都会重启
 
+其他proxy::
 
+    https://bpsifqa9.mirror.aliyuncs.com
+    
 
 
 

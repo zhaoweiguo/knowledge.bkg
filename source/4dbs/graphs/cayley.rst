@@ -6,6 +6,12 @@ cayley [1]_
 
 
 
+运行::
+
+    $ docker run -p 64210:64210 cayleygraph/cayley
+
+
+
 
 
 .. [1] https://github.com/cayleygraph/cayley
