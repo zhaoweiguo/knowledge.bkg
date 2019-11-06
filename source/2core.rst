@@ -10,6 +10,7 @@
 .. toctree::
    :maxdepth: 1
 
+   2cores/theory
    2cores/cognitive
    2cores/gpu
    2cores/blockchain

@@ -9,7 +9,6 @@
 
 
    algorithms/algorithm_encrypt
-   algorithms/concurrent
    algorithms/example
    algorithms/graph_theory
    algorithms/algorithm_other
