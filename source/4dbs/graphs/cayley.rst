@@ -11,6 +11,7 @@ cayley
 
    cayleys/normal
    cayleys/config
+   cayleys/GizmoAPI
    cayleys/advance
    cayleys/practice
 

@@ -1,6 +1,10 @@
 RDF
 #########
 
+* 参考-知识图谱-给AI装个大脑 [1]_
+* 开放领域知识图谱DBpedia: https://wiki.dbpedia.org/
+
+
 RDF(Resource Description Framework)，即资源描述框架，其本质是一个数据模型（Data Model）。它提供了一个统一的标准，用于描述实体/资源。简单来说，就是表示事物的一种方法和手段。RDF形式上表示为SPO三元组，有时候也称为一条语句（statement），知识图谱中我们也称其为一条知识，如下图。
 
 .. image:: /images/theorys/rdfs/architecture.png
@@ -296,3 +300,5 @@ OWL有两个主要的功能::
 
 
 
+
+.. [1] https://zhuanlan.zhihu.com/knowledgegraph
