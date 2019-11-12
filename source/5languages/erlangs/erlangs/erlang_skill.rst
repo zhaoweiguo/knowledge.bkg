@@ -43,7 +43,16 @@ Erlang技巧
 
     try-catch语法结构内无法构成尾递归
 
+判断是否字符串::
 
+    -spec is_string(String :: any()) -> true | false.
+    is_string(String) when is_list(String) ->
+        Fun = fun(E) ->
+            E >= 0 andalso E =< 255
+              end,
+        lists:all(Fun, String);
+    is_string(_String) ->
+        ?FALSE.
 
 
 小工具::

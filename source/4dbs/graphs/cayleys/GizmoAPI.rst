@@ -1,26 +1,45 @@
 GizmoAPI
 ########
 
-The graph object
+数据源
+======
+
+.. literalinclude:: ./demo.nq
+
+Graph object
 ================
 
 唯一入口对象::
 
     Name: graph, Alias: g
 
+graph.Emit(*)::
+
+    $ g.Emit({name:"bob"}) // push {"name":"bob"} as a result
+    
+    $ var n = g.V().Count();
+    $ g.Emit(n);
+
+graph.M(), graph.Morphism()
+---------------------------
+
+Morphism creates a morphism path object. Unqueryable on it's own, defines one end of the path. Saving these to variables with
+
 ::
 
-    graph.Emit(*)
-    g.Emit({name:"bob"}) // push {"name":"bob"} as a result
-
-
-
-    graph.M(), graph.Morphism()
     var shorterPath = graph.Morphism().Out("foo").Out("bar")
+
+graph.V(*), graph.Vertex
+------------------------
+
+格式::
 
     graph.V(*), graph.Vertex([nodeId],[nodeId]...)
 
-    graph.Uri(s)
+graph.IRI(s)
+------------
+Uri creates an IRI values from a given string.
+
 
 
 Path object
@@ -30,13 +49,10 @@ Path object
     path.All()
     path.And(path), 
     
-    path.Back(tag)
     path.Both([predicatePath], [tags])
-    path.Count()
     path.Difference(path), path.Except(path)
 
-    path.Save(predicate, tag)
-    
+
 
 path.As(tags), path.Tag(tags)
 -----------------------------
@@ -73,31 +89,190 @@ tags (Optional): One of::
     a string: A single tag to add the predicate used to the output set.
     a list of strings: Multiple tags to use as keys to save the predicate used to the output set.
 
+path.in([predicatePath], [tags])
+--------------------------------
+
+In is inverse of Out. Starting with the nodes in path on the object, follow the quads with predicates defined by predicatePath to their subjects.
+
+predicatePath (Optional): One of::
+
+    null or undefined: All predicates pointing into this node
+    a string: The predicate name to follow into this node
+    a list of strings: The predicates to follow into this node
+    a query path object: The target of which is a set of predicates to follow.
+
+tags (Optional): One of::
+
+    null or undefined: No tags
+    a string: A single tag to add the predicate used to the output set.
+    a list of strings: Multiple tags to use as keys to save the predicate used to the output set.
+
 Example::
 
-    $> g.V("<charlie>").All()
+    // Find the cool people, bob, dani and greg
+    $> g.V("cool_person").in("<status>").all();
+    {"id": "<bob>"},
+    {"id": "<dani>"},
+    {"id": "<greg>"}
+
+    // Find who follows bob, in this case, alice, charlie, and dani
+    $> g.V("<bob>").in("<follows>").all();
+    {"id": "<alice>"},
+    {"id": "<charlie>"},
+    {"id": "<dani>"}
+
+    // Find who follows the people emily follows, namely, bob and emily
+    $> g.V("<emily>").out("<follows>").in("<follows>").all();
+    {"id": "<bob>"},
+    {"id": "<emily>"}
+
+path.Count()
+------------
+Count returns a number of results and returns it as a value.
+
+实例::
+
+    // Save count as a variable
+    var n = g.V().count();
+    // Send it as a query result
+    g.emit(n);
+
+
+
+path.back([tag])
+----------------
+Back returns current path to a set of nodes on a given tag, preserving all constraints.
+
+If still valid, a path will now consider their vertex to be the same one as the previously tagged one, with the added constraint that it was valid all the way here. Useful for traversing back in queries and taking another route for things that have matched so far.
+
+
+g.V().Tag("start").out("<status>").back("start").in("<follows>").all()::
+
+    Start from all nodes, save them into start, follow any status links,
+    jump back to the starting node, and find who follows them. Return the result.
+    Results are:
+      {"id": "<alice>", "start": "<bob>"},
+      {"id": "<charlie>", "start": "<bob>"},
+      {"id": "<charlie>", "start": "<dani>"},
+      {"id": "<dani>", "start": "<bob>"},
+      {"id": "<dani>", "start": "<greg>"},
+      {"id": "<dani>", "start": "<greg>"},
+      {"id": "<fred>", "start": "<greg>"},
+      {"id": "<fred>", "start": "<greg>"}
+
+path.save(predicate, tag)
+-------------------------
+Save saves the object of all quads with predicate into tag, without traversal.
+
+Arguments::
+
+    predicate: A string for a predicate node.
+    tag: A string for a tag key to store the object node.
+
+Example::
+
+    // Start from dani and bob and save who they follow into "target"
+    g.V("<dani>", "<bob>").save("<follows>", "target").all();
+    // Returns:
+       {"id" : "<bob>", "target": "<fred>" },
+       {"id" : "<dani>", "target": "<bob>" },
+       {"id" : "<dani>", "target": "<greg>" }
+
+path.toArray(*)
+---------------
+
+ToArray executes a query and returns the results at the end of the query path as an JS array.
+
+实例::
+
+    // bobFollowers contains an Array of followers of bob (alice, charlie, dani).
+    var bobFollowers = g.V("<bob>").in("<follows>").toArray();
+    g.Emit(bobFollowers);
+
+
+path.outPredicates()
+--------------------
+
+OutPredicates gets the list of predicates that are pointing out from a node.
+
+实例::
+
+    // bob has "<follows>" and "<status>" edges pointing outwards
+    // returns "<follows>", "<status>"
+    $ g.V("<bob>").outPredicates().all();
     {
       "result": [
-        {
-          "id": "<charlie>"
-        }
-      ]
-    }
-    // The working set of this is bob and dani
-    $> g.V("<charlie>").Out("<follows>").All()
-    {
-      "result": [
-        {
-          "id": "<bob>"
-        },
-        {
-          "id": "<dani>"
-        }
+        {"id": "<follows>"},
+        {"id": "<status>"}
       ]
     }
 
+
+
+Example
+=======
+
+g.V().All()::
+
+    {
+      "result": [
+        {"id": "cool_person"},
+        {"id": "<dani>"},
+        {"id": "<smart_graph>"},
+        {"id": "<charlie>"},
+        {"id": "<bob>"},
+        {"id": "<fred>"},
+        {"id": "<greg>"},
+        {"id": "<emily>"},
+        {"id": "<predicates>"},
+        {"id": "smart_person"},
+        {"id": "<alice>"},
+        {"id": "<follows>"},
+        {"id": "<status>"},
+        {"id": "<are>"}
+      ]
+    }
+
+g.V("<bob>").All()::
+
+    {
+      "result": [
+        {"id": "<bob>"}
+      ]
+    }
+
+g.V("<bob>", "<dani>").All()::
+
+    {
+      "result": [
+        {"id": "<bob>"},
+        {"id": "<dani>"}
+      ]
+    }
+
+g.V("<bob>", "<dani>").Tag("start").All()::
+
+    {
+      "result": [
+        {"id": "<bob>","start": "<bob>"},
+        {"id": "<dani>","start": "<dani>"}
+      ]
+    }
+
+
+$> g.V("<charlie>").Out("<follows>").All()::
+
+    // The working set of this is bob and dani
+    {
+      "result": [
+        {"id": "<bob>"},
+        {"id": "<dani>"}
+      ]
+    }
+
+$> g.V("<alice>").Out("<follows>").Out("<follows>").All()::
+
     // The working set of this is fred, as alice follows bob and bob follows fred.
-    $> g.V("<alice>").Out("<follows>").Out("<follows>").All()
     {
       "result": [
         {
@@ -106,29 +281,26 @@ Example::
       ]
     }
 
+$> g.V("<dani>").Out().All()::
+
     // Finds all things dani points at. Result is bob, greg and cool_person
-    $> g.V("<dani>").Out().All()
     {
       "result": [
-        {
-          "id": "cool_person"
-        },
-        {
-          "id": "<bob>"
-        },
-        {
-          "id": "<greg>"
-        }
+        {"id": "cool_person"},
+        {"id": "<bob>"},
+        {"id": "<greg>"}
       ]
     }
 
+$> g.V("<dani>").Out(["<follows>", "<status>"]).All()::
+
     // Finds all things dani points at on the status linkage.
     // Result is bob, greg and cool_person
-    $> g.V("<dani>").Out(["<follows>", "<status>"]).All()
-    等同于: g.V("<dani>").Out().All()
+    结果与上面g.V("<dani>").Out().All()相同
+
+$> g.V("<dani>").Out(g.V("<status>"), "pred").All()::
 
     // Finds all things dani points at on the status linkage, given from a separate query path.
-    $> g.V("<dani>").Out(g.V("<status>"), "pred").All()
     {
       "result": [
         {
@@ -137,9 +309,6 @@ Example::
         }
       ]
     }
-
-.. literalinclude:: ./demo.nq
-
 
 
 

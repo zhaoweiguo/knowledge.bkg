@@ -13,7 +13,8 @@ cayley
    cayleys/config
    cayleys/GizmoAPI
    cayleys/advance
-   cayleys/practice
+   cayleys/practice1
+   cayleys/practice2
 
 
 
