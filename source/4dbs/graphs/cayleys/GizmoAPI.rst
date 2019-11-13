@@ -178,6 +178,19 @@ Example::
        {"id" : "<dani>", "target": "<bob>" },
        {"id" : "<dani>", "target": "<greg>" }
 
+path.tagArray(*)
+----------------
+
+TagArray is the same as ToArray, but instead of a list of top-level nodes, returns an Array of tag-to-string dictionaries, much as All would, except inside the JS environment.
+
+实例::
+
+    // bobTags contains an Array of followers of bob (alice, charlie, dani).
+    var bobTags = g.V("<bob>").tag("name").in("<follows>").tagArray();
+    // nameValue should be the string "<bob>"
+    var nameValue = bobTags[0]["name"];
+
+
 path.toArray(*)
 ---------------
 
@@ -189,11 +202,23 @@ ToArray executes a query and returns the results at the end of the query path as
     var bobFollowers = g.V("<bob>").in("<follows>").toArray();
     g.Emit(bobFollowers);
 
+path.inPredicates()
+-------------------
+
+InPredicates gets the list of predicates that are pointing in to a node.
+
+::
+
+    // bob only has "<follows>" predicates pointing inward
+    // returns "<follows>"
+    g.V("<bob>").inPredicates().all();
+
 
 path.outPredicates()
 --------------------
 
-OutPredicates gets the list of predicates that are pointing out from a node.
+* OutPredicates得到结点指向的谓语列表
+* OutPredicates gets the list of predicates that are pointing out from a node.
 
 实例::
 
@@ -206,6 +231,20 @@ OutPredicates gets the list of predicates that are pointing out from a node.
         {"id": "<status>"}
       ]
     }
+
+path.intersect(path)
+--------------------
+
+Intersect filters all paths by the result of another query path.
+This is essentially a join where, at the stage of each path, a node is shared. Example:
+
+实例::
+
+    var cFollows = g.V("<charlie>").out("<follows>");
+    var dFollows = g.V("<dani>").out("<follows>");
+    // People followed by both charlie (bob and dani) and dani (bob and greg) -- returns bob.
+    cFollows.intersect(dFollows).all();
+    // Equivalently, g.V("<charlie>").out("<follows>").And(g.V("<dani>").out("<follows>")).all()
 
 
 

@@ -49,6 +49,7 @@ cli命令
 * 经济图数据库: https://github.com/degdb/degdb
 * orm: github.com/jinzhu/gorm
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
+* sql通用扩展： https://github.com/jmoiron/sqlx
 
 
 web工具
