@@ -12,3 +12,11 @@ mac下docker的镜像保存位置::
 
     mv ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/ /otherPath/com.docker.driver.amd64-linux
     ln -s /otherPath/com.docker.driver.amd64-linux /Users/<username>/Library/Containers/com.docker.docker/Data
+
+
+
+
+
+
+
+
