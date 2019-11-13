@@ -22,6 +22,24 @@ maps模块
     maps:find(Key,Map).
   {ok,42}
 
+
+.. function:: from_list/1
+
+::
+
+    from_list(List) -> Map
+    类型:
+    List = [{Key, Value}]
+    Key = Value = term()
+    Map = map()
+
+实例::
+
+    erl> List = [{"a",ignored},{1337,"value two"},{42,value_three},{"a",1}].
+    erl> maps:from_list(List).
+    #{42 => value_three,1337 => "value two","a" => 1}
+
+
 .. function:: get/2/3
 
 ::

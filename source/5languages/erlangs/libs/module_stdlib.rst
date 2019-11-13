@@ -1,6 +1,6 @@
 .. _erlang_stdlib:
 
-stdlib
+stdlib [1]_
 ####################
 
 
@@ -37,3 +37,5 @@ stdlib
    stdlibs/unicode
 
 
+
+.. [1] http://erlang.org/doc/man/STDLIB_app.html
