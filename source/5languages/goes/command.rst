@@ -11,6 +11,7 @@
    commands/build
    commands/clean
    commands/fmt
+   commands/generate
    commands/get
    commands/install
    commands/run

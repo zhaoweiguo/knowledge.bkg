@@ -13,7 +13,10 @@ NODE文档
 
    nodes/node
    nodes/opensource
+
    nodes/javascript
+   nodes/ecmaScript
+   nodes/typeScript
 
    nodes/deployment
 

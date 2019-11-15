@@ -10,8 +10,13 @@
 * xml: https://github.com/tealeg/xlsx
 * yaml: https://github.com/go-yaml/yaml/
 
+Golang工具包
+------------
 
-
+* 总地址: golang.org/x/tools
+* mirror: https://github.com/golang/tools/
+* 文档: https://godoc.org/golang.org/x/tools
+* stringer: golang.org/x/tools/cmd/stringer
 
 通知
 ---------
@@ -91,7 +96,7 @@ DEVOPS
 ----
 
 * URL短链接服务: https://github.com/andyxning/shortme
-
+* 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
 
 
 

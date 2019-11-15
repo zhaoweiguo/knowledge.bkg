@@ -314,37 +314,9 @@ partition/2
 
 
 
-to_integer/1
-''''''''''''''''
-用法::
 
-    to_integer(String) -> {Int, Rest} | {error, Reason}
+.. function:: split/2
 
-    类型:
-    String = string()
-    Int = integer()
-    Rest = string()
-    Reason = no_integer | not_a_list
-
-说明::
-
-    String以数字开头,
-    Int: 返回最前面的数字 
-    Rest: 数字后面剩余的string
-
-实例::
-
-    > {I1,Is} = string:to_integer("33+22"),
-    > {I2,[]} = string:to_integer(Is),
-    > I1-I2.
-     11
-    > string:to_integer("0.5").
-     {0,".5"}
-    > string:to_integer("x=2").
-     {error,no_integer}
-
-split/2
----------
 ::
 
     split(N, List1) -> {List2, List3}
@@ -379,6 +351,7 @@ split/2
   15> lists:prefix([abc], [abc, def]).
   true
   16> lists:prefix([abc], [abcdef]).
+  false
 
 .. function:: zip/2
 
