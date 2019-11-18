@@ -25,6 +25,7 @@
    2cores/rfc
    2cores/regexp
    2cores/iq
+   2cores/abbr
    2cores/other
 
 

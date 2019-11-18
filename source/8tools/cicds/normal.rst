@@ -71,6 +71,10 @@
       Travis
       Codeship
       Strider
+      Jenkins和Strider是开源软件
+      Travis和Codeship对于开源项目可以免费使用
+
+
 
 4.4 测试（第二轮）::
 

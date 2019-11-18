@@ -7,6 +7,7 @@ CI/CD相关
 
 
    cicds/normal
+   cicds/ops
    cicds/jenkins
    cicds/drone
    cicds/gitlab
