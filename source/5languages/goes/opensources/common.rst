@@ -61,6 +61,7 @@ web工具
 -------
 
 * web框架: https://github.com/go-chi/chi
+* web框架: https://github.com/gin-gonic/gin
 * web框架(cayley): https://github.com/gobuffalo/packr
 * 爬虫: http://github.com/henrylee2cn/pholcus
 * 文件上传断点续传: https://github.com/tus/tusd

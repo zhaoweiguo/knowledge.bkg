@@ -18,7 +18,7 @@
    8tools/wireshark
    8tools/monitor
    8tools/sphinx
-   8tools/jenkins
+   8tools/cicd
    8tools/jumpserver
    8tools/fanqiang
    8tools/tool_tmp
