@@ -27,6 +27,7 @@ Contents:
    gits/web_github
    gits/web_gerrit
    gits/web_gitea
+   gits/web_gogs
 
    gits/svn
    gits/hg

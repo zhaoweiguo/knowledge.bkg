@@ -7,9 +7,8 @@
 .. toctree::
    :maxdepth: 2
 
-   fanqiangs/fanqiang_vpn
-   fanqiangs/fanqiang_server
-   fanqiangs/fanqiang_client
-   fanqiangs/fanqiang_browser
-   fanqiangs/fanqiang_git
-   fanqiangs/shadowsock
+   fanqiangs/vpn
+   fanqiangs/ngrok
+
+
+

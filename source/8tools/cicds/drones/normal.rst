@@ -6,8 +6,9 @@
 
 
 * 与kubedog接合实例 [3]_
-
+* Drone一插件开发 [4]_
 
 .. [1] https://github.com/drone/drone-cli
 .. [2] https://github.com/drone/drone-go
 .. [3] https://github.com/sunny0826/kubectl-kustomize
+.. [4] https://blog.wu-boy.com/

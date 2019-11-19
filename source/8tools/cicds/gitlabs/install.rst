@@ -95,10 +95,10 @@ runner注册及配置
 
 
 
-定义规则
-========
+相关链接
+=============
 
-
+* 敏捷开发与Gitlab CI/CD持续集成 [2]_
 
 
 
@@ -107,3 +107,4 @@ runner注册及配置
 
 
 .. [1] https://studygolang.com/articles/14720
+.. [2] 敏捷开发与Gitlab CI/CD持续集成

@@ -16,6 +16,7 @@
    2cores/blockchain
    2cores/algorithm
    2cores/ai
+   2cores/bot
    2cores/protocol
    2cores/safe
    2cores/architecture

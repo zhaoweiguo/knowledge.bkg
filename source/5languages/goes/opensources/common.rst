@@ -67,6 +67,10 @@ web工具
 * 文件上传断点续传: https://github.com/tus/tusd
 * websocket: https://github.com/olahol/melody
 
+web服务器
+---------
+
+* caddy(类似nginx,自动支持http2): https://github.com/caddyserver/caddy/tree/v2
 
 DEVOPS
 ------
