@@ -15,7 +15,11 @@ docker基本
    normals/proxy
 
 
+Docker在线实验室
+================
 
+github: https://github.com/play-with-docker/play-with-docker
+官网: http://labs.play-with-docker.com/
 
 
 .. [1] http://docs.docker.com/

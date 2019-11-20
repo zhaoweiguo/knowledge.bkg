@@ -11,5 +11,9 @@ gitea
     Unknwon基本拒绝了其他任何人，脱离他的掌控，对Gogs进行维护
 
 
+.. image:: /images/gits/gitea_gitlab_github.png
+
+
+
 
 .. [1] https://github.com/go-gitea/

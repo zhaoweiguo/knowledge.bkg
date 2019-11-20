@@ -52,10 +52,15 @@ cli命令
 * 图数据库: https://github.com/cayleygraph/cayley
 * 时序数据库: https://github.com/influxdata/influxdb
 * 经济图数据库: https://github.com/degdb/degdb
-* orm: github.com/jinzhu/gorm
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
+* 分布式k/v数据库: https://github.com/etcd-io/etcd
 * sql通用扩展： https://github.com/jmoiron/sqlx
+* orm: https://github.com/jinzhu/gorm
 
+服务发现
+--------
+
+* consul(分布、高可用连接和配置应用程序): https://github.com/hashicorp/consul
 
 web工具
 -------
@@ -70,7 +75,8 @@ web工具
 web服务器
 ---------
 
-* caddy(类似nginx,自动支持http2): https://github.com/caddyserver/caddy/tree/v2
+* caddy(类nginx,自动支持http2,內建了 Let’s Encrypt): https://github.com/caddyserver/caddy/tree/v2
+* traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
 
 DEVOPS
 ------
@@ -101,6 +107,11 @@ DEVOPS
 * 负载工具类似ab: https://github.com/rakyll/hey
 * 高速的 P2P 端口映射工具，同时支持Socks5代理: https://github.com/vzex/dog-tunnel
 
+CI&Git
+--------
+
+* gitlab-runner: https://gitlab.com/gitlab-org/gitlab-runner
+* 
 
 索引
 ----
@@ -112,7 +123,7 @@ DEVOPS
 
 * URL短链接服务: https://github.com/andyxning/shortme
 * 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
-
+* 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
 
 
 

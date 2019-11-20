@@ -31,5 +31,7 @@ ios生成ipa安装包::
     8.右键选择生成的文件，选择“Show in finder”就找到ipa文件了
     9.上专到fly.im中
 
+如何在 Mac 上使用表情符号::
 
+    『Control-Command-空格键』进入“字符检视器”弹出式窗口
     

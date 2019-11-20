@@ -24,7 +24,12 @@ travis-cli
 prow
 ======
 
-k8s官方使用的prow，Kubernetes 相关的项目，则会使用 prow 进行 CI:
+简介::
+
+    授权协议: Apache-2.0
+    开发语言: Golang
+
+    k8s官方使用的prow，Kubernetes 相关的项目，则会使用 prow 进行 CI:
 
 * prow是k8s测试框架test-infra [2]_ 中使用的CICD工具(在目录prow中)
 * 实例: 机器人 [6]_
