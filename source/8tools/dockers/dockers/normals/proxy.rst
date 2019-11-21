@@ -19,8 +19,9 @@ Docker代理加速
 
 其他proxy::
 
-    https://bpsifqa9.mirror.aliyuncs.com
-    
+    阿里云: https://bpsifqa9.mirror.aliyuncs.com
+    Docker 官方提供的中国 registry mirror https://registry.docker-cn.com
+    七牛云加速器 https://reg-mirror.qiniu.com/
 
 
 

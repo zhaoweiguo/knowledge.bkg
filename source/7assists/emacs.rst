@@ -16,5 +16,10 @@ Contents:
    emacs/phpstorm
    emacs/sublime
    emacs/idea
+   emacs/vsCode
    emacs/iterm2
    emacs/alfred
+
+
+
+

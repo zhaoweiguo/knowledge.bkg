@@ -8,6 +8,7 @@ Docker命令
    dockers/docker_hub
    dockers/docker_Dockerfile
    dockers/docker_cmd
+   dockers/docker_compose
    dockers/question
    dockers/practice
 

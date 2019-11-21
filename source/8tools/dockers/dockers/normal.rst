@@ -11,6 +11,8 @@ docker基本
 .. toctree::
    :maxdepth: 3
 
+   normals/history
+   normals/normal
    normals/mac
    normals/proxy
 
