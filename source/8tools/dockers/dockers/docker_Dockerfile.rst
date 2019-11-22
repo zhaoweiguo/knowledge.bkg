@@ -6,7 +6,8 @@ Dockerfile
 
    Dockerfiles/normal
    Dockerfiles/example
-
+   Dockerfiles/entrypoint
+   Dockerfiles/multistage-build
 
 
 

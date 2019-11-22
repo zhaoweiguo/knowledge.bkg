@@ -28,6 +28,14 @@ Usage::
     $ docker image ls ubuntu          # 查看ubuntu的所有镜像
     $ docker image ls ubuntu:16.04    # 查看指定标签的镜像
 
+    # 查看镜像摘要
+    $ docker image ls --digests
+    REPOSITORY   TAG   DIGEST                                                                    IMAGE ID            CREATED             SIZE
+    node         slim  sha256:b4f0e0bdeb578043c1ea6862f0d40cc4afe32a4a582f3be235a3b164422be228   6e0c4c8e3913        3 weeks ago         214 MB
+
+
+
+
 filter实例::
 
     # 在 mongo:3.2 之后建立的镜像
@@ -51,6 +59,8 @@ quiet实例::
     fe9198c04d62
 
     # 与--filter 配合 -q 产生出指定范围的 ID 列表，然后送给另一个 docker 命令作为参数
+    $ docker image rm $(docker image ls -q redis)
+
 
 高级::
 

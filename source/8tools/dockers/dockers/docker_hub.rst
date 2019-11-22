@@ -5,6 +5,11 @@ alpine::
 
     A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!
 
+scratch::
+
+    这个镜像是虚拟的概念，并不实际存在，它表示一个空白的镜像。
+    如果你以 scratch 为基础镜像的话，意味着你不以任何镜像为基础，接下来所写的指令将作为镜像第一层开始存在。
+    不以任何系统为基础，直接将可执行文件复制进镜像的做法并不罕见，比如 swarm、coreos/etcd
 
 
 语言 [1]_

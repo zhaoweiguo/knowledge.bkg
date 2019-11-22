@@ -2,6 +2,15 @@ docker命令
 ################
 
 
+
+.. toctree::
+   :maxdepth: 3
+
+   docker_cmds/other_image
+
+
+
+
 帮助、管理相关:
 
 .. toctree::
@@ -40,19 +49,18 @@ docker命令
    docker_cmds/cmds/build
    docker_cmds/cmds/commit
 
+   docker_cmds/cmds/diff
 
    docker_cmds/cmds/exec
 
 
    docker_cmds/cmds/history
    docker_cmds/cmds/images
-   docker_cmds/cmds/import
 
 
    docker_cmds/cmds/inspect
 
 
-   docker_cmds/cmds/load
    docker_cmds/cmds/login
    docker_cmds/cmds/logs
 
@@ -66,7 +74,6 @@ docker命令
    docker_cmds/cmds/rm
    docker_cmds/cmds/rmi
    docker_cmds/cmds/run
-   docker_cmds/cmds/save
    docker_cmds/cmds/search
    docker_cmds/cmds/start
 
@@ -77,7 +84,6 @@ docker命令
 
 ..   docker_cmds/cmds/cp
    docker_cmds/cmds/create
-   docker_cmds/cmds/diff
    docker_cmds/cmds/events
 ..   docker_cmds/cmds/export
 ..   docker_cmds/cmds/info

@@ -48,7 +48,21 @@ Options::
         --ulimit ulimit           Ulimit options (default [])
 
 
+其它 docker build 的用法::
 
+    1. 直接用 Git repo 进行构建
+    $ docker build https://github.com/twang2218/gitlab-ce-zh.git#:8.14
+
+    2. 用给定的 tar 压缩包构建
+    $ docker build http://server/context.tar.gz
+
+    3. 从标准输入中读取 Dockerfile 进行构建
+    $ docker build - < Dockerfile
+    或
+    $ cat Dockerfile | docker build -
+
+    4. 从标准输入中读取上下文压缩包进行构建
+    $ docker build - < context.tar.gz
 
 
 
