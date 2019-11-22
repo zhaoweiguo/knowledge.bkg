@@ -6,11 +6,13 @@ Usage::
     # 管理images
     docker image COMMAND
 
-实例::
+ls实例::
 
     // 查看镜像
     $ docker image ls   # 等同于docker images
 
+
+prune实例::
 
     // 删除无用镜像
     $ docker image prune
@@ -25,6 +27,11 @@ Usage::
     deleted: sha256:4564ce843578b149a403959b4a526b08e0ec38564c78d97011203577bf8b4c10
 
     Total reclaimed space: 19.57MB
+
+
+rm实例::
+
+    $ docker image rm 127.0.0.1:5000/ubuntu:latest
 
 
 Commands::

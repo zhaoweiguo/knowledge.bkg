@@ -6,7 +6,20 @@ Usage::
     # containers管理
     docker container COMMAND
 
-实例::
+
+
+kill实例::
+
+    $ docker container kill <hash>         # Force shutdown of the specified container
+
+
+logs实例::
+
+    $ docker container logs [container ID or NAMES]
+    hello world
+
+
+ls实例::
 
     $ docker container ls     // 列出全部运行的container
     CONTAINER ID         IMAGE     COMMAND      STATUS         PORTS             NAMES
@@ -21,12 +34,27 @@ Usage::
     1fa450fe1843
     6aa48b8ef586
 
+prune实例::
 
+    # 清理所有处于终止状态的容器
+    $ docker container prune
 
-    $ docker container stop <hash>           # Gracefully stop the specified container
-    $ docker container kill <hash>         # Force shutdown of the specified container
+rm实例::
+
+    # 删除容器
+    $ docker container rm  trusting_newton
+
     $ docker container rm <hash>        # Remove specified container from this machine
     $ docker container rm $(docker container ls -a -q)         # Remove all containers
+
+
+stop实例::
+
+    # 终止一个运行中的容器
+    $ docker container stop <hash>           # Gracefully stop the specified container
+
+
+
 
 
 Commands::
