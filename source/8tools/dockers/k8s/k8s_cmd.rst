@@ -60,8 +60,8 @@ kubectl命令
    k8s_cmds/5port-forward
    k8s_cmds/5attach
    k8s_cmds/5exec
-..   k8s_cmds/5proxy
    k8s_cmds/5cp
+..   k8s_cmds/5proxy
    k8s_cmds/5auth
 
 
