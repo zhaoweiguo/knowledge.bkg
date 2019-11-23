@@ -88,13 +88,13 @@ DEVOPS
 微服务
 ------
 
-* https://github.com/rancher/rancher
-* https://github.com/rancher/os
-* https://github.com/rancher/k3s
+* rancher: https://github.com/rancher/rancher
+* rancher os: https://github.com/rancher/os
+* k3s: https://github.com/rancher/k3s
 
-* https://github.com/docker
-
-* https://github.com/kubernetes/kubernetes
+* docker: https://github.com/docker
+* kubernetes: https://github.com/kubernetes/kubernetes
+* linuxkit: https://github.com/linuxkit/linuxkit
 
 网络工具
 --------
@@ -111,7 +111,7 @@ CI&Git
 --------
 
 * gitlab-runner: https://gitlab.com/gitlab-org/gitlab-runner
-* 
+* drone: https://github.com/drone/drone
 
 索引
 ----

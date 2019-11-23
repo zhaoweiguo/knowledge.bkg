@@ -16,6 +16,7 @@ Linux相关
    linuxs/debian
    linuxs/freebsd
    linuxs/alpine
+   linuxs/busybox
    linuxs/practice
    linuxs/linux_question
    linuxs/linux_security

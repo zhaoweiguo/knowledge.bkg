@@ -7,4 +7,5 @@ Alpine Linux
 
    alpines/normal
    alpines/docker
+   alpines/install
 

@@ -17,6 +17,8 @@ kube基本
 
 k8s的一个目标是设计功能来帮助应用完全感觉不到k8s的存在，因此让应用民api服务器通信的设计是不允许的
 
+.. image:: /images/k8s/k8s-singlenode-docker.png
+
 
 
 

@@ -19,6 +19,9 @@ Options::
     // 查询指定images
     $ docker search sinatra
 
+    // 只搜索那些被收藏 10 次以上的镜像
+    $ docker search --filter=stars=10 ubuntu
+    $ docker search -f stars=10 ubuntu
 
 
 

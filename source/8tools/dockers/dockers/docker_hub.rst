@@ -43,6 +43,15 @@ scratch::
 操作系统
 ========
 
+* `Ubuntu <https://hub.docker.com/_/ubuntu>`_::
+  
+    $ docker pull ubuntu:17.10
+
+* `CentOS <https://hub.docker.com/_/centos>`_::
+    
+    $ docker pull centos
+    $ docker pull centos:8
+    $ docker pull centos:7
 
 
 数据库
@@ -65,18 +74,26 @@ scratch::
     $ docker pull influxdb
     $ docker pull registry.cn-hangzhou.aliyuncs.com/opensources/influxdb
 
-* 文档数据库mongoDB::
+* 文档数据库`mongoDB <https://hub.docker.com/_/mongo>`_::
 
+    1. Simple Tags
+    $ docker pull mongo:4.2.1-bionic
+    
+    2. Shared Tags
     $ docker pull mongo:4.2.1
     $ docker pull registry.cn-hangzhou.aliyuncs.com/opensources/mongo:4.2.1
     $ docker run --rm -p 27017:27017 mongo:4.2.1
 
-* 关系数据库mysql::
+* 关系数据库`mysql <https://hub.docker.com/_/mysql>`_::
     
+    $ docker pull mysql:5
     $ docker pull mysql:5.7
+    $ docker pull mysql:5.7.28
+    $ docker pull mysql:8
 
-* key/value数据库redis::
+* key/value数据库`redis <https://hub.docker.com/_/redis>`_::
     
+    $ docker pull redis:5.0   # FROM debian:buster-slim
     $ docker pull redis:5.0-alpine
 
 
@@ -93,8 +110,10 @@ scratch::
     $ docker pull jenkins/jenkins
     $ docker pull registry.cn-hangzhou.aliyuncs.com/opensources/jenkins
 
-* nginx::
+* `nginx <https://hub.docker.com/_/nginx>`_::
   
+    $ docker pull nginx     # FROM debian:buster-slim
+    
     $ docker pull nginx:alpine
     $ docker pull registry.cn-hangzhou.aliyuncs.com/opensources/nginx:alpine
 
