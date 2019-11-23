@@ -40,6 +40,12 @@ docker network
     centos> ping mysqlhost    // 可以直接用上面指定的network-alias
     centos> mysql -h mysqlhost -uroot -p123
 
+create命令::
+
+    $ docker network create -d bridge my-net
+    -d 参数指定 Docker 网络类型，有 bridge overlay
+
+
 
 
 

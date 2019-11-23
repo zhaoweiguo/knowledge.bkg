@@ -23,6 +23,26 @@ Docker代理加速
     Docker 官方提供的中国 registry mirror https://registry.docker-cn.com
     七牛云加速器 https://reg-mirror.qiniu.com/
 
+配置 DNS::
+
+    # 每次启动的容器 DNS 自动配置为 114.114.114.114 和 8.8.8.8
+    $ cat /etc/docker/daemon.json
+    {
+      "dns" : [
+        "114.114.114.114",
+        "8.8.8.8"
+      ]
+    }
+
+如果希望永久绑定到某个固定的 IP 地址::
+
+    $ cat /etc/docker/daemon.json
+    {
+      "ip": "0.0.0.0"
+    }
+
+
+
 
 
 

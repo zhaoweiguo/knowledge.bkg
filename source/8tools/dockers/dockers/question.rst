@@ -65,8 +65,31 @@ Docker.raw占用过多的磁盘空间
     实例:
     chcon -Rt svirt_sandbox_file_t /tmp
 
+Networking will not work
+========================
 
+问题::
 
+    ---> [Warning] IPv4 forwarding is disabled. Networking will not work.
+    ---> Running in 10ad6724b3b8
+
+原因::
+
+    容器要想访问外部网络，需要本地系统的转发支持
+
+定位::
+
+    在Linux 系统中，检查转发是否打开:
+    $sysctl net.ipv4.ip_forward
+    net.ipv4.ip_forward = 0         # 如果为0说明没有开启转发
+
+解决::
+
+    方法1(手动打开):
+    $sysctl -w net.ipv4.ip_forward=1
+
+    方法2(启动时指定):
+    如果在启动 Docker 服务的时候设定 --ip-forward=true, Docker 就会自动设定系统的 ip_forward 参数为 1
 
 
 

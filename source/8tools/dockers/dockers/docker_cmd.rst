@@ -15,6 +15,7 @@ docker命令
    docker_cmds/manages/image
    docker_cmds/manages/service
    docker_cmds/manages/network
+   docker_cmds/manages/volume
 
 
 ..   docker_cmds/manages/builder
@@ -27,7 +28,6 @@ docker命令
    docker_cmds/manages/swarm
    docker_cmds/manages/system
    docker_cmds/manages/trust
-   docker_cmds/manages/volume
 
 
 查询相关

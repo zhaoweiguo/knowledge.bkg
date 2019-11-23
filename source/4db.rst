@@ -19,6 +19,7 @@
    4dbs/tsdb
    4dbs/graph
    4dbs/zookeeper
+   4dbs/etcd
    4dbs/mysql
    4dbs/hbase
    4dbs/sqlite

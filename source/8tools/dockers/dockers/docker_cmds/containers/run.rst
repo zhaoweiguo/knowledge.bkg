@@ -19,7 +19,7 @@ Usage::
     -v, --volume list   Bind mount a volume, 例: -v <host volume>:<container volume>
     -w, --workdir string   Working directory inside the container
 
-实例::
+常用实例::
 
     # 执行docker命令
     $ docker run ubuntu:14.04 /bin/cat /etc/issue
@@ -67,6 +67,14 @@ Usage::
     // -d, --detach
     $ docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
     1e5535038e285177d5214659a068137486f96ee5c2e85a4ac52dc83f2ebe4147
+
+
+指定dns::
+
+    -h HOSTNAME 或者 --hostname=HOSTNAME 设定容器的主机名，它会被写到容器内的 /etc/hostname 和 /etc/hosts
+    --dns=IP_ADDRESS 添加 DNS 服务器到容器的 /etc/resolv.conf 中
+    --dns-search=DOMAIN 设定容器的搜索域，当设定搜索域为 .example.com 时，
+        在搜索一个名为 host 的主机时，DNS 不仅搜索 host，还会搜索 host.example.com
 
 
 

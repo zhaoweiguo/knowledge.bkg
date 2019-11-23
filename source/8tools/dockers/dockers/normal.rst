@@ -15,6 +15,7 @@ docker基本
    normals/normal
    normals/mac
    normals/proxy
+   normals/net
 
 
 Docker在线实验室

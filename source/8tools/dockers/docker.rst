@@ -9,6 +9,8 @@ Docker命令
    dockers/docker_Dockerfile
    dockers/docker_cmd
    dockers/docker_compose
+   dockers/docker_machine
+   dockers/docker_swarm
    dockers/question
    dockers/practice
 
