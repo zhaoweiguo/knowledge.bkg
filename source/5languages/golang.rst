@@ -9,13 +9,10 @@ Golang语言相关
    :maxdepth: 1
 
    goes/normal
-   goes/go_install
    goes/command
    goes/opensource
    goes/testing
    goes/question
-   goes/proxy
-   goes/go_mod
    goes/tool
    goes/tmp
 

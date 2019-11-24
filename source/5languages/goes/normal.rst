@@ -7,12 +7,13 @@ Golang基本知识
    :maxdepth: 1
 
 
-   normal/normal
-   normal/go_usage
-   normal/go_simple
-   normal/go_concept
-   normal/go_objclass
-   normal/go_concurrent
+   normals/normal
+   normals/go_concept
+   normals/go_objclass
+   normals/go_concurrent
+   normals/go_install
+   normals/proxy
+   normals/go_mod
 
 gopher原意地鼠，在golang 的世界里解释为地道的go程序员。
 

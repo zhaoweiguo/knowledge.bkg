@@ -25,5 +25,9 @@ Installing extra Go versions::
     go version go1.10.7 linux/amd64
 
 
+GOPATH::
+
+    export GOPATH=~/work/go-proj1:~/work2/goproj2:~/work3/work4/go-proj3
+    // 之后可以在任意目录对以上3个工程进行构建
 
 
