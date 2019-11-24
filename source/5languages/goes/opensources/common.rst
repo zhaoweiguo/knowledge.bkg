@@ -1,6 +1,11 @@
 常用
 ##########
 
+官网
+----
+
+* golang: https://github.com/golang/go
+
 配置文件相关
 ----------------
 
@@ -16,7 +21,7 @@ Golang工具包
 * 总地址: golang.org/x/tools
 * mirror: https://github.com/golang/tools/
 * 文档: https://godoc.org/golang.org/x/tools
-* stringer: golang.org/x/tools/cmd/stringer
+* stringer: https://golang.org/x/tools/cmd/stringer
 
 通知
 ---------

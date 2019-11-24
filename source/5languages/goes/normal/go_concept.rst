@@ -130,16 +130,6 @@ struct结构::
     copy(slice1, slice2)    // 只复制slice2的前3个元素到slice1
     copy(slice2, slice1)    // 只复制slice1的前3个元素到slice2的前三个位置
 
-.. literalinclude:: ./codes/slice.go
-   :language: go
-   :linenos:
-
-动态增减元素:
-
-.. literalinclude:: ./codes/slice2.go
-   :language: go
-   :linenos:
-
 
 
 map数据类型::
@@ -159,10 +149,6 @@ map数据类型::
        if ok {  // 找到了
        } else { // 没找到
        }
-
-.. interalinclude ../codes/map.go
-   :languages: go
-   :lineons:
 
 流程控制::
 

@@ -8,7 +8,7 @@ Golang语言相关
 .. toctree::
    :maxdepth: 1
 
-   goes/go_basic
+   goes/normal
    goes/go_install
    goes/command
    goes/opensource

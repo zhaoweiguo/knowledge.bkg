@@ -81,7 +81,3 @@ channel的传递::
     var once sync.Once
     once.Do(<fun>)
 
-
-实例:
-
-.. literalinclude ./codes/go.go
