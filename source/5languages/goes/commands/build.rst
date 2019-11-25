@@ -5,19 +5,22 @@ go build命令
 
 usage::
 
-    go build [-o output] [-i] [build flags] [packages]
-    go help build
+    $ go build [-o output] [-i] [build flags] [packages]
+    $ go help build
 
 
 实例::
 
-    go build      // 默认packages为当前目录
-    go build flysnow.org/tools
+    $ go build      // 默认packages为当前目录
+    $ go build flysnow.org/tools
 
     // 3个点表示匹配所有字符串，这样go build就会编译tools目录下的所有包
-    go build flysnow.org/tools/...
+    $ go build flysnow.org/tools/...
 
 
+
+跨平台编译
+==========
 
 查看编译环境::
 
@@ -30,31 +33,6 @@ usage::
     GOROOT="/usr/local/go"
     GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
     // 注意里面两个重要的环境变量GOOS和GOARCH
-
-GOOS指的是目标操作系统::
-
-    darwin
-    freebsd
-    linux
-    windows
-    android
-    dragonfly
-    netbsd
-    openbsd
-    plan9
-    solaris
-
-GOARCH指的是目标处理器的架构，目前支持的有::
-
-    arm
-    arm64
-    386
-    amd64
-    ppc64
-    ppc64le
-    mips64
-    mips64le
-    s390x
 
 编译链工具::
 

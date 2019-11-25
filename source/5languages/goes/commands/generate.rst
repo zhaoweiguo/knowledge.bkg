@@ -50,14 +50,6 @@ go generate命令
     1. string方法：为类似枚举常量这样的类型生成String()方法。
     2. 宏：为既定的泛型包生成特定的实现，比如用于ints的sort.Ints。
 
-环境变量::
-
-    $GOARCH:        体系架构 (arm、amd64等待)
-    $GOOS:          OS环境(linux、windows等)
-    $GOFILE:        当前处理中的文件名
-    $GOLINE:        当前命令在文件中的行号
-    $GOPACKAGE:     当前处理文件的包名
-    $DOLLAR:        固定的"$",不清楚用途
 
 .. warning:: go:generate前面只能使用//注释，且//与go:generate之间不能有空格！！！
 

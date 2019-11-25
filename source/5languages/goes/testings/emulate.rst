@@ -17,3 +17,8 @@
     这个创建的模拟服务器，监听的是本机IP127.0.0.1，端口是随机的。接着我们发送Get请求的时候，不再发往/sendjson，而是模拟服务器的地址server.URL，剩下的就和访问正常的URL一样了，打印出结果即可。
     详情见go_demo中的testing/demo3_http_test
 
+
+
+
+
+

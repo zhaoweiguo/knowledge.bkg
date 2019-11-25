@@ -1,5 +1,5 @@
 ---
-title: kubenates 重要定义
+title: k8s 重要定义——configmap
 date: 2019-09-01 12:21:12
 tags:
 - k8s
@@ -17,9 +17,9 @@ ConfigMap用于保存配置数据的键值对，可以用来保存单个属性�
 
 查看列表:
 ```
-    kubectl get configmap
-    or
-    kubectl get cm
+kubectl get configmap
+or
+kubectl get cm
 ```
 
 查看详情:
