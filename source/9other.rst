@@ -13,7 +13,6 @@
    :maxdepth: 1
 
    9others/technology
-   9others/other_encoding
    9others/tmp
    9others/framework
    9others/history

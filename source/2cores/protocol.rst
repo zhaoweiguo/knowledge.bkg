@@ -27,6 +27,7 @@
    protocols/auth2
    protocols/qos
    protocols/jwt
+   protocols/rpc
    protocols/thrift
    protocols/other
 

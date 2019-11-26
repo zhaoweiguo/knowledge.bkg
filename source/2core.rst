@@ -12,13 +12,12 @@
 
    2cores/theory
    2cores/cognitive
-   2cores/gpu
    2cores/blockchain
    2cores/algorithm
    2cores/ai
    2cores/bot
    2cores/protocol
-   2cores/safe
+   2cores/encoding
    2cores/architecture
    2cores/encrypt
    2cores/concept
