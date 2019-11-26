@@ -1,5 +1,8 @@
-类型 [1]_
+spec [1]_
 #########
+
+类型
+====
 
 常用类型::
 
@@ -196,6 +199,246 @@ Expression statements::
     (<-ch)
     len("foo")  // illegal if len is the built-in function
 
+Send statements::
+
+    ch <- 3  // send value 3 to channel ch
+
+IncDec statements::
+
+    x++                 x += 1
+    x--                 x -= 1
+
+Assignments::
+
+    x = 1
+    *p = f()
+    a[i] = 23
+    (k) = <-ch  // same as: k = <-ch
+
+If statements::
+
+    if x > max {
+      x = max
+    }
+
+Switch statements::
+
+    1. Expression switches
+    switch tag {
+    default: s3()
+    case 0, 1, 2, 3: s1()
+    case 4, 5, 6, 7: s2()
+    }
+
+
+    2. Type switches
+    switch i := x.(type) {
+    case nil:
+      printString("x is nil")                // type of i is type of x (interface{})
+    case int:
+      printInt(i)                            // type of i is int
+    case float64:
+      printFloat64(i)                        // type of i is float64
+    case func(int) float64:
+      printFunction(i)                       // type of i is func(int) float64
+    case bool, string:
+      printString("type is bool or string")  // type of i is type of x (interface{})
+    default:
+      printString("don't know the type")     // type of i is type of x (interface{})
+    }
+
+For statements::
+
+    1. For statements with single condition
+    for a < b {
+      a *= 2
+    }
+
+    2. For statements with for clause
+    for i := 0; i < 10; i++ {
+      f(i)
+    }
+
+    3. For statements with range clause
+    for i, _ := range testdata.a {
+      f(i)
+    }
+
+Go statements::
+
+    go Server()
+    go func(ch chan<- bool) { for { sleep(10); ch <- true }} (c)
+
+Select statements::
+
+    select {
+    case i1 = <-c1:
+      print("received ", i1, " from c1\n")
+    case c2 <- i2:
+      print("sent ", i2, " to c2\n")
+    }
+
+    for {  // send random sequence of bits to c
+      select {
+      case c <- 0:  // note: no statement, no fallthrough, no folding of cases
+      case c <- 1:
+      }
+    }
+
+Return statements::
+
+    func noResult() {
+      return
+    }
+
+Break statements::
+
+    OuterLoop:
+      for i = 0; i < n; i++ {
+        for j = 0; j < m; j++ {
+          switch a[i][j] {
+          case nil:
+            state = Error
+            break OuterLoop
+          case item:
+            state = Found
+            break OuterLoop
+          }
+        }
+      }
+
+Continue statements::
+
+    RowLoop:
+      for y, row := range rows {
+        for x, data := range row {
+          if data == endOfRow {
+            continue RowLoop
+          }
+          row[x] = data + bias(x, y)
+        }
+      }
+
+Goto statements::
+
+      goto L  // BAD(跳过了v的定义)
+      v := 3
+    L:
+      xxx
+
+Fallthrough statements::
+
+    与switch接合用
+
+Defer statements::
+
+    lock(l)
+    defer unlock(l)  // unlocking happens before surrounding function returns
+
+    // prints 3 2 1 0 before surrounding function returns
+    for i := 0; i <= 3; i++ {
+      defer fmt.Print(i)
+    }
+
+    // f returns 42
+    func f() (result int) {
+      defer func() {
+        // result is accessed after it was set to 6 by the return statement
+        result *= 7
+      }()
+      return 6
+    }
+
+Built-in functions
+==================
+
+Close::
+
+    var c chan
+    close(c)
+
+Length and capacity::
+
+    len(s)    string type      string length in bytes
+              [n]T, *[n]T      array length (== n)
+              []T              slice length
+              map[K]T          map length (number of defined keys)
+              chan T           number of elements queued in channel buffer
+
+    cap(s)    [n]T, *[n]T      array length (== n)
+              []T              slice capacity
+              chan T           channel buffer capacity
+
+    0 <= len(s) <= cap(s)
+
+Allocation::
+
+    type S struct { a int; b float64 }
+    new(S)
+
+Making slices, maps and channels::
+
+    make(T, n)       slice      slice of type T with length n and capacity n
+    make(T, n, m)    slice      slice of type T with length n and capacity m
+
+    make(T)          map        map of type T
+    make(T, n)       map        map of type T with initial space for approximately n elements
+
+    make(T)          channel    unbuffered channel of type T
+    make(T, n)       channel    buffered channel of type T, buffer size n
+
+
+    s := make([]int, 10, 100)       // slice with len(s) == 10, cap(s) == 100
+    s := make([]int, 1e3)           // slice with len(s) == cap(s) == 1000
+    s := make([]int, 1<<63)         // illegal: len(s) is not representable by a value of type int
+    s := make([]int, 10, 0)         // illegal: len(s) > cap(s)
+    c := make(chan int, 10)         // channel with a buffer size of 10
+    m := make(map[string]int, 100)  // map with initial space for approximately 100 elements
+
+append::
+
+    append(s S, x ...T) S  // T is the element type of S
+
+    s0 := []int{0, 0}
+    // append a single element     s1 == []int{0, 0, 2}
+    s1 := append(s0, 2)
+    // append multiple elements    s2 == []int{0, 0, 2, 3, 5, 7}
+    s2 := append(s1, 3, 5, 7)
+    // append a slice              s3 == []int{0, 0, 2, 3, 5, 7, 0, 0}
+    s3 := append(s2, s0...)
+    // append overlapping slice    s4 == []int{3, 5, 7, 2, 3, 5, 7, 0, 0}
+    s4 := append(s3[3:6], s3[2:]...)
+
+    var t []interface{}
+    t = append(t, 42, 3.1415, "foo")   //  t == []interface{}{42, 3.1415, "foo"}
+
+    var b []byte
+    b = append(b, "bar"...)        // append string contents      b == []byte{'b', 'a', 'r' }
+
+copy::
+
+    var a = [...]int{0, 1, 2, 3, 4, 5, 6, 7}
+    var s = make([]int, 6)
+    var b = make([]byte, 5)
+    n1 := copy(s, a[0:])            // n1 == 6, s == []int{0, 1, 2, 3, 4, 5}
+    n2 := copy(s, s[2:])            // n2 == 4, s == []int{2, 3, 4, 5, 4, 5}
+    n3 := copy(b, "Hello, World!")  // n3 == 5, b == []byte("Hello")
+
+Deletion of map elements::
+
+    delete(m, k)  // remove element m[k] from map m
+
+
+complex number::
+
+    complex(realPart, imaginaryPart floatT) complexT
+    real(complexT) floatT
+    imag(complexT) floatT
+
+panics::
+
+    func panic(interface{})
+    func recover() interface{}
 
 
 
