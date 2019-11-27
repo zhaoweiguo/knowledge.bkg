@@ -14,6 +14,7 @@
    commands/get
    commands/mod
    commands/install
+   commands/list
    commands/run
    commands/test
 

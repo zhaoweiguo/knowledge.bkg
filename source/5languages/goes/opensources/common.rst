@@ -49,7 +49,13 @@ cli命令
 
 * https://github.com/urfave/cli
 
+辅助代码生成工具
+----------------
 
+* https://github.com/golang/mock
+    * gomock库: github.com/golang/mock/gomock
+    * 辅助代码生成工具mockgen: github.com/golang/mock/mockgen
+* https://github.com/google/wire
 
 数据库
 ------
