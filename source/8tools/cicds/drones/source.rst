@@ -5,6 +5,7 @@
    :maxdepth: 1
 
    sources/table
+   sources/api
 
 
 

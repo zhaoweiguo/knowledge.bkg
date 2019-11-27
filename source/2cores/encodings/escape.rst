@@ -64,6 +64,16 @@ unicode-escape是对unicode编码的字节流，两个字节两个字节转义�
     \x41\x42\x43\xe4\xb8\xad
 
 
+    >>> "中"
+    '\xe4\xb8\xad'
+    >>> u"中"
+    u'\u4e2d'
+    >>> u"中".encode('utf-8')
+    '\xe4\xb8\xad'
+    >>> u'\u4e2d'.encode('utf-8')
+    '\xe4\xb8\xad'
+
+
 nginx实例::
 
     # nginx日志post类型打印结果
