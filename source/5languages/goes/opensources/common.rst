@@ -56,6 +56,8 @@ cli命令
     * gomock库: github.com/golang/mock/gomock
     * 辅助代码生成工具mockgen: github.com/golang/mock/mockgen
 * https://github.com/google/wire
+* https://github.com/jarcoal/httpmock
+
 
 数据库
 ------
