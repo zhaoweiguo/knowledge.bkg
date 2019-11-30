@@ -9,6 +9,7 @@
    monitors/statsd
    monitors/graphite
    monitors/grafana
+   monitors/prometheus
    monitors/zabbix
    monitors/nagios
 

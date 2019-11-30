@@ -10,6 +10,7 @@
    opensources/common
    opensources/sarama
    opensources/mock
+   opensources/delve
 
 * 推荐项目1 [1]_
 * 别人收集的好的项目 [2]_

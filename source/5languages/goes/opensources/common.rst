@@ -22,6 +22,7 @@ Golang工具包
 * mirror: https://github.com/golang/tools/
 * 文档: https://godoc.org/golang.org/x/tools
 * stringer: https://golang.org/x/tools/cmd/stringer
+* debugger: https://github.com/go-delve/delve
 
 通知
 ---------
