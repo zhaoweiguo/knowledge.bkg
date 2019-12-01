@@ -3,3 +3,5 @@ build/
 *#
 #*
 plantuml/files/*.png
+.vscode
+source/_build

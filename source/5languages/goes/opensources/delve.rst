@@ -1,13 +1,69 @@
 golang调试工具Delve
 ###################
 
-* `gitlab <https://github.com/derekparker/delve>`_
+* `gitlab <https://github.com/go-delve/delve>`_
 
 安装::
 
-    go get -u github.com/derekparker/delve/cmd/dlv
+    go get -u github.com/go-delve/delve/cmd/dlv
 
-使用::
+命令
+====
+
+说明::
+
+    Delve is a source level debugger for Go programs.
+    Delve enables you to interact with your program by 
+        controlling the execution of the process,
+        evaluating variables, 
+        and providing information of thread / goroutine state, CPU register state and more.
+    The goal of this tool is to provide a simple yet powerful interface for debugging Go programs.
+    Pass flags to the program you are debugging using `--`, for example:
+    `dlv exec ./hello -- server --config conf/config.toml`
+
+用法::
+
+    dlv [command]
+
+Available Commands::
+
+    attach    Attach to running process and begin debugging.
+    connect   Connect to a headless debug server.
+    core      Examine a core dump.
+    debug     Compile and begin debugging main package in current directory,or the package specified.
+    exec      Execute a precompiled binary, and begin a debug session.
+    help      Help about any command
+    run       Deprecated command. Use 'debug' instead.
+    test      Compile test binary and begin debugging program.
+    trace     Compile and begin tracing program.
+    version   Prints version.
+
+Flags::
+
+      --accept-multiclient   Allows a headless server to accept multiple client connections.
+      --api-version int      Selects API version when headless. (default 1)
+      --backend string       Backend selection (see 'dlv help backend'). (default "default")
+      --build-flags string   Build flags, to be passed to the compiler.
+      --check-go-version     Checks that the version of Go in use is compatible with Delve. (default true)
+      --headless             Run debug server only, in headless mode.
+      --init string          Init file, executed by the terminal client.
+    -l, --listen string      Debugging server listen address. (default "127.0.0.1:0")
+      --log                  Enable debugging server logging.
+      --log-dest string      Writes logs to the specified file or file descriptor (see 'dlv help log').
+      --log-output string    Comma separated list of components that should produce debug output (see 'dlv help log')
+      --wd string            Working directory for running the program. (default ".")
+
+Additional help topics::
+
+    dlv backend Help about the --backend flag.
+    dlv log     Help about logging flags.
+
+
+
+使用
+====
+
+::
 
     dlv debug ./main.go
     dlv> help           // 查看帮助命令
@@ -113,6 +169,9 @@ The following commands are available::
     }
 
 使用::
+
+    // 在指定一行加断点
+    (dlv) b $GOROOT/src/github.com/zhaoweiguo/demo-go/github.com/derekparker/delve/example1/main.go:21
 
     > main.hi() ./main.go:21 (PC: 0x13316f2)
         16:         log.Fatal(http.ListenAndServe(":" + port, nil))

@@ -23,6 +23,12 @@ Mac相关软件
     轻量的矢量设计工具
     http://www.sketchcn.com/
 
+gif生成器::
+
+    https://getkap.co/
+    https://github.com/wulkano/kap
+    $ brew cask install kap
+
 
 Parallels::
 

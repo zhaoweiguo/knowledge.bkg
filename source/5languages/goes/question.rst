@@ -12,6 +12,8 @@
    questions/os
    questions/import
    questions/other
+   questions/version
+   questions/mac
 
 
 
