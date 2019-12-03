@@ -3,7 +3,6 @@
 测试 [1]_
 #########
 
-emulate
 
 .. toctree::
    :maxdepth: 1
@@ -12,6 +11,7 @@ emulate
    testings/benchmark
    testings/coverage
    testings/emulate
+   testings/flags
 
 
 

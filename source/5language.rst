@@ -17,6 +17,7 @@
    5languages/php
    5languages/node
    5languages/c
+   5languages/rust
    5languages/python
    5languages/java
    5languages/other

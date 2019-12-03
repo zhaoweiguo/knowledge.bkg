@@ -41,7 +41,11 @@ GO111MODULE::
     在使用模块的时候，GOPATH 是无意义的，不过它还是会把下载的依赖储存在 $GOPATH/pkg/mod 中
         也会把 go install 的结果放在 $GOPATH/bin 中
 
+GOPRIVATE::
 
+    Go 1.13后, go命令默认使用 proxy.golang.org 做下载代理镜像和校验和验证
+    有些私有项目不想经过此proxy，则设置:
+    GOPRIVATE=*.corp.example.com,rsc.io/private
 
 
 

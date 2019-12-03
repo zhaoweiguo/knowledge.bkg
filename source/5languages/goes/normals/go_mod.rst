@@ -12,14 +12,16 @@ go get引入私有git库 [4]_ ::
     git config --global url."git@gitee.com:".insteadof "https://gitee.com/"
 
     关掉 GO 代理 拉取代码
-
-    export GOPROXY
+    export GOPROXY=
 
     // 如果没有用https或证书
     go get -v   -insecure  gitcodecloud.zhaoweiguo.com.cn/tools/dauth
 
-deps管理依赖 [5]_
+历史管理方法
+============
 
+* deps管理依赖 [5]_
+* godep, glide, or dep
 
 
 

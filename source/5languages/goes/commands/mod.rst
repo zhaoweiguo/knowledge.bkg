@@ -19,6 +19,9 @@ Usage::
     verify      verify dependencies have expected content
     why         explain why packages or modules are needed
 
+init::
+
+    $ go mod init example.com/m
 
 
 

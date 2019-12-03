@@ -21,5 +21,13 @@ golang相关
 
     go get -u -v golang.org/x/tools/cmd/gorename
 
+安装gopkgs::
+
+    go get -u -v github.com/tpng/gopkgs
+
+安装go-symbols::
+
+    go get -u -v github.com/newhook/go-symbols
+
 
 

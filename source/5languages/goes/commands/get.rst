@@ -5,8 +5,8 @@ go get命令
 
 usage::
 
-    go get [-d] [-f] [-t] [-u] [-v] [-fix] [-insecure] [build flags] [packages]
-    go help get
+    $ go get [-d] [-f] [-t] [-u] [-v] [-fix] [-insecure] [build flags] [packages]
+    $ go help get
 
 获取::
 

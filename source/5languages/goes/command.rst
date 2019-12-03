@@ -6,7 +6,7 @@
 .. toctree::
    :maxdepth: 1
 
-   commands/summary
+   commands/0summary
    commands/build
    commands/clean
    commands/doc
@@ -17,6 +17,7 @@
    commands/list
    commands/run
    commands/test
+   commands/tool
 
 
 简单命令
