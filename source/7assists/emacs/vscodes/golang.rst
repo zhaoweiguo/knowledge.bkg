@@ -1,5 +1,32 @@
-golang相关
-##########
+golang相关 [1]_
+###############
+
+install all of the dependent Go tools::
+
+    Ctrl+Shift+p
+    1. 安装依赖的Go tools
+    > Go: Install/Update tools
+    2. 查看GOPATH
+    > Go: Current GOPATH
+
+
+
+.. note:: File > Preferences > Settings (or press ⌘,) to edit the user settings.json file(Note for macOS users: The Preferences menu is under Code not File. For example, Code > Preferences > Settings.)
+
+
+
+
+settting::
+
+    go.gopath
+    go.inferGopath
+    go.toolsGopath
+    "go.useLanguageServer": true,
+
+
+
+插件安装
+========
 
 安装gocode::
 
@@ -31,3 +58,5 @@ golang相关
 
 
 
+
+.. [1] https://github.com/microsoft/vscode-go

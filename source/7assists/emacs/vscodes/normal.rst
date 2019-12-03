@@ -16,6 +16,27 @@ code命令::
 
     打开文件跳转到指定的行和列:
 
+打开Extensions pane::
+
+    Ctrl+Shift+X or Cmd+Shift+X
+
+
+Zen Mode
+========
+
+打开Zen Mode::
+
+    View menu, Command Palette(View -> Appearance for Mac)
+    快捷键: ⌘K Z
+
+退出Zen Mode::
+
+    Double Esc
+
+
+
+
+
 代码编辑
 ===========
 
@@ -107,6 +128,10 @@ code命令::
     Cmd+Shift+O(win Ctrl+Shift+o) 输入你要跳转的符号，回车进行跳转
     win下输入Ctrl+T，可以在不同文件的符号间进行搜索跳转
 
+    #: 整个项目的文件名……
+    @: 当前打开文件的方法
+
+
 定义(definition)和实现(implementation)处::
 
     f12跳到函数的定义处
@@ -115,6 +140,9 @@ code命令::
 引用跳转::
 
     Shift + F12，VS Code 就会打开一个引用列表和一个内嵌的编辑器
+
+
+
 
 代码重构
 ===========
