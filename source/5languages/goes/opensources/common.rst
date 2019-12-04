@@ -132,12 +132,20 @@ CI&Git
 
 * 全文索引: https://github.com/huichen/wukong
 
+
+
 其他
 ----
 
 * URL短链接服务: https://github.com/andyxning/shortme
 * 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
 * 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
+* 定时: https://github.com/robfig/cron
+
+
+
+
+
 
 
 

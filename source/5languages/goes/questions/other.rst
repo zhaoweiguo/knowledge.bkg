@@ -18,20 +18,6 @@ EOF错误
     =>
     Version   = "0.10.2.1"
 
-debugserver or lldb-server not found
--------------------------------------------
-
-::
-
-    debugserver or lldb-server not found: install XCode's command line tools or lldb-server
-
-
-解决::
-
-    重新安装下xcode-select就好了
-    xcode-select --install
-
-
 
 
 

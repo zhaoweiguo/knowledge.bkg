@@ -95,6 +95,7 @@ scratch::
     
     $ docker pull redis:5.0   # FROM debian:buster-slim
     $ docker pull redis:5.0-alpine
+    
 
 * `kafka <https://hub.docker.com/r/wurstmeister/kafka>`_::
   

@@ -16,9 +16,46 @@ code命令::
 
     打开文件跳转到指定的行和列:
 
+user settings file位置::
+
+    Windows %APPDATA%\Code\User\settings.json
+    macOS $HOME/Library/Application Support/Code/User/settings.json
+    Linux $HOME/.config/Code/User/settings.json
+
+
 打开Extensions pane::
 
     Ctrl+Shift+X or Cmd+Shift+X
+
+快捷键
+==========
+
+常用快捷键::
+
+    Cmd+Shift+P: 打开「命令面板」
+    Cmd+P: 打开「文件搜索」
+    Cmd+K Z: 打开「Zend Mode」
+    Cmd+Shift+O: 打开「符号跳转」
+    Cmd+U: 回到本文件上一个光标的位置
+    Control+-: 在不同的文件之间回到上一个光标的位
+
+    f12: 跳到函数的定义处
+    Cmd+f12: 跳转到函数的实现处
+    
+    Cmd+Shift+E: 文件资源管理器
+    Cmd+Shift+F: 跨文件查找
+    Cmd+Shift+G: 源代码管理(todo)
+    Cmd+Shift+D: 启动调试
+    Cmd+Shift+X: 启动管理扩展
+
+
+Shift+Cmd+P::
+
+    // 为指定语言个性化Setting
+    Preferences: Configure Language Specific Settings (command id: workbench.action.configureLanguageBasedSettings)
+
+
+
 
 
 Zen Mode
@@ -27,7 +64,7 @@ Zen Mode
 打开Zen Mode::
 
     View menu, Command Palette(View -> Appearance for Mac)
-    快捷键: ⌘K Z
+    快捷键: Cmd+K Z
 
 退出Zen Mode::
 
@@ -93,7 +130,7 @@ Zen Mode
 
 行排序::
 
-    将代码行按照字母顺序进行排序，无快捷键，调出命令面板，输入按升序排序或者按降序排序
+    将代码行按照字母顺序进行排序，无快捷键，调出命令面板，输入「按升序排序或者按降序排序」
 
 多光标特性
 ============

@@ -13,6 +13,7 @@
    questions/import
    questions/other
    questions/version
+   questions/doc
    questions/mac
 
 
