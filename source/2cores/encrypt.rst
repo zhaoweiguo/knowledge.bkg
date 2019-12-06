@@ -15,6 +15,7 @@
    encrypts/practice
    encrypts/encrypt_certificate
    encrypts/encrypt_mbedtls
+   encrypts/kerberos
    encrypts/question
    encrypts/encrypt_tmp
 

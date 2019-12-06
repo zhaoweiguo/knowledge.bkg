@@ -13,12 +13,12 @@
    :maxdepth: 1
 
    8tools/docker
+   8tools/cicd
    8tools/tsung
    8tools/mqtt
    8tools/wireshark
    8tools/monitor
    8tools/sphinx
-   8tools/cicd
    8tools/jumpserver
    8tools/fanqiang
    8tools/tool_tmp

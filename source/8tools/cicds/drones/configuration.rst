@@ -12,6 +12,7 @@
    configurations/image
    configurations/parallelism
    configurations/secret
+   configurations/example
 
 
 

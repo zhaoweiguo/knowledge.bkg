@@ -18,6 +18,8 @@
 常用软件安装::
 
     $ apk add zip curl openssl
+    // 安装telnet(3.7版本后)
+    $ apk add busybox-extras
     $ apk add --no-cache <package>
 
 

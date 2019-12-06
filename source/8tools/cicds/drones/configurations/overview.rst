@@ -54,6 +54,40 @@ digitalocean::
       commands:
       - echo hello world
 
+volumes::
+
+    kind: pipeline
+    name: default
+
+    steps:
+    - name: test
+      image: golang
+      volumes:
+      - name: deps
+        path: /go
+      commands:
+      - go test
+
+    volumes:
+    - name: deps
+      temp: {}
+
+环境变量::
+
+    kind: pipeline
+    type: docker
+    name: default
+
+    steps:
+    - name: build
+      commands:
+      - echo $GOOS          // 
+      - echo $${GOARCH}     // 
+      - go build
+      - go test
+      environment:
+        GOOS: linux
+        GOARCH: amd64
 
 
 
