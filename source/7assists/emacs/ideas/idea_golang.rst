@@ -8,6 +8,10 @@ Package contains more than one main function
    :width: 60%
 
 
+.. image:: /images/emacs/idea_golang_import.png
+   :width: 60%
+
+
 
 
 

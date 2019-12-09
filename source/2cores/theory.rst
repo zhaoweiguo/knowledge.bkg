@@ -5,7 +5,8 @@
 .. toctree::
    :maxdepth: 1
 
-   theorys/concurrent
+   theorys/cap
+   theorys/csp
    theorys/rdf
 
 

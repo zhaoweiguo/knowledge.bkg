@@ -77,6 +77,38 @@ http://www.tutorialspoint.com/python/python_reg_expressions.htm
     \w             单词字符[A-Za-z0-9_]
     \W             非单词字符[^A-Za-z0-9_]
 
+    \A匹配输入字符串的开始位置
+    \Z匹配输入字符串的结束位置
+    \r回车\f换页\v垂直的TAB
+    '^'(脱字符)匹配输入字符串的开始位置，如果设置了re.MULTILINE标志，‘^’也匹配换行符之后的位置
+    '$'匹配输入字符串的结束位置，如果设置了re.MULTILINE标志，‘^’也匹配换行符之前的位置
+    \b匹配一个单词边界，单词定义为Unidcode的字母数字或下划线字符
+    \B匹配非单词边界，跟\b相反
+    \d 对于Unicode（str类型）模式：匹配任何一个数字，包括[0-9]和其他数字字符
+        如果开启了re.ASCII,只匹配 [0-9]
+    \D与\d相反，如果开启了re.ASCII,只匹配 [^0-9]
+    \s 对于Unicode(str类型)模式:匹配Unicode中的空白字符(包括[\t\n\v\f\r]以及其他空白字符)
+        如果开启了re.ASCII标志，就只匹配[\t\n\f\v\r]
+    \S与\s相反,如果开启了re.ASCII标志,就只匹配[^\t\n\f\v\r]
+    \w于Unicode（str类型）模式：匹配任何Unicode的单词字符，基本上所以语言的字符都可以匹配，包括数字和下划线
+        如果开启了re.ASCII，只匹配[0-9a-zA-Z_]
+    \W与\w相反，如果开启了re.ASCII，只匹配[^0-9a-zA-Z_]
+    \u,\U只有在Unicode模式下才被识别
+
+
+
+
+
+.. note:: \A,\Z,\b,^,$都是零宽断言
+
+
+
+
+
+
+
+
+
 
 
 

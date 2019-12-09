@@ -24,19 +24,19 @@ Column Selection Mode::
   command + Shift + v
 
 
-.. figure:: /images/ideas/keymap1.png
+.. figure:: /images/emacs/idea_normal_keymap1.png
    :width: 80%
 
 代码模板:
 
 
-.. figure:: /images/ideas/codetpl1.png
+.. figure:: /images/emacs/idea_normal_codetpl1.png
    :width: 80%
 
 tab<->space缩进indent:
 
 
-.. figure:: /images/ideas/indent1.png
+.. figure:: /images/emacs/idea_normal_indent1.png
    :width: 80%
 
 
