@@ -59,7 +59,9 @@
        :alt: map to buried treasure
        :align : left, center, or right   % 指定「标题」位置
 
-       「图片标题」
+       『图片标题』
+
+
 
     width说明:
       +---------------------------+

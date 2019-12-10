@@ -1,5 +1,6 @@
 常见问题
 ###########
+
 Broker may not be available
 -------------------------------
 现象::
@@ -18,6 +19,25 @@ Broker may not be available
 
     将localhost:9092改为PLAINTEXT://172.28.50.143:9092
     $> ./kafka-console-consumer.sh --bootstrap-server PLAINTEXT://172.28.50.143:9092 --topic test
+
+EOF Exception
+-------------
+
+* 最近用golang写的一个项目用到kafka,在本地测试好好的,一到线上就有问题,最后一点点调试找到原因,连接kafka server是成功的,但收到返回值是"EOF",最后找到原因
+
+* 原因::
+
+    由于kafka的版本不一致导致的
+
+* 说明::
+
+    kafka_2.10-0.8.2-beta.jar
+    其中:
+      2.10是Scala版本
+      0.8.2-beta是Kafka版本
+
+
+
 
 
 

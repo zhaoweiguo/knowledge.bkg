@@ -205,12 +205,21 @@ RWMutex(读写锁)::
 趣味
 ====
 
-.. image:: /images/golangs/cocurrence_chan1.png
+.. figure:: /images/golangs/cocurrence_chan1.png
+   :alt: 看图识channel1
    :width: 70%
+   :align: center
+
+   看图识channel1
 
 
-.. image:: /images/golangs/cocurrence_chan2.png
+.. figure:: /images/golangs/cocurrence_chan2.png
+   :alt: 看图识channel2
    :width: 70%
+   :align: center
+
+   看图识channel2
+
 
 
 相关

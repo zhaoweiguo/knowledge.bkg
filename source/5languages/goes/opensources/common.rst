@@ -95,9 +95,9 @@ web服务器
 DEVOPS
 ------
 
-* 监控: https://github.com/prometheus/prometheus
+* 监控&统计: https://github.com/prometheus/prometheus
 * 监控: https://github.com/grafana/grafana
-
+* 统计: https://github.com/rcrowley/go-metrics
 
 微服务
 ------

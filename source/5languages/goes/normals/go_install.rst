@@ -49,8 +49,12 @@ GOPRIVATE::
 
 
 
+快速使用::
 
-
+    export GO111MODULE=on
+    export GOPROXY=https://goproxy.cn,direct
+    export GOSUMDB=sum.golang.google.cn
+    export GOPRIVATE=git.zhaoweiguo.com
 
 
 
