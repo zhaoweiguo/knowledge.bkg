@@ -32,8 +32,11 @@ user settings file位置::
 
 常用快捷键::
 
-    Cmd+Shift+P: 打开「命令面板」
-    Cmd+P: 打开「文件搜索」
+    Cmd+Shift+P: 打开「命令面板」界面
+    Control+Shift+G: 打开「版本控制」界面
+    Cmd+P: 打开「文件搜索」界面
+    Cmd+Shift+X: 打开「插件扩展」界面
+
     Cmd+K Z: 打开「Zend Mode」
     Cmd+Shift+O: 打开「符号跳转」
     Cmd+U: 回到本文件上一个光标的位置
@@ -46,7 +49,6 @@ user settings file位置::
     Cmd+Shift+F: 跨文件查找
     Cmd+Shift+G: 源代码管理(todo)
     Cmd+Shift+D: 启动调试
-    Cmd+Shift+X: 启动管理扩展
 
 
 Shift+Cmd+P::
@@ -70,9 +72,20 @@ Zen Mode
 
     Double Esc
 
+Git相关 [1]_
+============
 
+::
 
+    Control+Shift+G: 打开「版本控制」界面
 
+    克隆:
+    1. Shift + Command + P
+    2. Git: Clone ...
+
+    分支与tag:
+    1. Shift + Command + P
+    2. Git: Checkout to ...
 
 代码编辑
 ===========
@@ -197,3 +210,5 @@ Zen Mode
 
 
 
+
+.. [1] https://code.visualstudio.com/Docs/editor/versioncontrol

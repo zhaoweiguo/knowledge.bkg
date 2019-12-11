@@ -6,5 +6,6 @@ vsCode
 
     vscodes/normal
     vscodes/golang
+    vscodes/plugin
 
 
