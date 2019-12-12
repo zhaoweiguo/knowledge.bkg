@@ -41,12 +41,13 @@ feature::
 
 ::
 
-    6g是amd64的go编译器，它生成的是.6文件。
-    386一般使用8g命令，它生成的一般是.8格式的文件。
-    当然还有一个5g的命令是用于arm的cpu，
+    6g是amd64的go编译器，它生成的是.6文件
+    386一般使用8g命令，它生成的一般是.8格式的文件
+    当然还有一个5g的命令是用于arm的cpu
     同理amd64用6l，386用8l,arm用5l的链接器
 
 
-
+* golang image: https://gopherize.me/
+* 好的网站: https://awesome-go.com/
 
 

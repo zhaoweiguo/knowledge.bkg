@@ -22,6 +22,10 @@ go get引入私有git库 [4]_ ::
 
 * deps管理依赖 [5]_
 * godep, glide, or dep
+* 各管理依赖对比 [6]_
+
+
+* gopkg.in: Go的包管理解决方案之一，就是gopkg.in做了一个转发过程，实际上是使用了github里面的相应的tag的代码
 
 
 
@@ -30,3 +34,4 @@ go get引入私有git库 [4]_ ::
 .. [3] http://copyfuture.com/blogs-details/c0da8fd286057159b61b483fa0e8a4c6
 .. [4] https://golang.org/doc/faq#git_https
 .. [5] https://github.com/golang/dep
+.. [6] https://github.com/blindpirate/report-of-build-tools-for-java-and-golang

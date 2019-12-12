@@ -75,9 +75,12 @@ Zen Mode
 Git相关 [1]_
 ============
 
-::
+打开「版本控制」界面::
 
-    Control+Shift+G: 打开「版本控制」界面
+    Control+Shift+G: 
+    可以查看具体的修改细节
+
+Shift + Command + P相关操作::
 
     克隆:
     1. Shift + Command + P
@@ -86,6 +89,13 @@ Git相关 [1]_
     分支与tag:
     1. Shift + Command + P
     2. Git: Checkout to ...
+       
+    Commit:
+    1. Shift + Command + P
+    2. Git: Stage All Changes
+    3. Git: Commit All
+    4. Git: Push
+
 
 代码编辑
 ===========

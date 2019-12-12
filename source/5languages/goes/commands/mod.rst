@@ -23,11 +23,15 @@ init::
 
     $ go mod init example.com/m
 
+    // 下载缺少的、移除不用的module
+    $ go mod tidy
 
 
 
 
+参考
+====
 
-
+* `Go Modules : v2 及更高版本 <https://juejin.im/post/5de7c00d518825122b0f7113>`_
 
 

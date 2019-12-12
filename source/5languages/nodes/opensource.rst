@@ -13,6 +13,7 @@
    opensources/less
    opensources/bootstrap
    opensources/bower
+   opensources/tool
    opensources/other
 
 

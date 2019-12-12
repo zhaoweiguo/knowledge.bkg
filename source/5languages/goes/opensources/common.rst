@@ -14,6 +14,9 @@
 * https://www.consul.io/
 * xml: https://github.com/tealeg/xlsx
 * yaml: https://github.com/go-yaml/yaml/
+* 兼容 json，toml，yaml，hcl 等格式的日志库: https://github.com/spf13/viper
+
+
 
 Golang工具包
 ------------
@@ -22,7 +25,6 @@ Golang工具包
 * mirror: https://github.com/golang/tools/
 * 文档: https://godoc.org/golang.org/x/tools
 * stringer: https://golang.org/x/tools/cmd/stringer
-* debugger: https://github.com/go-delve/delve
 
 通知
 ---------
@@ -49,6 +51,7 @@ cli命令
 -------
 
 * https://github.com/urfave/cli
+* https://github.com/spf13/cobra
 
 辅助代码生成工具
 ----------------
@@ -68,23 +71,70 @@ cli命令
 * 经济图数据库: https://github.com/degdb/degdb
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
 * 分布式k/v数据库: https://github.com/etcd-io/etcd
+  
+
+数据库驱动
+----------
+
 * sql通用扩展： https://github.com/jmoiron/sqlx
 * orm: https://github.com/jinzhu/gorm
+* mysql: https://github.com/go-xorm/xorm
+* es: https://github.com/elastic/elasticsearch
+* redis: https://github.com/gomodule/redigo
+* mongo: https://github.com/mongodb/mongo-go-driver
+* kafka: https://github.com/Shopify/sarama
+* 数据结构: https://github.com/emirpasic/gods
+
+并发
+----
+
+* https://github.com/Jeffail/tunny
+* https://github.com/benmanns/goworke
+* https://github.com/rafaeldias/async
+
+lib工具
+--------
+
+* 针对结构体的校验逻辑: https://github.com/asaskevich/govalidator
+* https://github.com/bytedance/go-tagexpr
+* protobuf 文件动态解析的接口，可以实现反射相关的能力: https://github.com/jhump/protoreflect
+* 字符串处理: https://github.com/huandu/xstrings
+* 表达式引擎工具: https://github.com/Knetic/govaluate
+* 表达式引擎工具: https://github.com/google/cel-go
+* ratelimit 工具::
+
+    https://github.com/uber-go/ratelimit
+    https://blog.csdn.net/chenchongg/article/details/85342086
+    https://github.com/juju/ratelimit
+
+* golang 熔断的库::
+
+    熔断除了考虑频率限制，还要考虑 qps，出错率等其他东西.
+    https://github.com/afex/hystrix-go
+    https://github.com/sony/gobreaker
+
+* 表格: https://github.com/chenjiandongx/go-echarts
+* tail 工具库: https://github.com/hpcloud/taglshi
+
+
 
 服务发现
 --------
 
 * consul(分布、高可用连接和配置应用程序): https://github.com/hashicorp/consul
 
-web工具
+框架
 -------
 
 * web框架: https://github.com/go-chi/chi
 * web框架: https://github.com/gin-gonic/gin
 * web框架(cayley): https://github.com/gobuffalo/packr
+* https://github.com/grpc/grpc-go
+
 * 爬虫: http://github.com/henrylee2cn/pholcus
 * 文件上传断点续传: https://github.com/tus/tusd
 * websocket: https://github.com/olahol/melody
+
 
 web服务器
 ---------
@@ -109,6 +159,7 @@ DEVOPS
 * docker: https://github.com/docker
 * kubernetes: https://github.com/kubernetes/kubernetes
 * linuxkit: https://github.com/linuxkit/linuxkit
+* 超轻量级: https://github.com/hashicorp/nomad
 
 网络工具
 --------
@@ -133,6 +184,36 @@ CI&Git
 * 全文索引: https://github.com/huichen/wukong
 
 
+开发工具类
+----------
+
+* 跨平台解压缩: https://github.com/mholt/archiver
+* 查看某一个库的依赖情况: https://github.com/KyleBanks/depth
+* 通过监听当前目录下的相关文件变动，进行实时编译: https://github.com/silenceper/gowatch
+* 代码质量检测工具(代替golint): https://github.com/mgechev/revive
+* 代码调用链可视化工具: https://github.com/TrueFurby/go-callvis
+* 开发流程改进工具: https://github.com/oxequa/realize
+* 自动生成测试用例工具(已集成至各ide): https://github.com/cweill/gotests
+
+调试工具
+--------
+
+* debugger: https://github.com/go-delve/delve
+* perf 工具(go版ps命令): https://github.com/google/gops
+* go-torch 工具(deprecated, use pprof): https://github.com/uber-archive/go-torch
+* 网络代理工具: https://github.com/snail007/goproxy
+* 抓包工具: https://github.com/40t/go-sniffer
+* 反向代理工具，快捷开放内网端口供外部使用: https://github.com/inconshreveable/ngrok
+* 配置化生成证书: https://github.com/cloudflare/cfssl
+* 免费的证书获取工具: https://github.com/Neilpang/acme.sh
+* 敏感信息和密钥管理工具: https://github.com/hashicorp/vault
+* 高度可配置化的 http 转发工具，基于 etcd 配置: https://github.com/gojek/weaver
+* 分布式任务系统: https://github.com/shunfei/cronsun/blob/master/README_ZH.md
+* 定时任务管理系统: https://github.com/ouqiang/gocron
+* 定时: https://github.com/robfig/cron
+* 自动化运维平台 Gaia: https://github.com/gaia-pipeline/gaia
+
+
 
 其他
 ----
@@ -140,14 +221,13 @@ CI&Git
 * URL短链接服务: https://github.com/andyxning/shortme
 * 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
 * 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
-* 定时: https://github.com/robfig/cron
 
 
 
 
+参考
+----
 
-
-
-
+* https://juejin.im/post/5de082a95188256f9a25384f
 
 
