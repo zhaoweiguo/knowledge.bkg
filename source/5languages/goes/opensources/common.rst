@@ -41,6 +41,8 @@ Golang工具包
     可以设定只打印指定级别日志
     可以设定打印日志到文件、hook等
 
+* 分布式链路追踪: https://github.com/opentracing/opentracing-go
+
 环境变量
 -----------
 
