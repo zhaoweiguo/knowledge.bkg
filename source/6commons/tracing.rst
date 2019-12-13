@@ -1,6 +1,23 @@
 Tracing相关
 #################
 
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :name: 分布式的追踪系统
+   :reversed:
+
+   tracings/opentracing
+   tracings/jaeger
+   tracings/zipkin
+   tracings/eagleEye
+   tracings/dapper
+   tracings/skywalking
+
+
+
+
 Logging，Metrics 和 Tracing 有各自专注的部分::
 
     Logging - 用于记录离散的事件
@@ -17,30 +34,11 @@ Logging，Metrics 和 Tracing 有各自专注的部分::
 .. figure:: /images/cores/tracing_logging_metrics.png
     :width: 80%
 
-opentracing-官网 [2]_
-opentracing-github [3]_
-jaeger-官网 [4]_
-jaeger-github [5]_
-
-
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :name: 分布式的追踪系统
-   :reversed:
-
-   tracings/*
-
 
 
 
 
 .. [1] http://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html
-.. [2] https://opentracing.io
-.. [3] https://github.com/opentracing
-.. [4] https://www.jaegertracing.io/
-.. [5] https://github.com/jaegertracing/jaeger
 
 
  
