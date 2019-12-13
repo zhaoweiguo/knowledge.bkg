@@ -1,7 +1,21 @@
 Transfer-Encoding
 #######################
 
-传输编码::
+
+* HTTP 头部字段::
+
+    Transfer-Encoding(传输编码)
+    Content-Encoding(内容编码)
+    Connection(持久连接)
+
+
+* HTTP 协议中的 Transfer-Encoding [1]_
+
+
+
+
+
+* 传输编码::
 
     Transfer-Encoding 则是用来改变报文格式，
     Transfer-Encoding: chunked
@@ -61,3 +75,4 @@ Transfer-Encoding
 
 
 
+.. [1] https://imququ.com/post/transfer-encoding-header-in-http.html

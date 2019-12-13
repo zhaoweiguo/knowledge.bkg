@@ -1,5 +1,5 @@
-(JWT)JSON Web Token协议
-##############################
+JWT
+###
 
 JSON Web Token（缩写 JWT）是目前最流行的跨域认证解决方案
 

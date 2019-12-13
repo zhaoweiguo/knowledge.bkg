@@ -24,20 +24,12 @@ kind: pipeline
 type: docker
 name: <项目名>
 
-platform:
-  os: linux
-  arch: amd64
-
 steps:
   - name: <step1名>
     image: <镜像名>
     commands:
       - 实际执行的命令1
       - 实际执行的命令2
-volumes:
-  - name: gopath
-    host:
-      path: /root/drone/gopath
 trigger:
   branch:
     - pvt
@@ -45,11 +37,20 @@ trigger:
 
 说明:
 ```
-1. kind: 
+1. kind: 设定为管道命令(默认值:pipeline，暂没有发现有其他可用值)
+2. type: 设定管道类型
+    docker: docker管道
+    kubernetes: k8s管道，暂不稳定，有泄密风险(基本都可以由docker管道替代)
+    exec: Drone Server上执行的命令
+    ssh: 可远程登录其他远程机器
+    digitalocean: digitalocean云主机专用
+3. name: 整个项目的名字
+4. step: 执行步骤，此部分是最重要的部分
+5. trigger: 触发器
 ```
 
 
-#### 
+#### step详情
 
 实例:
 ```
