@@ -1,6 +1,29 @@
 Redis 字符串(String)
 ####################
 
+Get
+===
+
+格式::
+
+    GET key
+
+说明::
+
+    Available since 1.0.0.
+    Time complexity: O(1)
+
+实例::
+
+    redis> GET nonexisting
+    (nil)
+    redis> SET mykey "Hello"
+    "OK"
+    redis> GET mykey
+    "Hello"
+
+其他
+====
 
 简单的赋值、取值set, get, getset::
 

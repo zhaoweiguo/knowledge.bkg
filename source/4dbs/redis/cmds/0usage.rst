@@ -1,7 +1,10 @@
 .. _redis_usage:
 
 用法
-========
+####
+
+服务端
+======
 
 启动服务端::
 
@@ -10,6 +13,9 @@
 关闭服务端::
 
     ./redis-cli -p 10379 shutdown
+
+客户端
+======
 
 启动客户端, 用redis-cli启动它的自带客户端::
 
@@ -41,6 +47,8 @@
           "help <tab>" to get a list of possible help topics
           "quit" to exit
 
+其他
+====
 
 可执行文件::
 

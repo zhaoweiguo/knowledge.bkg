@@ -51,6 +51,11 @@ Zincrby
 * 当 key 不是有序集类型时，返回一个错误。
 * 分数值可以是整数值或双精度浮点数。
 
+说明::
+
+    Available since 1.2.0.
+    Time complexity: O(log(N)) where N is the number of elements in the sorted set.
+
 
 语法::
 
@@ -71,7 +76,7 @@ Zincrby
     4) "3"
 
 
-zrevrange
+Zrevrange
 ---------
 
 * 命令返回有序集中，指定区间内的成员
@@ -79,6 +84,13 @@ zrevrange
 * 具有相同分数值的成员按字典序的逆序(reverse lexicographical order)排列。
 * 除了成员按分数值递减的次序排列这一点外， ZREVRANGE 命令的其他方面和 ZRANGE 命令一样。
 
+说明::
+
+    Available since 1.2.0.
+    Time complexity: O(log(N)+M) with 
+        N being the number of elements in the sorted set 
+        and
+        M the number of elements returned.
 
 语法::
 
@@ -102,11 +114,93 @@ zrevrange
     5) "peter"
     6) "3500"
 
+实操::
 
-其他
+    1. 插入几条数据
+    redis> ZADD myzset 1 "one"
+    (integer) 1
+    redis> ZADD myzset 2 "two"
+    (integer) 1
+    redis> ZADD myzset 3 "three"
+    (integer) 1
+
+    2. 打印全部数据
+    redis> ZREVRANGE myzset 0 -1
+    1) "three"
+    2) "two"
+    3) "one"
+
+    3. 打印第2到3条
+    redis> ZREVRANGE myzset 2 3
+    1) "one"
+
+    4. 打印倒数第2条到倒数第1条
+    redis> ZREVRANGE myzset -2 -1
+    1) "two"
+    2) "one"
+
+
+Zadd
 ----
 
-order set:zadd, zrange::
+说明::
+
+    Available since 1.2.0.
+    Time complexity: O(log(N)) for each item added, 
+        where N is the number of elements in the sorted set.
+
+实操::
+
+    redis> ZADD myzset 1 "one"
+    (integer) 1
+    redis> ZADD myzset 1 "uno"
+    (integer) 1
+    redis> ZADD myzset 2 "two" 3 "three"
+    (integer) 2
+    redis> ZRANGE myzset 0 -1 WITHSCORES
+    1) "one"
+    2) "1"
+    3) "uno"
+    4) "1"
+    5) "two"
+    6) "2"
+    7) "three"
+    8) "3"
+
+
+Zrange
+------
+格式::
+
+    ZRANGE key start stop [WITHSCORES]
+
+说明::
+
+    Available since 1.2.0.
+    Time complexity: O(log(N)+M) with 
+        N being the number of elements in the sorted set 
+        and 
+        M the number of elements returned.
+
+实操::
+
+    redis> ZADD myzset 1 "one"
+    (integer) 1
+    redis> ZADD myzset 2 "two"
+    (integer) 1
+    redis> ZADD myzset 3 "three"
+    (integer) 1
+    redis> ZRANGE myzset 0 -1
+    1) "one"
+    2) "two"
+    3) "three"
+    redis> ZRANGE myzset 2 3
+    1) "three"
+    redis> ZRANGE myzset -2 -1
+    1) "two"
+    2) "three"
+
+实例::
 
     zadd ordersets 1 "a" =>1//插入数据
     zadd ordersets 4 "d" =>1

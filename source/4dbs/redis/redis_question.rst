@@ -30,7 +30,17 @@ redis的key字符串中不能有空格和回车
     // 直接命令行增加""
     redis-cli keys "key_*" | xargs -I {} redis-cli del “{}”
 
+NOAUTH Authentication required
+------------------------------
 
+错误说明::
+
+    redis> get <key>
+    (error) NOAUTH Authentication required.
+
+原因::
+
+    没有加密码、或密码错误
 
 
 .. [1] https://blog.csdn.net/weixin_39049216/article/details/90765129
