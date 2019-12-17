@@ -6,14 +6,12 @@ Tracing相关
    :glob:
    :maxdepth: 1
    :name: 分布式的追踪系统
-   :reversed:
 
    tracings/opentracing
    tracings/jaeger
    tracings/zipkin
-   tracings/eagleEye
    tracings/dapper
-   tracings/skywalking
+   tracings/other
 
 
 

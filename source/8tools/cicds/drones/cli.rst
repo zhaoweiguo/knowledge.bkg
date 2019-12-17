@@ -1,10 +1,27 @@
-cli命令
+cli命令 [1]_
 ###########
+
+安装::
+
+    $ wget https://github.com/drone/drone-cli/releases/latest/download/drone_linux_amd64.tar.gz | tar zx
+
+配置::
+
+    $ export DRONE_SERVER=http://drone.zhaoweiguo.com
+    $ export DRONE_TOKEN=Pclk4hB779h1VodNXEm0zZem9FBxxxx
+    % 其中DRONE_TOKEN可参见:
+    drone网站 -> 右上角头像 -> User Settings
+
 
 ::
 
     // 设置全局密钥
     $ drone orgsecret add [organization] [name] [data]
+    注意:
+    [organization]是gitlab的org
+    [name]是secret的名
+    [data]是secret的值
+
 
 Encrypted::
 
@@ -35,3 +52,5 @@ Encrypted::
 
 
 
+
+.. [1] https://docs.drone.io/cli/install/

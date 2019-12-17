@@ -4,6 +4,8 @@ Shadowsock
 PAC自定义规则
 ===================
 
+* 参考 [1]_
+
 规则描述::
 
     1. 通配符支持，如 *.example.com/* 实际书写时可省略,如:
@@ -24,8 +26,37 @@ PAC自定义规则
        http://example.com/ 和http://example.com:8000/ 均满足条件
        而 http://example.com.ar/ 不满足条件
 
+实例::
+
+    \[\w]+:\/\/en.wikipedia.org\
+    \[\w]+:\/\/blog.kubernetes.io\
+    \[\w]+:\/\/c.disquscdn.com\
+    \[\w]+:\/\/cdnjs.cloudflare.com\
+    \[\w]+:\/\/d3js.org\
+    \[\w]+:\/\/[\w]+.neo4jsandbox.com\
+    \[\w]+:\/\/raw.githubusercontent.com\
+    \[\w]+:\/\/image.slidesharecdn.com\
+    \[\w]+:\/\/maps.googleapis.com\
+    \[\w]+:\/\/blog.golang.org\
+    \[\w]+:\/\/[\w]+.youtube.com\
+    \[\w]+:\/\/research.google\
+
+实例2(实测有效)::
+
+  ||en.wikipedia.org
+  ||blog.kubernetes.io
+  ||c.disquscdn.com
+  ||cdnjs.cloudflare.com
+  ||d3js.org
+  ||neo4jsandbox.com
+  ||raw.githubusercontent.com
+  ||image.slidesharecdn.com
+  ||maps.googleapis.com
+  ||storage.googleapis.com
+  ||blog.golang.org
+  ||youtube.com
+  ||research.google
 
 
 
-
-
+.. [1] https://adblockplus.org/en/filter-cheatsheet

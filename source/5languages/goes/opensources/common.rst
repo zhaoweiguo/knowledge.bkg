@@ -42,6 +42,8 @@ Golang工具包
     可以设定打印日志到文件、hook等
 
 * 分布式链路追踪: https://github.com/opentracing/opentracing-go
+* CNCF Jaeger, a Distributed Tracing Platform: https://github.com/jaegertracing/jaeger.git
+
 
 环境变量
 -----------
