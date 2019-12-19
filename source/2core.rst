@@ -15,7 +15,6 @@
    2cores/blockchain
    2cores/algorithm
    2cores/ai
-   2cores/bot
    2cores/protocol
    2cores/encoding
    2cores/architecture
@@ -24,9 +23,8 @@
    2cores/chart
    2cores/rfc
    2cores/regexp
-   2cores/iq
    2cores/abbr
-   2cores/other
+   2cores/tmp
 
 
 

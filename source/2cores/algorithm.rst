@@ -10,6 +10,7 @@
 
    algorithms/algorithm_encrypt
    algorithms/example
+   algorithms/iq
    algorithms/graph_theory
    algorithms/algorithm_other
 
