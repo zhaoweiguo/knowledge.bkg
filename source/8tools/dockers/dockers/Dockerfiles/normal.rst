@@ -169,6 +169,7 @@ ADD::
 
 COPY::
 
+    // 建议使用copy，少用add
     COPY <src> <dest>
     类似cp命令
 
@@ -276,6 +277,18 @@ HEALTHCHECK::
     MAINTAINER Kate Smith <ksmith@example.com>
     RUN apt-get update && apt-get install -y ruby ruby-dev
     RUN gem install sinatra
+
+实例-时区::
+
+    实例1:
+    // 前提宿主机有文件/usr/share/zoneinfo/Asia/Shanghai
+    // 使用docker镜像的, 要求镜像有此文件
+    RUN copy /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone
+
+    实例2:
+    RUN apk add tzdata && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+        && echo "Asia/Shanghai" > /etc/timezone \
+        && apk del tzdata
 
 
 

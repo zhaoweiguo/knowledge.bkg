@@ -16,6 +16,12 @@ opentracing
       opentracing-javascript
 
 
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   opentracings/normal
+
 
 .. [2] https://opentracing.io
 .. [3] https://github.com/opentracing

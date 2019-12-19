@@ -16,8 +16,6 @@
    tmps/dmesg
    tmps/split
    tmps/cmp
-   tmps/set
-   tmps/export
    tmps/finger
    tmps/hostname
    tmps/mount

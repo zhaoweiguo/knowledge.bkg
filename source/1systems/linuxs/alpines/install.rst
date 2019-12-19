@@ -20,6 +20,7 @@
     $ apk add zip curl openssl
     // 安装telnet(3.7版本后)
     $ apk add busybox-extras
+    $ apk add tzdata  // 时区相关
     $ apk add --no-cache <package>
 
 

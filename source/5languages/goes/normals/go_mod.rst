@@ -28,6 +28,17 @@ go get引入私有git库 [4]_ ::
 * gopkg.in: Go的包管理解决方案之一，就是gopkg.in做了一个转发过程，实际上是使用了github里面的相应的tag的代码
 
 
+相关参考
+========
+
+* https://blog.golang.org/versioning-proposal
+* https://semver.org/
+* https://labix.org/gopkg.in
+* https://github.com/golang/proposal/blob/master/design/24301-versioned-go.md#rationale
+* https://github.com/golang/go/issues/24301
+* https://github.com/golang/go/wiki/PackageManagementTools
+* https://supereagle.github.io/2017/10/05/golang-dep/
+
 
 .. [1] https://blog.jetbrains.com/cn/2019/03/go-%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
 .. [2] https://juejin.im/post/5c9c8c4fe51d450bc9547ba1

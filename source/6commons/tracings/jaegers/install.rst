@@ -1,6 +1,9 @@
 安装
 ####
 
+Server端
+========
+
 使用docker快速启动::
 
     $ docker run -d --name jaeger \
@@ -18,7 +21,8 @@
 
     $ jaeger-all-in-one --collector.zipkin.http-port=9411
 
-* Jaeger UI: http://localhost:16686
+* 浏览器打开Jaeger UI: http://localhost:16686
+* http://localhost:16686/dependencies
 
 端口说明::
 
@@ -32,6 +36,33 @@
     14268 | HTTP     |  collector  |   accept jaeger.thrift directly from clients
     14250 | HTTP     |  collector  |   accept model.proto
     9411  | HTTP     |  collector  |   Zipkin compatible endpoint (optional)
+
+
+Client端(demo)
+==============
+
+From Source::
+
+    git clone git@github.com:jaegertracing/jaeger.git jaeger
+    cd jaeger
+    make install
+    go run ./examples/hotrod/main.go all
+
+From docker::
+
+    $ docker run --rm -it \
+      --link jaeger \
+      -p8080-8083:8080-8083 \
+      -e JAEGER_AGENT_HOST="jaeger" \
+      jaegertracing/example-hotrod:1.15 \
+      all
+
+* 浏览器打开: http://localhost:8080
+* http://127.0.0.1:8083/debug/vars
+
+
+
+
 
 
 
