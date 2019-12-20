@@ -1,3 +1,5 @@
+.. _practice_disable_tls1.0:
+
 网站如何禁止tls1.0漏洞
 ######################
 
@@ -62,6 +64,11 @@
     ssl_protocols TLSv1.2 TLSv1.1 TLSv1;
     为
     ssl_protocols TLSv1.2 TLSv1.1;
+
+.. image:: /images/alis/slbs/slb_cert_tls1.0.png
+   :width: 70%
+
+
 
 
 验证解决后网站是不支持tls1.0的::

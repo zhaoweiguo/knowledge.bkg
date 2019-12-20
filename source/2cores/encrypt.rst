@@ -11,9 +11,8 @@
    encrypts/encrypt_base64
    encrypts/encrypt_gpg
    encrypts/encrypt_sha256
-   encrypts/cert_ca
+   encrypts/cert
    encrypts/practice
-   encrypts/encrypt_certificate
    encrypts/encrypt_mbedtls
    encrypts/kerberos
    encrypts/question
