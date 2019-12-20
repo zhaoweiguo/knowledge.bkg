@@ -36,7 +36,7 @@ D
 
 
 * DNS: Domain Name System 
-
+* DST: Daylight Saving Time(夏令时)
 
 G
 -----
@@ -45,6 +45,7 @@ G
 * GPL——General Public License
 * GSA: Google Search Appliance
 * GUI——Graphical User Interface
+* GMT: Greenwich Mean Time(格林威治标准时间)
 
 H
 ---
@@ -116,7 +117,7 @@ U
 ----
 
 * URI: Uniform resource Identifier 
-* UTC: Coordinated Universal Time 
+* UTC: Universal Time Coordinated(世界标准时间)
 
 V
 ----
