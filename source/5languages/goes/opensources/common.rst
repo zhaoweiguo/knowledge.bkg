@@ -40,6 +40,8 @@ Golang工具包
     可以设定日志颜色
     可以设定只打印指定级别日志
     可以设定打印日志到文件、hook等
+    注:
+    v1.2.0后可打印当前文件和当前行
 
 * 分布式链路追踪: https://github.com/opentracing/opentracing-go
 * CNCF Jaeger, a Distributed Tracing Platform: https://github.com/jaegertracing/jaeger.git
@@ -132,6 +134,7 @@ lib工具
 
 * web框架: https://github.com/go-chi/chi
 * web框架: https://github.com/gin-gonic/gin
+* web框架: https://github.com/astaxie/beego
 * web框架(cayley): https://github.com/gobuffalo/packr
 * https://github.com/grpc/grpc-go
 
