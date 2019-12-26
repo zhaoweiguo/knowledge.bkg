@@ -1,8 +1,6 @@
 mac常用
 ==============
 
-
-
 安装命令::
 
    brew search <pgk>
@@ -35,6 +33,10 @@ mac常用
     ~/Library/Cookies
 
     /usr/local/homebrew/lib/python2.7/site-packages/
+
+
+
+
 
 
 

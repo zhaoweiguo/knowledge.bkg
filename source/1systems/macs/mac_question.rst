@@ -49,8 +49,9 @@ Mac 如何开启任何来源选项::
     sudo spctl --master-disable
 
 
+dyld: Library not loaded::
 
-
+    直接brew reinstall xxx解决
 
 
 

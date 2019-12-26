@@ -60,5 +60,12 @@
       export PKG_CONFIG_PATH="/usr/local/homebrew/opt/openssl@1.1/lib/pkgconfig"
 
 
+$ brew remove openssl::
+
+    Error: Refusing to uninstall /usr/local/homebrew/Cellar/openssl@1.1/1.1.1d
+    because it is required by aspcud, cairo, clingo, emacs, erlang@19, glib, gnuplot, gobject-introspection, harfbuzz, ideviceinstaller, imap-uw, ios-webkit-debug-proxy, libevent, libimobiledevice, mercurial, meson, mysql, nginx, nmap, openvpn, pango, pkcs11-helper, python, python@2, rrdtool, sphinx-doc, sysbench, thrift, tmux, w3m, wget and wrk, which are currently installed.
+
+
+
 
 

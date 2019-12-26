@@ -13,6 +13,7 @@ Golang语言相关
    goes/opensource
    goes/testing
    goes/upgrade
+   goes/practice
    goes/question
    goes/tool
    goes/tmp

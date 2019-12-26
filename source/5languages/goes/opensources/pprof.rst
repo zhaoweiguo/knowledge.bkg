@@ -7,8 +7,10 @@ pprof 数据采样
 pprof 采样数据主要有三种获取方式::
 
     1. runtime/pprof: 
+        工具型应用
         手动调用runtime.StartCPUProfile或者runtime.StopCPUProfile等 API来生成和写入采样文件，灵活性高
     2. net/http/pprof: 
+        服务型应用
         通过 http 服务获取Profile采样文件，简单易用，适用于对应用程序的整体监控。通过 runtime/pprof 实现
     3. go test: 
         通过 go test -bench . -cpuprofile prof.cpu生成采样文件 适用对函数进行针对性测试
@@ -25,7 +27,7 @@ net/http/pprof
     直接看到当前web服务的状态, 包括CPU占用情况和内存使用情况等
 
 
-用法2-非web服务::
+用法2-服务进程::
 
     也可以选择使用net/http/pprof包
     开启另外一个goroutine来开启端口监听
@@ -72,13 +74,12 @@ http://localhost:6060/debug/pprof/goroutine?debug=2::
         对应用程序进行执行追踪，参数: seconds, 默认值1s
 
 
-.. literalinclude:: /files/golangs/pprof_http.go
 
 
-runtime/pprof
--------------
+runtime/pprof(工具型应用)
+-------------------------
 
-应用程序::
+cpu::
 
     使用: runtime/pprof
     具体做法就是用到pprof.StartCPUProfile和pprof.StopCPUProfile
@@ -94,12 +95,34 @@ runtime/pprof
               pprof.StartCPUProfile(f)
               defer pprof.StopCPUProfile()
           }
-
+          xxxx
+          xxxx
       }
 
     运行程序的时候加一个--cpuprofile参数，比如:
-    $ fabonacci --cpuprofile=fabonacci.prof   // 这样程序运行的时候的cpu信息就会记录到XXX.prof中了
+    $ fabonacci --cpuprofile=cpu.prof   // 这样程序运行的时候的cpu信息就会记录到XXX.prof中了
     下一步就可以使用这个prof信息做出性能分析图了(需要安装graphviz)
+
+堆内存::
+
+    func main() {
+        f, err := os.OpenFile("heap.prof", os.O_RDWR|os.O_CREATE, 0644)
+        if err != nil {
+            log.Fatal(err)
+        }
+        defer f.Close()
+
+        time.Sleep(30 * time.Second)
+
+        pprof.WriteHeapProfile(f)
+        fmt.Println("Heap Profile generated")
+    }
+
+使用::
+
+    $ go tool pprof <二进制文件> cpu.prof
+    $ go tool pprof <二进制文件> heap.prof
+
 
 * `runtime/pprof <https://golang.org/pkg/runtime/pprof/>`_
 * `http pprof 实现 <https://github.com/golang/go/blob/release-branch.go1.9/src/net/http/pprof/pprof.go>`_
@@ -108,7 +131,6 @@ runtime/pprof
 像这个样子:
 
 .. image:: /images/golangs/pprof_example1.png
-
 
 .. literalinclude:: /files/golangs/pprof_runtime.go
 
@@ -157,12 +179,12 @@ cpuprofile
     Showing nodes accounting for 9.60s, 41.20% of 23.30s total
     Dropped 112 nodes (cum <= 0.12s)
     Showing top 5 nodes out of 90
-          flat  flat%   sum%        cum   cum%
-         2.59s 11.12% 11.12%      2.78s 11.93%  runtime.mapaccess1_fast64 /go/1.9.1/libexec/src/runtime/hashmap_fast.go
-         2.26s  9.70% 20.82%      4.97s 21.33%  runtime.scanobject /go/1.9.1/libexec/src/runtime/mgcmark.go
-         2.06s  8.84% 29.66%     13.79s 59.18%  main.FindLoops /Code/goprof/havlak/havlak1.go
-         1.39s  5.97% 35.62%      1.39s  5.97%  runtime.heapBitsForObject /go/1.9.1/libexec/src/runtime/mbitmap.go
-         1.30s  5.58% 41.20%      4.14s 17.77%  runtime.mapassign_fast64 /go/1.9.1/libexec/src/runtime/hashmap_fast.go
+      flat  flat%   sum%        cum   cum%
+     2.59s 11.12% 11.12%      2.78s 11.93%  runtime.mapaccess1_fast64 /go/1.9.1/libexec/src/runtime/hashmap_fast.go
+     2.26s  9.70% 20.82%      4.97s 21.33%  runtime.scanobject /go/1.9.1/libexec/src/runtime/mgcmark.go
+     2.06s  8.84% 29.66%     13.79s 59.18%  main.FindLoops /Code/goprof/havlak/havlak1.go
+     1.39s  5.97% 35.62%      1.39s  5.97%  runtime.heapBitsForObject /go/1.9.1/libexec/src/runtime/mbitmap.go
+     1.30s  5.58% 41.20%      4.14s 17.77%  runtime.mapassign_fast64 /go/1.9.1/libexec/src/runtime/hashmap_fast.go
 
 top5用于显示消耗 CPU 前五的函数，每一行代表一个函数，每一列为一项指标::
 
@@ -202,12 +224,12 @@ memprofile
     Entering interactive mode (type "help" for commands, "o" for options)
     (pprof) top
     Showing nodes accounting for 57.39MB, 100% of 57.39MB total
-          flat  flat%   sum%        cum   cum%
-       39.60MB 69.00% 69.00%    39.60MB 69.00%  main.FindLoops /Code/goprof/havlak/havlak3.go
-       11.29MB 19.67% 88.67%    11.29MB 19.67%  main.(*CFG).CreateNode /Code/goprof/havlak/havlak3.go
-        6.50MB 11.33%   100%    17.79MB 31.00%  main.NewBasicBlockEdge /Code/goprof/havlak/havlak3.go
-             0     0%   100%    39.60MB 69.00%  main.FindHavlakLoops /Code/goprof/havlak/havlak3.go
-             0     0%   100%    17.79MB 31.00%  main.buildBaseLoop /Code/goprof/havlak/havlak3.go
+        flat  flat%   sum%        cum   cum%
+     39.60MB 69.00% 69.00%    39.60MB 69.00%  main.FindLoops /Code/goprof/havlak/havlak3.go
+     11.29MB 19.67% 88.67%    11.29MB 19.67%  main.(*CFG).CreateNode /Code/goprof/havlak/havlak3.go
+      6.50MB 11.33%   100%    17.79MB 31.00%  main.NewBasicBlockEdge /Code/goprof/havlak/havlak3.go
+           0     0%   100%    39.60MB 69.00%  main.FindHavlakLoops /Code/goprof/havlak/havlak3.go
+           0     0%   100%    17.79MB 31.00%  main.buildBaseLoop /Code/goprof/havlak/havlak3.go
 
 memprofile 也就是 heap 采样数据，go tool pprof 默认显示的是使用的内存的大小，如果想要显示使用的堆对象的个数，则通过::
 
@@ -228,13 +250,13 @@ pprof_blockprofile.go内容:
     ▶ go tool pprof blockprofile block.bprof
     (pprof) top
     Showing nodes accounting for 3.37ms, 100% of 3.37ms total
-          flat  flat%   sum%        cum   cum%
-        2.04ms 60.52% 60.52%     2.04ms 60.52%  sync.(*Mutex).Lock /go/1.9.1/libexec/src/sync/mutex.go
-        1.33ms 39.48%   100%     1.33ms 39.48%  sync.(*WaitGroup).Wait /go/1.9.1/libexec/src/sync/waitgroup.go
-             0     0%   100%     1.33ms 39.48%  main.main /go/src/ngs/test/tmp/tmp.go
-             0     0%   100%     2.04ms 60.52%  main.worker /go/src/ngs/test/tmp/tmp.go
-             0     0%   100%     3.37ms   100%  runtime.goexit /go/1.9.1/libexec/src/runtime/asm_amd64.s
-             0     0%   100%     1.33ms 39.48%  runtime.main /go/1.9.1/libexec/src/runtime/proc.go
+      flat  flat%   sum%        cum   cum%
+    2.04ms 60.52% 60.52%     2.04ms 60.52%  sync.(*Mutex).Lock /go/1.9.1/libexec/src/sync/mutex.go
+    1.33ms 39.48%   100%     1.33ms 39.48%  sync.(*WaitGroup).Wait /go/1.9.1/libexec/src/sync/waitgroup.go
+         0     0%   100%     1.33ms 39.48%  main.main /go/src/ngs/test/tmp/tmp.go
+         0     0%   100%     2.04ms 60.52%  main.worker /go/src/ngs/test/tmp/tmp.go
+         0     0%   100%     3.37ms   100%  runtime.goexit /go/1.9.1/libexec/src/runtime/asm_amd64.s
+         0     0%   100%     1.33ms 39.48%  runtime.main /go/1.9.1/libexec/src/runtime/proc.go
 
 可以看到程序在 mutex.Lock 上阻塞了2.04ms(worker goroutine)， 在 WaitGroup.Wait 上等待了1.33ms(main goroutine)，从更上层来看，在 main 函数中一共阻塞了2.04ms，worker函数中阻塞了1.33ms(cum 列)，通过 web命令生成 svg 图片在浏览器查看:
 
@@ -255,15 +277,56 @@ mutexprofile
     ▶ go tool pprof bin/Temp mutex.mprof
     (pprof) top
     Showing nodes accounting for 2.55ms, 100% of 2.55ms total
-          flat  flat%   sum%        cum   cum%
-        2.55ms   100%   100%     2.55ms   100%  sync.(*Mutex).Unlock /go/1.9.1/libexec/src/sync/mutex.go
-             0     0%   100%     2.55ms   100%  main.main /go/src/ngs/test/tmp/tmp.go
-             0     0%   100%     2.55ms   100%  runtime.goexit /go/1.9.1/libexec/src/runtime/asm_amd64.s
-             0     0%   100%     2.55ms   100%  runtime.main /go/1.9.1/libexec/src/runtime/proc.go
+      flat  flat%   sum%        cum   cum%
+    2.55ms   100%   100%     2.55ms   100%  sync.(*Mutex).Unlock /go/1.9.1/libexec/src/sync/mutex.go
+         0     0%   100%     2.55ms   100%  main.main /go/src/ngs/test/tmp/tmp.go
+         0     0%   100%     2.55ms   100%  runtime.goexit /go/1.9.1/libexec/src/runtime/asm_amd64.s
+         0     0%   100%     2.55ms   100%  runtime.main /go/1.9.1/libexec/src/runtime/proc.go
 
 查看 svg 图:
 
 .. image:: /images/golangs/pprof_mutexprofile1.png
+
+Trace 报告
+==========
+
+源码::
+
+    // 生成追踪报告
+    func traceProfile() {
+        f, err := os.OpenFile("trace.out", os.O_RDWR|os.O_CREATE, 0644)
+        if err != nil {
+            log.Fatal(err)
+        }
+        defer f.Close()
+
+        log.Println("Trace started")
+        trace.Start(f)
+        defer trace.Stop()
+
+        time.Sleep(60 * time.Second)
+        fmt.Println("Trace stopped")
+    }
+
+使用::
+
+    $ go tool trace xxxx
+
+pprof命令
+=========
+
+::
+
+    // 生成pprof
+    $ go get -u github.com/google/pprof
+
+    // 使用
+    $ pprof -http=":8081" [binary] [profile]
+
+.. image:: /images/golangs/pprof1.png
+
+
+
 
 实践 Tips
 =========
@@ -277,13 +340,17 @@ mutexprofile
 * 将所有外部IO(网络IO，磁盘IO)做成异步
 
 
+相关链接
+========
+
+* :ref:`pprof在http服务的使用 <pprof_http>`
+* :ref:`go tool命令 <go_tool>`
+
 
 参考
 ====
 
 * `Go的pprof使用 <https://www.cnblogs.com/yjf512/archive/2012/12/27/2835331.html>`_
 * `go pprof 性能分析 <https://juejin.im/entry/5ac9cf3a518825556534c76e>`_
-
-
-
+* `Go 程序的性能优化及 pprof 的使用 <https://www.cnblogs.com/snowInPluto/p/7403097.html>`_
 
