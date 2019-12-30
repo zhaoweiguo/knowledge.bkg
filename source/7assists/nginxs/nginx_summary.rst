@@ -96,8 +96,20 @@ php代码::
     $uri 请求中的当前URI(不带请求参数，参数位于$args)，不同于浏览器传递的$request_uri的值
         它可以通过内部重定向，或者使用index指令进行修改。不包括协议和主机名，例如/foo/bar.html
 
+拒绝某些文件被访问
+------------------
 
+文件夹拒绝::
 
+    location ~* /(\.svn|CVS|Entries){
+        deny all;
+    }
+
+文件拒绝::
+
+    location ~* /\.(sql|bak|inc|old)$ {
+        deny all;
+    }
 
 
 

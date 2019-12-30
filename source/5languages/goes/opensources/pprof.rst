@@ -312,10 +312,18 @@ Trace 报告
 
     $ go tool trace xxxx
 
-pprof命令
+火焰图
 =========
 
 ::
+
+    $ go tool pprof -http=":8081" [binary] [profile]
+
+    实例:
+    $ go tool pprof -http=":8081" ./simple ./heap
+    $ go tool pprof -http=":8081" ./simple  http://localhost:6060/debug/pprof/heap
+
+也可使用pprof命令::
 
     // 生成pprof
     $ go get -u github.com/google/pprof
@@ -325,6 +333,10 @@ pprof命令
 
 .. image:: /images/golangs/pprof1.png
 
+在上面的压测过程中，我们再新建一个终端窗口输入以下命令，生成我们的profile文件::
+
+    // 我们设置了25秒的采样时间
+    $ go tool pprof --seconds 25 http://localhost:9090/debug/pprof/profile
 
 
 
@@ -342,6 +354,7 @@ pprof命令
 
 相关链接
 ========
+
 
 * :ref:`pprof在http服务的使用 <pprof_http>`
 * :ref:`go tool命令 <go_tool>`
