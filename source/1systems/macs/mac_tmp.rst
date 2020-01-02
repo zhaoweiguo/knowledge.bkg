@@ -1,5 +1,5 @@
 其他
-========
+####
 
 
 提示
@@ -31,39 +31,25 @@
    //大家都知道，macOS Sierra之前的系统也是需要手动去打开应用程序-系统偏好设置-安全性和隐私-通用里勾选任何来源，这样操作之后才能打开第三方应用
    sudo spctl master-disable
 
-::
 
-    $ brew install graphviz
-    $ brew install wrk
+小工具使用
+================
 
+mac计算器::
 
-安装wrk时报::
+  RAD：弧度(Radians)
+  GRA：梯度(Grads)
+  DEG：度(degrees)
 
-    A CA file has been bootstrapped using certificates from the system
-    keychain. To add additional certificates, place .pem files in
-      /usr/local/homebrew/etc/openssl@1.1/certs
+  BIN：binary 二进制的
+  OCT：octal 八进制
+  HEX：hexadecimal 十六进制的
+  DEC：decimal 十进制
 
-    and run
-      /usr/local/homebrew/opt/openssl@1.1/bin/c_rehash
-
-    openssl@1.1 is keg-only, which means it was not symlinked into /usr/local/homebrew,
-    because openssl/libressl is provided by macOS so don't link an incompatible version.
-
-    If you need to have openssl@1.1 first in your PATH run:
-      echo 'export PATH="/usr/local/homebrew/opt/openssl@1.1/bin:$PATH"' >> ~/.zshrc
-
-    For compilers to find openssl@1.1 you may need to set:
-      export LDFLAGS="-L/usr/local/homebrew/opt/openssl@1.1/lib"
-      export CPPFLAGS="-I/usr/local/homebrew/opt/openssl@1.1/include"
-
-    For pkg-config to find openssl@1.1 you may need to set:
-      export PKG_CONFIG_PATH="/usr/local/homebrew/opt/openssl@1.1/lib/pkgconfig"
+  POL(x,y)指的是把直角坐标（x,y）转换成对应的极坐标
+  REC（x,y）作用与之相反
 
 
-$ brew remove openssl::
-
-    Error: Refusing to uninstall /usr/local/homebrew/Cellar/openssl@1.1/1.1.1d
-    because it is required by aspcud, cairo, clingo, emacs, erlang@19, glib, gnuplot, gobject-introspection, harfbuzz, ideviceinstaller, imap-uw, ios-webkit-debug-proxy, libevent, libimobiledevice, mercurial, meson, mysql, nginx, nmap, openvpn, pango, pkcs11-helper, python, python@2, rrdtool, sphinx-doc, sysbench, thrift, tmux, w3m, wget and wrk, which are currently installed.
 
 
 

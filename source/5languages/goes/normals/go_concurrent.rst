@@ -30,7 +30,7 @@
     // 其中goroutines，channels和select 对应于实现CSP理论，即通过通信来共享内存
     // 这几乎能解决Golang并发的90%问题，另外的10%场景需要通过同步原语来解决，即sync包相关的结构
 
-
+* :ref:`共享资源竞争检测 <go_build>`
 
 
 select语法

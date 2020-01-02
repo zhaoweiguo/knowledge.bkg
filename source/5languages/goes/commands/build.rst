@@ -39,6 +39,65 @@ usage::
     // 可以让我们在任何一个开发平台上，编译出其他平台的可执行文件
     GOOS=linux GOARCH=amd64 go build flysnow.org/hello
 
+共享资源竞争检测
+================
+
+使用::
+
+    $ go build -race
+
+实例``cat main.go``::
+
+    var (
+        count int32
+        wg    sync.WaitGroup
+    )
+
+    func main() {
+        wg.Add(2)
+        go incCount()
+        go incCount()
+        wg.Wait()
+        fmt.Println(count)
+    }
+
+    func incCount() {
+        defer wg.Done()
+        for i := 0; i < 2; i++ {
+            value := count
+            runtime.Gosched()
+            value++
+            count = value
+        }
+    }
+
+检测::
+
+    $ go build -race
+    $ ls
+    main.go concurrency
+    $ ./concurrency
+    ==================
+    WARNING: DATA RACE
+    Read at 0x0000012282b8 by goroutine 8:
+      main.incCount()
+          /Users/zhaoweiguo/9tool/go/src/github.com/zhaoweiguo/demo-go/pkg/basic3/concurrency/demo1.go:34 +0x79
+
+    Previous write at 0x0000012282b8 by goroutine 7:
+      main.incCount()
+          /Users/zhaoweiguo/9tool/go/src/github.com/zhaoweiguo/demo-go/pkg/basic3/concurrency/demo1.go:37 +0x98
+
+    Goroutine 8 (running) created at:
+      main.main()
+          /Users/zhaoweiguo/9tool/go/src/github.com/zhaoweiguo/demo-go/pkg/basic3/concurrency/demo1.go:26 +0x77
+
+    Goroutine 7 (finished) created at:
+      main.main()
+          /Users/zhaoweiguo/9tool/go/src/github.com/zhaoweiguo/demo-go/pkg/basic3/concurrency/demo1.go:25 +0x5f
+    ==================
+    4
+    Found 1 data race(s)
+
 
 
 

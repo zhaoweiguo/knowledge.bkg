@@ -7,6 +7,7 @@
 
    6commons/tracing
    6commons/testing
+   6commons/performance
    6commons/notice
    6commons/log
    6commons/methodology

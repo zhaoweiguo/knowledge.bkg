@@ -12,6 +12,7 @@ Golang基本知识
    normals/go_objclass
    normals/go_concurrent
    normals/go_install
+   normals/debug
    normals/proxy
    normals/go_mod
    normals/spec

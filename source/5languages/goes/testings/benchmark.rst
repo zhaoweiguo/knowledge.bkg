@@ -38,6 +38,17 @@ If a benchmark needs to test performance in a parallel setting::
     }
 
 
+运行::
+
+    $ go test -bench=. -run=none
+
+    // 测试时间默认是1秒，如果想让测试运行的时间更长，可以通过-benchtime指定，比如3秒
+    $ go test -bench=. -benchtime=3s -run=none
+
+    // -benchmem可以提供每次操作分配内存的次数，以及每次操作分配的字节数
+    go test -bench=. -benchmem -run=none
+
+
 性能测试实例:
 
 .. literalinclude:: /files/golangs/benchmark_test.go

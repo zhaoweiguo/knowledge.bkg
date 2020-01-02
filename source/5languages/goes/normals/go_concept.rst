@@ -1,5 +1,8 @@
 定义说明
-===================
+############
+
+常见类型
+========
 
 变量声明::
 
@@ -46,15 +49,19 @@
 枚举::
 
     const (
-        Sunday = iota
-        Monday
-        Tuesday
+        Sunday = iota   // 0
+        Monday          // 1
+        Tuesday         // 2
         thursday   // 此变量没导出
     )
 
-基础类型::
 
-    //基础类型
+
+类型
+====
+
+1. 基础类型(值传递)::
+
     布尔: bool
     整形: int8, byte(uint8), int16, int(长度平台相关), uint, uintptr
     浮点: float32, float64
@@ -62,14 +69,64 @@
     字符串: string
     字符: rune   //代表unicode字符,bype代表utf8字符
     错误类型: error
-    //复合类型
-    指针: pointer
+
     数组: array
+
+2. 引用类型(指针传递)::
+
     切片: slice
     字典: map
     通道: chan
     结构体: struct
     接口: interface
+    函数类型
+    指针: pointer
+
+3. 结构类型::
+
+    type person struct {
+        age int
+        name string
+    }
+
+4. 自定义类型::
+
+    type A int64
+    type B int64
+    // Go这种强类型语言，A和B是不能相互赋值的
+
+嵌入类型-或者嵌套类型
+=====================
+
+接口类型嵌入::
+
+    这是一种可以把已有的类型声明在新的类型里的一种方式，这种功能对代码复用非常重要
+
+    type Reader interface {
+        Read(p []byte) (n int, err error)
+    }
+    type Writer interface {
+        Write(p []byte) (n int, err error)
+    }
+    type ReadWriter interface {
+        Reader
+        Writer
+    }
+
+结构体类型嵌入::
+
+    type user struct {
+        name string
+        email string
+    }
+    type admin struct {
+        user            // 嵌入
+        level string
+    }
+
+
+重点几个数据类型
+================
 
 位运算::
 
@@ -79,6 +136,16 @@
     x & y    与
     x | y    或
     ^x       取反(c中为~c)
+
+chan类型::
+
+    one := make(chan int)       // 无缓冲的通道
+    ch := make(chan int, 3)     // 有缓冲的通道
+
+    // 单向通道
+    var send chan<- int //只能发送
+    var receive <-chan int //只能接收
+
 
 struct结构::
 
@@ -109,6 +176,8 @@ struct结构::
     1. 基于数组创建切片
     2. 直接创建切片
 
+    切片是基于数组实现的，它的底层是数组，它自己本身非常小，可以理解为对底层数组的抽象
+
     // 基于数组创建数组切片
     var mySlice1 int[] = myArray[:5]   // (前5个元素)
     var mySlice2 int[] = myArray[:]   // 基于所有元素创建数组
@@ -135,20 +204,33 @@ struct结构::
 map数据类型::
 
     1. 元素声明:
-       var myMap map[string] PersonInfo
-    2. 创建并初使化map代码如下:                                                                                         
-        map[string] PeronsInfo {
+       var a map[string] PersonInfo
+       var b map[string] int
+    2. 创建并初使化map代码如下:
+        a := map[string] PeronsInfo {
             "1234" : PersonInfo{"1", "gordon"}
-        } 
+        }
+        b := map[string]int{}
     3. 元素赋值:
-       mapMyap["key"] = PersonInfo{"12", "gordon"}
+       a["key"] = PersonInfo{"12", "gordon"}
+       b["key"] = 1
     4. 元素删除:
-       delete(myMap, "key")   // 如传入的key不存在,则不做任何操作; 如key为nil则抛异常
+       delete(a, "key")   // 如传入的key不存在,则不做任何操作; 如key为nil则抛异常
     5. 元素查找:
        value, ok := myMap["key"]
        if ok {  // 找到了
        } else { // 没找到
        }
+    Map是给予散列表来实现，就是我们常说的Hash表
+    Map的散列表包含一组桶，每次存储和查找键值对的时候，都要先选择一个桶
+    存储的数据越多，索引分布越均匀，所以我们访问键值对的速度也就越快
+
+    注: Map存储的是无序的键值对集合
+
+    Map的创建有make函数
+    dict:=make(map[string]int)
+
+
 
 流程控制::
 
@@ -157,7 +239,7 @@ map数据类型::
     循环语句: for, range
     跳转语句: goto
 
-函数::
+函数(function)::
 
     1. 函数组成: func, 函数名, 参数列表, 返回值, 函数体, 返回语句
     2. 不定参数: func myfunc(args ...int)
@@ -175,6 +257,7 @@ map数据类型::
         }
 
     3. 多返回值(如果对某一值不关心可以使用“_”代替)
+        file, _ := os.Open("/usr/tmp")
     4. 匿名函数:
        f := func(x, y int) int {
           return x+y
@@ -185,6 +268,25 @@ map数据类型::
        }(reply_chan)
 
     5. 闭包:
+
+方法(method)::
+
+    注意: 在golang中方法与函数是不相同的
+        函数是指不属于任何结构体、类型的方法
+        也就是说，函数是没有接收者的；而方法是有接收者的，要么是属于一个结构体的，要么属于一个新定义的类型的
+    如:
+    type person struct {
+        name string
+    }
+
+    func (p person) String() string{
+        return "the person name is "+p.name
+    }
+
+接口::
+
+    抽象就是接口的优势，它不用和具体的实现细节绑定在一起，我们只需定义接口，告诉编码人员它可以做什么，
+        这样我们可以把具体实现分开，这样编码就会更加灵活方面，适应能力也会非常强
 
 
 错误处理::
@@ -223,7 +325,10 @@ map数据类型::
     name := v.Elem().Field(0).String()  //获取存储在第一个字段里面的值
 
 
-并发相关::
+并发相关
+========
+
+::
 
     ch := make(chan type, value)
     //value == 0 ! 无缓冲（阻塞）

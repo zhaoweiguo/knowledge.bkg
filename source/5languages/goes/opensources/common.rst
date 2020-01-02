@@ -228,7 +228,7 @@ CI&Git
 * URL短链接服务: https://github.com/andyxning/shortme
 * 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
 * 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
-
+* updating terminal output in realtime: https://github.com/gosuri/uilive
 
 
 

@@ -12,12 +12,10 @@
 .. toctree::
    :maxdepth: 1
 
-   9others/technology
    9others/tmp
    9others/framework
    9others/history
    9others/goal_english
-   9others/install
    9others/other
 
 
