@@ -1,5 +1,5 @@
 问题解决方案
-=================
+############
 
 mac突然显示蓝牙不可用::
 
@@ -54,7 +54,21 @@ dyld: Library not loaded::
     直接brew reinstall xxx解决
 
 
+chrome相关
+==========
+
+Your connection is not private [1]_ [2]_ ::
+
+    解决方案:
+    存盲打「thisisunsafe」解决
+    In the chrome browser whilst on the page, type “thisisunsafe”
 
 
 
 
+
+
+
+
+.. [1] https://podtech.io/os/mac-osx/chrome-catalina-certificate-issue/
+.. [2] https://support.google.com/chrome/thread/16648034?hl=en

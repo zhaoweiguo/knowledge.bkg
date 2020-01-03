@@ -107,19 +107,46 @@ Facets：帮助理解机器学习训练数据的开放源代码可视化工具ht
     数据安全
     数据分析
 
-北向接口：提供给其他厂家或运营商进行接入和管理的接口，即向上提供的接口
-南向接口：管理其他厂家网管或设备的接口，即向下提供的接口
+设备相关术语
+============
+
+* 北向接口：提供给其他厂家或运营商进行接入和管理的接口，即向上提供的接口
+* 南向接口：管理其他厂家网管或设备的接口，即向下提供的接口
 
 A northbound interface is an interface that conceptualizes lower level details. It interfaces to higher level layers and is normally drawn at the top of an architectural overview.
 A southbound interface decomposes concepts in the technical details, mostly specific to a single component of the architecture. Southbound interfaces are drawn at the bottom of an architectural overview.
 Northbound interfaces normally talk to southbound interfaces of higher level components and vice versa.
 
-从英文定义可以看出来：
+从英文定义可以看出来::
 
-1.北向接口是某个模块的顶层抽象接口
-2.南向接口是某个模块之内部子模块的接口
-3.北向接口因处于架构图的顶部而得名,南向接口则因处于架构图的底部而得名,所谓上北下南
-4.另外,北向和南向也是相对的,相对于更顶级的模块,某个模块的北向接口就相对来说是南向接口了
+    1.北向接口是某个模块的顶层抽象接口
+    2.南向接口是某个模块之内部子模块的接口
+    3.北向接口因处于架构图的顶部而得名,南向接口则因处于架构图的底部而得名,所谓上北下南
+    4.另外,北向和南向也是相对的,相对于更顶级的模块,某个模块的北向接口就相对来说是南向接口了
+
+技术管理
+========
+
+技术专家，他的日常工作都是对事的::
+
+    和产品等沟通，了解业务需求
+    任务需求分析，制定架构和技术方案
+    任务拆分，带领小团队完成任务
+    上线，监控并解决发现的问题
+    积累可复用的技术组件，提升团队开发效率
+    技术文档沉淀，便于新同事熟悉技术和业务
+    …………
+
+相比来说，技术管理者的工作就是关于人的，如何让团队发挥出更高效的能力::
+
+    根据公司的战略，选用合适的人来完成不同的里程碑点
+    调用资源支持团队，灵活协调和支援
+    制定和优化团队工作流程，提升团队协作效率
+    和其他团队保持沟通交流，为自己的团队提供更好的支持
+    跟进团队重点任务的进度，并且做好向上汇报
+    招聘和培养人才梯队
+    提前布局技术和积累
+    …………
 
 
 

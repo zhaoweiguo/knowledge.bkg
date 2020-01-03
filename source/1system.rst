@@ -20,5 +20,6 @@
    1systems/tune
    1systems/hardware
    1systems/gpu
+   1systems/history
    1systems/other
 

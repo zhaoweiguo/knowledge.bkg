@@ -77,7 +77,7 @@ cli命令
 * 经济图数据库: https://github.com/degdb/degdb
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
 * 分布式k/v数据库: https://github.com/etcd-io/etcd
-  
+* A realtime distributed messaging platform: https://github.com/nsqio/nsq
 
 数据库驱动
 ----------
@@ -87,6 +87,7 @@ cli命令
 * mysql: https://github.com/go-xorm/xorm
 * es: https://github.com/elastic/elasticsearch
 * redis: https://github.com/gomodule/redigo
+* proxy based rediscluster solution: https://github.com/CodisLabs/codis
 * mongo: https://github.com/mongodb/mongo-go-driver
 * kafka: https://github.com/Shopify/sarama
 * 数据结构: https://github.com/emirpasic/gods
@@ -135,6 +136,8 @@ lib工具
 * web框架: https://github.com/go-chi/chi
 * web框架: https://github.com/gin-gonic/gin
 * web框架: https://github.com/astaxie/beego
+* web框架: https://github.com/caddyserver/caddy
+* web框架: https://github.com/go-martini/martini
 * web框架(cayley): https://github.com/gobuffalo/packr
 * https://github.com/grpc/grpc-go
 
@@ -184,6 +187,7 @@ CI&Git
 
 * gitlab-runner: https://gitlab.com/gitlab-org/gitlab-runner
 * drone: https://github.com/drone/drone
+* makes git easier to use with GitHub: https://github.com/github/hub
 
 索引
 ----

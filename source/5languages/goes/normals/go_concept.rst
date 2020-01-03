@@ -230,7 +230,16 @@ map数据类型::
     Map的创建有make函数
     dict:=make(map[string]int)
 
+指针类型::
 
+    为了安全的考虑，Go语言是不允许两个指针类型进行转换
+    两个不同的指针类型不能相互转换，比如*int不能转为*float64
+    unsafe.Pointer是一种特殊意义的指针，它可以包含任意类型的地址，有点类似于C语言里的void*指针，全能型的
+    unsafe.Pointer的4个规则:
+    1. 任何指针都可以转换为unsafe.Pointer
+    2. unsafe.Pointer可以转换为任何指针
+    3. uintptr可以转换为unsafe.Pointer
+    4. unsafe.Pointer可以转换为uintptr
 
 流程控制::
 
@@ -358,6 +367,43 @@ map数据类型::
     NumCPU: 返回 CPU 核数量
     NumGoroutine: 返回正在执行和排队的任务总数
     GOMAXPROCS: 用来设置可以并行计算的CPU核数的最大值，并返回之前的值
+
+源码
+====
+
+最底层的类型::
+
+    const (
+        Invalid Kind = iota
+        Bool
+        Int
+        Int8
+        Int16
+        Int32
+        Int64
+        Uint
+        Uint8
+        Uint16
+        Uint32
+        Uint64
+        Uintptr
+        Float32
+        Float64
+        Complex64
+        Complex128
+        Array
+        Chan
+        Func
+        Interface
+        Map
+        Ptr
+        Slice
+        String
+        Struct
+        UnsafePointer
+    )
+
+
 
 
 
