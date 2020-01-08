@@ -11,11 +11,7 @@ IDEA相关
     ideas/idea_golang
     ideas/idea_java
     ideas/idea_folding
+    ideas/idea_licence
 
-
-licence [1]_
-
-
-.. [1] http://idea.lanyus.com/
 
 

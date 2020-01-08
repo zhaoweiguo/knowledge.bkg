@@ -9,7 +9,17 @@ Error: unknown command or invalid arguments:  "databases;". Enter ".help" for he
     sql> .databases
 
 
-Error: malformed database schema (ix_stage_in_progress) - near "WHERE": syntax error::
+版本太低问题
+============
+
+现象::
+
+    1. .table 命令显示为空
+    2. .databases命令或select语句报以下错误:
+    Error: malformed database schema (ix_stage_in_progress) - near "WHERE": syntax error
+
+
+解决方案::
 
     sqlite版本太低, 要下载最新的sqlite
     下载地址:

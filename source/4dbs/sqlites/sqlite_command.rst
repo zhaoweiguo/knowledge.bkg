@@ -50,6 +50,7 @@ sqlite基本命令
     select * from company where type="table";
     select * from company where type="table" and name="<tableName>";
 
+    update users set user_admin=1 where id=123;
 
 数据导出::
 

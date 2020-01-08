@@ -86,10 +86,15 @@ cli命令
 * orm: https://github.com/jinzhu/gorm
 * mysql: https://github.com/go-xorm/xorm
 * es: https://github.com/elastic/elasticsearch
-* redis: https://github.com/gomodule/redigo
 * proxy based rediscluster solution: https://github.com/CodisLabs/codis
+
+* redis: https://github.com/gomodule/redigo
 * mongo: https://github.com/mongodb/mongo-go-driver
 * kafka: https://github.com/Shopify/sarama
+* sqlite: https://github.com/mattn/go-sqlite3
+* mysql: https://github.com/go-sql-driver/mysql
+* psql: https://github.com/lib/pq
+
 * 数据结构: https://github.com/emirpasic/gods
 
 并发
@@ -212,6 +217,7 @@ CI&Git
 * debugger: https://github.com/go-delve/delve
 * perf 工具(go版ps命令): https://github.com/google/gops
 * go-torch 工具(deprecated, use pprof): https://github.com/uber-archive/go-torch
+* 打印deep pretty printer: https://github.com/davecgh/go-spew
 * 网络代理工具: https://github.com/snail007/goproxy
 * 抓包工具: https://github.com/40t/go-sniffer
 * 反向代理工具，快捷开放内网端口供外部使用: https://github.com/inconshreveable/ngrok
@@ -224,6 +230,11 @@ CI&Git
 * 定时: https://github.com/robfig/cron
 * 自动化运维平台 Gaia: https://github.com/gaia-pipeline/gaia
 
+
+P2P
+---
+
+* https://github.com/libp2p/go-libp2p
 
 
 其他

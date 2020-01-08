@@ -6,16 +6,35 @@ npm命令
     git clone https://github.com/isaacs/npm.git
 
 
-常见命令::
+常见命令
+========
+
+基本::
 
     npm -v #显示版本，检查npm 是否正确安装。
     npm init    //初使化, 生成package.json文件(可以用此察看此文件的结构)
+
+install命令::
+
     npm install express #安装express模块
     npm install -g express #全局安装express模块
     npm install --global express    //--global进行全局安装，这样我们才可以在任何路径下使用gulp命令
     npm install express --save  // 添加--save-dev选项，把express模块安装依赖里
     // save-dev选项，把gulp模块安装在开发依赖里
     npm install express --save-dev  // gulp仅仅是开发辅助工具，只在本地开发机器上使用，因此上述命令添加--
+
+run命令::
+
+    npm run xxx 命令基本是执行「package.json」文件中的scripts字段下面的命令, 如:
+    "scripts": {
+      "prebuild": "rm -rf dist/files",
+      "build": "cross-env NODE_ENV=production webpack"
+    }
+    则:
+    npm run build 本质是执行 cross-env NODE_ENV=production webpack
+
+
+其他::
 
     npm list #列出已安装模块
     npm show express #显示模块详情
