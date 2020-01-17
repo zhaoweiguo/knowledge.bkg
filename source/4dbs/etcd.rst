@@ -14,6 +14,8 @@ github  [1]_
    :maxdepth: 1
 
    etcds/etcdctl
+   etcds/install
+   etcds/history
 
 
 etcd 是 CoreOS 团队于 2013 年 6 月发起的开源项目，它的目标是构建一个高可用的分布式键值（key-value）数据库，基于 Go 语言实现。受到 :ref:`Apache ZooKeeper <zookeeper>` 项目和 :ref:`doozer <doozer>` 项目的启发，etcd 在设计的时候重点考虑了下面四个要素::

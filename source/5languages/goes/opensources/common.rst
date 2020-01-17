@@ -45,7 +45,7 @@ Golang工具包
 
 * 分布式链路追踪: https://github.com/opentracing/opentracing-go
 * CNCF Jaeger, a Distributed Tracing Platform: https://github.com/jaegertracing/jaeger.git
-
+* rolling log: https://github.com/natefinch/lumberjack
 
 环境变量
 -----------
@@ -76,8 +76,11 @@ cli命令
 * 时序数据库: https://github.com/influxdata/influxdb
 * 经济图数据库: https://github.com/degdb/degdb
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
-* 分布式k/v数据库: https://github.com/etcd-io/etcd
 * A realtime distributed messaging platform: https://github.com/nsqio/nsq
+
+* 分布式k/v数据库: https://github.com/etcd-io/etcd
+* Programmatic load balancer backed(inspired by Hystrix): https://github.com/vulcand/vulcand
+* Global Distributed Client Side Rate Limiting: https://github.com/youtube/doorman
 
 数据库驱动
 ----------

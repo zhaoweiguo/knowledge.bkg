@@ -19,6 +19,13 @@ Server端
 
 命令行启动::
 
+    $ GOOS=linux
+    $ BUILD_INFO_IMPORT_PATH=github.com/jaegertracing/jaeger/pkg/version
+    $ BUILD_INFO=-ldflags "-X $(BUILD_INFO_IMPORT_PATH).commitSHA=$(GIT_SHA) -X $(BUILD_INFO_IMPORT_PATH).latestVersion=$(GIT_CLOSEST_TAG) -X $(BUILD_INFO_IMPORT_PATH).date=$(DATE)"
+    $ CGO_ENABLED=0 
+    $ installsuffix=cgo 
+    $ go build -tags ui -o ./cmd/all-in-one/all-in-one-$(GOOS) $(BUILD_INFO) ./cmd/all-in-one/main.go
+
     $ jaeger-all-in-one --collector.zipkin.http-port=9411
 
 * 浏览器打开Jaeger UI: http://localhost:16686

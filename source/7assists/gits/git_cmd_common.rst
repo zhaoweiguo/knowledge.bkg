@@ -20,6 +20,7 @@ Git命令列表
    cmd_commons/git_remote
    cmd_commons/git_reset
    cmd_commons/git_tag
+   cmd_commons/git_describe
    cmd_commons/git_format-patch
    cmd_commons/git_submodule
    cmd_commons/git_hook

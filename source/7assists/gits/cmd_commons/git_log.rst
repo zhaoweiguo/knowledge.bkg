@@ -117,10 +117,22 @@ git log浏览日志
     git log --since ==2013-08.01 --until=2013-09-07 //某个时间段的 log
 
 
+实例
+====
 
+获取git commit版本::
 
+    $ git log --abbrev-commit --pretty=oneline -1 | cut -c 1-7
+    返回: b0f7ff5
 
+    说明:
 
+    --abbrev-commit: 使用简化的 commitID
+    --pretty=oneline: 每个 commit 只保留第一行
+    -1 取第一个 commitID 行
+    cut -c 1-7 取 commitID 行中 commitID 号
+
+    其他相关可参考git describe命令
 
 
 

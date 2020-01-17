@@ -18,6 +18,19 @@ usage::
     $ go build flysnow.org/tools/...
 
 
+选项ldflags
+===========
+
+格式::
+
+    -ldflags '[pattern=]arg list'
+
+说明::
+
+    arguments to pass on each go tool link invocation.
+
+
+
 
 跨平台编译
 ==========
