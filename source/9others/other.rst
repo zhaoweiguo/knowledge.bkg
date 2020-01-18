@@ -149,6 +149,12 @@ Northbound interfaces normally talk to southbound interfaces of higher level com
     …………
 
 
+其他
+====
+
+
+* https://swagger.io/
+* 实例: https://github.com/etcd-io/etcd/blob/master/Documentation/dev-guide/apispec/swagger/rpc.swagger.json
 
 
 

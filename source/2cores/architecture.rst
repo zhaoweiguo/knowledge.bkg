@@ -10,6 +10,7 @@
    architectures/crud
    architectures/ddd
    architectures/api
+   architectures/discovery
    architectures/event_driver
    architectures/network_agent
    architectures/message_bus

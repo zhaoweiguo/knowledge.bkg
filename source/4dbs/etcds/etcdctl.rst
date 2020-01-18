@@ -1,5 +1,5 @@
-etcdctl命令
-###########
+etcdctl命令 [1]_
+################
 
 
 数据库操作
@@ -54,3 +54,5 @@ member::
 
 
 
+
+.. [1] https://github.com/etcd-io/etcd/blob/master/Documentation/dev-guide/interacting_v3.md
