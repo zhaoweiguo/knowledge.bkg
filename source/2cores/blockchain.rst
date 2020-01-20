@@ -9,7 +9,7 @@
 .. toctree::
    :maxdepth: 2
 
-   blockchains/common
+   blockchains/normal
    blockchains/ethereum
    blockchains/other
 

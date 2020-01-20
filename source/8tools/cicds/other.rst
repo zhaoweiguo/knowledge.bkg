@@ -98,4 +98,4 @@ Strider
 .. [8] https://github.com/Strider-CD/strider
 .. [9] https://github.com/travis-ci/travis-ci
 .. [10] https://app.yinxiang.com/fx/20235d10-84e5-4f38-80a1-0c616c5d7192
-.. [11] http://note.youdao.com/noteshare?id=9dd773a2c0e6e8d6ff35c653e04fa110
+.. [11] https://app.yinxiang.com/fx/87d85dea-f7d2-4b6d-a55f-f01238c00dad

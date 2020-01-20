@@ -1,5 +1,5 @@
-挖矿相关
-------------
+minner挖矿相关
+--------------
 
 ::
 
@@ -12,6 +12,12 @@
     > miner.setEtherbase("0xe8abf98484325fd6afc59b804ac15804b978e607")
     > eth.coinbase
 
+
+  // 开始挖矿
+  miner.start(1)
+  // 停止挖矿
+  miner.stop()
+  // 说明：当出现“Mined block”这样的字眼时，说明成功挖矿
 
 
 

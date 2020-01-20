@@ -249,7 +249,7 @@ P2P
 * 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
 * updating terminal output in realtime: https://github.com/gosuri/uilive
 * Go CGO cross compiler: https://github.com/karalabe/xgo
-
+* A JavaScript interpreter in Go: https://github.com/robertkrimen/otto
 
 参考
 ----

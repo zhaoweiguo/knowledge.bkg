@@ -1,8 +1,7 @@
 实例
 ####
 
-
-查看智能合约编译器::
+查看智能合约编译器 [1]_ ::
 
   > eth.compile
 
@@ -103,3 +102,5 @@ solc --bin --abi --optimize -o output Netkiller.sol::
 
 
 
+
+.. [1] http://www.netkiller.cn/blockchain/ethereum/web3/web3.js.js.contracts.html

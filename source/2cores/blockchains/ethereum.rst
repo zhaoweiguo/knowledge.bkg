@@ -10,7 +10,6 @@
    :maxdepth: 2
 
    ethereums/normal
-   ethereums/install
    ethereums/geth
    ethereums/contract
    ethereums/web3

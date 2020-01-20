@@ -145,11 +145,12 @@ web3.eth.getBlock() 获取区块::
     web3.eth.personal.unlockAccount(coinbase, "your password").then(console.log);
 
 
-智能合约
-----------
 
-http://www.netkiller.cn/blockchain/ethereum/web3/web3.js.js.contracts.html
 
+  // 查询默认帐户余额
+  > web3.fromWei(eth.getBalance(eth.coinbase), "ether")
+  // 查询第2个帐户余额
+  web3.fromWei(eth.getBalance(eth.accounts[1]),"ether")
 
 
 

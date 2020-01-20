@@ -1,19 +1,6 @@
 geth命令
 ########
 
-常用选项
-========
-
---bootnodes::
-
-    指定服务发现的bootnodes
-    $ geth --bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
-
---nodiscover::
-
-    禁止服务发现
-    一般只用于test node or an experimental test network
-
 帮助
 ====
 
