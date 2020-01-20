@@ -3,7 +3,7 @@ Nginx源码分析流程
 
 源码:
 
-.. literalinclude:: /files/nginx_src_nginx_http_hello_module.c
+.. literalinclude:: /files/nginxs/nginx_src_nginx_http_hello_module.c
    :language: c
    :linenos:
 
@@ -11,7 +11,7 @@ Nginx源码分析流程
 配置文件:
 
 
-.. literalinclude:: /files/nginx_src_config
+.. literalinclude:: /files/nginxs/nginx_src_config
    :linenos:
 
 

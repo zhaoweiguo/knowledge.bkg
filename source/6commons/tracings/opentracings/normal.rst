@@ -113,3 +113,5 @@ Trace表示一次完整的追踪链路，trace由一个或多个span组成。下
 * `水立方——Go集成Opentracing <https://juejin.im/post/5d7ed711e51d4562165535ab>`_
 * `opentracing-tutorial <https://github.com/yurishkuro/opentracing-tutorial/tree/master/go>`_
 * `opentracing/specification <https://github.com/opentracing/specification>`_
+* `Opentracing规范文档v1.1 <https://github.com/opentracing/specification/blob/master/specification.md>`_
+* `Opentracing语义习惯 <https://github.com/opentracing/specification/blob/master/semantic_conventions.md>`_

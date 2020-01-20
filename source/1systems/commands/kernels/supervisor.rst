@@ -46,7 +46,7 @@ supervisor命令
 
 每个进程的配置文件都可以单独分拆，放在 ``/etc/supervisor/conf.d/`` 目录下，以 ``.conf`` 作为扩展名,以 ``app.conf`` 为例:
 
-.. literalinclude:: /files/linux_supervisord.conf
+.. literalinclude:: /files/linuxs/linux_supervisord.conf
    :language: nginx
    :linenos:
 
@@ -55,5 +55,8 @@ supervisor命令
 
     #!/bin/sh  
     /usr/bin/gunicorn -w `grep -c ^processor /proc/cpuinfo` wsgiapp:application  
+
+
+
 
 

@@ -56,13 +56,13 @@ HTTP选项
 ==================
 
 
-.. literalinclude:: /files/nginx_config_full.conf
+.. literalinclude:: /files/nginxs/nginx_config_full.conf
     :language: nginx
     :emphasize-lines: 12,15-18
     :linenos:
 
 
-.. literalinclude:: /files/nginx_config_server_full.conf
+.. literalinclude:: /files/nginxs/nginx_config_server_full.conf
     :language: nginx
     :emphasize-lines: 12,15-18
     :linenos:
@@ -77,7 +77,7 @@ HTTP选项
 主配置文件
 -------------
 
-.. literalinclude:: /files/nginx_config_nginx.conf
+.. literalinclude:: /files/nginxs/nginx_config_nginx.conf
     :language: nginx
     :emphasize-lines: 12,15-18
     :linenos:
@@ -85,7 +85,7 @@ HTTP选项
 默认的配置文件
 ---------------------
 
-.. literalinclude:: /files/nginx_config_default.conf
+.. literalinclude:: /files/nginxs/nginx_config_default.conf
     :language: nginx
     :emphasize-lines: 2,4-5
     :linenos:
@@ -93,7 +93,7 @@ HTTP选项
 PHP对应的配置文件
 ---------------------
 
-.. literalinclude:: /files/nginx_config_php.conf
+.. literalinclude:: /files/nginxs/nginx_config_php.conf
     :language: nginx
     :emphasize-lines: 12,15-18
     :linenos:
@@ -101,7 +101,7 @@ PHP对应的配置文件
 PHP对应的包含文件fastcgi_params
 ------------------------------------
 
-.. literalinclude:: /files/nginx_config_fastcgi_params
+.. literalinclude:: /files/nginxs/nginx_config_fastcgi_params
     :language: nginx
     :emphasize-lines: 12,15-18
     :linenos:
@@ -110,7 +110,7 @@ PHP对应的包含文件fastcgi_params
 mobapi(ssl相关)
 ------------------------------------
 
-.. literalinclude:: /files/nginx_config_mobapi.conf
+.. literalinclude:: /files/nginxs/nginx_config_mobapi.conf
     :language: nginx
     :emphasize-lines: 12,15-18
     :linenos:

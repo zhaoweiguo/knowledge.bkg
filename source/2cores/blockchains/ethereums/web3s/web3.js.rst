@@ -121,8 +121,8 @@ web3.eth.sendSignedTransaction() 私钥签名转账::
         .on('receipt', console.log);
     })
 
-.. literalinclude:: ./files/transfer.js
-   :language: javascript
+
+.. literalinclude:: /files/blockchains/ethereums/transfer.js
 
 
 web3.eth.getBlock() 获取区块::

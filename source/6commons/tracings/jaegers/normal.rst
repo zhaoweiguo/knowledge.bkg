@@ -14,7 +14,9 @@ Technical Specs::
 
 * Client Libraries [1]_
 
+说明::
 
+    1. 主要目的是查询出系统的哪一部分请求时长过长，用于优化系统
 
 
 .. [1] https://www.jaegertracing.io/docs/1.15/client-libraries/

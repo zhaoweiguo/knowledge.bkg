@@ -9,26 +9,26 @@ Nginx数据结构
 --------------------
 ngx_command_t:
 
-.. literalinclude:: /files/nginx_src_ngx_command_t.c
+.. literalinclude:: /files/nginxs/nginx_src_ngx_command_t.c
    :language: c
    :linenos:
 
 
 ngx_http_module_t:
 
-.. literalinclude:: /files/nginx_src_ngx_http_module_t.c
+.. literalinclude:: /files/nginxs/nginx_src_ngx_http_module_t.c
    :language: c
    :linenos:
 
 ngx_module_t:
 
-.. literalinclude:: /files/nginx_src_ngx_module_t.c
+.. literalinclude:: /files/nginxs/nginx_src_ngx_module_t.c
    :language: c
    :linenos:
 
 ngx_http_request_t:
 
-.. literalinclude:: /files/nginx_src_ngx_http_request_t.c
+.. literalinclude:: /files/nginxs/nginx_src_ngx_http_request_t.c
    :language: c
    :linenos:
 

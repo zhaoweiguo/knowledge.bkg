@@ -1,5 +1,6 @@
-api
-#######
+函数
+####
+
 
 
 .. function:: web3.eth.sendTransaction
@@ -35,9 +36,4 @@ api
      if (!err)
        console.log(transactionHash); // "0x7f9fade1c0d57a7af66ab4ead7c2eb7b11a91385"
     });
-
-
-
-
-
 

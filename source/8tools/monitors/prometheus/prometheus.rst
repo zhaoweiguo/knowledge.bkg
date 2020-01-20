@@ -12,7 +12,8 @@ linux版安装
     PROMETHEUS_VERSION="2.15.2"   // 20200118最新版
     wget https://github.com/prometheus/prometheus/releases/download/v$PROMETHEUS_VERSION/prometheus-$PROMETHEUS_VERSION.linux-amd64.tar.gz -O /tmp/prometheus-$PROMETHEUS_VERSION.linux-amd64.tar.gz
     tar -xvzf /tmp/prometheus-$PROMETHEUS_VERSION.linux-amd64.tar.gz --directory /tmp/ --strip-components=1
-    /tmp/prometheus -version
+
+    $ /tmp/prometheus --version
 
 配置::
 

@@ -9,18 +9,18 @@
 .. toctree::
    :maxdepth: 2
 
-   ethereums/api
    ethereums/normal
+   ethereums/install
    ethereums/geth
    ethereums/contract
-   ethereums/eth_basic
    ethereums/web3
-   ethereums/web3.js
-   ethereums/op
-   ethereums/eth_connectivity
-   ethereums/geth_command
+   ethereums/practice
    ethereums/question
-   ethereums/eth_tmp
+   ethereums/tmp
+
+* 文档 [1]_
 
 
-   
+
+
+.. [1] https://geth.ethereum.org/docs/

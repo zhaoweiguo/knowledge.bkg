@@ -48,7 +48,7 @@ rebar3配置
 实例:
 
 
-.. literalinclude:: /files/languages_erlang_rebar_all.config
+.. literalinclude:: /files/erlangs/rebar_all.config
    :linenos:
    :language: erlang
 

@@ -64,7 +64,7 @@ multipart/form-data的请求体::
 
 php socket模拟 ``multipart/form-data`` 类型请求:
 
-.. literalinclude:: /files/php_multipart_socket.php
+.. literalinclude:: /files/phps/php_multipart_socket.php
    :language: php
    :linenos:
 

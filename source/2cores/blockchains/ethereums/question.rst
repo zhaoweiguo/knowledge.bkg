@@ -8,7 +8,7 @@
   解决:sudo ntpdate -s time.nist.gov
 
   2.防火墙问题
-  原因:以太坊连接其他结点的本质是通过udp协议
+  原因:以太坊连接其他结点的本质是通过udp协议，有些防火墙会阻止UDP的传输
   解决:
     a.使用static nodes
     b.使用方法admin.addPeer()增加结点

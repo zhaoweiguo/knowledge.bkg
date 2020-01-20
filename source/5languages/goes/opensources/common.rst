@@ -32,7 +32,7 @@ Golang工具包
 * email: https://gopkg.in/gomail.v2
 
 
-日志
+日志log
 -------
 
 * https://github.com/sirupsen/logrus ::
@@ -46,6 +46,7 @@ Golang工具包
 * 分布式链路追踪: https://github.com/opentracing/opentracing-go
 * CNCF Jaeger, a Distributed Tracing Platform: https://github.com/jaegertracing/jaeger.git
 * rolling log: https://github.com/natefinch/lumberjack
+* Leveled execution logs for Go: https://github.com/golang/glog
 
 环境变量
 -----------
@@ -247,7 +248,7 @@ P2P
 * 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
 * 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
 * updating terminal output in realtime: https://github.com/gosuri/uilive
-
+* Go CGO cross compiler: https://github.com/karalabe/xgo
 
 
 参考

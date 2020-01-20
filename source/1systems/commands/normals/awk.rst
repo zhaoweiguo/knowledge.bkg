@@ -164,7 +164,7 @@ awk的流程控制::
 
 实例:
 
-.. literalinclude:: /files/linux_awk_nginxlog.sh
+.. literalinclude:: /files/linuxs/linux_awk_nginxlog.sh
    :language: sh
    :linenos:
 

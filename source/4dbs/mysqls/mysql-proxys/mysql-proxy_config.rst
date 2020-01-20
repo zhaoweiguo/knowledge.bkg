@@ -18,6 +18,6 @@ MySQL代理配置
 MySQL配置文件实例
 -----------------------
 
-.. literalinclude:: /files/mysql_mysql-proxy.cnf
+.. literalinclude:: /files/mysqls/mysql_mysql-proxy.cnf
     :language: sh
     :linenos:

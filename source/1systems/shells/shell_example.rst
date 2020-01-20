@@ -4,7 +4,7 @@ shell实例
 
 把数据备份并发送到指定的email下:
 
-.. literalinclude:: /files/linux_shell_bkg_mysql_to_email.sh
+.. literalinclude:: /files/shells/shell_bkg_mysql_to_email.sh
     :language: sh
     :linenos:
 

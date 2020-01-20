@@ -3,7 +3,7 @@
 文件詳細说明
 ==================
 
-.. literalinclude:: /files/mysql_my.cnf
+.. literalinclude:: /files/mysqls/mysql_my.cnf
     :language: mysql
     :emphasize-lines: 12,15-18
     :linenos:

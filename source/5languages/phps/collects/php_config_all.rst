@@ -85,20 +85,20 @@ Features and packages:
 SAPI modules:
 """""""""""""""""""""""
 
-.. literalinclude:: /files/languages_php_config_sapi.txt
+.. literalinclude:: /files/phps/php_config_sapi.txt
    :linenos:
 
 基本配置
 """"""""""""""
 
-.. literalinclude:: /files/languages_php_config_general_settings.txt
+.. literalinclude:: /files/phps/php_config_general_settings.txt
    :linenos:
 
 
 扩展
 """""""""
 
-.. literalinclude:: /files/languages_php_config_extensions.txt
+.. literalinclude:: /files/phps/php_config_extensions.txt
    :linenos:
 
 PEAR
