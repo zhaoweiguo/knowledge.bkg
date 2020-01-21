@@ -34,7 +34,7 @@
 
 * 解决2:
 
-.. literalinclude:: ./go/example1-1.go
+.. literalinclude:: ./go/example1-2.go
    :language: go
 
 

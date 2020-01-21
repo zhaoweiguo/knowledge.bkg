@@ -21,9 +21,6 @@
 ::
 
   微服务只是结果，而不是最终目的。微服务的目的是有效的拆分应用，实现敏捷开发和部署
-  https://www.cnblogs.com/zgynhqf/p/5679028.html?utm_source=tuicool&utm_medium=referral
-  http://www.sohu.com/a/160338225_467759
-  https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489318&amp;idx=1&amp;sn=8687a6ebe151991c2da0cf7326518351&source=41#wechat_redirect
 
 
 Docker最大的特点就是轻量，启动速度快，扩张快，部署快，因此具体实现业务的服务，都应该放在Docker里面进行部署，但是一定要强调，并且一定要保证无状态化，这是快速扩张，自主更新的基础
@@ -49,9 +46,13 @@ Docker最大的特点就是轻量，启动速度快，扩张快，部署快，�
    :width: 80%
 
 
+参考
+====
 
 
-
+* https://www.cnblogs.com/zgynhqf/p/5679028.html?utm_source=tuicool&utm_medium=referral
+* http://www.sohu.com/a/192082715_609513
+* https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489318&amp;idx=1&amp;sn=8687a6ebe151991c2da0cf7326518351&source=41#wechat_redirect
 
 
 
