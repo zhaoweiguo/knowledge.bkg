@@ -17,7 +17,6 @@ erlydtl实例
 * 对应的模板:
 
 .. literalinclude:: files/template.tpl
-   :language: php
    :emphasize-lines: 2, 5, 16, 25
    :linenos:
 

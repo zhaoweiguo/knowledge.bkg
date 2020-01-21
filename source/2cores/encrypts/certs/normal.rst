@@ -116,7 +116,4 @@ PKCS#12/PFX 格式::
 五. 原文链接
 ------------
 
-.. [1] `DER.VS.CRT.VS.CER.VS.PEM-CERTIFICATES <http://www.gtopia.org/blog/2010/02/der-vs-crt-vs-cer-vs-pem-certificates/>`_
-
-
-
+* `DER.VS.CRT.VS.CER.VS.PEM-CERTIFICATES <http://www.gtopia.org/blog/2010/02/der-vs-crt-vs-cer-vs-pem-certificates/>`_

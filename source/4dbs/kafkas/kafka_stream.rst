@@ -1,7 +1,5 @@
-Kafka Streams
-###################
-
-
+Kafka Streams [1]_
+######################
 
 Kafka Streams是一个Java库，而不是一个流处理框架，这点和Strom等流处理框架有明显地不同
 
@@ -18,7 +16,7 @@ Kafka Streams直接解决了在流处理中会遇到的很多难题::
 Kafka Streams是一个用来构建流处理程序的库，特别是其输入是一个Kafka topic，输出是另一个Kafka topic的程序(或者是调用外部服务，或者是更新数据库，或者其它)
 
 
-在流处理领域有很多正在进行的有趣的工作，包括像 Apache Spark[2]_, Apache Storm[3]_, Apache Flink[4]_, 和 Apache Samza[5]_这样的的开源框架，也包括像Google’s DataFlow[6]_ 和 AWS Lambda[7]_一样的专有服务
+在流处理领域有很多正在进行的有趣的工作，包括像 Apache Spark [2]_ , Apache Storm [3]_ ,Apache Flink [4]_ ,和 Apache Samza [5]_ 这样的的开源框架，也包括像Google’s DataFlow [6]_ 和 AWS Lambda [7]_ 一样的专有服务
 
 
 
@@ -34,6 +32,3 @@ Kafka Streams是一个用来构建流处理程序的库，特别是其输入是�
 .. [5] http://samza.apache.org/
 .. [6] https://cloud.google.com/dataflow/
 .. [7] https://aws.amazon.com/cn/lambda/
-
-
-

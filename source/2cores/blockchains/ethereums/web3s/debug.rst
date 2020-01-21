@@ -7,7 +7,7 @@ debug_traceTransaction
 +---------+--------------------------------------------------------------------------------------------+
 | Client  | Method invocation                                                                          |
 +=========+============================================================================================+
-| Go      | debug.TraceTransaction(txHash common.Hash, logger *vm.LogConfig) (*ExecutionResurt, error) |
+| Go      | debug.TraceTransaction(txHash common.Hash, logger vm.LogConfig) (ExecutionResurt, error)   |
 +---------+--------------------------------------------------------------------------------------------+
 | Console | debug.traceTransaction(txHash, [options])                                                  |
 +---------+--------------------------------------------------------------------------------------------+

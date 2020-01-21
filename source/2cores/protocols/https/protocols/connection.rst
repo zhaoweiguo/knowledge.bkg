@@ -28,18 +28,6 @@ Connection
       1. 对非持久连接，浏览器可以通过连接是否关闭来界定请求或响应实体的边界
       2. 而对于持久连接，这种方法显然不奏效,可以指定实体长度来告诉浏览器
 
-:ref:`使用Content-Length指定实体长度 <content-length>`
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+* :ref:`使用Content-Length指定实体长度 <content-length>`

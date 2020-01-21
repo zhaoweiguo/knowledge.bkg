@@ -244,7 +244,3 @@ code_server中杀死进程的过程::
 
 
 .. [1] http://erlang.org/doc/reference_manual/code_loading.html
-.. [2] https://blog.alibabagame.xyz/publish/2017-07-15-erlang-code-loading.html
-
-
-
