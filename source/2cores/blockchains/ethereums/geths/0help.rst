@@ -1,8 +1,8 @@
-geth命令
-########
-
 帮助
 ====
+
+* Eth在线交流: https://discord.gg/nthXNEv
+
 
 $ geth --help::
 

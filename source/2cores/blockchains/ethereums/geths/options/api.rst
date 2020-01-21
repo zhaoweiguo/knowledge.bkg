@@ -1,6 +1,9 @@
 API AND CONSOLE OPTIONS
 =======================
 
+http
+====
+
 api 相关参数::
 
     // rpcapi 启动后允许连接到系统的API协议
@@ -20,10 +23,6 @@ api 相关参数::
     通过 --rpcaddr="0.0.0.0" 指定监听地址
     HTTP endpoint opened: http://0.0.0.0:8545
 
-.. option:: verbosity
-
-    --verbosity 日志输出级别控制
-    geth --verbosity 0 console
 
 --ipcdisable::
 
@@ -32,6 +31,47 @@ api 相关参数::
 --rpcport value::
 
     HTTP-RPC server listening port (default: 8545)
+
+--rpccorsdomain value::
+
+    Comma separated list of domains from which to accept cross origin requests (browser enforced)
+    Use --rpccorsdomain '*' to enable access from any origin.
+    $ geth --rpc --rpccorsdomain https://remix.ethereum.org
+
+Websocket
+=========
+
+启动 Websocket 端口::
+
+    geth --syncmode light --rpc --rpcaddr 0.0.0.0 --rpcapi web3,eth --ws --wsaddr 0.0.0.0 --wsapi web3,eth --wsorigins '*'
+
+    安装 websocket 测试工具 wscat
+    npm install -g wscat
+    测试 Websocket
+    wscat -c ws://127.0.0.1:8546
+
+--wsapi value::
+
+    API's offered over the WS-RPC interface
+    $ geth --ws --wsport 3334 --wsapi eth,net,web3
+
+
+--wsorigins value::
+
+    Origins from which to accept websockets requests
+    using --wsorigins '*' allows access from any origin
+    $ geth --ws --wsorigins http://myapp.example.com
+
+
+
+
+其他
+####
+
+.. option:: verbosity
+
+    --verbosity 日志输出级别控制
+    geth --verbosity 0 console
 
 --preload value::
 
@@ -43,14 +83,6 @@ api 相关参数::
 
     Execute JavaScript statement
 
-启动 Websocket 端口::
-
-    geth --syncmode light --rpc --rpcaddr 0.0.0.0 --rpcapi web3,eth --ws --wsaddr 0.0.0.0 --wsapi web3,eth --wsorigins '*'
-
-    安装 websocket 测试工具 wscat
-    npm install -g wscat
-    测试 Websocket
-    wscat -c ws://127.0.0.1:8546
 
 实例::
 

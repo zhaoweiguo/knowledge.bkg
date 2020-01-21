@@ -34,9 +34,15 @@ CI::
 D
 ----
 
-
+* DHT: Distributed Hash Table，分布式哈希表
 * DNS: Domain Name System 
 * DST: Daylight Saving Time(夏令时)
+
+E
+----
+
+* EIPs: Ethereum Improvement Proposals
+* EVM (Ethereum Virtual Machine) 
 
 G
 -----

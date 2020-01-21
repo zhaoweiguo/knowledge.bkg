@@ -88,6 +88,12 @@ Strider
     $ strider
 
 
+AppVeyor [12]_
+=================
+
+* 可以自动化构建Windows项目
+
+
 .. [1] https://travis-ci.com/
 .. [2] https://github.com/kubernetes/test-infra
 .. [3] https://codeship.com/
@@ -99,3 +105,4 @@ Strider
 .. [9] https://github.com/travis-ci/travis-ci
 .. [10] https://app.yinxiang.com/fx/20235d10-84e5-4f38-80a1-0c616c5d7192
 .. [11] https://app.yinxiang.com/fx/87d85dea-f7d2-4b6d-a55f-f01238c00dad
+.. [12] https://ci.appveyor.com/

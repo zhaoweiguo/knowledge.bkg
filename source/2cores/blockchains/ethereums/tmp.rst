@@ -80,7 +80,9 @@ bip44 = a specific format of a bip32 wallet
 区块链是一种分布式的账本，其去中心化的思想带给我们一种颠覆性的新技术。区块链系统优势明显，但其在诸如安全隐私、效率等方面的潜在问题也不可忽视。
 
 
+log entry for a single opcode looks like:
 
+.. literalinclude:: /files/blockchains/ethereums/logentry_for_single_opcode.json
 
 
 
