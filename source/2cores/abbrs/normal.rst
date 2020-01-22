@@ -4,7 +4,6 @@
 A
 ----
 
-* IETF: Internet Engineering Task Force
 * ANSI: American National Standards Institute
 
 B
@@ -17,19 +16,13 @@ B
 C
 ----
 
-CD::
+* CAP: Consistency Availability Partition-tolerance
+* CD: 持续部署（continuous deployment）
+* CE: 社区版(Community Edition), 如:Docker社区版（CE）,Docker企业版（EE）
+* CE: 持续探索(Continuous Exploration)
+* CI: 持续集成 (Continuous integration)
+* CSP: Communicating Sequential Processes
 
-    持续部署（continuous deployment）
-
-CE::
-
-    社区版(Community Edition):
-        Docker社区版（CE）,Docker企业版（EE）
-    持续探索(Continuous Exploration)
-
-CI::
-
-    持续集成 (Continuous integration)
 
 D
 ----
@@ -42,6 +35,8 @@ E
 ----
 
 * EIPs: Ethereum Improvement Proposals
+* ELK: Elasticsearch、Logstash、Kibana(https://www.elastic.co/cn/)
+* ETL: Extract-Transform-Load(大数据相关)
 * EVM (Ethereum Virtual Machine) 
 
 G
@@ -62,6 +57,7 @@ I
 ----
 
 * IEEE: Institute for Electrical and Electronics Engineers 
+* IETF: Internet Engineering Task Force
 * IP: Internet Protocol 
 * ISO: International Organization of Standardization 
 
@@ -101,6 +97,7 @@ P
 R
 ----
 
+* RDF: Resource Description Framework(资源描述框架)
 * RDBMS: Relational DataBase Management System
 * REST: Representational State Transfer
 * RFC: Request for Comments 

@@ -12,6 +12,7 @@
    monitors/prometheus
    monitors/zabbix
    monitors/nagios
+   monitors/kibana
 
 Tracing::
 

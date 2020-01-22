@@ -5,16 +5,16 @@ kubectl yaml文件
 .. toctree::
    :maxdepth: 3
 
-   k8s_yamls/Pod_yml
-   k8s_yamls/Deployment_yml
-   k8s_yamls/Job_yml
-   k8s_yamls/CronJob_yml
-   k8s_yamls/Secret_yml
-   k8s_yamls/Service_yml
-   k8s_yamls/Ingress_yml
-   k8s_yamls/PersistentVolume_yml
-   k8s_yamls/StatefulSet_yml
-   k8s_yamls/Role.yml
+   yamls/Pod_yml
+   yamls/Deployment_yml
+   yamls/Job_yml
+   yamls/CronJob_yml
+   yamls/Secret_yml
+   yamls/Service_yml
+   yamls/Ingress_yml
+   yamls/PersistentVolume_yml
+   yamls/StatefulSet_yml
+   yamls/Role.yml
 
 
 

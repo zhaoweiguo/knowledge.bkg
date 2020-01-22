@@ -7,11 +7,11 @@ kubectl命令
    :maxdepth: 1
    :caption: Basic Commands (Beginner)
 
-   k8s_cmds/0help
-   k8s_cmds/1create
-   k8s_cmds/1expose
-   k8s_cmds/1run
-..   k8s_cmds/1set
+   cmds/0help
+   cmds/1create
+   cmds/1expose
+   cmds/1run
+..   cmds/1set
 
 
 
@@ -19,10 +19,10 @@ kubectl命令
    :maxdepth: 1
    :caption: Basic Commands (Intermediate)
 
-   k8s_cmds/2explain
-   k8s_cmds/2get
-   k8s_cmds/2delete
-   k8s_cmds/2edit
+   cmds/2explain
+   cmds/2get
+   cmds/2delete
+   cmds/2edit
 
 
 
@@ -30,9 +30,9 @@ kubectl命令
    :maxdepth: 1
    :caption: Deploy Commands
 
-   k8s_cmds/3scale
-   k8s_cmds/3rollout
-..   k8s_cmds/3autoscale
+   cmds/3scale
+   cmds/3rollout
+..   cmds/3autoscale
 
 
 
@@ -41,13 +41,13 @@ kubectl命令
    :maxdepth: 1
    :caption: Cluster Management Commands
 
-   k8s_cmds/4cluster-info
-   k8s_cmds/4cordon
-   k8s_cmds/4drain
-..   k8s_cmds/4top
-   k8s_cmds/4certificate
-   k8s_cmds/4uncordon
-   k8s_cmds/4taint
+   cmds/4cluster-info
+   cmds/4cordon
+   cmds/4drain
+..   cmds/4top
+   cmds/4certificate
+   cmds/4uncordon
+   cmds/4taint
 
 
 
@@ -55,34 +55,34 @@ kubectl命令
    :maxdepth: 1
    :caption: Troubleshooting and Debugging Commands
 
-   k8s_cmds/5describe
-   k8s_cmds/5logs
-   k8s_cmds/5port-forward
-   k8s_cmds/5attach
-   k8s_cmds/5exec
-   k8s_cmds/5cp
-..   k8s_cmds/5proxy
-   k8s_cmds/5auth
+   cmds/5describe
+   cmds/5logs
+   cmds/5port-forward
+   cmds/5attach
+   cmds/5exec
+   cmds/5cp
+..   cmds/5proxy
+   cmds/5auth
 
 
 .. toctree::
    :maxdepth: 1
    :caption: Advanced Commands
 
-   k8s_cmds/6apply
-   k8s_cmds/6patch
-..   k8s_cmds/6replace
-   k8s_cmds/6wait
-   k8s_cmds/6convert
+   cmds/6apply
+   cmds/6patch
+..   cmds/6replace
+   cmds/6wait
+   cmds/6convert
 
 
 .. toctree::
    :maxdepth: 1
    :caption: Settings Commands
 
-   k8s_cmds/7label
-   k8s_cmds/7annotate
-..   k8s_cmds/7completion
+   cmds/7label
+   cmds/7annotate
+..   cmds/7completion
 
 
 
@@ -91,12 +91,12 @@ kubectl命令
    :maxdepth: 1
    :caption: Other Commands
 
-   k8s_cmds/8config
-   k8s_cmds/8api-versions
-   k8s_cmds/8version
-   k8s_cmds/8api-resources
-..   k8s_cmds/8alpha
-..   k8s_cmds/8plugin
+   cmds/8config
+   cmds/8api-versions
+   cmds/8version
+   cmds/8api-resources
+..   cmds/8alpha
+..   cmds/8plugin
 
 
 

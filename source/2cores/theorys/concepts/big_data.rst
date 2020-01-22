@@ -10,13 +10,10 @@
    big_datas/data_collection
    big_datas/data_warehouse
    big_datas/hadoop
-   big_datas/db_time_series
    big_datas/db_hdfs
    big_datas/fulltest_index
    big_datas/realtime_computer
-   big_datas/visualization
    big_datas/fulltest_index
-   big_datas/relationship
    big_datas/other
 
 

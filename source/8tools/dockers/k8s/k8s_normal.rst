@@ -8,11 +8,12 @@ kube基本
 .. toctree::
    :maxdepth: 1
 
-   k8s_normals/jsonpath
-   k8s_normals/volume
-   k8s_normals/concept
-   k8s_normals/cluster_testing
-   k8s_normals/install_kubectl
+   normals/jsonpath
+   normals/volume
+   normals/concept
+   normals/cluster_testing
+   normals/install_kubectl
+   normals/introduce
 
 
 k8s的一个目标是设计功能来帮助应用完全感觉不到k8s的存在，因此让应用民api服务器通信的设计是不允许的
