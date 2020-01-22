@@ -27,5 +27,5 @@ Contents:
    nginxs/nginx_example
    nginxs/nginx_src
    nginxs/nginx_addon
-
+   nginxs/openresty
 

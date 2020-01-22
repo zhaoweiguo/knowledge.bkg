@@ -5,10 +5,10 @@
 .. toctree::
    :maxdepth: 1
 
-   theorys/cap
-   theorys/csp
-   theorys/rdf
-
+   theorys/normal
+   theorys/cognitive
+   theorys/algorithm
+   theorys/concept
 
 
 

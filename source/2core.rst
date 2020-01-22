@@ -11,16 +11,13 @@
    :maxdepth: 1
 
    2cores/theory
-   2cores/cognitive
    2cores/blockchain
-   2cores/algorithm
    2cores/ai
    2cores/protocol
    2cores/encoding
    2cores/time_zone
    2cores/architecture
    2cores/encrypt
-   2cores/concept
    2cores/chart
    2cores/rfc
    2cores/regexp
