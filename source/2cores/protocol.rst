@@ -28,6 +28,7 @@
    protocols/qos
    protocols/jwt
    protocols/rpc
+   protocols/protocol_buffer
    protocols/thrift
    protocols/other
 

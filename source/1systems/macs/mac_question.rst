@@ -53,6 +53,7 @@ dyld: Library not loaded::
 
     直接brew reinstall xxx解决
 
+.. _mac_chrome_question:
 
 chrome相关
 ==========
