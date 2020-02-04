@@ -22,7 +22,6 @@
    2cores/chart
    2cores/rfc
    2cores/regexp
-   2cores/abbr
    2cores/tmp
 
 
