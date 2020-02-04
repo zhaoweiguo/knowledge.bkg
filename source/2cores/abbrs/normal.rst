@@ -4,11 +4,14 @@
 A
 ----
 
+* AAA(protocol): Authentication, Authorization and Accounting
+* ADT: Android Development Tools
 * ANSI: American National Standards Institute
 
 B
 ----
 
+* BI: Business Intelligence
 * BSD: Berkeley Software Distribution (加州柏克莱大学)
 
 
@@ -97,6 +100,7 @@ P
 R
 ----
 
+* RBAC: Role-based access control
 * RDF: Resource Description Framework(资源描述框架)
 * RDBMS: Relational DataBase Management System
 * REST: Representational State Transfer

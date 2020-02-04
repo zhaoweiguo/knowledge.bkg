@@ -78,6 +78,10 @@ services::
     # 查看指定services
     $> kubectl get svc <serviceName> -o yaml
 
+    # 查询入口网关服务的 IP 地址
+    kubectl get service serviceName -n default -o jsonpath="{.status.loadBalancer.ingress[*].ip}"
+
+
 node::
 
     kubectl get nodes -l labelkey1=labelvalue1

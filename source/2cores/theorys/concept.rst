@@ -12,7 +12,6 @@
    concepts/ai
    concepts/learning_theory
    concepts/soft
-   concepts/monitor
    concepts/tmp
 
 

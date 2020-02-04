@@ -3,8 +3,6 @@
 
 
 * CSRG: Computer Systems Research Group 
-* AAA(protocol): Authentication, Authorization and Accounting
-* ADT: Android Development Tools
 * FSF——Free Software Foundation
 * GE:奇异公司
 * IAB: Internet Architecture Board

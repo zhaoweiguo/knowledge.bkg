@@ -4,9 +4,9 @@
 .. toctree::
    :maxdepth: 1
 
-   theorys/cap
-   theorys/csp
-   theorys/rdf
+   normals/cap
+   normals/csp
+   normals/rdf
 
 
 

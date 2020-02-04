@@ -5,16 +5,19 @@ ali开放平台
 .. toctree::
    :maxdepth: 1
 
-   alis/ali_log
-   alis/ali_iot
-   alis/ali_slb
-   alis/ali_tsdb
-   alis/ali_yundun
-   alis/ali_vpc
-   alis/ali_ram
+   alis/log
+   alis/iot
+   alis/slb
+   alis/tsdb
+   alis/asm
+   alis/vpc
+   alis/ram
+   alis/vpn
+   alis/ess
+   alis/ros
    alis/kubernete
+   alis/ali_yundun
    alis/ali_email
-   alis/ali_vpn
    alis/ali_bastionHost
    alis/other
 

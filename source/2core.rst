@@ -13,6 +13,7 @@
    2cores/theory
    2cores/blockchain
    2cores/ai
+   2cores/bi
    2cores/protocol
    2cores/encoding
    2cores/time_zone

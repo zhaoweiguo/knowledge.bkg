@@ -13,6 +13,7 @@
    monitors/zabbix
    monitors/nagios
    monitors/kibana
+   monitors/other
 
 Tracing::
 

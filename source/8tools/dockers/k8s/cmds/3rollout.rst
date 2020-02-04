@@ -12,6 +12,7 @@ Available Commands::
     resume      Resume a paused resource
     status      Show the status of the rollout
     undo        Undo a previous rollout
+    [新]restart     v1.15版本才有
 
 Examples::
 
@@ -37,6 +38,9 @@ Examples::
     $> kubectl rollout resume deploy/nginx-deployment 
 
 
+    // 重新启动 Deployment:
+    注: v1.15版新增的restart子命令
+    $ kubectl rollout restart deployment -n NAMESPACE
 
 
 

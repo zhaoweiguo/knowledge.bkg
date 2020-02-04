@@ -41,6 +41,10 @@ Examples::
     kubectl label pods foo bar-
 
 
+    // 为名为default的ns添加标签
+    $ kubectl label namespace default istio-injection=enabled
+
+
 
 
 
