@@ -7,5 +7,6 @@
 
    laws/murphy'slaw
    laws/conway'slaw
+   laws/dunbar'snumber
 
 
