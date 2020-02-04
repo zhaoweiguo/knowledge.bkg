@@ -9,6 +9,10 @@ Dunbar Number
     150 casual friends
 
 
+Dunbar’s Number::
+
+    A measurement of the “cognitive limit to the number of individuals with whom 
+        any one person can maintain stable relationships.
 
 
 

@@ -16,11 +16,24 @@
 
 * 康威定律被视为微服务架构的理论基础
 
-康威4大定律
-===========
+
+
+
+
+康威4大定律(1967)
+=================
 
 Law 1::
 
+    ->
+    Any organization that designs a system (defined more broadly here than just information systems)
+      will inevitably produce a design whose structure is a copy of 
+        the organization's communication structure.
+    
+    ->
+    A system’s design is a copy of the organization’s communication structure.
+
+    ->
     Communication dictates design
     o> The mode of organizational communication is expressed through system design
 
@@ -29,17 +42,47 @@ Law 2::
     There is never enough time to do something right, but there is always enough time to do it over
     o> A task can never be done perfectly, even with unlimited time, but there is always time to complete a task
 
+    Satisficing v. Sacrificing  -- Eric Hollnagel, 2009
+    -> Satisficing is explained as a consequence of limited cognitive capacity. 
+    -> Sacrificing is explained as a consequence of the intractability of the work environment
+    1. Problem too complicated? Ignore details.
+    2. Not enough resources? Give up features.
+    Increasing Intractability
+    1. Systems grow too large 
+    2. Rate of change increases 
+    3. Overall expectations keep rising
+
+
 Law 3::
 
     There is a homomorphism from the linear graph of a system to the linear graph of its design organization
     o> Homomorphism exists between linear systems and linear organizational structures
+
+    homomorphism    - Eric S. Raymond, 1991
+    “If you have four groups working on a compiler, you'll get a 4-pass compiler.”
 
 Law 4::
 
     The structures of large systems tend to disintegrate during development, qualitatively more so than small systems
     o> A large system organization is easier to decompose than a smaller one
 
+    Disintegration: Reason #1
+    “The realization that the system will be large, together with organization pressures, 
+        make irresistible the temptation to assign too many people to a design effort”
+    Brooks’ Law:
+    Adding manpower to a late software project makes it later   -- Fred Brooks, 1975
+    Intercommunication formula: n(n − 1) / 2
 
+    Disintegration: Reason #2
+    Application of the conventional wisdom of management to a large design organization 
+        causes its communication structure to disintegrate.
+    Dunbar’s Number   -- Robin Dunbar, 1992
+    A measurement of the “cognitive limit to the number of individuals with whom 
+        any one person can maintain stable relationships.
+
+    Disintegration: Reason #3
+    “Homomorphism insures that the structure of the system will 
+        reflect the disintegration which has occurred in the design organization.”
 
 
 参考
