@@ -8,6 +8,7 @@
    kns/abbr
    kns/concept
    kns/author
+   kns/keyword
 
 
 

@@ -47,10 +47,15 @@ Law 2::
     -> Sacrificing is explained as a consequence of the intractability of the work environment
     1. Problem too complicated? Ignore details.
     2. Not enough resources? Give up features.
+
     Increasing Intractability
     1. Systems grow too large 
     2. Rate of change increases 
     3. Overall expectations keep rising
+    系统的复杂性、功能数量、市场竞争以及投资人的期望值都在增加，而人的智力是有上限的，没有企业能说一定能找到合适的人，
+        对于一个极其复杂的系统，总会有考虑不周全的地方，Erik认为这个问题最好的解决办法就是：不去管它。
+
+    持续集成和敏捷开发
 
 
 Law 3::
@@ -92,11 +97,13 @@ Law 4::
 2. `【论文】Conway's Law <https://app.yinxiang.com/fx/1d4a3db5-5221-46bf-9fbf-8e2d8805b2c8>`_
 3. `【云栖芷沁】Conway's Law – A Theoretical Basis for the Microservice Architecture <https://app.yinxiang.com/fx/5bfa6baa-8383-4aa6-881e-4564900014f4>`_
 4. `【ppt】Conway's Law at a Distance <https://app.yinxiang.com/fx/b6ed51d1-0280-4005-b75c-953003537d98>`_
-  
+5. ` 【segmentfault】康威定律——这个50年前就被提出的微服务概念，你知多少 <https://app.yinxiang.com/fx/5dd09498-35b0-4f60-9a55-ecb1e587bb45>`_
+
 说明::
 
     1. 康威定律的wiki定义
     2. 康威定律出现的论文
     3. 云栖芷沁对4中ppt内容的介绍并在最后论证了与「微服务」的相似点
     4. Mike Amundsen(Author of 「Design RESTful API」)讲解的ppt，并总结出康威4大定律
+    5. 是3的中文翻译版，用作参考
 
