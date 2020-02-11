@@ -3,7 +3,14 @@
 grep使用方法
 ==================
 
-grep <字符串>|”<正则表达式>” [文件名]
+
+::
+
+    grep <字符串>|”<正则表达式>” [文件名]
+
+    -o, --only-matching
+      Prints only the matching part of the lines.
+
 
 * 查找对应目录下的所有文件(包括子目录)中的内容::
 
@@ -28,6 +35,14 @@ grep <字符串>|”<正则表达式>” [文件名]
 
     // 查询以"Aug 17"开头的内容
     grep "Aug 17.*" <file>
+
+    $ curl www.zhaoweiguo.com/productpage | grep -o "<title>.*</title>"
+    <title>Simple Bookstore App</title>
+
+
+
+
+
 
 
 

@@ -5,8 +5,9 @@
 .. toctree::
    :maxdepth: 2
 
-   fanqiangs/vpn
-   fanqiangs/ngrok
+   vpns/normal
+   vpns/fanqiang
+   vpns/ngrok
 
 
 

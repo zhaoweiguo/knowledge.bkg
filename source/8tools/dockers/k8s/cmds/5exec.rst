@@ -10,7 +10,7 @@ Usage::
 
     
     POD_NAMESPACE=ingress-nginx
-    POD_NAME=$(kubectl get pods -n $POD_NAMESPACE -l app.kubernetes.io/name=ingress-nginx -o jsonpath='{.items[0].metadata.name}')
+    POD_NAME=$(kubectl get pods -n $POD_NAMESPACE -l app=ratings -o jsonpath='{.items[0].metadata.name}')
     $> kubectl exec -it $POD_NAME -n $POD_NAMESPACE -- /nginx-ingress-controller --version
 
     # 注: 双横杠(--)代表kubectl命令项的结束
@@ -21,6 +21,9 @@ Usage::
       在kubectl中-s选项用来告诉kubectl需要连接一个不同的api服务器(不使用默认的)
       上面请求会报不能连接到位于10.10.10.10的服务器
 
+    // 另一个相同的用法:
+    $ kubectl exec -it $(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}') -c ratings -- curl productpage:9080/productpage | grep -o "<title>.*</title>"
+    <title>Simple Bookstore App</title>
 
 
 

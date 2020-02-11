@@ -255,6 +255,11 @@ P2P
 * updating terminal output in realtime: https://github.com/gosuri/uilive
 * Go CGO cross compiler: https://github.com/karalabe/xgo
 * A JavaScript interpreter in Go: https://github.com/robertkrimen/otto
+  
+开源项目收集
+------------
+
+* A curated list of awesome Go frameworks, libraries and software: https://github.com/avelino/awesome-go
 
 参考
 ----

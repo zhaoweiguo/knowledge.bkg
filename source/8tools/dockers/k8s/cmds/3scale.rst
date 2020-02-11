@@ -18,7 +18,9 @@ Usage::
     kubectl scale --replicas=3 -f foo.yaml
 
     # If the deployment named mysql's current size is 2, scale mysql to 3.
-    kubectl scale --current-replicas=2 --replicas=3 deployment/mysql
+    $ kubectl scale --current-replicas=2 --replicas=3 deployment/mysql
+    # 直接scale到2
+    $ kubectl scale --replicas=2 deployment webapp-deployment
 
     # Scale multiple replication controllers.
     kubectl scale --replicas=5 rc/foo rc/bar rc/baz

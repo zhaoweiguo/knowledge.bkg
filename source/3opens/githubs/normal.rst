@@ -1,6 +1,11 @@
 基本
 ####
 
+高Rank的项目
+============
+
+https://gitstar-ranking.com/
+
 Showcases
 =========
 
@@ -60,4 +65,4 @@ webhook
 ====
 
 * https://www.flysnow.org/2017/01/15/github-community.html
-
+* https://developer.github.com/

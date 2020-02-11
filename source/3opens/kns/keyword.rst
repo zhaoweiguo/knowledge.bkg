@@ -15,3 +15,12 @@ Service Mesh
 
 
 
+canary
+======
+
+金丝雀
+
+blue-green, canary, and rolling deployments
+blue/green deployment
+fault injections, circuit breaking, and canary deployments
+

@@ -45,6 +45,29 @@ create命令::
     $ docker network create -d bridge my-net
     -d 参数指定 Docker 网络类型，有 bridge overlay
 
+inspect命令::
+
+    $ docker network inspect bridge
+    [{
+        "Name": "bridge",
+        "Id": "93196df71406f690bf83ba65d7556 a4ba9fae676b828e578c53832f8b59608ef",
+        "Created": "2019-05-30T07:42:54.43279813+05:30", 
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default", 
+            "Options": null, 
+            "Config": [{
+                "Subnet": "172.17.0.0/16", 
+                "Gateway": "172.17.0.1"
+            }]
+        },
+                        // Removed for Brevity
+    }]
+
+
+
 
 
 

@@ -20,7 +20,7 @@
    8tools/monitor
    8tools/sphinx
    8tools/jumpserver
-   8tools/fanqiang
+   8tools/vpn
    8tools/tool_tmp
 
 

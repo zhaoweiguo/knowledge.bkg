@@ -10,7 +10,8 @@ Usage::
 
     kubectl port-forward <podName> 80:8080
 
-
+    // 把此pod下的5000端口映射到本地
+    $ kubectl port-forward webapp-deployment-7946f7db77-gtsbg 5000:5000
 
 
 
