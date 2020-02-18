@@ -12,6 +12,7 @@ k8s相关
    k8s/k8s_yaml
    k8s/k8s_practice
    k8s/k8s_future
+   k8s/minikube
    k8s/kustomize
    k8s/kubedog
 

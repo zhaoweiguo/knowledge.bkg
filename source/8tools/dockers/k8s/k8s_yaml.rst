@@ -15,6 +15,11 @@ kubectl yaml文件
    yamls/PersistentVolume_yml
    yamls/StatefulSet_yml
    yamls/Role.yml
+   yamls/NetworkPolicy.yaml
+   yamls/PodSecurityPolicy_yml
+   yamls/securityContext
+   yamls/hostNetwork
+   yamls/hostPort
 
 
 

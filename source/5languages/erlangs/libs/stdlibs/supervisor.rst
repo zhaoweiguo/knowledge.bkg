@@ -1,4 +1,4 @@
-supervisor模块
+supervisor模块 [2]_
 ########################
 
 start_link
@@ -97,7 +97,7 @@ start_child
 
 实例::
 
-    % supervisor:
+    % supervisor版:
     init([]) ->
         {ok,{{simple_one_for_one, 0, 1},
              [{demo_gun_hubsock,
@@ -107,15 +107,20 @@ start_child
               worker,
               [demo_gun_hubsock]}]}}.
 
+    % start_child版:
+    Args = {demo_gun_hubsock,
+        {demo_gun_hubsock, start_link, [[]]},
+        temporary, brutal_kill, worker, [demo_gun_hubsock]}
     start_child(Args) ->
         supervisor:start_child(demo_gun_hubsock_sup, Args).
     
-    or =>
+    %or =>
     ChildSpecs = [#{
         id => demo_gun_hubsock,
         start => {demo_gun_hubsock, start_link, []},
         shutdown => brutal_kill
-    }]
+    }],
+    supervisor:start_child(demo_gun_hubsock_sup, ChildSpecs).
 
 
 
@@ -296,5 +301,4 @@ simple_one_for_one实例::
 
 
 .. [1] http://erlang.org/doc/design_principles/sup_princ.html
-
-
+.. [2] http://erlang.org/doc/man/supervisor.html

@@ -97,6 +97,11 @@ P
 * POSIX: Portable Operating System Interface 
 * Pull Request (PR)
 
+Q
+----
+
+* QoS: Quality of Service
+
 R
 ----
 

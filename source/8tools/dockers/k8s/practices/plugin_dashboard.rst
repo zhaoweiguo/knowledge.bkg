@@ -66,7 +66,7 @@ token获取方法:
 
 .. [2] dashboard文件内容:
 
-.. literalinclude:: /files/kube_yamls/dashboard.yaml
+.. literalinclude:: /files/k8s/yamls/dashboard.yaml
    :language: yaml
    :linenos:
 

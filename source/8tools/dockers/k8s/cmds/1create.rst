@@ -30,8 +30,8 @@ Usage::
         --from-file=ssh=$HOME/.ssh/id_rsa \
         --from-file=known_hosts=/tmp/known_hosts
 
-
-
+    // 创建clusterrolebinding绑定clusterrole与sa(foo:default)
+    $ kubectl create clusterrolebinding pv-test --clusterrole=pv-reader --serviceaccount=foo:default
 
 Available Commands::
 

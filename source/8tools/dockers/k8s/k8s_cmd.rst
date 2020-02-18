@@ -61,8 +61,8 @@ kubectl命令
    cmds/5attach
    cmds/5exec
    cmds/5cp
-..   cmds/5proxy
-   cmds/5auth
+   cmds/5proxy
+..   cmds/5auth
 
 
 .. toctree::
