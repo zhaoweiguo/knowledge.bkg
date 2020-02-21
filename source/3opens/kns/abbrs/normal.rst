@@ -88,6 +88,7 @@ N
 O
 ----
 
+* OOM: OutOfMemory
 * OOP: Object Oriented Programming)，面向对象程序设计
 * OSI: Open Systems Interconnection 
 

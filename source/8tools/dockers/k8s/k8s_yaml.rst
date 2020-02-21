@@ -17,9 +17,12 @@ kubectl yaml文件
    yamls/Role.yml
    yamls/NetworkPolicy.yaml
    yamls/PodSecurityPolicy_yml
-   yamls/securityContext
-   yamls/hostNetwork
-   yamls/hostPort
+   yamls/LimitRange_yml
+   yamls/ResourceQuota_yml
+   yamls/option_securityContext
+   yamls/option_hostNetwork
+   yamls/option_hostPort
+   yamls/option_lifecycle
 
 
 

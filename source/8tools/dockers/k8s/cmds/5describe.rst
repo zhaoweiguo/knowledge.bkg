@@ -10,6 +10,7 @@ Usage::
 
 实例::
 
+    $> kubectl describe node    // 查看全部node
     $> kubectl describe node <nodeName>
     $> kubectl describe pod <podName>
     $> kubectl describe svc <svcName>

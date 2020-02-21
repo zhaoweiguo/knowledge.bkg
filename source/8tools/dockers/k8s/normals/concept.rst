@@ -53,7 +53,7 @@ restartPolicy::
     1. Never      # 容器启动后未成功就会一直创建新的容器
     2. OnFailure  # 容器启动后未成功不会在创建新的容器，他会一直重启(容器终止运行且退出码不为0时重启)
     3. Always     # 容器失效时，kubelet 自动重启该容器
-
+    注: 一般启动失败会不断重启，重启间隔会逐渐加大，最大间隔是5分钟
 
 persistentVolumeReclaimPolicy::
 

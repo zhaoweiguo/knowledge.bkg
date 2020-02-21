@@ -22,6 +22,36 @@ maps模块
     maps:find(Key,Map).
   {ok,42}
 
+.. function:: fold/3
+
+::
+
+    注: OTP 17.0增加
+    fold(Fun, Init, MapOrIter) -> Acc
+    类型:
+    Fun = fun((Key, Value, AccIn) -> AccOut)
+    Init = term()
+    Acc = AccOut
+    AccIn = Init | AccOut
+    MapOrIter = #{Key => Value} | iterator(Key, Value)
+
+实例::
+
+    Map = #{<<"25">> => <<"11111">>,
+              <<"code">> => <<"scene_data_v2">>,
+              <<"t">> => 1582010130302,
+              <<"value">> => <<"Gordon">>
+              }.
+    Fun = fun(Key, Value, AccIn) ->
+                  io:format("Key=~p, Value=~p~n", [Key, Value]),
+                  [{Key, Value}] ++ AccIn
+               end.
+    Init = [].
+    maps:fold(Fun, Init, Map).
+    [{<<"value">>,<<"Gordon">>},
+     {<<"t">>,1582010130302},
+     {<<"code">>,<<"scene_data_v2">>},
+     {<<"25">>,<<"11111">>}]
 
 .. function:: from_list/1
 

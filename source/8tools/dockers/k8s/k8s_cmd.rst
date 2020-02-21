@@ -1,6 +1,9 @@
 kubectl命令
 ###################
 
+发音::
+
+   kube control、kube cuttle、kube c-t-l
 
 
 .. toctree::
@@ -44,8 +47,8 @@ kubectl命令
    cmds/4cluster-info
    cmds/4cordon
    cmds/4drain
-..   cmds/4top
-   cmds/4certificate
+   cmds/4top
+..   cmds/4certificate
    cmds/4uncordon
    cmds/4taint
 
