@@ -6,13 +6,13 @@ Defining custom API objects
 
 创建CustomResourceDefinition类型websites:
 
-.. literalinclude:: ./files/CustomResourceDefinition.yaml
+.. literalinclude:: /files/k8s/yamls/CustomResourceDefinition.yaml
    :language: yaml
 
 
 使用新的CRD创建websites实例:
 
-.. literalinclude:: ./files/CustomResourceDefinition_usage.yaml
+.. literalinclude:: /files/k8s/yamls/CustomResourceDefinition_usage.yaml
    :language: yaml
 
 查看::
@@ -34,7 +34,7 @@ Defining custom API objects
     $ kubectl create clusterrolebinding website-controller --clusterrole=cluster-admin --serviceaccount=default:website-controller
 
 
-.. literalinclude:: ./files/usage_kubeproxy.yaml
+.. literalinclude:: /files/k8s/yamls/usage_kubeproxy.yaml
    :language: yaml
 
 注: 这儿的image(luksa/website-controller)来自项目 [1]_
