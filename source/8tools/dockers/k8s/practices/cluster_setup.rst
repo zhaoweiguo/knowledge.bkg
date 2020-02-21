@@ -495,14 +495,14 @@ $> kubeadm init::
 
 .. [附录1] Weave Net资源文件net.yml:
 
-.. literalinclude:: ./files/net_Weave.yml
+.. literalinclude:: /files/k8s/practices/net_Weave.yml
 
 
 .. [附录2] Flannel资源文件net_kube-flannel-rbac.yml和net_kube-flannel-rbac.yml:
 
-.. literalinclude:: ./files/net_kube-flannel.yml
+.. literalinclude:: /files/k8s/practices/net_kube-flannel.yml
 
-.. literalinclude:: ./files/net_kube-flannel-rbac.yml
+.. literalinclude:: /files/k8s/practices/net_kube-flannel-rbac.yml
 
 
 .. [1] https://blog.csdn.net/u013171997/article/details/93607025

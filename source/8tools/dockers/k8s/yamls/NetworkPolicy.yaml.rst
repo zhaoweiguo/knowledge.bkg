@@ -6,7 +6,7 @@ Enabling network isolation in a namespace
 
 默认拒绝
 
-.. literalinclude:: ./files/NetworkPolicy_default_deny.yaml
+.. literalinclude:: /files/k8s/yamls/NetworkPolicy_default_deny.yaml
    :language: yaml
 
 Allowing only some pods in the namespace to connect to a server pod
@@ -14,7 +14,7 @@ Allowing only some pods in the namespace to connect to a server pod
 
 podSelector指定lable可连接:The NetworkPolicy allows pods with the app=webserver label to connect to pods with the app=database label, and only on port 5432。
 
-.. literalinclude:: ./files/NetworkPolicy_pod.yaml
+.. literalinclude:: /files/k8s/yamls/NetworkPolicy_pod.yaml
    :language: yaml
 
 
@@ -26,7 +26,7 @@ Isolating the network between Kubernetes namespaces
 namespaceSelector指定lable可连接，This NetworkPolicy ensures only pods running in namespaces labeled as tenant:
 manning can access their Shopping Cart microservice
 
-.. literalinclude:: ./files/NetworkPolicy_namespace.yaml
+.. literalinclude:: /files/k8s/yamls/NetworkPolicy_namespace.yaml
    :language: yaml
 
 .. image:: /images/k8s/networkpolicy_namespace.png

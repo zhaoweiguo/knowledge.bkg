@@ -4,14 +4,14 @@ PersistentVolume
 被声明前:
 ============
 
-.. literalinclude:: ./files/PersistentVolume0.yml
+.. literalinclude:: /files/k8s/yamls/PersistentVolume0.yml
    :language: yaml
 
 
 被声明后:
 ==============
 
-.. literalinclude:: ./files/PersistentVolume1.yml
+.. literalinclude:: /files/k8s/yamls/PersistentVolume1.yml
    :language: yaml
 
 

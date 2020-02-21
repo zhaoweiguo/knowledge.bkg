@@ -19,6 +19,7 @@ kubectl yaml文件
    yamls/PodSecurityPolicy_yml
    yamls/LimitRange_yml
    yamls/ResourceQuota_yml
+   yamls/ServiceAccount_yaml
    yamls/CustomResourceDefinition_yaml
    yamls/option_securityContext
    yamls/option_hostNetwork

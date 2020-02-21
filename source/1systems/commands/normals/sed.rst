@@ -190,6 +190,9 @@ linux专用实例
         sed -i -E "$rule" ${files[*]}
     done
 
+把指定文件夹./files下的 ``./files`` 替换为 ``/files/k8s/yamls`` ::
+
+    $ sed -i -e "s/\.\/files/\/files\/k8s\/yamls/g" `grep -rl "./files" .`
 
 
 

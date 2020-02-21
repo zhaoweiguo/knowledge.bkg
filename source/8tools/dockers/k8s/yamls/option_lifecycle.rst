@@ -8,14 +8,14 @@ postStart
 
 在container启动时执行，不是container启动前执行，没有先后顺序。
 
-.. literalinclude:: ./files/option_lifecycle_postStart.yaml
+.. literalinclude:: /files/k8s/yamls/option_lifecycle_postStart.yaml
    :language: yaml
 
 
 preStop
 =======
 
-.. literalinclude:: ./files/option_lifecycle_preStop.yaml
+.. literalinclude:: /files/k8s/yamls/option_lifecycle_preStop.yaml
    :language: yaml
 
 Pod停止前相关事件::

@@ -5,7 +5,7 @@ ServiceAccount.yaml
 
 
 
-.. literalinclude:: ./files/ServiceAccount.yaml
+.. literalinclude:: /files/k8s/yamls/ServiceAccount.yaml
    :language: yaml
 
 创建sa和clusterrolebinding::

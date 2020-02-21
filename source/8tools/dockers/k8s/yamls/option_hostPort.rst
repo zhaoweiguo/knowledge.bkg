@@ -13,7 +13,7 @@ hostPort选项
 
 下面这个实例, 展示了可以使用8080端口访问指定Node的此服务，也可以使用9000端口访问随机Node上的此服务。
 
-.. literalinclude:: ./files/option_hostPort.yaml
+.. literalinclude:: /files/k8s/yamls/option_hostPort.yaml
    :language: yaml
 
 

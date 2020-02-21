@@ -5,7 +5,7 @@ hostNetwork选项
 
 
 
-.. literalinclude:: ./files/option_hostNetwork.yaml
+.. literalinclude:: /files/k8s/yamls/option_hostNetwork.yaml
    :language: yaml
 
 
@@ -32,7 +32,7 @@ hostNetwork选项
 hostPID
 =======
 
-.. literalinclude:: ./files/option_hostPID.yaml
+.. literalinclude:: /files/k8s/yamls/option_hostPID.yaml
    :language: yaml
 
 使用hostPID则可以在pod上查看到host上的进程,而使用hostIPC则可以与host上的其他进程进行Inter-Process Communication::

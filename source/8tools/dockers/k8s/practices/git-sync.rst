@@ -71,7 +71,7 @@ Step 3: Configure git-sync container
 最后:完整实例
 --------------------
 
-.. literalinclude:: ./files/git-sync.yaml
+.. literalinclude:: /files/k8s/practices/git-sync.yaml
    :language: yaml
 
 

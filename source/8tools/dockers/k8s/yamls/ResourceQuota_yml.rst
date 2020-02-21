@@ -5,7 +5,7 @@ ResourceQuota.yaml
 
 
 
-.. literalinclude:: ./files/ResourceQuota.yaml
+.. literalinclude:: /files/k8s/yamls/ResourceQuota.yaml
    :language: yaml
 
 

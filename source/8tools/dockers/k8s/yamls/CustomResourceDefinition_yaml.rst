@@ -3,7 +3,7 @@ CustomResourceDefinition.yaml
 
 
 
-.. literalinclude:: ./files/CustomResourceDefinition.yaml
+.. literalinclude:: /files/k8s/yamls/CustomResourceDefinition.yaml
    :language: yaml
 
 
@@ -11,7 +11,7 @@ CustomResourceDefinition.yaml
 用法
 ====
 
-.. literalinclude:: ./files/CustomResourceDefinition_usage.yaml
+.. literalinclude:: /files/k8s/yamls/CustomResourceDefinition_usage.yaml
    :language: yaml
 
 

@@ -7,7 +7,7 @@ StatefulSet部署::
     2. 必需的一个控制Service
     3. StatefulSet本身
 
-.. literalinclude:: ./files/StatefulSet1.yml
+.. literalinclude:: /files/k8s/yamls/StatefulSet1.yml
    :language: yaml
 
 

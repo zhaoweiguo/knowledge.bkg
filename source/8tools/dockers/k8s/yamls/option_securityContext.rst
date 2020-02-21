@@ -6,7 +6,7 @@ securityContext选项
 Running a container as a specific user
 ======================================
 
-.. literalinclude:: ./files/option_securityContext_runAsUser.yaml
+.. literalinclude:: /files/k8s/yamls/option_securityContext_runAsUser.yaml
    :language: yaml
 
 使用::
@@ -18,7 +18,7 @@ Running a container as a specific user
 Preventing a container from running as root
 ===========================================
 
-.. literalinclude:: ./files/option_securityContext_runAsNonRoot.yaml
+.. literalinclude:: /files/k8s/yamls/option_securityContext_runAsNonRoot.yaml
    :language: yaml
 
 如果使用root用户就会报错::
@@ -30,7 +30,7 @@ Preventing a container from running as root
 Running pods in privileged mode
 ===============================
 
-.. literalinclude:: ./files/option_securityContext_privileged.yaml
+.. literalinclude:: /files/k8s/yamls/option_securityContext_privileged.yaml
    :language: yaml
 
 List of available devices in a non-privileged pod::
@@ -61,7 +61,7 @@ List of available devices in a privileged pod::
 Adding individual kernel capabilities to a container
 ====================================================
 
-.. literalinclude:: ./files/option_securityContext_capabilities.yaml
+.. literalinclude:: /files/k8s/yamls/option_securityContext_capabilities.yaml
    :language: yaml
 
 默认不是修改时间::
@@ -77,7 +77,7 @@ Adding individual kernel capabilities to a container
 Dropping capabilities from a container
 ======================================
 
-.. literalinclude:: ./files/option_securityContext_capabilities2.yaml
+.. literalinclude:: /files/k8s/yamls/option_securityContext_capabilities2.yaml
    :language: yaml
 
 默认有修改文件所有者的权限::
@@ -94,7 +94,7 @@ Dropping capabilities from a container
 Preventing processes from writing to the container’s filesystem
 ===============================================================
 
-.. literalinclude:: ./files/option_securityContext_fileSystem.yaml
+.. literalinclude:: /files/k8s/yamls/option_securityContext_fileSystem.yaml
    :language: yaml
 
 增加配置「readOnlyRootFilesystem」后::
