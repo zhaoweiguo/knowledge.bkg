@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1beta1    # extensions是API group, v1beta1是version
 kind: Deployment
 metadata:
   name: oneserver-deployment

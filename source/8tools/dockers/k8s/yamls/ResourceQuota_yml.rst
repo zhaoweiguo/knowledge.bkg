@@ -1,3 +1,5 @@
+.. _ResourceQuota_yaml:
+
 ResourceQuota.yaml
 ##################
 

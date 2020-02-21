@@ -10,6 +10,7 @@ k8s实战
    practices/cluster_node_upgrade
    practices/plugin_dashboard
    practices/plugin_ingress
+   practices/custom_API_objects
    practices/git-sync
    practices/secret_dockerpull
 
