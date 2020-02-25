@@ -7,11 +7,11 @@ k8s相关
 .. toctree::
    :maxdepth: 2
 
-   k8s/k8s_normal
-   k8s/k8s_cmd
-   k8s/k8s_yaml
-   k8s/k8s_practice
-   k8s/k8s_future
+   k8s/normal
+   k8s/cmd
+   k8s/yaml
+   k8s/practice
+   k8s/future
    k8s/minikube
    k8s/kustomize
    k8s/kubedog

@@ -21,6 +21,7 @@ kubectl yaml文件
    yamls/ResourceQuota_yml
    yamls/ServiceAccount_yaml
    yamls/CustomResourceDefinition_yaml
+   yamls/StorageClasses_yaml
    yamls/option_securityContext
    yamls/option_hostNetwork
    yamls/option_hostPort

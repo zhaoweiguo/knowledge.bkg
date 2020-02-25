@@ -6,6 +6,7 @@
    :maxdepth: 1
 
    3opens/ali
+   3opens/aws
    3opens/github
    3opens/foundation
    3opens/openlicense
