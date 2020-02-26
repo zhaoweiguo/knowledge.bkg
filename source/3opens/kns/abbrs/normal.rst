@@ -6,6 +6,7 @@ A
 
 * AAA(protocol): Authentication, Authorization and Accounting
 * ADT: Android Development Tools
+* AI: Artificial Intelligence
 * ANSI: American National Standards Institute
 
 B
@@ -40,6 +41,7 @@ E
 * EIPs: Ethereum Improvement Proposals
 * ELK: Elasticsearch、Logstash、Kibana(https://www.elastic.co/cn/)
 * ETL: Extract-Transform-Load(大数据相关)
+* ES: Expert System(专家系统,人工智能相关领域)
 * EVM (Ethereum Virtual Machine) 
 
 G

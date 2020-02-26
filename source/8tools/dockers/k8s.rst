@@ -16,6 +16,8 @@ k8s相关
    k8s/kustomize
    k8s/kubedog
 
+* 阳明的博客: https://www.qikqiak.com/
+
 
 .. [1] https://kubernetes.io/zh/
 .. [2] https://github.com/kubernetes/kubernetes

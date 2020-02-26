@@ -13,7 +13,6 @@
    big_datas/db_hdfs
    big_datas/fulltest_index
    big_datas/realtime_computer
-   big_datas/fulltest_index
    big_datas/other
 
 

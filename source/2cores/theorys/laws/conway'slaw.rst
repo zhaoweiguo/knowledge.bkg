@@ -97,7 +97,7 @@ Law 4::
 2. `【论文】Conway's Law <https://app.yinxiang.com/fx/1d4a3db5-5221-46bf-9fbf-8e2d8805b2c8>`_
 3. `【云栖芷沁】Conway's Law – A Theoretical Basis for the Microservice Architecture <https://app.yinxiang.com/fx/5bfa6baa-8383-4aa6-881e-4564900014f4>`_
 4. `【ppt】Conway's Law at a Distance <https://app.yinxiang.com/fx/b6ed51d1-0280-4005-b75c-953003537d98>`_
-5. ` 【segmentfault】康威定律——这个50年前就被提出的微服务概念，你知多少 <https://app.yinxiang.com/fx/5dd09498-35b0-4f60-9a55-ecb1e587bb45>`_
+5. `【segmentfault】康威定律——这个50年前就被提出的微服务概念，你知多少 <https://app.yinxiang.com/fx/5dd09498-35b0-4f60-9a55-ecb1e587bb45>`_
 
 说明::
 
