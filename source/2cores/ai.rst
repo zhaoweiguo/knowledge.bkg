@@ -7,7 +7,7 @@ AI相关
 
 .. image:: /images/ais/ai_ml_dl.png
 
-
+训练深度神经网络的过程就叫做深度学习。
 
 
 
@@ -24,7 +24,10 @@ AI相关
    ais/caffe
 
 
-
+* https://datawhalechina.github.io/leeml-notes/
+* https://www.captainbed.net/
+* https://developers.google.cn/machine-learning/crash-course/prereqs-and-prework
+* https://tf.wiki/
 
 
 
