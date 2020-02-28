@@ -18,10 +18,10 @@ AI相关
 
    ais/deep_learning
    ais/tensorflow
+   ais/pytorch
    ais/alphaGo
-   ais/torch
    ais/kubeflow
-   ais/caffe
+   ais/other
 
 
 * https://datawhalechina.github.io/leeml-notes/

@@ -1,5 +1,5 @@
 sublime的使用
-================
+#############
 
 打开Command Palette::
 
@@ -17,7 +17,8 @@ sublime的使用
 .. _column_select_mode:
 
 Column Selection Mode
-'''''''''''''''''''''''''''''
+=====================
+
 MacOS::
 
   鼠标:

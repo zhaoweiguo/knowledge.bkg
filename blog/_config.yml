@@ -161,6 +161,9 @@ theme_config:
     theme:
       enable: true
       version: true
+    beian:
+      enable: true
+      icp: 京ICP备16018553号
 
   creative_commons:
     license: by-nc-sa

@@ -1,6 +1,6 @@
 .. _python_tmp:
 
-python收集
+python临时
 ####################
 
 python中获取当前位置所在的行号和函数名::

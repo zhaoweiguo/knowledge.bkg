@@ -13,3 +13,8 @@
    tmps/webqq
    tmps/dia
 
+
+
+* omifocus：task management for Mac, iPad, and iPhone
+* 文件对比：beyond compare，
+

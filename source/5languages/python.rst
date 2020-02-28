@@ -8,18 +8,13 @@ Python使用方法
 .. toctree::
    :maxdepth: 2
 
-   pythons/python_install
-   pythons/python_tool
-   pythons/python_simple
-   pythons/python_tmp
-   pythons/python_basic
-   pythons/python_lib
-   pythons/python_mongo
-   pythons/python_mysql
-   pythons/python_uwsgi
-   pythons/python_scrapy
-   pythons/python_question
-   pythons/python_crawler
+   pythons/normal
+   pythons/tool
+   pythons/basic
+   pythons/lib
+   pythons/uwsgi
+   pythons/crawler
+   pythons/question
    pythons/virtualenv
 
 

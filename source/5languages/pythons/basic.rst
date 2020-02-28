@@ -8,6 +8,7 @@
 .. toctree::
    :maxdepth: 2
 
+   basics/simple
    basics/python_date
    basics/python_string
    basics/python_list

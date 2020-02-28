@@ -9,9 +9,10 @@ Python包管理工具
 .. toctree::
    :maxdepth: 2
 
-   tools/python_pip
-   tools/python_easyinstall
-   tools/python_distribute
+   tools/pip
+   tools/easyinstall
+   tools/distribute
+   tools/conda
 
 
 .. figure:: /images/python_packet_tool.png

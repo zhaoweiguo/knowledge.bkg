@@ -9,7 +9,6 @@
    :maxdepth: 2
 
    concepts/big_data
-   concepts/ai
    concepts/learning_theory
    concepts/tmp
 

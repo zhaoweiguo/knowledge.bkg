@@ -9,7 +9,9 @@ Python常见的库函数
    :maxdepth: 2
 
 
-   libs/python_pycurl
-   libs/python_pyfile
+   libs/pycurl
+   libs/pyfile
+   libs/mongo
+   libs/mysql
 
 

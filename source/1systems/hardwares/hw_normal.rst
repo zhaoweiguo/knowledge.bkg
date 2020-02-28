@@ -72,3 +72,25 @@
 
   LabVIEW
   Keil C51
+
+设备相关术语
+============
+
+* 北向接口：提供给其他厂家或运营商进行接入和管理的接口，即向上提供的接口
+* 南向接口：管理其他厂家网管或设备的接口，即向下提供的接口
+
+A northbound interface is an interface that conceptualizes lower level details. It interfaces to higher level layers and is normally drawn at the top of an architectural overview.
+A southbound interface decomposes concepts in the technical details, mostly specific to a single component of the architecture. Southbound interfaces are drawn at the bottom of an architectural overview.
+Northbound interfaces normally talk to southbound interfaces of higher level components and vice versa.
+
+从英文定义可以看出来::
+
+    1.北向接口是某个模块的顶层抽象接口
+    2.南向接口是某个模块之内部子模块的接口
+    3.北向接口因处于架构图的顶部而得名,南向接口则因处于架构图的底部而得名,所谓上北下南
+    4.另外,北向和南向也是相对的,相对于更顶级的模块,某个模块的北向接口就相对来说是南向接口了
+
+
+
+
+

@@ -21,7 +21,7 @@
    8tools/sphinx
    8tools/jumpserver
    8tools/vpn
-   8tools/tool_tmp
+   8tools/tmp
 
 
 
