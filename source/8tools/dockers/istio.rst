@@ -69,8 +69,9 @@ Istio is composed of these components::
 
 * `Stop reinventing the wheel with Istio <https://app.yinxiang.com/fx/e470501b-9796-4167-99b1-8079aa764171>`_
 
-
-
+* https://tf.wiki/
+* https://www.cnblogs.com/liufei1983/p/10335952.html
+* https://blog.csdn.net/zhonglinzhang/article/details/85233390
 
 
 .. [1] https://istio.io/

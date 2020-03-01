@@ -19,6 +19,7 @@ AI相关
    ais/deep_learning
    ais/tensorflow
    ais/pytorch
+   ais/mxnet
    ais/alphaGo
    ais/kubeflow
    ais/other

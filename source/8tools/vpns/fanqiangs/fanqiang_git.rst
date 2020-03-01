@@ -34,25 +34,25 @@ SSH 协议的配置::
 HTTP 协议的配置::
 
   [http]
-          #这里是因为 Git 使用 libcurl 提供 http 支持
-          proxy = socks5://127.0.0.1:7070
+      #这里是因为 Git 使用 libcurl 提供 http 支持
+      proxy = socks5://127.0.0.1:7070
   or
   [http]
-          proxy = http://127.0.0.1:8087
+      proxy = http://127.0.0.1:8087
 
 
 所有协议全部使用 http 代理::
 
-  1./path/to/socks5proxywrapper 文件
-  #!/bin/sh
-  connect -H 192.168.1.100:8080 "$@"
-  2.HTTP 协议配置
-  [http]
-      proxy = http://192.168.1.100:8080
+    1./path/to/socks5proxywrapper 文件
+    #!/bin/sh
+    connect -H 192.168.1.100:8080 "$@"
+    2.HTTP 协议配置
+    [http]
+        proxy = http://192.168.1.100:8080
 
 针对域名启用代理::
 
-  gitproxy 参数提供 * for * 结构，具体看 man git-config 的 core.gitproxy 部分
+    gitproxy 参数提供 * for * 结构，具体看 man git-config 的 core.gitproxy 部分
 
 
 

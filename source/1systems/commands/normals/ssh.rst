@@ -1,14 +1,45 @@
 ssh命令
 #########################
 
+-L选项
+------
+
+::
+
+     -L [bind_address:]port:host:hostport
+     -L [bind_address:]port:remote_socket
+     -L local_socket:host:hostport
+     -L local_socket:remote_socket
+
 
 * 把远端的端口3306影射到本地的3308(把远端的mysql通过本地访问,有bindaddress配置的mysql)::
 
     ssh -L 3308:<ip>:3306 <user>@<host>
 
+-D选项
+------
+
+::
+
+     -D [bind_address:]port
+
 * 指定一个动态应用级端口做转发,然后可以在浏览器做代理,通过指定服务器进行访问（如翻墙）::
 
     ssh -D 7070 username@yourserver.com
+
+实例::
+
+    ssh -CfNg -D 0.0.0.0:1080 -l username xxx.xxx.xxx.xxx
+
+各参数含义::
+
+    -C 传输时压缩数据
+    -f 输入密码登陆后，ssh进入后台运行
+    -N 不执行远程命令，只提供端口转发。仅用于ssh2协议
+    -g 允许远程主机连接ssh转发端口
+    -D 设置socks代理地址和监听端口，如果是只允许本地访问则指定IP为127.0.0.1
+    -l ssh登陆用户名
+    -i 指定ssh登陆用的私钥，如果是用公钥、私钥对登陆则需要指定
 
 
 ssh-keygen命令

@@ -8,17 +8,6 @@ linux下操作 [1]_
 
     ssh -D 7070 username@yourserver.com
 
-    ssh -CfNg -D 0.0.0.0:1080 -l username xxx.xxx.xxx.xxx
-    各参数含义:
-    -C 传输时压缩数据
-    -f 输入密码登陆后，ssh进入后台运行
-    -N 不执行远程命令，只提供端口转发。仅用于ssh2协议
-    -g 允许远程主机连接ssh转发端口
-    -D 设置socks代理地址和监听端口，如果是只允许本地访问则指定IP为127.0.0.1
-    -l ssh登陆用户名
-    -i 指定ssh登陆用的私钥，如果是用公钥、私钥对登陆则需要指定
-
-
 * 使用gSTM客户端(ubuntu)::
 
     apt-get install gstm
