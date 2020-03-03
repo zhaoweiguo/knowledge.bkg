@@ -12,7 +12,7 @@ Anaconda是Python的一个开源发行版本，主要面向科学计算。包管
 
 Conda是一种通用包管理系统，旨在构建和管理任何语言的任何类型的软件。因此，它也适用于Python包。　　因为conda来自于Python(更具体地说是PyData)社区，许多人错误地认为它基本上是一个Python包管理器。情况并非如此：conda旨在管理任何软件堆栈中的包和依赖关系。在这个意义上，它不像pip，更像是apt或yum等跨平台版本。
 
-安装::
+安装( `安装过程 <http://note.youdao.com/noteshare?id=cf1631389efd829422c4688df885ef12>`_ )::
 
     conda分为anaconda和miniconda
     anaconda是包含一些常用包
@@ -24,6 +24,10 @@ Conda是一种通用包管理系统，旨在构建和管理任何语言的任何
     
     anaconda:
     https://www.anaconda.com/distribution/
+
+    下载后直接执行sh命令,如:
+    ./Miniconda3-latest-MacOSX-x86_64.sh
+
 
 
 Docker::

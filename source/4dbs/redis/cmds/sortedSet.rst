@@ -10,6 +10,11 @@ Redis 有序集合(sorted set)
 Zadd
 ----
 
+说明::
+
+    Available since 1.2.0.
+    Time complexity: O(log(N)) for each item added, 
+        where N is the number of elements in the sorted set.
 
 * Redis Zadd 命令用于将一个或多个成员元素及其分数值加入到有序集当中。
 * 如果某个成员已经是有序集的成员，那么更新这个成员的分数值，并通过重新插入这个成员元素，来保证该成员在正确的位置上。
@@ -39,7 +44,6 @@ Zadd
     6) "2"
     7) "three"
     8) "3"
-
 
 
 Zincrby
@@ -139,33 +143,6 @@ Zrevrange
     1) "two"
     2) "one"
 
-
-Zadd
-----
-
-说明::
-
-    Available since 1.2.0.
-    Time complexity: O(log(N)) for each item added, 
-        where N is the number of elements in the sorted set.
-
-实操::
-
-    redis> ZADD myzset 1 "one"
-    (integer) 1
-    redis> ZADD myzset 1 "uno"
-    (integer) 1
-    redis> ZADD myzset 2 "two" 3 "three"
-    (integer) 2
-    redis> ZRANGE myzset 0 -1 WITHSCORES
-    1) "one"
-    2) "1"
-    3) "uno"
-    4) "1"
-    5) "two"
-    6) "2"
-    7) "three"
-    8) "3"
 
 
 Zrange

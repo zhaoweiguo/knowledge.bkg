@@ -12,6 +12,9 @@ PyTorch 是最新的深度学习框架之一，由 Facebook 的团队开发，�
 PyTorch 很简洁、易于使用、支持动态计算图而且内存使用很高效，因此越来越受欢迎
 
 
+* https://github.com/ShusenTang/Dive-into-DL-PyTorch
+* https://tangshusen.me/Dive-into-DL-PyTorc
+
 安装::
 
     // Anaconda安装

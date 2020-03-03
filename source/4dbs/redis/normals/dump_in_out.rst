@@ -24,11 +24,13 @@ redis-load导入::
 
 生成aof数据::
 
-    $ redis-cli -h 172.20.0.2 -a password flushall
+    $ redis-cli -h 172.20.0.2 -a password flushall      // 删除所有数据库中的所有数据
     OK
     // 源实例开启aof功能，将在dir目录下生成appendonly.aof文件
     $ redis-cli -h 172.20.0.1 -a password config set appendonly yes
     OK
+
+    // ...(这儿执行的各种输入修改操作都会存储到appendonly.aof)
 
 目标实例导入aof数据::
 
