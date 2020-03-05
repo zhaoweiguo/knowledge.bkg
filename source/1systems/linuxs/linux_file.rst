@@ -6,9 +6,9 @@ linux相关
 .. toctree::
    :maxdepth: 2
 
-   linuxs/linux_normal
-   linuxs/linux_sudo
-   linuxs/linux_init.d
+   linux_files/linux_normal
+   linux_files/linux_sudo
+   linux_files/linux_init.d
 
 
 bash的几个初始化文件::
@@ -22,12 +22,17 @@ bash的几个初始化文件::
     ~/.bash_logout
 
 
-如何更改环境变量PATH的值::
+bash如何更改环境变量PATH的值::
 
     ~/.bash_profile
     ~/.bashrc
 
-* 字符目录::
+zsh如何更改环境变量PATH的值::
+
+    ~/.zprofile
+    ~/.zshrc
+
+字符目录::
 
     Locale是根据计算机用户所使用的语言，所在国家或者地区，以及当地的文化传统所定义的一个软件运行时的语言环境
     /usr/share/i18n/locales/
@@ -40,5 +45,8 @@ path路径::
     ~/.bash_profile
     %添加如下命令
     PATH=/sbin:$PATH
+
+
+
 
 

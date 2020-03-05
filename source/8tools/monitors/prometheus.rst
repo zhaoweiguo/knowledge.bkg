@@ -8,6 +8,7 @@ Prometheus
 .. toctree::
    :maxdepth: 2
 
+   prometheus/normal
    prometheus/prometheus
    prometheus/node_exporter
    prometheus/alertmanager

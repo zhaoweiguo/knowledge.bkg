@@ -13,7 +13,6 @@ Shell文档
    :maxdepth: 1
 
    shells/shell_example
-   shells/shell_example2
    shells/shell_normal
    shells/shell_question
    shells/shell_expect

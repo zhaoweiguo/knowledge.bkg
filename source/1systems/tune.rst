@@ -8,7 +8,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   tunes/tune_tmp
    tunes/tune_file
+   tunes/tune_tmp
 
 

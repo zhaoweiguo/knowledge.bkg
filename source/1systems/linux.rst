@@ -11,13 +11,12 @@ Linux相关
 .. toctree::
    :maxdepth: 2
 
-   linuxs/linux
+   linuxs/linux_file
    linuxs/centos
    linuxs/debian
    linuxs/freebsd
    linuxs/alpine
    linuxs/busybox
-   linuxs/practice
    linuxs/linux_question
    linuxs/linux_security
    linuxs/linux_aliyun

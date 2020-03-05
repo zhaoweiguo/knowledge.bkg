@@ -12,7 +12,9 @@
 硬件协议::
 
     smartConfig: udp广播、组播协议
-    softAP
+    softAP: 软AP(热点) -> AP = access point
+      无线接入点:wireless access point(wirelessAP)
+
 
 所谓的smartconfig就是::
 

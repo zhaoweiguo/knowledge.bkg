@@ -1,7 +1,7 @@
 .. _mysql_replication:
 
 16. 复制
-=============
+########
 
 :author: 新溪-gordon
 :date: 2012-05-28

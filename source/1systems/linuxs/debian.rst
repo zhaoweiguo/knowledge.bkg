@@ -11,12 +11,10 @@ ubuntu/debian专用
    debians/apt-get
    debians/debian_dpkg
    debians/debian_aptitude
-   debians/debian_upgrade
    debians/debian_question
-   debians/debian_desktop
+   debians/debian_upgrade
    debians/ubuntu_upgrade
-
-
+   debians/debian_desktop
 
 
 debian::

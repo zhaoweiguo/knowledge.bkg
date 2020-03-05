@@ -1,16 +1,13 @@
 shell实例
 #################
 
+.. toctree::
+   :maxdepth: 1
 
-把数据备份并发送到指定的email下:
-
-.. literalinclude:: /files/shells/shell_bkg_mysql_to_email.sh
-    :language: sh
-    :linenos:
-
-实例
+   examples/example1
+   examples/example2
+   examples/arch_os
+   examples/ssh_login
 
 
-.. literalinclude:: /files/shells/demo_practice1.sh
-    :language: sh
-    :linenos:
+
