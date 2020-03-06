@@ -9,13 +9,13 @@ Python使用方法
    :maxdepth: 2
 
    pythons/normal
-   pythons/tool
    pythons/basic
    pythons/lib
+   pythons/opensource
+   pythons/tool
    pythons/uwsgi
    pythons/crawler
    pythons/question
-   pythons/virtualenv
 
 
 

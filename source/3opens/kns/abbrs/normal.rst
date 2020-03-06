@@ -109,6 +109,7 @@ R
 ----
 
 * RBAC: Role-based access control
+* REPL: Read-Eval-Print Loop(读取-求值-输出-循环,  一种「交互式解释器」)
 * RDF: Resource Description Framework(资源描述框架)
 * RDBMS: Relational DataBase Management System
 * REST: Representational State Transfer

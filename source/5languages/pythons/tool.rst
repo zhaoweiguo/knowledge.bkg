@@ -12,6 +12,7 @@ Python包管理工具
    tools/pip
    tools/easyinstall
    tools/distribute
+   tools/virtualenv
    tools/conda
 
 
