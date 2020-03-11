@@ -78,6 +78,8 @@ M
 
 * MIT:麻省理工学院
 * MTU: Maximum Transfer Unit 
+* MLP: multilayer perceptron(多层感知器)
+* MLP: Machine Language Program（机器语言程序）
 
 N
 ----

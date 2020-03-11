@@ -139,6 +139,8 @@ The built-in magics include::
     myvar = jobs.result(5) 或 myvar =jobs[5].result
     另外:jobs.status() 可以查看现有任务的状态。
 
+Background Scripts::
+
     实例:
     In [47]: %%ruby --bg --out ruby_lines
         ...: for n in 1...10
@@ -162,6 +164,34 @@ The built-in magics include::
     line 7
     line 8
     line 9
+
+Arguments to subcommand::
+
+    In [51]: %%script python2 -Qnew
+        ...: print 1/3
+        ...:
+        ...:
+    0.333333333333
+
+    In [50]: %%script --bg --out bashout bash -c "while read line; do echo $line; sleep 1; done"
+        ...: line 1
+        ...: line 2
+        ...: line 3
+        ...: line 4
+        ...: line 5
+        ...:
+        ...:
+    In [52]: import time
+        ...: tic = time.time()
+        ...: line = True
+        ...: while True:
+        ...:     line = bashout.readline()
+        ...:     if not line:
+        ...:         break
+        ...:     sys.stdout.write("%.1fs: %s" %(time.time()-tic, line))
+        ...:     sys.stdout.flush()
+        ...:
+    0.0s: b'line 1\n'0.0s: b'line 2\n'0.0s: b'line 3\n'0.0s: b'line 4\n'0.0s: b'line 5\n'0.0s: b'\n'
 
 
 %edit编辑命令::
