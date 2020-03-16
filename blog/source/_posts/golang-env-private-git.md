@@ -174,6 +174,15 @@ Root CA证书:        DigiCert Global Root CA
 然后把中间CA证书也放到gitlab服务的配置中后，一切都ok了
 
 
+## 2020-03-13更新
+
+上面说的还是有一些问题，主要是版本不同，带来的问题也不同。首先要先知道1.12版和1.13版的不同，1.13增加了GOSUMDB和GOPRIVATE环境变量1.13版本需要加上以下几个命令到~/.bash_profile(zsh要改~/.zprofile):
+```
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn,direct
+export GOSUMDB=sum.golang.google.cn
+export GOPRIVATE=gitlab.com  # 这儿改成你的私有git域名
+```
 
 
 

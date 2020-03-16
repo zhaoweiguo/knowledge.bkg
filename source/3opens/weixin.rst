@@ -7,5 +7,6 @@
 
    weixins/offiaccount
    weixins/miniprogram
+   weixins/iot
 
 
