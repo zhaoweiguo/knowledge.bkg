@@ -6,7 +6,6 @@ Golang基本知识
 .. toctree::
    :maxdepth: 1
 
-
    normals/normal
    normals/go_concept
    normals/go_objclass

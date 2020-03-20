@@ -8,4 +8,5 @@
    opensources/ipython
    opensources/jupyter
    opensources/matplotlib
+   opensources/mxnet
 

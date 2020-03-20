@@ -8,6 +8,8 @@ Tracing相关
    :name: 分布式的追踪系统
 
    tracings/opentracing
+   tracings/opencensus
+   tracings/opentelemetry
    tracings/jaeger
    tracings/zipkin
    tracings/dapper

@@ -8,6 +8,7 @@ Docker相关
    dockers/docker
    dockers/k8s
    dockers/istio
+   dockers/nomad
    dockers/virtualbox
    dockers/vmware
    dockers/tmp

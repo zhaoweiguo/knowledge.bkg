@@ -17,6 +17,7 @@
    1systems/mac
    1systems/shell
    1systems/window
+   1systems/iot
    1systems/tune
    1systems/hardware
    1systems/gpu

@@ -43,9 +43,6 @@ Docker 四种网络模式::
     但是这种做法也存在着占用主机有限的端口资源的缺点。
 
 
-
-.. image:: /images/dockers/net_bridge.png
-
 安装Docker时，它会自动创建三个网络::
 
     $ docker network ls

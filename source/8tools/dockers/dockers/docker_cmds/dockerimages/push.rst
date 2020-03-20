@@ -15,6 +15,6 @@ Options::
 
     $ docker push zhaoweiguo/demo  // 推送前需要先login
 
-    $ docker push registry.cn-beijing.aliyuncs.com/octopus-test/gordondemo:v1
+    $ docker push registry.cn-beijing.aliyuncs.com/gordon-test/gordondemo:v1
 
 

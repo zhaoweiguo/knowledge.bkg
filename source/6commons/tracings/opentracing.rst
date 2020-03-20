@@ -5,6 +5,7 @@ opentracing
 
 * opentracing-官网 [2]_
 * opentracing-github [3]_
+* Google论文Dapper: :ref:`here <dapper>`
 
 说明::
     
@@ -14,6 +15,9 @@ opentracing
       opentracing-java
       opentracing-python
       opentracing-javascript
+
+* Vendor-neutral APIs and instrumentation for distributed tracing
+
 
 
 .. toctree::

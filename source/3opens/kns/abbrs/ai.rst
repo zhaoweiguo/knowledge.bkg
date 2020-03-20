@@ -2,7 +2,7 @@ AI相关名词
 ##########
 
 
-* Linear Algebra[ˈældʒɪbrə] : 线性代数
+* Linear Algebra[ˈældʒɪbrə]: 线性代数
 * Probability Statistics: 概率统计
 * probability: 概率论
 * Calculus: 微积分学
@@ -37,6 +37,8 @@ AI相关名词
 * Random variable 𝑧 has probability distribution 𝑃: 随机变量z的概率分布为p
 
 * loss function: 损失函数
+* clustering algorithm: 聚类算法
+* Standard deviation: 标准偏差
 
 
 * Probability distribution: 概率分布
@@ -54,3 +56,7 @@ AI相关名词
 * multi-layer perceptrons: 多层感知器
 
 * pixel: 像素,分辨率
+
+
+
+

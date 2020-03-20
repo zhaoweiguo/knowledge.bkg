@@ -13,7 +13,7 @@ Usage::
     // 为已存在的images加tag:
     $ docker tag 5db5f8471261 zhaoweiguo/sinatra:devel
 
-    $ docker tag [ImageId] registry.cn-beijing.aliyuncs.com/octopus-test/gordondemo:v1
+    $ docker tag [ImageId] registry.cn-beijing.aliyuncs.com/gordon-test/gordondemo:v1
 
 
 

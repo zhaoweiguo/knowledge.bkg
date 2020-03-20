@@ -13,7 +13,7 @@ docker build
     // 使用 . 指定是当前目录的Dockerfile文件
     $ docker build -t="zhaoweiguo/sinatra:v2" .
 
-    $ docker build -t registry.cn-beijing.aliyuncs.com/octopus-test/gordondemo:v1 .
+    $ docker build -t registry.cn-beijing.aliyuncs.com/gordon-test/gordondemo:v1 .
 
 
 Options::

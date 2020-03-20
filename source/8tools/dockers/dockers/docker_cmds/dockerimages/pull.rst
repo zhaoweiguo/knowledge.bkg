@@ -17,7 +17,7 @@ Options::
     // 获取一个新的images
     $ docker pull centos
 
-    $ docker pull registry.cn-beijing.aliyuncs.com/octopus-test/gordondemo:v1
+    $ docker pull registry.cn-beijing.aliyuncs.com/gordon-test/gordondemo:v1
 
 
 
