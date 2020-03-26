@@ -17,6 +17,7 @@ k8s相关
    k8s/kubedog
 
 * 阳明的博客: https://www.qikqiak.com/
+* Kubernetes中文指南/云原生应用架构实践手册: https://jimmysong.io/kubernetes-handbook/
 
 
 .. [1] https://kubernetes.io/zh/

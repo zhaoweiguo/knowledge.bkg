@@ -22,6 +22,7 @@ AI相关
    ais/mxnet
    ais/alphaGo
    ais/kubeflow
+   ais/bi
    ais/other
 
 

@@ -10,6 +10,7 @@
 
    concepts/big_data
    concepts/learning_theory
+   concepts/cloud_native
    concepts/tmp
 
 

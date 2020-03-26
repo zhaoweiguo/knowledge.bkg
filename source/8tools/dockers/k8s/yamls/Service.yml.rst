@@ -1,7 +1,7 @@
 Service.yml
 #################
 
-默认spec.type为cluster-ip:
+默认spec.type为cluster-ip(只能内部用):
 
 .. literalinclude:: /files/k8s/yamls/Service_Default.yml
    :language: yaml

@@ -21,6 +21,7 @@ C
 ----
 
 * CAP: Consistency Availability Partition-tolerance
+* CBA: Cell-Based Architecture, 基于单元格的架构(对应MSA)
 * CD: 持续部署（continuous deployment）
 * CE: 社区版(Community Edition), 如:Docker社区版（CE）,Docker企业版（EE）
 * CE: 持续探索(Continuous Exploration)
@@ -63,6 +64,7 @@ I
 
 * IEEE: Institute for Electrical and Electronics Engineers 
 * IETF: Internet Engineering Task Force
+* IOE: IBM, Oracle, EMC 
 * IP: Internet Protocol 
 * ISO: International Organization of Standardization 
 
@@ -80,6 +82,7 @@ M
 * MTU: Maximum Transfer Unit 
 * MLP: multilayer perceptron(多层感知器)
 * MLP: Machine Language Program（机器语言程序）
+* MSA: Micro-Service Architecture, 微服务架构(对应CBA)
 
 N
 ----
@@ -92,6 +95,7 @@ N
 O
 ----
 
+* OCR: Optical Character Recognition, 文字识别
 * OOM: OutOfMemory
 * OOP: Object Oriented Programming)，面向对象程序设计
 * OSI: Open Systems Interconnection 

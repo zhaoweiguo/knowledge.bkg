@@ -57,6 +57,18 @@ PAC自定义规则
   ||youtube.com
   ||research.google
 
+相关知识
+========
+
+* ss: Shadowsocks
+* ssr: SSR全称shadowsocks-R。SSR作者声称SS不够隐匿，容易被防火墙检测到，SSR在改进了混淆和协议，更难被防火墙检测到。简单地说，SSR是SS的改进版。
+
+相关网站
+========
+
+* 支持ssr: https://github.com/shadowsocksrr
+* ssr版(mac专用): https://github.com/qinyuhang/ShadowsocksX-NG-R/releases
+* 其他: https://tlanyan.me/shadowsockr-shadowsocksr-shadowsocksrr-clients/
 
 
 .. [1] https://adblockplus.org/en/filter-cheatsheet

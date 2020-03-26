@@ -17,9 +17,10 @@ Istio
    istios/normal
 
 
-K8s中，同一个Pod的多个容器之间，网络栈是共享的，这是sidecar实现的基础。
+* K8s中，同一个Pod的多个容器之间，网络栈是共享的，这是sidecar实现的基础。
+* 2018年7月31日 `Istio 1.0 <https://istio.io/blog/2018/announcing-1.0/>`_ 发布
 
-
+* servicemesher: https://www.servicemesher.com/
 
 
 

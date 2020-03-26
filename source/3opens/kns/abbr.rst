@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    abbrs/normal
+   abbrs/cluster
    abbrs/ai
    abbrs/architecture
    abbrs/psychology
