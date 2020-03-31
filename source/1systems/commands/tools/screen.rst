@@ -23,7 +23,9 @@ screen命令使用
 每个screen session 下 [1]_::
 
    C-a ? -> 显示所有键绑定信息
+   
    C-a c -> 创建一个新的运行shell的窗口并切换到该窗口
+
    C-a n -> Next，切换到下一个 window
    C-a p -> Previous，切换到前一个 window
    C-a 0..9 -> 切换到第 0..9 个 window
@@ -34,7 +36,9 @@ screen命令使用
    C-a z -> 把当前session放到后台执行，用 shell 的 fg 命令则可回去。
    C-a w -> 显示所有窗口列表
    C-a t -> Time，显示当前时间，和系统的 load
+
    C-a k -> kill window，强行关闭当前的 window
+
    C-a [ -> 进入 copy mode，在 copy mode 下可以回滚、搜索、复制就像用使用 vi 一样
 
 其他::

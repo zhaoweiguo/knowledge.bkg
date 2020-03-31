@@ -16,6 +16,7 @@ AI相关
    :glob:
    :maxdepth: 1
 
+   ais/ml
    ais/deep_learning
    ais/tensorflow
    ais/pytorch

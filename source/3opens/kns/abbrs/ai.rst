@@ -42,6 +42,8 @@ AI相关名词
 
 
 * Probability distribution: 概率分布
+* Bernoulli distribution: 伯努利分布
+* Gaussian distribution: 高斯分布
 * Conditional probability: 条件概率
 * Probability density function: [数] 机率密度函数；概率密度分布函数
 
@@ -56,6 +58,11 @@ AI相关名词
 * multi-layer perceptrons: 多层感知器
 
 * pixel: 像素,分辨率
+
+* the  𝐿2  loss corresponds to the assumption that our data was corrupted by Gaussian noise, whereas the  𝐿1  loss corresponds to an assumption of noise from a Laplace distribution.
+
+
+
 
 
 

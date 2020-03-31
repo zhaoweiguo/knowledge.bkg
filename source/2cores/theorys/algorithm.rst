@@ -9,6 +9,7 @@
 
 
    algorithms/encrypt
+   algorithms/tree
    algorithms/example
    algorithms/iq
    algorithms/graph_theory

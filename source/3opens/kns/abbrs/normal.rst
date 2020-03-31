@@ -135,7 +135,7 @@ T
 
 * TCP: Transmission Control Portocol 
 * TDD: Test-Driven Development(测试驱动开发)
-
+* TTS: Text to Speech
 
 U
 ----

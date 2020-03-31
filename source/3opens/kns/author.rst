@@ -19,4 +19,16 @@ Mike Amundsen
 * Author of 「RESTful Web APIs」
 * Author of 「Designing APIs for the Web」
 
+
+Other
+=====
+
+* Euclidean: 欧几里得
+* Asimov’s Robot Series: 阿西莫夫的机器人系列
+* Ohm’s law: 欧姆定律
+* `Jacob Bernoulli (1655-1705) <https://en.wikipedia.org/wiki/Jacob_Bernoulli>`_
+* `Carl Friedrich Gauss (1777-1855) <https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss>`_
+* `Alan Turing (1912-1954) <https://en.wikipedia.org/wiki/Alan_Turing>`_
+
+
 .. [1] https://app.yinxiang.com/fx/1d4a3db5-5221-46bf-9fbf-8e2d8805b2c8

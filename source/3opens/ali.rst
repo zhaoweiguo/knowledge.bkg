@@ -8,6 +8,7 @@ ali开放平台
    alis/ElasticComputing
    alis/Networking
    alis/ApsaraDB
+   alis/ai
    alis/iot
    alis/Security
    alis/ApplicationService

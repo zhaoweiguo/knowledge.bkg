@@ -13,6 +13,4 @@
 
 
 
-
-
 .. [1] https://github.com/zhaoweiguo/docker-images
