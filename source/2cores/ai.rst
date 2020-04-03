@@ -7,7 +7,13 @@ AI相关
 
 .. image:: /images/ais/ai_ml_dl.png
 
-训练深度神经网络的过程就叫做深度学习。
+* 训练深度神经网络的过程就叫做深度学习
+
+* 谷歌TensorFlow
+* Facebook PyTorch
+* amzon MxNet
+* 百度PaddlePaddle
+* 阿里PAI
 
 
 

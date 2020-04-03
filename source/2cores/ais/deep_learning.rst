@@ -9,6 +9,14 @@
     4. 人机博弈
     5. 强化学习和统计建模
 
+
+.. toctree::
+   :maxdepth: 1
+
+   deep_learnings/cnn
+   deep_learnings/rnn
+   deep_learnings/lstm
+
 深度学习前身是神经网络（基于的神经网络模型和用数据编程的核心思想）。
 机器学习是一门讨论各式各样的适用于不同问题的函数形式，以及如何使用数据来有效地获取函数参数具体值的学科。
 深度学习是指机器学习中的一类函数，它们的形式通常为多层神经网络。
@@ -102,10 +110,10 @@ softmax回归则适用于分类问题。
 | TensorFlow | c++/cuda/python | c++/python        | #                | ##       | #    | CNN/RNN/… | ###      |
 +------------+-----------------+-------------------+------------------+----------+------+-----------+----------+
 
-安装难度: (简单) –> ##(复杂)
-文档风格: (一般) –> ##(好看、全面)
-示例: (给的少) –> ##(给的多、全)
-上手难易: (易) –> ##(难)
+* 安装难度: (简单) –> ##(复杂)
+* 文档风格: (一般) –> ##(好看、全面)
+* 示例: (给的少) –> ##(给的多、全)
+* 上手难易: (易) –> ##(难)
 
 
 
@@ -116,7 +124,7 @@ softmax回归则适用于分类问题。
 
 
 
-* Python版: https://tangshusen.me/Dive-into-DL-PyTorch/
+* PyTorch版: https://tangshusen.me/Dive-into-DL-PyTorch/
 * GitHub: https://github.com/ShusenTang/Dive-into-DL-PyTorch
 * 英文版: https://d2l.ai/
 * GitHub开源地址: https://github.com/d2l-ai/d2l-en

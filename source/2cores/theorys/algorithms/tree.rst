@@ -6,6 +6,7 @@
 
    trees/b-tree
    trees/b+tree
+   trees/balanced_binary_tree
 
 
 

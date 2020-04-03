@@ -6,6 +6,8 @@
    :maxdepth: 1
 
    laws/murphy'slaw
+   laws/parkinson'slaw
+   laws/peterPrinciple
    laws/conway'slaw
    laws/dunbar'snumber
 

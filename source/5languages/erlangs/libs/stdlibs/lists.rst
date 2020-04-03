@@ -182,8 +182,13 @@ keyreplace/4
 
 实例::
 
-  %% ts_config_server.erl
+  %% 示例
   lists:keyreplace(env, 1, AppSpec, {env, Env}).
+  %% 实例
+  1> List = [{key1, value1}, {key2, value2}].
+  [{key1,value1},{key2,value2}]
+  2> lists:keyreplace(key1, 1, List, {key1, abc}).
+  [{key1,abc},{key2,value2}]
 
 keysort/2
 ''''''''''''''
@@ -229,6 +234,13 @@ member/2
 解释::
 
     如果列表List中有Elem返回true，否则返回true
+
+实例::
+
+    1> List = [1,2,3,4,5].
+    [1,2,3,4,5]
+    2> lists:member(3, List).
+    true
 
 partition/2
 ''''''''''''''''

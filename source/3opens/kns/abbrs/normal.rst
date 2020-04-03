@@ -26,6 +26,7 @@ C
 * CE: 社区版(Community Edition), 如:Docker社区版（CE）,Docker企业版（EE）
 * CE: 持续探索(Continuous Exploration)
 * CI: 持续集成 (Continuous integration)
+* CNN: 卷积神经网络（Convolutional Neural Network, CNN）
 * CSP: Communicating Sequential Processes
 
 
@@ -72,7 +73,7 @@ L
 ---
 
 * LDAP: Lightweight Directory Access Protocol
-
+* LSTM: 长短时记忆（Long Short Term Memory，LSTM）
 
 
 M
@@ -121,6 +122,7 @@ R
 * REST: Representational State Transfer
 * RFC: Request for Comments 
 * RPC: Remote Procedure Call 
+* RNN: 循环神经网（Recurrent Neural Network，RNN）
 
 S
 ----

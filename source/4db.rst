@@ -13,6 +13,7 @@
 .. toctree::
    :maxdepth: 1
 
+   4dbs/normal
    4dbs/redis
    4dbs/mongodb
    4dbs/kafka

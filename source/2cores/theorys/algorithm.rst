@@ -7,7 +7,6 @@
 .. toctree::
    :maxdepth: 1
 
-
    algorithms/encrypt
    algorithms/tree
    algorithms/example

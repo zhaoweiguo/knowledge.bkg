@@ -102,7 +102,16 @@ MDPs, bandits, and friends
       this problem is the classic 「multi-armed bandit problem」.
 
 
+实例
+====
 
+::
+
+    自动驾驶: autopilot
+    NLP: 
+    图像识别、语音识别: visual/speech recognition
+    高频交易: high frequency trading
+    CV: 
 
 
 
