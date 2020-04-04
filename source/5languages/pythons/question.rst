@@ -19,7 +19,6 @@ AttributeError module object has no attribute <xxxx>::
 安装高版本的python后，会遇到一些问题::
 
 
-
   1.要把/usr/bin下面的python改成新版本的python; 但这会导致一个问题——yum的使用:
 
   这个是python2与python3不同的原因
@@ -66,6 +65,20 @@ Cannot uninstall 'pyparsing'. It is a distutils installed project and thus we ca
   如果没有安装相关的元信息的话，最简单的方式就是删除对应的egg文件
 
   
+py2 VS py3
+==========
+
+Python3中出现“No module named 'StringIO'”错误处理方法::
+
+    python2用法:
+    import StringIO
+    iost = StringIO.StringIO()
+ 
+
+    Python3中已将StringIO归入io，调用方法如下：
+    import io
+    iost = io.StringIO()
+
 
 
 

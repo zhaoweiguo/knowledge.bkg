@@ -13,6 +13,8 @@
 .. toctree::
    :maxdepth: 1
 
+   deep_learnings/history
+   deep_learnings/dnn
    deep_learnings/cnn
    deep_learnings/rnn
    deep_learnings/lstm

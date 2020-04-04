@@ -25,7 +25,6 @@
    4dbs/hbase
    4dbs/sqlite
    4dbs/oracle
-   4dbs/memcached
    4dbs/sqlserver
    4dbs/other
 

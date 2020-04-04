@@ -5,17 +5,6 @@ python安装
 * 文档: http://docs.python.org/
 
 
-
-python使用小技巧::
-
-  shell> python -v
-  python>>> import sys
-  python>>> print sys.path    # 打印系统安装路径
-
-
-
-
-
 ::
 
     easy_install web.py

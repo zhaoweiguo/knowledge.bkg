@@ -34,6 +34,7 @@ D
 ----
 
 * DHT: Distributed Hash Table，分布式哈希表
+* DNN: 深度神经网络（Deep Neural Network, DNN）
 * DNS: Domain Name System 
 * DST: Daylight Saving Time(夏令时)
 

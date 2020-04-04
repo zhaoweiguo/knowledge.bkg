@@ -9,11 +9,8 @@ Python使用方法
    :maxdepth: 2
 
    pythons/normal
-   pythons/basic
-   pythons/lib
    pythons/opensource
    pythons/tool
-   pythons/uwsgi
    pythons/crawler
    pythons/question
 

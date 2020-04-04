@@ -20,6 +20,7 @@
    2cores/encrypt
    2cores/chart
    2cores/rfc
+   2cores/paper
    2cores/regexp
    2cores/tmp
 
