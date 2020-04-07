@@ -14,10 +14,12 @@
    :maxdepth: 1
 
    deep_learnings/history
+   deep_learnings/ann
    deep_learnings/dnn
    deep_learnings/cnn
    deep_learnings/rnn
    deep_learnings/lstm
+   deep_learnings/relu
 
 深度学习前身是神经网络（基于的神经网络模型和用数据编程的核心思想）。
 机器学习是一门讨论各式各样的适用于不同问题的函数形式，以及如何使用数据来有效地获取函数参数具体值的学科。

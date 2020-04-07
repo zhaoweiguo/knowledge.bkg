@@ -1,6 +1,7 @@
-Pycurl——cURL library module of python
-##################################################
+Pycurl
+########
 
+* cURL library module of python
 * 实例 [1]_
 
 urllib超时设置::

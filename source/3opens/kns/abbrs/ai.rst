@@ -39,6 +39,7 @@ AI相关名词
 * loss function: 损失函数
 * clustering algorithm: 聚类算法
 * Standard deviation: 标准偏差
+* normal equation: 正规方程
 
 
 * Probability distribution: 概率分布

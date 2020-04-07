@@ -3,6 +3,7 @@
 mxnet库
 #######
 
+* d2l [1]_
 
 .. toctree::
    :maxdepth: 2
@@ -15,3 +16,5 @@ mxnet库
 
 
 
+
+.. [1] https://d2l.ai/

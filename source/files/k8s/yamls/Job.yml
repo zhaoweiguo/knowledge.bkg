@@ -11,13 +11,15 @@ spec:
       labels:
         app: busybox
     spec:
+      backoffLimit: 5   # 重启次数限制(默认为6), 超过些限制会不再重启
+      activeDeadlineSeconds: 20     # 最长运行时间(单位s), 默认应该是可以一直运行
+      ttlSecondsAfterFinished: 60   # 自动清理已结束的作业 
       containers:
       - name: busybox
         image: registry.cn-beijing.aliyuncs.com/octopus-test/analysis-once:v1
         imagePullPolicy: IfNotPresent
         command: ["/analysis-once", "--start=20190101", "--end=20190819"]
       restartPolicy: Never
-
       # restartPolicy: Never  #如果使用参数Never，容器启动后未成功就会一直创建新的容器
       # restartPolicy: OnFailure  #如果使用参数OnFailure，容器启动后未成功不会在创建新的容器，他会一直重启
 

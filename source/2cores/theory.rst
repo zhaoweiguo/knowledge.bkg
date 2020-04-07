@@ -11,6 +11,7 @@
    theorys/algorithm
    theorys/concurrency
    theorys/vision
+   theorys/math
 
 
 

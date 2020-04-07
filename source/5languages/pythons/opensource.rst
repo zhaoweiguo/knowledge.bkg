@@ -15,6 +15,8 @@
 
    opensources/ipython
    opensources/jupyter
+   opensources/numpy
    opensources/matplotlib
+   opensources/scipy
    opensources/mxnet
 

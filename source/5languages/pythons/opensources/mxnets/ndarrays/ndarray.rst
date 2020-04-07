@@ -57,10 +57,14 @@ zeros
 
 Parameters::
 
-    shape (int or tuple of int) – The shape of the empty array
-    ctx (Context, optional) – An optional device context (default is the current default context)
-    dtype (str or numpy.dtype, optional) – An optional value type (default is float32)
-    stype (string, optional) – The storage type of the empty array, 如:‘row_sparse’, ‘csr’, etc.
+    shape (int or tuple of int) 
+        – The shape of the empty array
+    ctx (Context, optional) 
+        – An optional device context (default is the current default context)
+    dtype (str or numpy.dtype, optional) 
+        – An optional value type (default is float32)
+    stype (string, optional) 
+        – The storage type of the empty array, 如:‘row_sparse’, ‘csr’, etc.
 
 实例::
 

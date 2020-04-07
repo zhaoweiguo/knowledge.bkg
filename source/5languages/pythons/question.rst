@@ -1,5 +1,6 @@
-python常见问题
-================
+常见问题
+########
+
 AttributeError module object has no attribute <xxxx>::
 
     一般是因为有*.pyc文件有问题导致，如
@@ -17,7 +18,6 @@ AttributeError module object has no attribute <xxxx>::
     ... ...
 
 安装高版本的python后，会遇到一些问题::
-
 
   1.要把/usr/bin下面的python改成新版本的python; 但这会导致一个问题——yum的使用:
 
