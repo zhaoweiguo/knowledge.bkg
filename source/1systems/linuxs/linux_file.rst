@@ -6,9 +6,11 @@ linux相关
 .. toctree::
    :maxdepth: 2
 
-   linux_files/linux_normal
-   linux_files/linux_sudo
-   linux_files/linux_init.d
+   linux_files/normal
+   linux_files/file_sudo
+   linux_files/file_nsswitch
+   linux_files/folder_init.d
+   linux_files/folder_tmp
 
 
 bash的几个初始化文件::

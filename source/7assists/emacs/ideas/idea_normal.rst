@@ -23,6 +23,10 @@ Column Selection Mode::
   % 打开粘贴板
   command + Shift + v
 
+  % 选中/当前单词 大小写切换
+  command + Shift + u
+
+
 
 .. figure:: /images/emacs/idea_normal_keymap1.png
    :width: 80%

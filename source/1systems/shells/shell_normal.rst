@@ -13,6 +13,7 @@ shell基本用法
    normals/shell_printf
    normals/shell_kv
    normals/shell_array
+   normals/shell_string
    normals/shell_variable
    normals/shell_test
    normals/shell_shift
