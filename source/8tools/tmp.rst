@@ -12,6 +12,7 @@
    tmps/asterisk
    tmps/webqq
    tmps/dia
+   tmps/sphinx
 
 
 

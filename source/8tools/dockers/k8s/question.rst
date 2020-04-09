@@ -46,6 +46,8 @@ Job has reached the specified backoff limit
     后续:
     先重启起来，继续定位问题
 
+.. _question_muslibc_glibc:
+
 修改/etc/hosts不生效问题
 ========================
 

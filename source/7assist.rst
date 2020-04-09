@@ -17,6 +17,7 @@
    7assists/design
    7assists/chrome
    7assists/tool
+   7assists/website
    7assists/other
 
 

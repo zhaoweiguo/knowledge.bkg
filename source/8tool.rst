@@ -18,7 +18,6 @@
    8tools/mqtt
    8tools/wireshark
    8tools/monitor
-   8tools/sphinx
    8tools/jumpserver
    8tools/vpn
    8tools/tmp

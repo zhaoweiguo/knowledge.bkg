@@ -7,5 +7,6 @@ Alpine Linux
 
    alpines/normal
    alpines/docker
+   alpines/musl_libc
    alpines/install
 

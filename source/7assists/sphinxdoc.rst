@@ -17,6 +17,7 @@ Contents:
    sphinxdocs/md
    sphinxdocs/apidoc
    sphinxdocs/hugo
+   sphinxdocs/gitbook
    sphinxdocs/commit
 
 
