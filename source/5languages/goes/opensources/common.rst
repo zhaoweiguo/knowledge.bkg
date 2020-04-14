@@ -77,6 +77,7 @@ cli命令
 * 时序数据库: https://github.com/influxdata/influxdb
 * 经济图数据库: https://github.com/degdb/degdb
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
+    * https://github.com/etcd-io/bbolt
 * A realtime distributed messaging platform: https://github.com/nsqio/nsq
 
 * 分布式k/v数据库: https://github.com/etcd-io/etcd

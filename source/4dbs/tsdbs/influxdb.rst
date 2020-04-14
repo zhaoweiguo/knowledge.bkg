@@ -8,12 +8,9 @@ InfluxDB
    :maxdepth: 2
 
    influxdbs/normal
-   influxdbs/influxd
-   influxdbs/protocol_normal
-   influxdbs/protocol_api
-   influxdbs/protocol_cli
+   influxdbs/command
+   influxdbs/practice
    influxdbs/question
-   influxdbs/other
 
 
 

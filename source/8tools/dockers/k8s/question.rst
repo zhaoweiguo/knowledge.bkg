@@ -118,6 +118,60 @@ Job has reached the specified backoff limit
 * :ref:`nsswitch.conf <nsswitch.conf>`
 
 
+job执行失败但没有一个执行失败的pod
+==================================
+
+kubectl describe job JobName::
+
+    ...
+    Pods Statuses:  0 Running / 0 Succeeded / 1 Failed
+    ...
+
+kubectl get job JobName -o yaml::
+
+    status:
+      conditions:
+      - lastProbeTime: 2020-04-12T17:05:45Z
+        lastTransitionTime: 2020-04-12T17:05:45Z
+        message: Job has reached the specified backoff limit
+        reason: BackoffLimitExceeded
+        status: "True"
+        type: Failed
+      failed: 1
+
+但在使用命令kubectl get po::
+
+    结果为空
+
+原因::
+
+    配置选项设置为:restartPolicy: OnFailure时, 每次执行失败都会删除原来的pod并重启容器
+    最后删除原来的pod后检测超过了backoffLimit限制不再重启容器, 所以pod列表为空
+
+    注: restartPolicy: Never的话, 最后pod数为6(backoffLimit默认值为6)
+
+实例::
+
+    # 可用如下实例验证
+    apiVersion: batch/v1
+    kind: Job
+    metadata:
+      name: job-error
+    spec:
+      backoffLimit: 5
+      template:
+        metadata:
+          name: job
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: job
+              image: busybox
+              args:
+                - /bin/sh
+                - -c
+                - exit 1
+
 
 
 

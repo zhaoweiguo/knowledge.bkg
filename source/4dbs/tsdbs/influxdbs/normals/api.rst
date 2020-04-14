@@ -8,8 +8,6 @@
     # curl -G http://localhost:8086/query --data-urlencode "q=SHOW DATABASES"
 
 
-
-
 查询::
 
     curl -G 'https://<ip>:port/query?u=<账号名称>&p=<密码>&pretty=true' 

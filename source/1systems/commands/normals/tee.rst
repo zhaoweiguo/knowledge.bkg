@@ -8,5 +8,7 @@ tee命令
     EOF
 
 
+    $ echo '{"svc": {"name": "web", "tags": ["php"], "port": 80}}'  | tee /tmp/web.json
+
 
 

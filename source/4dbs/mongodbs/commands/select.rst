@@ -89,7 +89,8 @@ limit, skip, sort::
 
     db.getCollection('octopus_user_line').find({
         "time_created": {
-            "$gte" : ISODate("2018-01-23"), "$lt" : ISODate("2018-01-24")
+            "$gte" : ISODate("2018-01-23T00:00:00Z"), 
+            "$lt" : ISODate("2018-01-24T00:00:00Z")
         }
     })
 

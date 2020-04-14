@@ -11,6 +11,7 @@ CI/CD相关
    cicds/jenkins
    cicds/drone
    cicds/gitlab
+   cicds/rancher
    cicds/other
 
 

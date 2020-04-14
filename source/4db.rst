@@ -14,18 +14,14 @@
    :maxdepth: 1
 
    4dbs/normal
-   4dbs/redis
+   4dbs/kv
    4dbs/mongodb
+   4dbs/mysql
    4dbs/kafka
    4dbs/tsdb
    4dbs/graph
-   4dbs/zookeeper
-   4dbs/etcd
-   4dbs/mysql
    4dbs/hbase
    4dbs/sqlite
-   4dbs/oracle
-   4dbs/sqlserver
    4dbs/other
 
 

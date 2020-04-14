@@ -16,14 +16,3 @@ influxd命令
       https-enabled = false  
       https-certificate = "/etc/ssl/influxdb.pem" 
 
-登录::
-
-    shell> influx -precision rfc3339 
-    influx> auth
-    username: root
-    password: 
-
-    or
-    $> influx -username <user> -password <pwd> -precision rfc3339 
-
-

@@ -5,6 +5,8 @@ metadata:
   labels:
     app: goanalysis
 spec:
+  successfulJobsHistoryLimit: 3   # 保留执行成功的历史pod数
+  failedJobsHistoryLimit: 1       # 保留执行失败的历史pod数
   schedule: "5 0 * * *"
   jobTemplate:
     spec:
@@ -24,6 +26,6 @@ spec:
                   memory: "128Mi"
                 limits:
                   memory: "256Mi"
-          restartPolicy: OnFailure
+          restartPolicy: OnFailure      # 设定为OnFailure
 
 
