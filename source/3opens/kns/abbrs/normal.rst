@@ -106,6 +106,7 @@ O
 P
 -----
 
+* PCRE: Perl Compatible Regular Expressions
 * POSIX: Portable Operating System Interface 
 * Pull Request (PR)
 

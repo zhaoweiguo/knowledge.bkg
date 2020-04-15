@@ -39,6 +39,7 @@
 
    tools/samba
    tools/puttygen
+   tools/htpasswd
 
 
 

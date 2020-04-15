@@ -1,6 +1,6 @@
 .. _nginx_config:
 
-配置简介
+配置选项
 ############
 
 HTTP配置
@@ -49,71 +49,6 @@ HTTP选项
 
 
 
-
-
-
-文件实例
-==================
-
-
-.. literalinclude:: /files/nginxs/nginx_config_full.conf
-    :language: nginx
-    :emphasize-lines: 12,15-18
-    :linenos:
-
-
-.. literalinclude:: /files/nginxs/nginx_config_server_full.conf
-    :language: nginx
-    :emphasize-lines: 12,15-18
-    :linenos:
-
-
-
-
-
-具体实例
-=================
-
-主配置文件
--------------
-
-.. literalinclude:: /files/nginxs/nginx_config_nginx.conf
-    :language: nginx
-    :emphasize-lines: 12,15-18
-    :linenos:
-
-默认的配置文件
----------------------
-
-.. literalinclude:: /files/nginxs/nginx_config_default.conf
-    :language: nginx
-    :emphasize-lines: 2,4-5
-    :linenos:
-
-PHP对应的配置文件
----------------------
-
-.. literalinclude:: /files/nginxs/nginx_config_php.conf
-    :language: nginx
-    :emphasize-lines: 12,15-18
-    :linenos:
-
-PHP对应的包含文件fastcgi_params
-------------------------------------
-
-.. literalinclude:: /files/nginxs/nginx_config_fastcgi_params
-    :language: nginx
-    :emphasize-lines: 12,15-18
-    :linenos:
-
-
-mobapi(ssl相关)
-------------------------------------
-
-.. literalinclude:: /files/nginxs/nginx_config_mobapi.conf
-    :language: nginx
-    :emphasize-lines: 12,15-18
-    :linenos:
 
 
 
