@@ -1,6 +1,7 @@
 Lager相关
 ================
 
+* github [1]_
 
 .. toctree::
    :maxdepth: 3
@@ -13,3 +14,5 @@ Lager相关
 
 
 
+
+.. [1] https://github.com/erlang-lager/lager

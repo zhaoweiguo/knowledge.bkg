@@ -92,6 +92,18 @@ foreach/2
   对List中的每个元素调用Fun(Elem)
   得到的结果顺序与List顺序相同
 
+实例::
+
+    L1 = [1,2,3,4,5].
+    lists:foreach(fun(X) -> io:format("~p~n", [X]) end, L1).
+
+    L2 = [{a1, b1}, {a2, b2}, {a3, b3}].
+    Fun = fun({A, _}) -> 
+        io:format("~p~n", [A]) 
+    end.
+    lists:foreach(Fun, L2).
+
+
 foldl/3
 '''''''''''''''
 用法::

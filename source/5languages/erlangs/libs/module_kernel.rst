@@ -1,9 +1,10 @@
-.. _erlang_doc:
+.. _kernel:
 
-kernel
+kernel [1]_
 ####################
 
-
+* users_guide [1]_
+* manual [2]_
 
 .. toctree::
    :maxdepth: 2
@@ -34,3 +35,6 @@ kernel
    kernels/erl_ddll
 
 
+
+.. [1] http://erlang.org/doc/apps/kernel/users_guide.html
+.. [2] http://erlang.org/doc/apps/kernel/index.html

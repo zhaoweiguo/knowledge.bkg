@@ -50,11 +50,12 @@ E
 G
 -----
 
+* GDPR: General Data Protection Regulation, 通用数据保护条例(欧洲联盟的条例)
 * GNU: GNU is Not Unix 
 * GPL——General Public License
 * GSA: Google Search Appliance
 * GUI——Graphical User Interface
-* GMT: Greenwich Mean Time(格林威治标准时间)
+* GMT: Greenwich Mean Time, 格林威治标准时间
 
 H
 ---
