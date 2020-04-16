@@ -1,5 +1,5 @@
-策略Retention Policy (RP)
--------------------------
+保留策略Retention Policy(RP)
+-----------------------------
 
 是InfluxDB数据架构的一部分，它描述了InfluxDB保存数据的时间。InfluxDB会比较服务器本地的时间戳和请求数据里的时间戳，并删除比你在RPs里面用DURATION设置的更老的数据。一个数据库中可以有多个RPs但是每个数据表的RPs是唯一的。
 
@@ -49,6 +49,14 @@
 
     ALTER RETENTION POLICY <retention_policy_name> ON <database_name> 
         DURATION <duration> REPLICATION <n> SHARD DURATION <duration> DEFAULT
+
+    实例:
+    > CREATE RETENTION POLICY "what_is_time" ON "NOAA_water_database" 
+        DURATION 2d REPLICATION 1
+    // 修改what_is_time的持续时间为3个星期，shard group的持续时间为30分钟:
+    > ALTER RETENTION POLICY "what_is_time" ON "NOAA_water_database" 
+        DURATION 3w SHARD DURATION 30m DEFAULT
+
 
 
 删除策略::

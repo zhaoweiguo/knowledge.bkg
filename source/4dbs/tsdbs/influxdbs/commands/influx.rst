@@ -9,7 +9,7 @@ influx命令
 
 登录::
 
-    $> influx -ssl -username <账号名称> -password <密码> -host <网络地址> -port 3242 
+    $> influx -ssl -username <账号名称> -password <密码> -host <网络地址> -port 3242 \
       -import -path=path/to/apple_stand.txt -database=apple_stand
 
     > create user gordon with password '1QAZ2wsx'
@@ -32,5 +32,9 @@ influx命令
 
     or
     $> influx -username <user> -password <pwd> -precision rfc3339 
+
+
+
+
 
 
