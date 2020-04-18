@@ -53,6 +53,19 @@
 
 ``$not`` 是元条件句, 即可以用在任何其他条件之上
 
+数组查询::
+
+    // 查询字段是数组
+    db.time_info.find({"begin_time":{$size:1}})
+    // 方法2
+    db.time_info.find({ "begin_time.0": {$exists:1} })
+
+    // 数组大小是某个范围(要求数组大小小于3)
+    db.time_info.find({ $where: "this.begin_time.length < 3" })
+    //数组大小小于1，就意味着num[0]不存在
+    db.time_info.find({ "begin_time.0": {$exists:0} })
+
+
 查询表数据条数::
 
     # 查询此表的数据条数

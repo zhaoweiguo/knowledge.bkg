@@ -7,6 +7,7 @@ Golang基本知识
    :maxdepth: 1
 
    normals/normal
+   normals/timer
    normals/go_concept
    normals/go_objclass
    normals/go_concurrent

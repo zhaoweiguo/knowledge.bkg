@@ -25,4 +25,15 @@ ethereum实例
 .. literalinclude:: /files/dockers/drone.Dockerfile
    :linenos:
 
+收集
+----
+
+guoxudongdocker/kubectl:
+
+.. literalinclude:: /files/dockers/kubectl.Dockerfile
+
+
+
+
+
 

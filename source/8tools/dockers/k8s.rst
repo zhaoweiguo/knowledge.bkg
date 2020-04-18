@@ -13,8 +13,7 @@ k8s相关
    k8s/practice
    k8s/future
    k8s/minikube
-   k8s/kustomize
-   k8s/kubedog
+   k8s/tool
    k8s/question
 
 * 阳明的博客: https://www.qikqiak.com/

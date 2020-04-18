@@ -5,6 +5,8 @@ kubectl命令
 
    kube control、kube cuttle、kube c-t-l
 
+下载地址 [1]_
+
 
 .. toctree::
    :maxdepth: 1
@@ -112,3 +114,5 @@ kubectl命令
 
 
 
+
+.. [1] https://kubernetes.io/docs/tasks/tools/install-kubectl

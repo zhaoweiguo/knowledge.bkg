@@ -63,4 +63,9 @@ Examples::
     # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
     kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
 
+说明::
+
+    1.14版:
+    kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+
 

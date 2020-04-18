@@ -8,6 +8,7 @@ consul
    :maxdepth: 2
 
    consuls/normal
+   consuls/install
 
 
 .. [1] https://github.com/hashicorp/consul

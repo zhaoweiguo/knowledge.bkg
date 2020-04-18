@@ -16,7 +16,6 @@ Contents:
    redis/redis_normal
    redis/redis_optimize
    redis/redis_question
-   redis/memcached
 
 
 * 官网 [1]_

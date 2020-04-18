@@ -1,13 +1,8 @@
 etcd
 ####
 
-简介::
-
-    开发语言: Golang
-    开源协议: Apache 2.0
-
-github  [1]_
-官网 [2]_
+* github  [1]_
+* 官网 [2]_
 
 
 .. toctree::
@@ -17,6 +12,11 @@ github  [1]_
    etcds/install
    etcds/api
    etcds/history
+
+简介::
+
+    开发语言: Golang
+    开源协议: Apache 2.0
 
 
 etcd 是 CoreOS 团队于 2013 年 6 月发起的开源项目，它的目标是构建一个高可用的分布式键值（key-value）数据库，基于 Go 语言实现。受到 :ref:`Apache ZooKeeper <zookeeper>` 项目和 :ref:`doozer <doozer>` 项目的启发，etcd 在设计的时候重点考虑了下面四个要素::

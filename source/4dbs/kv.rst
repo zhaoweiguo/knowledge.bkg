@@ -6,6 +6,7 @@ K/V数据库
    :maxdepth: 2
 
    kvs/redis
+   kvs/memcached
    kvs/etcd
    kvs/zookeeper
    kvs/consul
