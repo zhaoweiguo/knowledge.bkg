@@ -10,8 +10,6 @@
 ----------------
 
 * https://github.com/go-ini/ini
-* https://github.com/hashicorp/consul
-* https://www.consul.io/
 * xml: https://github.com/tealeg/xlsx
 * yaml: https://github.com/go-yaml/yaml/
 * 兼容 json，toml，yaml，hcl 等格式的日志库: https://github.com/spf13/viper
@@ -47,6 +45,8 @@ Golang工具包
 * CNCF Jaeger, a Distributed Tracing Platform: https://github.com/jaegertracing/jaeger.git
 * rolling log: https://github.com/natefinch/lumberjack
 * Leveled execution logs for Go: https://github.com/golang/glog
+* zerolog: https://github.com/rs/zerolog (项目 https://github.com/alibaba/kt-connect 中使用)
+* go-kit: https://github.com/go-kit/kit (阿里一个人推荐 https://www.cnblogs.com/alisystemsoftware/p/12408258.html)
 
 环境变量
 -----------
@@ -81,7 +81,8 @@ cli命令
 * A realtime distributed messaging platform: https://github.com/nsqio/nsq
 
 * 分布式k/v数据库: https://github.com/etcd-io/etcd
-* Programmatic load balancer backed(inspired by Hystrix): https://github.com/vulcand/vulcand
+* consul: https://github.com/hashicorp/consul
+* Programmatic lb backend(inspired by Hystrix): https://github.com/vulcand/vulcand
 * Global Distributed Client Side Rate Limiting: https://github.com/youtube/doorman
 
 数据库驱动
@@ -135,11 +136,6 @@ lib工具
 
 
 
-服务发现
---------
-
-* consul(分布、高可用连接和配置应用程序): https://github.com/hashicorp/consul
-
 框架
 -------
 
@@ -188,6 +184,7 @@ DEVOPS
 * automated deployment and declarative configuration: https://github.com/box/kube-applier
 * kustomize: https://github.com/kubernetes-sigs/kustomize
 * kubedog: https://github.com/flant/kubedog
+* clientGo: https://github.com/kubernetes/client-go
 
 网络工具
 --------

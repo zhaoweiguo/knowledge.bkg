@@ -9,7 +9,6 @@ IDEA相关
     ideas/idea_golang
     ideas/idea_java
     ideas/idea_folding
-    ideas/idea_licence
     ideas/idea_pycharm
 
 

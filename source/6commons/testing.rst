@@ -9,6 +9,7 @@
 
    testings/common
    testings/eunit
+   testings/code_coverage
 
 
 
