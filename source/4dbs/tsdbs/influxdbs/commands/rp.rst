@@ -62,3 +62,6 @@
 删除策略::
 
     DROP RETENTION POLICY <retention_policy_name> ON <database_name>
+
+
+

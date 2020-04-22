@@ -12,9 +12,4 @@
    normals/other
 
 
-* 文档参考1: https://jasper-zhang1.gitbooks.io/
-
-
-
-
-
+* 文档参考1: https://jasper-zhang1.gitbooks.io/influxdb/content/

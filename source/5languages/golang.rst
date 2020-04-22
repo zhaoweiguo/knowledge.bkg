@@ -12,7 +12,7 @@ Golang语言相关
    goes/command
    goes/opensource
    goes/testing
-   goes/upgrade
+   goes/history
    goes/practice
    goes/question
    goes/tool

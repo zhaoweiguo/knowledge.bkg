@@ -137,7 +137,8 @@ schema的语法
     location   santa_monica
     randtag       1
 
-6. # 显示数据字段的Key
+6. 显示数据字段的Key::
+
     show field keys
     show field keys from metrics
 

@@ -14,6 +14,7 @@ k8s相关
    k8s/future
    k8s/minikube
    k8s/tool
+   k8s/history
    k8s/question
 
 * 阳明的博客: https://www.qikqiak.com/

@@ -8,5 +8,7 @@
    tools/kt-connect
    tools/kubedog
    tools/kustomize
+   tools/kubecm
+   tools/kubewatch
 
 

@@ -197,11 +197,12 @@ DEVOPS
 * 负载工具类似ab: https://github.com/rakyll/hey
 * 高速的 P2P 端口映射工具，同时支持Socks5代理: https://github.com/vzex/dog-tunnel
 
-CI&Git
---------
+CI&CD&Git
+---------
 
 * gitlab-runner: https://gitlab.com/gitlab-org/gitlab-runner
 * drone: https://github.com/drone/drone
+* werf: https://github.com/flant/werf
 * makes git easier to use with GitHub: https://github.com/github/hub
 
 索引

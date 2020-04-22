@@ -93,6 +93,11 @@ AppVeyor [12]_
 
 * 可以自动化构建Windows项目
 
+werf
+====
+
+* github: https://github.com/flant/werf
+
 
 .. [1] https://travis-ci.com/
 .. [2] https://github.com/kubernetes/test-infra
