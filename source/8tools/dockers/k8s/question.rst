@@ -173,5 +173,62 @@ kubectl get job JobName -o yaml::
                 - exit 1
 
 
+k3s创建时报node.kubernetes.io/unreachable
+=========================================
+
+创建成功了，node已经启动::
+
+    $ kubectl get pods --all-namespaces
+    NAMESPACE     NAME                                      READY   STATUS
+    kube-system   metrics-server-6d684c7b5-hgc6p            1/1     Running
+    kube-system   helm-install-traefik-zp8r4                0/1     Completed
+    kube-system   local-path-provisioner-58fb86bdfd-76whq   1/1     Running
+    kube-system   coredns-d798c9dd-72r8v                    1/1     Running
+    kube-system   svclb-traefik-f8qk6                       2/2     Running
+    kube-system   traefik-6787cddb4b-fw2bg                  0/1     Evicted
+    kube-system   traefik-6787cddb4b-dvp2d                  0/1     Pending
+
+    $ kubectl get pods traefik-6787cddb4b-dvp2d -n kube-system -o yaml
+    ...
+    status:
+      conditions:
+      - lastProbeTime: null
+        lastTransitionTime: "2020-04-22T02:37:10Z"
+        message: '0/1 nodes are available: 1 node(s) had taints that the pod didn''t tolerate.'
+        reason: Unschedulable
+        status: "False"
+        type: PodScheduled
+      phase: Pending
+      qosClass: BestEffort
+    ...
+
+    $ kubectl describe po traefik-6787cddb4b-dvp2d
+    ...
+    Status:             Failed
+    Reason:             Evicted
+    Message:            The node was low on resource: ephemeral-storage.
+    ...
+    Events:
+      Type     Reason                 Message
+      ----     ------                 -------
+      ...
+      Warning  Evicted  The node was low on resource: ephemeral-storage.
+      ...
+
+说明::
+
+    其实看到这个信息基本就应该知道是因为磁盘不够, 但我执行df命令发现磁盘还好多
+    这时查看issue list发现下面一条, 也是指向磁盘不够问题
+    最后原因就是磁盘不够, 我使用的mac下Docker Desktop服务限制了docker使用磁盘大小
+
+* 参考: https://github.com/rancher/k3s/issues/1346
+
+.. image:: /images/k8s/tools/docker-desktop-resource-limit.png
+
+
+
+
+
+
 
 

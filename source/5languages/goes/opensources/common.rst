@@ -23,6 +23,7 @@ Golang工具包
 * mirror: https://github.com/golang/tools/
 * 文档: https://godoc.org/golang.org/x/tools
 * stringer: https://golang.org/x/tools/cmd/stringer
+* godoc.org: https://github.com/golang/gddo
 
 通知
 ---------
@@ -163,6 +164,7 @@ DEVOPS
 ------
 
 * 监控&统计: https://github.com/prometheus/prometheus
+* prometheus规模部署方案: https://github.com/thanos-io/thanos
 * 监控: https://github.com/grafana/grafana
 * 统计: https://github.com/rcrowley/go-metrics
 * 统计A well tested and comprehensive Golang statistics library: https://github.com/montanaflynn/stats
@@ -185,6 +187,8 @@ DEVOPS
 * kustomize: https://github.com/kubernetes-sigs/kustomize
 * kubedog: https://github.com/flant/kubedog
 * clientGo: https://github.com/kubernetes/client-go
+* kubeflow: https://github.com/kubeflow/kubeflow
+* ks命令: https://github.com/ksonnet/ksonnet
 
 网络工具
 --------

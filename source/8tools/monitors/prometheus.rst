@@ -12,6 +12,8 @@ Prometheus
    prometheus/prometheus
    prometheus/node_exporter
    prometheus/alertmanager
+   prometheus/port
+   prometheus/practice
 
 .. [1] https://prometheus.io/
 .. [2] https://github.com/prometheus

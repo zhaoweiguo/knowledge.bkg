@@ -16,6 +16,7 @@ drone
    drones/cli
    drones/install
    drones/plugin
+   drones/question
    drones/source
 
 

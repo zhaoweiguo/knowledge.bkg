@@ -11,8 +11,10 @@ Usage::
 实例::
 
     // 
-    $> kubectl expose rc kubia --type=LoadBalancer --name kubia-http
+    $ kubectl expose rc kubia --type=LoadBalancer --name kubia-http
 
+    // minikube 项目介绍中实例
+    $ kubectl expose deployment first-deployment --port=80 --type=NodePort
 
 Examples::
 

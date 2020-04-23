@@ -30,6 +30,7 @@
    protocols/rpc
    protocols/protocol_buffer
    protocols/thrift
+   protocols/jsonnet
    protocols/other
 
 

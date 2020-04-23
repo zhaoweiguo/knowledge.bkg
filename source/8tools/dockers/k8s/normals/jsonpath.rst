@@ -1,6 +1,9 @@
 JSONPath Support [1]_
 ###########################
 
+实例1
+=====
+
 json input::
 
     {
@@ -64,7 +67,41 @@ On Windows::
     C:\> kubectl get pods -o=jsonpath="{range .items[*]}{.metadata.name}{'\t'}{.status.startTime}{'\n'}{end}"
     C:\> kubectl get pods -o=jsonpath="{range .items[*]}{.metadata.name}{\"\t\"}{.status.startTime}{\"\n\"}{end}"
 
+实例2
+=====
 
+input::
+
+    $ kubectl  get svc first-deployment -o yaml
+    apiVersion: v1
+    kind: Service
+    metadata:
+      creationTimestamp: "2020-04-22T06:44:41Z"
+      labels:
+        app: first-deployment
+      name: first-deployment
+      namespace: default
+      resourceVersion: "529"
+      selfLink: /api/v1/namespaces/default/services/first-deployment
+      uid: a25ff4b7-0ee9-4fdc-b134-6c66f9431bc1
+    spec:
+      clusterIP: 10.110.122.106
+      externalTrafficPolicy: Cluster
+      ports:
+      - nodePort: 31012
+        port: 80
+        protocol: TCP
+        targetPort: 80
+      selector:
+        app: first-deployment
+      sessionAffinity: None
+      type: NodePort
+    status:
+      loadBalancer: {}
+
+使用::
+
+    $ export PORT=$(kubectl get svc first-deployment -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
 
 
 

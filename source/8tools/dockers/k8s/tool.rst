@@ -10,5 +10,8 @@
    tools/kustomize
    tools/kubecm
    tools/kubewatch
+   tools/k3s
+   tools/ksonnet
+   tools/minikube
 
 

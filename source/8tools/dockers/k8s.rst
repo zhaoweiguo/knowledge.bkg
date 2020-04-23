@@ -12,7 +12,6 @@ k8s相关
    k8s/yaml
    k8s/practice
    k8s/future
-   k8s/minikube
    k8s/tool
    k8s/history
    k8s/question

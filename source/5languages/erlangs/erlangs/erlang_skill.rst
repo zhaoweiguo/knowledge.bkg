@@ -76,6 +76,15 @@ Erlang技巧
 
     unicode:characters_to_binary("谢谢谢谢谢谢谢谢谢谢谢").
 
+    // 打印汉字
+    erl> io:format("~ts~n", ["汉字"]).
+    汉字
+    ok
+
+    // 消息有为汉字时json出错
+    S = list_to_binary(xmerl_ucs:to_utf8("灯泡"))
+
+
 
 操作符::
 
