@@ -10,6 +10,7 @@ ali开放平台
    alis/ApsaraDB
    alis/ai
    alis/iot
+   alis/StorageAndCDN
    alis/Security
    alis/ApplicationService
    alis/MonitorAndManagement

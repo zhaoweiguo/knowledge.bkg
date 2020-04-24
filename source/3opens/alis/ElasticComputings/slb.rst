@@ -8,7 +8,7 @@ slb相关
    :maxdepth: 1
 
    slbs/limit
-   slbs/ssl
+   slbs/pay
    slbs/question
 
 

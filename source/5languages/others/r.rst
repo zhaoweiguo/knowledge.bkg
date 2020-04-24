@@ -19,6 +19,18 @@ R是统计领域广泛使用的诞生于1980年左右的S语言的一个分支�
     $ registry.cn-hangzhou.aliyuncs.com/langs/r-base
 
 
+Basic types::
+
+    numeric (real)
+    integer
+    character
+    logical
+    complex
+
+
+
+
+
 
 
 
