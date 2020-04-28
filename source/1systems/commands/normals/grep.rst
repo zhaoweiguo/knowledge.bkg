@@ -39,6 +39,10 @@ grep使用方法
     $ curl www.zhaoweiguo.com/productpage | grep -o "<title>.*</title>"
     <title>Simple Bookstore App</title>
 
+    // 查询文件中是否含有keyword, 有返回true, 否则返回false
+    grep -q "keyword" <file>
+
+
 
 
 

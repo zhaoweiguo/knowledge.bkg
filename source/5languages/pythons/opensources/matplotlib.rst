@@ -14,6 +14,7 @@ Matplotlib: Visualization with Python。Matplotlib is a comprehensive library fo
 
 .. toctree::
 
+    matplotlibs/normal
     matplotlibs/install
     matplotlibs/pyplot
 
