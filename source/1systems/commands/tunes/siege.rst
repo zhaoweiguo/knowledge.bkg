@@ -3,7 +3,6 @@
 siege命令的使用方法
 =====================
 
-
 * 官网:
 
     `siege官网 <http://www.joedog.org>`_
@@ -44,6 +43,61 @@ siege命令的使用方法
     Failed transactions: 11 //失败处理次数
     Longest transaction: 29.04 //每次传输所花最长时间
     Shortest transaction: 0.00 //每次传输所花最短时间
+
+实例
+====
+
+非常类似于curl的-iL，只是这里Siege也会输出请求header::
+
+    $ siege -g www.google.com:
+    GET / HTTP/1.1 
+    Host: www.google.com 
+    User-Agent: JoeDog/1.00 [en] (X11; I; Siege 2.70)
+    Connection: close  
+
+    HTTP/1.1 302 Found 
+    Location: http://www.google.co.uk/ 
+    Content-Type: text/html; charset=UTF-8 
+    Server: gws 
+    Content-Length: 221 
+    Connection: close  
+
+    GET / HTTP/1.1 
+    Host: www.google.co.uk 
+    User-Agent: JoeDog/1.00 [en] (X11; I; Siege 2.70) 
+    Connection: close  
+
+    HTTP/1.1 200 OK 
+    Content-Type: text/html; charset=ISO-8859-1 
+    X-XSS-Protection: 1; mode=block 
+    Connection: close
+
+真正在行的是服务器的负载测试。就像ab::
+
+    在30秒内向Google发起20个并发连接，最后会得到一个漂亮的测试报告
+    $ siege -c20 www.google.co.uk -b -t30s 
+    ...
+    Lifting the server siege... done. 
+    Transactions: 1400 hits 
+    Availability: 100.00 % 
+    Elapsed time: 29.22 secs 
+    Data transferred: 13.32 MB 
+    Response time: 0.41 secs 
+    Transaction rate: 47.91 trans/sec 
+    Throughput: 0.46 MB/sec 
+    Concurrency: 19.53 
+    Successful transactions: 1400 
+    Failed transactions: 0 
+    Longest transaction: 4.08 
+    Shortest transaction: 0.08
+
+Siege最有用的一个特性是它可以把一个记录URL的文件作为输入::
+
+    // 重现Apache对另一台服务器的日志记录，以做负载测试
+    $ cut -d ' ' -f7 /var/log/apache2/access.log > urls.txt 
+    $ siege -c<concurrency rate> -b -f urls.txt
+
+
 
 
 

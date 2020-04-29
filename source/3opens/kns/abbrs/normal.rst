@@ -33,7 +33,9 @@ C
 D
 ----
 
+* NAT: 网络地址转换(Network Address Translation)
 * DHT: Distributed Hash Table，分布式哈希表
+* DNAT: 目的地址转换(Destination NAT)
 * DNN: 深度神经网络（Deep Neural Network, DNN）
 * DNS: Domain Name System 
 * DST: Daylight Saving Time(夏令时)
@@ -132,6 +134,7 @@ S
 
 * SASL: System Architecture Support Libraries)
 * SMTP: Simple Mail Transfer Protocol 
+* SNAT: 源地址转换(Source NAT)
 * SNMP: Simple Network Management Protocol
 * SSL: Security Socket Layer
 

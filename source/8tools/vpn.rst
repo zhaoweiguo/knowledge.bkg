@@ -7,7 +7,10 @@
 
    vpns/normal
    vpns/fanqiang
+   vpns/dnat
    vpns/ngrok
+   vpns/tool
+   vpns/question
 
 
 

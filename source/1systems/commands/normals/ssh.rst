@@ -1,3 +1,5 @@
+.. _command_ssh:
+
 ssh命令
 #########################
 
@@ -14,7 +16,7 @@ ssh命令
 
 * 把远端的端口3306影射到本地的3308(把远端的mysql通过本地访问,有bindaddress配置的mysql)::
 
-    ssh -L 3308:<ip>:3306 <user>@<host>
+    $ ssh -L 3308:<ip>:3306 <user>@<host>
 
 -D选项
 ------
