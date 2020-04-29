@@ -97,6 +97,15 @@ mac专用 [1]_::
       When removing identities with -d, each passphrase will be removed from it.
     $ ssh-add -K [path/to/your/ssh-key]
 
+ssh-copy-id
+-----------
+
+ssh-copy-id 将本机的公钥复制到远程机器的authorized_keys文件中，ssh-copy-id也能让你有到远程机器的home, ~./ssh , 和 ~/.ssh/authorized_keys的权利
+
+用ssh-copy-id将公钥复制到远程机器中::
+
+    $  ssh-copy-id -i .ssh/id_rsa.pub  username@192.168.x.xxx
+
 
 常见问题
 ----------

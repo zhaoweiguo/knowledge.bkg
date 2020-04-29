@@ -9,6 +9,7 @@ Python使用方法
    :maxdepth: 2
 
    pythons/normal
+   pythons/kernel
    pythons/opensource
    pythons/tool
    pythons/crawler

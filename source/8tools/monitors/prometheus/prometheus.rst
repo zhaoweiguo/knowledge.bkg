@@ -1,5 +1,13 @@
-prometheus [1]_
-###############
+prometheus
+##########
+
+* github [1]_
+* 官方文档 [2]_
+
+::
+
+    开源协议: Apache-2.0
+    语言: Golang
 
 简介
 ====
@@ -15,8 +23,8 @@ To emphasize this, and to clarify the project's governance structure, Prometheus
 安装
 ====
 
-linux版安装
------------
+linux版安装 [3]_
+----------------
 
 基本::
 
@@ -68,3 +76,5 @@ Docker版安装
 
 
 .. [1] https://github.com/prometheus/prometheus
+.. [2] https://prometheus.io/docs/introduction/overview/
+.. [3] https://prometheus.io/download/
