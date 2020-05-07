@@ -12,6 +12,7 @@ Prometheus
    prometheus/prometheus
    prometheus/node_exporter
    prometheus/alertmanager
+   prometheus/thanos
    prometheus/port
    prometheus/practice
 

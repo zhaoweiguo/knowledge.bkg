@@ -5,10 +5,8 @@
    :maxdepth: 2
 
    kernels/string
-   kernels/list
-   kernels/tuple
-   kernels/dict
-   kernels/set
+   kernels/collect
+   kernels/data_manage
    kernels/python_date
    kernels/python_exception
    kernels/python_lib

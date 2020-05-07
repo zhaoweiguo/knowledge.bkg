@@ -14,5 +14,6 @@
    encodings/other_encoding
 
 
+* :ref:`Python Unicode<python_unicode>`
 
 

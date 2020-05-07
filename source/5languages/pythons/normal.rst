@@ -6,6 +6,7 @@
 
    normals/install
    normals/simple
+   normals/class
    normals/skill
    normals/uwsgi
 

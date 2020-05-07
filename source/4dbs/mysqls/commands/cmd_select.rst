@@ -63,3 +63,18 @@ select命令
         select unix_timestamp('2013-05-26 14:42:24')-unix_timestamp('2013-05-26 14:39:44');
         -- 160(s)
 
+正则处理::
+
+    // 指定列是否含有手机号
+    SELECT COUNT(1) FROM t_user WHERE user_name REGEXP ".[1][35678][0-9]{9}.";
+    // 指定列是否是手机号
+    SELECT COUNT(1) FROM t_user WHERE user_name REGEXP "^[1][35678][0-9]{9}$";
+
+
+
+
+
+
+
+
+

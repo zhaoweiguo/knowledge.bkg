@@ -8,7 +8,7 @@ matplotlib
 ::
 
     授权协议: 自定义
-    开发语言: Ruby
+    开发语言: Python
 
 Matplotlib: Visualization with Python。Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 
@@ -17,6 +17,7 @@ Matplotlib: Visualization with Python。Matplotlib is a comprehensive library fo
     matplotlibs/normal
     matplotlibs/install
     matplotlibs/pyplot
+    matplotlibs/example
 
 
 
