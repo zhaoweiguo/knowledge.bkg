@@ -6,7 +6,8 @@
 .. toctree::
    :maxdepth: 2
 
-   commons/difference
+   normals/tsdb
+   normals/difference
 
 
 

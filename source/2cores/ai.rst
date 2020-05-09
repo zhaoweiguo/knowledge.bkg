@@ -37,7 +37,7 @@ AI相关
 * https://www.captainbed.net/
 * https://developers.google.cn/machine-learning/crash-course/prereqs-and-prework
 * https://tf.wiki/
-
+* 天池人工智能基础课程: https://tianchi.aliyun.com/course/courseDetail?courseId=41138
 
 
 

@@ -10,11 +10,12 @@ Prometheus
 
    prometheus/normal
    prometheus/prometheus
-   prometheus/node_exporter
+   prometheus/exporter
    prometheus/alertmanager
    prometheus/thanos
    prometheus/port
    prometheus/practice
+   prometheus/promql
 
 .. [1] https://prometheus.io/
 .. [2] https://github.com/prometheus

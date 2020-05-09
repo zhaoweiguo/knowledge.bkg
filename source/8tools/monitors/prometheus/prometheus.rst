@@ -17,6 +17,15 @@ Since its inception in 2012, many companies and organizations have adopted Prome
 It is now a standalone open source project and maintained independently of any company. 
 To emphasize this, and to clarify the project's governance structure, Prometheus joined the Cloud Native Computing Foundation in 2016 as the second hosted project, after Kubernetes.
 
+Prometheus的特点::
+
+    多维度数据模型。
+    灵活的查询语言。
+    不依赖分布式存储，单个服务器节点是自主的。
+    通过基于HTTP的pull方式采集时序数据。
+    可以通过中间网关进行时序列数据推送。
+    通过服务发现或者静态配置来发现目标服务对象。
+    支持多种多样的图表和界面展示，比如Grafana等。
 
 
 

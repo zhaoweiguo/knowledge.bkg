@@ -8,6 +8,6 @@ TSDB数据库
 
    tsdbs/influxdb
    tsdbs/opentsdb
-   tsdbs/common
+   tsdbs/normal
 
 

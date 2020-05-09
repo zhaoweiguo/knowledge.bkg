@@ -71,7 +71,10 @@ CNCF对云原生的重新定义（中英对照）::
     面向诊断性设计（Diagnosability）：集群级别的日志、metric 和追踪；
     面向安全性设计（Security）：安全端点、API Gateway、端到端加密；
 
+参考
+====
 
+* :ref:`Serverless<serverless>`
 
 
 
