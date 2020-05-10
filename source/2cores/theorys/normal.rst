@@ -7,7 +7,6 @@
    normals/cap
    normals/csp
    normals/rdf
-   normals/serverless
 
 
 

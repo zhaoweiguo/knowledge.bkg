@@ -1,3 +1,6 @@
+.. _k8s:
+.. _kubernetes:
+
 k8s相关
 #############
 
@@ -18,6 +21,7 @@ k8s相关
 
 * 阳明的博客: https://www.qikqiak.com/
 * Kubernetes中文指南/云原生应用架构实践手册: https://jimmysong.io/kubernetes-handbook/
+* Migrating to Cloud Native Application Architectures: https://jimmysong.io/migrating-to-cloud-native-application-architectures/
 * 《Kubernetes In Action》摘抄&笔记: https://blog.laisky.com/p/kubernetes-in-action
 
 

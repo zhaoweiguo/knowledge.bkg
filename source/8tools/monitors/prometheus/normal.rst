@@ -1,6 +1,10 @@
 常用
 ####
 
+.. image:: /images/monitors/prometheus/structure1.png
+
+
+
 组件
 ====
 

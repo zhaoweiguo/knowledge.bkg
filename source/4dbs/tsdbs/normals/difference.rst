@@ -36,7 +36,7 @@ Prometheus
           through those open source tools like Prometheus […]»
     — Site Reliability Engineering: How Google Runs Production Systems (O’Reilly Media)
 
-* 不过 InfluxData 公司也推出了整套的围绕时间序列数据库的解决方案：TICK，功能覆盖了数据获取（Telegraf ）、存储和查询（InfluxDB）、图表绘制（Chronograf ）、报警（Kapacitor ）。这套解决方案和 Elastic 公司的做法特别像：围绕着 ElasticSearch 核心功能，收购了 Logstash，Kibana，又搞出了了 Beat、Watcher 等外围服务打造完整的功能完备的全文检索解决方案。
+* 不过 InfluxData 公司也推出了整套的围绕时间序列数据库的解决方案：TICK，功能覆盖了数据获取（Telegraf ）、存储和查询（InfluxDB）、图表绘制（Chronograf ）、报警（Kapacitor ）。这套解决方案和 Elastic 公司的做法特别像：围绕着 ElasticSearch 核心功能，收购了 Logstash，Kibana，又搞出了 Beat、Watcher 等外围服务打造完整的功能完备的全文检索解决方案。
 
 * 扯得有点远，回到文章的核心内容：InfluxDB 和 Prometheus 的区别是啥。目前主要区别在于：前者仅仅是一个数据库，它被动的接受客户的数据插入和查询请求。而后者是完整的监控系统，能抓取数据、查询数据、报警等功能。
 
@@ -153,11 +153,3 @@ gtt 认为 Push 和 Pull 的主要区别在：
 
 
 .. [1] https://yq.aliyun.com/articles/680177
-
-
-
-
-
-
-
-

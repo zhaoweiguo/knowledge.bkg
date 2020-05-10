@@ -11,6 +11,8 @@
    concepts/big_data
    concepts/learning_theory
    concepts/cloud_native
+   concepts/serverless
+   concepts/data_center
    concepts/tmp
 
 

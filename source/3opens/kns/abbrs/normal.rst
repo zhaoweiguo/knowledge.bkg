@@ -49,6 +49,11 @@ E
 * ES: Expert System(专家系统,人工智能相关领域)
 * EVM (Ethereum Virtual Machine) 
 
+F
+----
+
+* FaaS: Function as a Service
+
 G
 -----
 

@@ -6,3 +6,4 @@ ApsaraDB飞天数据库
    :maxdepth: 1
 
    ApsaraDBs/tsdb
+   ApsaraDBs/dts

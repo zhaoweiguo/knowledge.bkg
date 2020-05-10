@@ -1,3 +1,5 @@
+.. _cncf:
+
 Cloud Native Computing Foundation [1]_
 ############################################
 
@@ -8,9 +10,9 @@ Cloud Native Computing Foundation [1]_
 
 ::
 
-    – Kubernetes ：集群中管理跨多台主机容器化应用的开源系统
-    – Prometheus ：专注于时间序列数据，为客户端依赖及第三方数据消费提供广泛集成支持的开源监控解决方案
-    – OpenTracing：与厂商无关的分布式追踪开源标准
+    – Kubernetes : 集群中管理跨多台主机容器化应用的开源系统
+    – Prometheus : 专注于时间序列数据，为客户端依赖及第三方数据消费提供广泛集成支持的开源监控解决方案
+    – OpenTracing: 与厂商无关的分布式追踪开源标准
     – Fluentd：创建统一日志层的开源数据收集器
 
 2017 开年以来基金会新接纳了五个项目::
@@ -26,7 +28,9 @@ Cloud Native Computing Foundation [1]_
 .. toctree::
    :maxdepth: 1
 
+   cncfs/kubernetes
    cncfs/opentracing
+   cncfs/landscape
 
 
 
