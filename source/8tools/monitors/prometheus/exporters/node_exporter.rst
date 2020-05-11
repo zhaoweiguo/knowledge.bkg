@@ -1,7 +1,7 @@
 node_exporter
 ==================
 
-* github [2]_
+* github [1]_
 
 安装::
 

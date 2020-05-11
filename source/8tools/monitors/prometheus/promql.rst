@@ -38,7 +38,7 @@ PromQL 查询结果主要有 3 种类型::
     支持的聚合运算符有 sum，min，max，avg，stddev，stdvar，count，count_values，bottomk，topk，quantile
     例如 max(http_requests_total) 表示 http_requests_total 结果中最大的数据。
 
-.. note:: 注意，和四则运算类型，Prometheus 的运算符也有优先级，它们遵从（^）> (*, /, %) > (+, -) > (==, !=, <=, <, >=, >) > (and, unless) > (or) 的原则
+.. note:: 注意，和四则运算类型，Prometheus 的运算符也有优先级，它们遵从（^）> (❋, /, %) > (+, -) > (==, !=, <=, <, >=, >) > (and, unless) > (or) 的原则
 
 
 内置函数 [1]_ ::

@@ -199,10 +199,9 @@ CQ一旦创建就不能修改了，你必须DROP再CREATE才行。
 基本语法的常见问题
 ==================
 
-.. note:: 基本语法不支持使用fill()更改不含数据的间隔报告的值。如果基本语法CQs包括了fill()，则会忽略fill()
+.. note:: 基本语法不支持使用fill()更改不含数据的间隔报告的值。如果基本语法CQs包括了fill()，则会忽略fill()。默认情况下，所有INTO查询将源measurement中的任何tag转换为目标measurement中的field
 
-
-默认情况下，所有INTO查询将源measurement中的任何tag转换为目标measurement中的field。在CQ中包含GROUP BY *，以保留目的measurement中的tag，如::
+在CQ中包含GROUP BY，以保留目的measurement中的tag，如::
 
     SELECT mean(*) INTO "downsampled_transportation"."autogen".:MEASUREMENT 
       FROM /.*/ GROUP BY time(30m),*
