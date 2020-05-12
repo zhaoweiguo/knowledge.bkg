@@ -10,5 +10,7 @@
    raspberrys/rasp_normal
 
 
+其他::
 
+    树莓派,NanoPi，Banana PI，香橙派
    

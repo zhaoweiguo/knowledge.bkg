@@ -67,7 +67,19 @@ Gauge：可增可减的仪表盘::
     例如，预测系统磁盘空间在4个小时之后的剩余情况
     predict_linear(node_filesystem_free{job="node"}[1h], 4 * 3600)
 
+使用Histogram和Summary分析数据分布情况::
 
+    Histogram和Summary主用用于统计和分析样本的分布情况
+    例如CPU的平均使用率、页面的平均响应时间
+
+    例如，统计延迟在0~10ms之间的请求数有多少而10~20ms之间的请求数又有多少
+    
+    1. prometheus_tsdb_wal_fsync_duration_seconds的指标类型为Summary。 
+    它记录了Prometheus Server中wal_fsync处理的处理时间，通过访问Prometheus Server的/metrics地址
+
+    2. 类型为Histogram的监控指标prometheus_tsdb_compaction_chunk_range_bucket
+
+    可以通过histogram_quantile()函数计算出其值的分位数
 
 参考文档
 ========

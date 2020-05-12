@@ -72,6 +72,16 @@ PromQL 查询结果主要有 3 种类型::
     5. irate 查询，过去 5 分钟平均每秒数值
     irate(http_requests_total[5m])
 
+实例::
+
+    # 查询系统所有http请求的总量
+    sum(http_request_total)
+
+    # 按照mode计算主机CPU的平均使用时间
+    avg(node_cpu) by (mode)
+
+    # 按照主机查询各个主机的CPU使用率
+    sum(sum(irate(node_cpu{mode!='idle'}[5m]))  / sum(irate(node_cpu[5m]))) by (instance)
 
 
 
