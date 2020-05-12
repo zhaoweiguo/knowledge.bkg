@@ -17,6 +17,7 @@ Pandas
    pandas/Series
    pandas/DataFrame
    pandas/index
+   pandas/example_file
    pandas/example_subset
    pandas/example_analysis
    pandas/example_sql

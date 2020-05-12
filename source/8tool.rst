@@ -14,10 +14,10 @@
 
    8tools/docker
    8tools/cicd
+   8tools/monitor
    8tools/tsung
    8tools/mqtt
    8tools/wireshark
-   8tools/monitor
    8tools/jumpserver
    8tools/vpn
    8tools/tmp

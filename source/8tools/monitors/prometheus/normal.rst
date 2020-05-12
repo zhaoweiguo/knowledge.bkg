@@ -33,6 +33,42 @@ Exporter::
 
     支持其他数据源的指标导入到Prometheus，支持数据库、硬件、消息中间件、存储系统、http服务器、jmx等, 也可以自行开发
 
+指标类型
+========
+
+Prometheus定义了4种不同的指标类型(metric type)::
+
+    Counter（计数器）、Gauge（仪表盘）、Histogram（直方图）、Summary（摘要）
+
+Counter：只增不减的计数器::
+
+    Counter类型的指标其工作方式和计数器一样，只增不减
+    常见的监控指标，如http_requests_total，node_cpu都是Counter类型的监控指标
+    一般在定义Counter类型指标的名称时推荐使用_total作为后缀
+
+    实例:
+    1. 例如，通过rate()函数获取HTTP请求量的增长率：
+    rate(http_requests_total[5m])
+    2. 查询当前系统中，访问量前10的HTTP地址：
+    topk(10, http_requests_total)
+
+Gauge：可增可减的仪表盘::
+
+    Gauge类型的指标侧重于反应系统的当前状态
+    常见指标如：node_memory_MemFree（主机当前空闲的内容大小）、node_memory_MemAvailable（可用内存大小）都是Gauge类型的监控指标
+
+    实例:
+    1. 直接查看系统的当前状态：
+    node_memory_MemFree
+    2. 通过PromQL内置函数delta()可以获取样本在一段时间返回内的变化情况
+    例如，计算CPU温度在两个小时内的差异
+    delta(cpu_temp_celsius{host="zeus"}[2h])
+    3. 使用deriv()计算样本的线性回归模型，甚至是直接使用predict_linear()对数据的变化趋势进行预测
+    例如，预测系统磁盘空间在4个小时之后的剩余情况
+    predict_linear(node_filesystem_free{job="node"}[1h], 4 * 3600)
+
+
+
 参考文档
 ========
 

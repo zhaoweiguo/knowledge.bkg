@@ -48,8 +48,12 @@ PromQL 查询结果主要有 3 种类型::
     floor(avg(http_requests_total{code="200"}))
     ceil(avg(http_requests_total{code="200"}))
 
-    查看 http_requests_total 5分钟内，平均每秒数据:
+    查看 http_requests_total 5分钟内增长率:
     rate(http_requests_total[5m])
+
+    访问量前10的HTTP地址:
+    topk(10, http_requests_total)
+
 
 聚合, 统计高级查询::
 

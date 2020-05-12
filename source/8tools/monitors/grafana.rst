@@ -34,7 +34,7 @@ Grafana 是一个开源仪表盘工具，它可用于Graphite、InfluxDB与 Open
 从本质上说，它是一个功能丰富的Graphite-web 替代品，能帮助用户更简单地创建和编辑仪表盘。它包含一个独一无二的Graphite目标解析器，从而可以简化度量和函数的编辑。Grafana快速的客户端渲染默认使用的是 Flot ，即使很长的时间范围也可应对，这样用户就可以创建具有智能轴格式（比如线和点）的复杂图表了。
 
 
-
+* 分享Dashboard: https://grafana.com/dashboards
 
 
 .. [1] https://grafana.com/

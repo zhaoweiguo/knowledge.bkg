@@ -13,7 +13,7 @@
     云上的资源除了服务器所包含的基础计算、网络、存储资源之外，还包括各种类别的更上层的资源，例如数据库、缓存、消息等等。
 
 
-2019年2月，UC 伯克利大学发表了一篇标题为 `《Cloud Programming Simplified: A Berkeley View on Serverless Computing》 <https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf?file=EECS-2019-3.pdf>`_ 的论文，论文中也有一个非常清晰形象的比喻，文中这样描述::
+2019年2月，UC 伯克利大学发表了一篇标题为 `《Cloud Programming Simplified: A Berkeley View on Serverless Computing》 <https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf>`_ 的论文，论文中也有一个非常清晰形象的比喻，文中这样描述::
 
     在云的上下文中，Serverful 的计算就像使用低级的汇编语言编程，而 Serverless 的计算就像使用 Python 这样的高级语言进行编程。
     例如 c = a + b 这样简单的表达式，如果用汇编描述，就必须先选择几个寄存器，把值加载到寄存器，进行数学计算，再存储结果。

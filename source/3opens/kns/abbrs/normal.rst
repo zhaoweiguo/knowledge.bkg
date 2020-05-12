@@ -63,6 +63,7 @@ G
 * GSA: Google Search Appliance
 * GUI——Graphical User Interface
 * GMT: Greenwich Mean Time, 格林威治标准时间
+* GMV: Gross Merchandise Volume, 成交总额
 
 H
 ---

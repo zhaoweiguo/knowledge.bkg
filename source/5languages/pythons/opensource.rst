@@ -8,6 +8,7 @@
    opensources/Flash
    opensources/mongo
    opensources/mysql
+   opensources/certifi
 
 
 .. toctree::
