@@ -21,4 +21,8 @@
    opensources/matplotlib
    opensources/scipy
    opensources/mxnet
+   opensources/sklearn
+   opensources/statsmodels
+
+
 

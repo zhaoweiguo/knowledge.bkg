@@ -23,7 +23,7 @@ k8s相关
 * Kubernetes中文指南/云原生应用架构实践手册: https://jimmysong.io/kubernetes-handbook/
 * Migrating to Cloud Native Application Architectures: https://jimmysong.io/migrating-to-cloud-native-application-architectures/
 * 《Kubernetes In Action》摘抄&笔记: https://blog.laisky.com/p/kubernetes-in-action
-
+* kubernetes 从入门到实践: http://www.kancloud.cn:8080/huyipow/kubernetes
 
 .. [1] https://kubernetes.io/zh/
 .. [2] https://github.com/kubernetes/kubernetes

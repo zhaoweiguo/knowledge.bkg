@@ -3,6 +3,18 @@
 
 .. image:: /images/monitors/prometheus/structure1.png
 
+k8s监控::
+
+    container_cpu_system_seconds_total{container_name="POD",namespace="monitoring"}
+
+    
+    container_cpu_user_seconds_total{container_name="POD",namespace="monitoring"}
+
+    page cache used by the container, in bytes:
+    container_memory_cache{container_name="POD",namespace="monitoring"}
+
+    resident set size (RSS):
+    container_memory_rss{container_name="POD",namespace="monitoring"}
 
 
 组件

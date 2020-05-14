@@ -29,6 +29,7 @@ Golang工具包
 ---------
 
 * email: https://gopkg.in/gomail.v2
+* email: https://github.com/jordan-wright/email
 
 
 日志log
@@ -189,6 +190,9 @@ DEVOPS
 * clientGo: https://github.com/kubernetes/client-go
 * kubeflow: https://github.com/kubeflow/kubeflow
 * ks命令: https://github.com/ksonnet/ksonnet
+* cadvisor: https://github.com/google/cadvisor
+* ube-state-metrics: https://github.com/kubernetes/kube-state-metrics
+* node_exporter: https://github.com/prometheus/node_exporter
 
 网络工具
 --------

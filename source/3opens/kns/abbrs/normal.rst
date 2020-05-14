@@ -12,6 +12,8 @@ A
 B
 ----
 
+* BaaS: Backend as a Service，后端即服务
+* BaaS: Blockchain as a Service
 * BI: Business Intelligence
 * BSD: Berkeley Software Distribution (加州柏克莱大学)
 
@@ -73,6 +75,7 @@ H
 I
 ----
 
+* IaaS: Infrastructure as a Service(基础设施即服务)
 * IEEE: Institute for Electrical and Electronics Engineers 
 * IETF: Internet Engineering Task Force
 * IOE: IBM, Oracle, EMC 
@@ -114,6 +117,7 @@ O
 P
 -----
 
+* PaaS: Platform as a Service(平台即服务)
 * PCRE: Perl Compatible Regular Expressions
 * POSIX: Portable Operating System Interface 
 * Pull Request (PR)
@@ -138,6 +142,7 @@ R
 S
 ----
 
+* SaaS: Software as a Service(软件服务化)
 * SASL: System Architecture Support Libraries)
 * SMTP: Simple Mail Transfer Protocol 
 * SNAT: 源地址转换(Source NAT)
