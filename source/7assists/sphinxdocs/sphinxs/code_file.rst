@@ -40,7 +40,7 @@ protobuf::
     MIME types: None
 
 简单的
-##########
+======
 
 
 语言
@@ -86,7 +86,7 @@ mysql实例::
 
 
 其他
-#########
+====
 
 
 配置文件configuration file formats
@@ -185,12 +185,3 @@ less::
 
 
 .. [1] http://pygments.org/docs/lexers/#lexers-for-php-and-related-languages
-
-
-
-
-
-
-
-    
-

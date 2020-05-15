@@ -1,7 +1,7 @@
 .. _python_mongo:
 
-pymongo的使用
-#######################
+pymongo
+#######
 
 http://api.mongodb.org/python/current/tutorial.html
 

@@ -10,7 +10,6 @@ Contents:
 
    sphinxs/normal
    sphinxs/code_file
-   sphinxs/display
    sphinxs/pygments_language
    sphinxs/sphinxdoc_advance
    sphinxs/sphinxdoc_install
