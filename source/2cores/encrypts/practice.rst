@@ -10,6 +10,8 @@
    practices/ssl_to_ssh
    practices/disable_tls1.0
    practices/self_signed_cert
+   practices/cert_match
+   practices/cert_gen
 
 
 

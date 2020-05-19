@@ -17,12 +17,14 @@ openssl基本
   spkac             ts                verify            version           
   x509
 
+  // 非对称：
   2.Message Digest commands (see the `dgst' command for more details)
   gost-mac          md4               md5               md_gost94         
   ripemd160         sha               sha1              sha224            
   sha256            sha384            sha512            streebog256       
   streebog512       whirlpool
 
+  // 对 称：
   3.Cipher commands (see the `enc' command for more details)
   aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb       
   aes-256-cbc       aes-256-ecb       base64            bf                

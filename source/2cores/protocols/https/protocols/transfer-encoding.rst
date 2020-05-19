@@ -47,7 +47,7 @@ Transfer-Encoding
       接着又输出了 5 字节的分块，
       最后用一个 0 长度的分块表明数据已经传完了
 
- Content-Encoding 和 Transfer-Encoding 二者经常会结合来用，其实就是针对进行了内容编码（压缩）的内容再进行传输编码（分块）。下面是我用 telnet 请求测试页面得到的响应，可以看到对 gzip 内容进行的分块::
+Content-Encoding 和 Transfer-Encoding 二者经常会结合来用，其实就是针对进行了内容编码（压缩）的内容再进行传输编码（分块）。下面是我用 telnet 请求测试页面得到的响应，可以看到对 gzip 内容进行的分块::
 
     > telnet 106.187.88.156 80
 

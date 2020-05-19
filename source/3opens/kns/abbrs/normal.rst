@@ -6,6 +6,7 @@ A
 
 * AAA(protocol): Authentication, Authorization and Accounting
 * ADT: Android Development Tools
+* AES: Advanced Encryption Standard
 * AI: Artificial Intelligence
 * ANSI: American National Standards Institute
 
@@ -19,6 +20,8 @@ B
 
 
 
+
+
 C
 ----
 
@@ -29,7 +32,10 @@ C
 * CE: 持续探索(Continuous Exploration)
 * CI: 持续集成 (Continuous integration)
 * CNN: 卷积神经网络（Convolutional Neural Network, CNN）
+* CQRS: Command Query Responsibility Seperation
+* CRUD: Create、Retrieve、Update、Delete
 * CSP: Communicating Sequential Processes
+* CSR: certificate signing request
 
 
 D
@@ -41,6 +47,8 @@ D
 * DNN: 深度神经网络（Deep Neural Network, DNN）
 * DNS: Domain Name System 
 * DST: Daylight Saving Time(夏令时)
+* DTLS(Datagram Transport Layer Security)
+
 
 E
 ----
@@ -92,6 +100,7 @@ L
 M
 ----
 
+* MIME: Multipurpose Internet Mail Extensions(rfc2045)
 * MIT:麻省理工学院
 * MTU: Maximum Transfer Unit 
 * MLP: multilayer perceptron(多层感知器)
@@ -130,12 +139,16 @@ Q
 R
 ----
 
+
 * RBAC: Role-based access control
 * REPL: Read-Eval-Print Loop(读取-求值-输出-循环,  一种「交互式解释器」)
+* REST: Representational State Transfer
 * RDF: Resource Description Framework(资源描述框架)
 * RDBMS: Relational DataBase Management System
 * REST: Representational State Transfer
+* PFS: Perfect Forward Secrecy
 * RFC: Request for Comments 
+* ROA: Resource Oriented Architecture
 * RPC: Remote Procedure Call 
 * RNN: 循环神经网（Recurrent Neural Network，RNN）
 
@@ -147,6 +160,8 @@ S
 * SMTP: Simple Mail Transfer Protocol 
 * SNAT: 源地址转换(Source NAT)
 * SNMP: Simple Network Management Protocol
+* SOA: service oriented architecture
+* SOAP: Simple Object Access Protocol
 * SSL: Security Socket Layer
 
 T
@@ -154,6 +169,7 @@ T
 
 * TCP: Transmission Control Portocol 
 * TDD: Test-Driven Development(测试驱动开发)
+* TLS: Transport Layer Security
 * TTS: Text to Speech
 
 U

@@ -76,7 +76,9 @@ unable to load key file
 
 解决方案::
 
-  原因:openssl dgst -verify cert.pem命令期望文件cert.pem contains the "raw" public key in PEM format. The raw format is an encoding of a SubjectPublicKeyInfo structure, which can be found within a certificate; but openssl dgst cannot process a complete certificate in one go.
+  原因:openssl dgst -verify cert.pem命令期望文件cert.pem contains the "raw" public key in PEM format. 
+    The raw format is an encoding of a SubjectPublicKeyInfo structure, which can be found within a certificate; 
+    but openssl dgst cannot process a complete certificate in one go.
 
   // 你要先从证书中提取出public key
   $> openssl x509 -pubkey -noout -in cert.pem > pubkey.pem

@@ -1,4 +1,4 @@
-s_client加密
+openssl s_client命令
 ########################
 
 ::

@@ -4,14 +4,6 @@ Rest相关
 RESTful架构风格最初由Roy T. Fielding（HTTP/1.1协议专家组负责人）在其2000年的博士学位论文中提出。HTTP就是该架构风格的一个典型应用。
 
 
-* REST: Representational State Transfer
-* SOA: service oriented architecture
-* ROA: Resource Oriented Architecture
-* RPC: remote procedure call
-* SOAP: Simple Object Access Protocol
-* CRUD: create, read, update和delete
-
-
 RESTful架构风格的特点
 =====================
 

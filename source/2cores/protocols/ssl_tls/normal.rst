@@ -8,8 +8,6 @@
   SSL v1.0, SSL v2.0因安全原因没有公开
   1996年公开了v3.0版
   而SSL v3.1版就是TLS1.0版
-  SSL: Secure Socket Layer
-  TLS: Transport Layer Security
 
 SSL提供了3种功能::
 

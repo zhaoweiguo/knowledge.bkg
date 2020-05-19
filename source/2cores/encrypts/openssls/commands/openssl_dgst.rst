@@ -1,4 +1,4 @@
-dgst加密
+openssl dgst命令
 ================
 
 openssl dgst <option>::
@@ -18,15 +18,17 @@ openssl dgst <option>::
 实例::
 
 
-  // 签名
-  openssl dgst -sha256 -sign private.pem -out out.bin testfile
-  // 验证
-  openssl dgst -sha256 -verify public.pem -signature out.bin testfile
+    // 签名
+    openssl dgst -sha256 -sign private.pem -out out.bin testfile
+    // 验证
+    openssl dgst -sha256 -verify public.pem -signature out.bin testfile
 
-  // 从p12文件中取出私钥
-  openssl pkcs12 -nodes -nocerts -in Mocca.pfx -out private.pem -passin pass:""
+    // 从p12文件中取出私钥
+    openssl pkcs12 -nodes -nocerts -in Mocca.pfx -out private.pem -passin pass:""
 
 
+    $ echo "zhaohang" |openssl dgst -md5
+    c47df1e95ae452e959fcc73cda1a3e77
 
 
 

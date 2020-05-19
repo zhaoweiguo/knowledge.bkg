@@ -1,4 +1,4 @@
-RSA加密
+openssl rsa命令
 ---------------
 
 openssl rsa 命令::
@@ -71,9 +71,6 @@ RSA类加密使用::
   openssl rsautl -encrypt -in <file.pub> -inkey test_pub.key -pubin -out <file> 
   // 操作:解密文件
   openssl rsautl -decrypt -in <file> -inkey test.key -out <newfile.pub>
-
-
-
 
 
 

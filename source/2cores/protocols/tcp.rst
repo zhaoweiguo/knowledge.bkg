@@ -14,9 +14,7 @@ tcp相关
    tcps/dns
    tcps/icmp
    tcps/igmp
-   tcps/ip
    tcps/dll
-   tcps/ip_route
 
 
 * W.Richard Stevens, 《TCP/IP 详解》
