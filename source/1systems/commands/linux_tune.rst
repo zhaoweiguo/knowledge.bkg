@@ -27,10 +27,6 @@
 
    tunes/ulimit
 
-   tunes/webbench
-   tunes/ab
-   tunes/http_load
-   tunes/siege
    tunes/time
 
    tunes/pstree

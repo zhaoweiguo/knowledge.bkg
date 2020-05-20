@@ -15,7 +15,7 @@
    8tools/docker
    8tools/cicd
    8tools/monitor
-   8tools/tsung
+   8tools/stress_testing
    8tools/mqtt
    8tools/wireshark
    8tools/jumpserver

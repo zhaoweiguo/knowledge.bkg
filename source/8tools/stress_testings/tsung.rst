@@ -1,7 +1,7 @@
 .. _tsung:
 
 Tsung使用文档
-=================================
+=============
 
 Contents:
 
@@ -17,8 +17,4 @@ Contents:
    tsungs/tsung-1.0-dtd
    tsungs/tsung_question
    tsungs/tsung_other
-   tsungs/jmeter
-
-
-
 
