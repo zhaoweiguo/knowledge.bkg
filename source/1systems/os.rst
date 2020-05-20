@@ -1,7 +1,7 @@
 .. _linux:
 
-Linux相关
-=================================
+OS相关
+######
 
 :作者: 新溪-gordon <programfan.info#gmail.com>
 :时间: 2012-01-30
@@ -11,16 +11,14 @@ Linux相关
 .. toctree::
    :maxdepth: 2
 
-   linuxs/linux_file
-   linuxs/centos
-   linuxs/debian
-   linuxs/freebsd
-   linuxs/alpine
-   linuxs/busybox
-   linuxs/linux_question
-   linuxs/linux_security
-   linuxs/linux_aliyun
-   linuxs/linux_other
+   oses/centos
+   oses/debian
+   oses/freebsd
+   oses/alpine
+   oses/busybox
+   oses/mac
+   oses/window
+   oses/hardware
 
 
 

@@ -1,5 +1,12 @@
-物联网
-######
+物联网相关
+##########
+
+::
+
+   ETL提取、转移、加载
+   RFID(Radio Frequency Identification)射频识别
+   OEM:Original Equipment Manufacturer
+
 
 物联网架构::
 
@@ -16,4 +23,5 @@
 ====
 
 * http://www.ruijie.com.cn/fa/xw-hlw/60952
+
 

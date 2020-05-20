@@ -13,13 +13,11 @@
    :maxdepth: 2
 
    1systems/linux_command
-   1systems/linux
-   1systems/mac
+   1systems/linux_file
+   1systems/os
+   1systems/normal
    1systems/shell
-   1systems/window
-   1systems/iot
    1systems/tune
-   1systems/hardware
    1systems/gpu
    1systems/history
    1systems/other

@@ -1,33 +1,7 @@
-常用文件
-=============
+时区
+####
 
-
-
-常用文件::
-
-  // 设置指定的域名解析地址:
-  /etc/hosts
-  // 设置DNS:
-  /etc/resolv.conf
-  //察看操作系统:
-  /etc/issue
-
-  //日志消息目录:
-  /var/spool/mail/
-
-
-   重启crond
-   /etc/init.d/crond restart
-   重启日志服务
-   /etc/init.d/rsyslog restart
-   
-
-   所有命令历史记录
-   .bash_history
-
-
-
-时区::
+::
 
   找到相应的时区文件 /usr/share/zoneinfo/Asia/Shanghai 
   替换当前的/etc/localtime
@@ -61,5 +35,4 @@
   同步biso时间:
   同步BIOS时钟，强制把系统时间写入CMOS，命令如下:
     clock -w
-
 
