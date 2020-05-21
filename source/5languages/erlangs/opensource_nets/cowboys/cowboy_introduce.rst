@@ -63,7 +63,7 @@ mimetype::
 
 
 
-.. figure:: /images/erlangs/cowboy_http_req_resp.png
+.. figure:: /images/languages/erlangs/cowboy_http_req_resp.png
    :width: 30%
 
 

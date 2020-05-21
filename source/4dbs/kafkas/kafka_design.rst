@@ -62,7 +62,7 @@
 
 4.8 Log Compaction:
 
-.. image:: /images/kafkas/kafka_log_compaction.png
+.. image:: /images/dbs/kafkas/kafka_log_compaction.png
    :width: 70%
 
 ::

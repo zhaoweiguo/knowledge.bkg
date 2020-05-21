@@ -3,7 +3,7 @@ Kafka其他
 
 Topic数量对性能影响图 [1]_ :
 
-.. figure:: /images/kafkas/kafka_topic_numbers.png
+.. figure:: /images/dbs/kafkas/kafka_topic_numbers.png
    :width: 80%
 
 下一代的kafka? [2]_

@@ -13,12 +13,12 @@
 
 支持的文件格式:
 
-.. figure:: /images/erlangs/erl_rebar_source_format.png
+.. figure:: /images/languages/erlangs/erl_rebar_source_format.png
     :width: 80%
 
 项目依赖:
 
-.. figure:: /images/erlangs/erl_rebar_dependance.png
+.. figure:: /images/languages/erlangs/erl_rebar_dependance.png
     :width: 80%
 
 动态配置::

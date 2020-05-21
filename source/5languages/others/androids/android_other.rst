@@ -2,8 +2,8 @@
 ###################
 
 
-    .. figure:: /images/androids/android_color.png
-        :width: 60%
+.. figure:: /images/languages/androids/android_color.png
+    :width: 60%
 
 
 

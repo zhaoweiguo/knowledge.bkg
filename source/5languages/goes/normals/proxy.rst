@@ -21,7 +21,7 @@
     $env:GOPROXY = "https://goproxy.io"
 
 
-.. image:: /images/golangs/goproxy1.png
+.. image:: /images/languages/golangs/goproxy1.png
 
 
 Athens [2]_

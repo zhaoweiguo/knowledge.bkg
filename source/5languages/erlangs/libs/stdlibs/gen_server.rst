@@ -6,7 +6,7 @@ Design Principles
 Client-Server Principles:
 1 Server VS n Client
 
-.. figure:: /images/erlangs/erl_otp_gen_server_principle.gif
+.. figure:: /images/languages/erlangs/erl_otp_gen_server_principle.gif
    :width: 60%
 
 监控树模式::

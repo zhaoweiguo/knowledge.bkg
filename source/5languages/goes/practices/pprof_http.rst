@@ -23,7 +23,7 @@ CPU 的占用分析使用
 
 打开 http://localhost:9876/debug/pprof:
 
-.. image:: /images/golangs/pprof_http2.png
+.. image:: /images/languages/golangs/pprof_http2.png
 
 
 ::
@@ -60,7 +60,7 @@ CPU 的占用分析使用
 效果图
 ======
 
-.. image:: /images/golangs/pprof_http.svg
+.. image:: /images/languages/golangs/pprof_http.svg
 
 
 参考

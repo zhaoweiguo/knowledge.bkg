@@ -3,5 +3,5 @@
 CI快速参考图
 ==============
 
-.. figure:: /images/phps/languages_php_ci_quick_ref.png
+.. figure:: /images/languages/phps/languages_php_ci_quick_ref.png
    :width: 100%

@@ -11,7 +11,7 @@ innodb_flush_log_at_trx_commit(待测试)
     link: http://dev.mysql.com/doc/refman/5.5/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit
 
 
-.. figure:: /images/mysqls/mysql_conf_innodb_flush_log_at_trx_commit.png
+.. figure:: /images/dbs/mysqls/mysql_conf_innodb_flush_log_at_trx_commit.png
    :width: 40%
 
 innodb_flush_log_at_trx_commit，IO负载马上下降，调整innodb_flush_log_at_trx_commit对于大量写事务的情况磁盘IO会有很明显的改善，但也有丢数据的风险，慎用

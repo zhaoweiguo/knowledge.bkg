@@ -79,7 +79,7 @@ godoc命令
         Sub-repositories
         Community
 
-.. image:: /images/golangs/command_godoc1.png
+.. image:: /images/languages/golangs/command_godoc1.png
 
 添加文档示例
 ------------
@@ -114,7 +114,7 @@ godoc命令
         return a+b
     }
 
-.. image:: /images/golangs/command_godoc2.png
+.. image:: /images/languages/golangs/command_godoc2.png
 
 
 

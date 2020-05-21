@@ -58,7 +58,7 @@ InfluxDB的单节点是完全开源的，InfluxDB的集群版本是闭源的商�
 
 内存的增长和series的基数存在一个指数级的关系：
 
-.. image:: /images/influxdbs/influxdb_series_cardinality.png
+.. image:: /images/dbs/influxdbs/influxdb_series_cardinality.png
 
 硬盘::
 

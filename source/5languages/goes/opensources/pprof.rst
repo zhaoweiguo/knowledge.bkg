@@ -130,7 +130,7 @@ cpu::
 
 像这个样子:
 
-.. image:: /images/golangs/pprof_example1.png
+.. image:: /images/languages/golangs/pprof_example1.png
 
 .. literalinclude:: /files/golangs/pprof_runtime.go
 
@@ -260,7 +260,7 @@ pprof_blockprofile.go内容:
 
 可以看到程序在 mutex.Lock 上阻塞了2.04ms(worker goroutine)， 在 WaitGroup.Wait 上等待了1.33ms(main goroutine)，从更上层来看，在 main 函数中一共阻塞了2.04ms，worker函数中阻塞了1.33ms(cum 列)，通过 web命令生成 svg 图片在浏览器查看:
 
-.. image:: /images/golangs/pprof_blockprofile1.png
+.. image:: /images/languages/golangs/pprof_blockprofile1.png
 
 mutexprofile
 ------------
@@ -285,7 +285,7 @@ mutexprofile
 
 查看 svg 图:
 
-.. image:: /images/golangs/pprof_mutexprofile1.png
+.. image:: /images/languages/golangs/pprof_mutexprofile1.png
 
 Trace 报告
 ==========
@@ -331,7 +331,7 @@ Trace 报告
     // 使用
     $ pprof -http=":8081" [binary] [profile]
 
-.. image:: /images/golangs/pprof1.png
+.. image:: /images/languages/golangs/pprof1.png
 
 在上面的压测过程中，我们再新建一个终端窗口输入以下命令，生成我们的profile文件::
 

@@ -235,7 +235,7 @@ group配置::
 
 supervisor图:
 
-.. figure:: /images/erlangs/brod_sup_struct.png
+.. figure:: /images/languages/erlangs/brod_sup_struct.png
     :width: 80%
 
 

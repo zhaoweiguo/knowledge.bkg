@@ -37,7 +37,7 @@
     # position：箱型图占位
 
 
-.. image:: /images/pythons/opensources/matplotlib_box_demo1.png
+.. image:: /images/languages/pythons/opensources/matplotlib_box_demo1.png
 
 实例::
 

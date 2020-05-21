@@ -39,7 +39,7 @@ NumPy之于数值计算特别重要的原因之一，是因为它可以高效处
     Wall time: 651 ms
 
 
-.. image:: /images/pythons/opensources/numpy_func.jpg
+.. image:: /images/languages/pythons/opensources/numpy_func.jpg
 
 
 NumPy的ndarray：一种多维数组对象::
@@ -124,11 +124,11 @@ ndarray的数据类型::
 =============================
 
 
-.. image:: /images/pythons/opensources/numpy_func1.jpg
+.. image:: /images/languages/pythons/opensources/numpy_func1.jpg
 
-.. image:: /images/pythons/opensources/numpy_func2.jpg
+.. image:: /images/languages/pythons/opensources/numpy_func2.jpg
 
-.. image:: /images/pythons/opensources/numpy_func3.jpg
+.. image:: /images/languages/pythons/opensources/numpy_func3.jpg
 
 
 sqrt和exp函数::
@@ -213,7 +213,7 @@ modf返回浮点数数组的小数和整数部分::
      [ 2.         -1.63077865 -1.00532788 -0.59828079]
      [ 2.          2.          2.          2.        ]]
 
-.. image:: /images/pythons/opensources/numpy_func4.png
+.. image:: /images/languages/pythons/opensources/numpy_func4.png
 
 数学和统计方法::
 
@@ -248,7 +248,7 @@ modf返回浮点数数组的小数和整数部分::
      [  3  12  60]
      [  6  42 336]]
 
-.. image:: /images/pythons/opensources/numpy_func5.png
+.. image:: /images/languages/pythons/opensources/numpy_func5.png
 
 
 排序算法的特征在于执行速度，最坏情况性能
@@ -329,7 +329,7 @@ modf返回浮点数数组的小数和整数部分::
     ['Bob' 'Joe' 'Will']
 
 
-.. image:: /images/pythons/opensources/numpy_func6.jpg
+.. image:: /images/languages/pythons/opensources/numpy_func6.jpg
 
 用于数组的文件输入输出::
 
@@ -366,10 +366,10 @@ modf返回浮点数数组的小数和整数部分::
     In [35]: print(np.dot(x, np.ones(3)))
     [ 6. 15.]
 
-.. image:: /images/pythons/opensources/numpy_func7.jpg
+.. image:: /images/languages/pythons/opensources/numpy_func7.jpg
 
 
-.. image:: /images/pythons/opensources/numpy_func8.png
+.. image:: /images/languages/pythons/opensources/numpy_func8.png
 
 
 

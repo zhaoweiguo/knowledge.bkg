@@ -27,7 +27,7 @@
     DiscardPolicy       默认情况下它将丢弃被拒绝的任务
 
 
-.. figure:: /images/javas/java_thread_pool.png
+.. figure:: /images/languages/javas/java_thread_pool.png
    :width: 80%
 
 

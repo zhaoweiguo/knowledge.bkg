@@ -1,8 +1,8 @@
 android架构
 ####################
 
-    .. figure:: /images/androids/android_systemarchitecture.jpg
-        :width: 80%
+.. figure:: /images/languages/androids/android_systemarchitecture.jpg
+    :width: 80%
 
 
 

@@ -3,5 +3,5 @@
 CI流程图
 ============
 
-.. figure:: /images/phps/languages_php_ci_appflow.gif
+.. figure:: /images/languages/phps/languages_php_ci_appflow.gif
    :width: 100%

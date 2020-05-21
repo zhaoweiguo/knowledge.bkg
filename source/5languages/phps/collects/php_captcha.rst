@@ -83,6 +83,6 @@ php验证码实例
 
 * 运行結果如图:
 
-    .. figure:: /images/phps/languages_php_yzm.bmp
+    .. figure:: /images/languages/phps/languages_php_yzm.bmp
        :width: 50%
 
