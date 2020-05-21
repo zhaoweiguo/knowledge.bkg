@@ -12,6 +12,7 @@ linux下的功能模块可以分为静态内核模块和动态功能模块
    :maxdepth: 2
 
    kernels/modprobe
+   kernels/kexec
    kernels/lsmod
    kernels/sysctl
    kernels/systemctl

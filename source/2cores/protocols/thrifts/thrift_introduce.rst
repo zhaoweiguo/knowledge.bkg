@@ -11,12 +11,12 @@ a remote procedure call framework for "scalable cross-languages services develop
 架构设计
 ------------
 
-.. figure:: /images/thrift_architecture.png
+.. figure:: /images/protocols/thrift_architecture.png
    :width: 70%
 
 Thrift的网络栈:
 
-.. figure:: /images/thrift_netstack.jpg
+.. figure:: /images/protocols/thrift_netstack.jpg
    :width: 70%
 
 

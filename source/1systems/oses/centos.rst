@@ -1,6 +1,6 @@
 .. _os_centos:
 
-centos专用命令
+centos专用
 ##############
 
 目录:

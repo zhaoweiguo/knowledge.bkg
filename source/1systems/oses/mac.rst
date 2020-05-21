@@ -1,6 +1,6 @@
 
-Mac相关知识
-#########################
+Mac相关
+#######
 
 
 :作者: 新溪-gordon <programfan.info#gmail.com>

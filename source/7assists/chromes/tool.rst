@@ -1,7 +1,7 @@
 Chrome Console工具
 '''''''''''''''''''''''''''
 
-.. figure:: /images/chrome_enable_protocol.png
+.. figure:: /images/chromes/chrome_enable_protocol.png
    :width: 80%
 
   

@@ -41,6 +41,15 @@ Apache Bench(ab)
     // post请求实例:以4个并发数请求40个请求
     ab -c 4 -n 40 -v2 -p "post.json" -T "application/x-www-form-urlencoded" "http://zgapi.taojoy.com.cn/3/goods/multibuy2"
 
+介绍
+====
+
+Apache Bench（ab）是一款用来针对HTTP协议做性能压测的命令行工具，支持在本地环境发起测试请求，验证服务器的处理性能。它主要具有以下特点：
+
+
+
+
+
 缺点
 ====
 

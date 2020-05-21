@@ -34,7 +34,7 @@ NoSQL数据库大致可以分为四类::
 
 
 
-.. image:: /images/dbGraphs/nosql-databases-overview.png
+.. image:: /images/dbs/nosql-databases-overview.png
 
 
 

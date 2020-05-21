@@ -1,6 +1,6 @@
 .. _os_linux:
 
-linux相关
+linux文件
 ============
 
 .. toctree::
@@ -14,6 +14,7 @@ linux相关
    linux_files/folder_init.d
    linux_files/folder_tmp
    linux_files/folder_log
+   linux_files/folder_proc
 
 
 
