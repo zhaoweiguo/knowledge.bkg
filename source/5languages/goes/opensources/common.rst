@@ -270,6 +270,7 @@ P2P
 ------------
 
 * A curated list of awesome Go frameworks, libraries and software: https://github.com/avelino/awesome-go
+* 压测工具: https://github.com/link1st/go-stress-testing
 
 参考
 ----

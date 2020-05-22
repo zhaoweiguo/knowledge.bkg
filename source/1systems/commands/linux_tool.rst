@@ -12,7 +12,6 @@
 
    tools/watch
 
-   tools/vagrant
    tools/tmux
    tools/screen
    tools/pgrep

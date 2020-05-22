@@ -7,15 +7,6 @@ kexec工具
 
 
 
-实践
-====
-
-系统层日志是否有异常::
-
-    vim /etc/default/grub  #修改crashkernel=auto
-    GRUB_CMDLINE_LINUX="crashkernel=128M rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet"
-
-
 简介
 ====
 

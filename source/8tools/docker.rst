@@ -13,14 +13,8 @@ Docker相关
    dockers/language
    dockers/virtualbox
    dockers/vmware
+   dockers/vagrant
    dockers/tmp
-
-
-
-
-
-
-
 
 
 

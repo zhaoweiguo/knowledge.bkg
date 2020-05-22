@@ -1,4 +1,4 @@
-简单命令
+简单工具
 ########
 
 
@@ -9,4 +9,5 @@
    simples/ab
    simples/http_load
    simples/siege
+   simples/locust
 
