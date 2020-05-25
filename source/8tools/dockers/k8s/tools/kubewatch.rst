@@ -1,6 +1,17 @@
 kubewatch命令
 #############
 
+说明
+====
+
+Kubernetes 资源观测工具，实时监控 Kubernetes 集群中各种资源的新建、更新和删除，并实时通知到各种协作软件/聊天软件，目前支持的通知渠道有::
+
+    slack
+    hipchat
+    mattermost
+    flock
+    webhook
+
 安装
 ====
 
@@ -44,6 +55,18 @@ Go安装::
     INFO[0000] Processing add to pod: kube-system/tiller-deploy-69ffbf64bc-h8zxm  pkg=kubewatch-pod
     INFO[0000] Kubewatch controller synced and ready         pkg=kubewatch-service
     INFO[0000] Kubewatch controller synced and ready         pkg=kubewatch-pod
+
+钉钉配置
+========
+
+::
+
+    // 钉钉原项目没集成, 需要使用下面这个路径
+    git clone https://github.com/sunny0826/kubewatch-chat.git
+    cd kubewatch-chat
+    helm install kubewatch kubewatch \
+      --set dingtalk.sign="XXX" \
+      --set dingtalk.token="XXXX-XXXX-XXXX"
 
 Configure
 =========

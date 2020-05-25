@@ -29,6 +29,7 @@ Cloud Native Computing Foundation [1]_
    :maxdepth: 1
 
    cncfs/kubernetes
+   cncfs/prometheus
    cncfs/opentracing
    cncfs/landscape
 

@@ -21,7 +21,7 @@ k3s
 
     $ brew install k3d
 
-创建 k3s 集群
+k3s 集群
 =============
 
 创建 k3s 集群::
@@ -39,6 +39,15 @@ k3s
     kubectl cluster-info
     // 注意, 镜像拉取需要梯子
 
+查看集群列表::
+
+    $ k3d ls
+    +-----------+------------------------------------+---------+---------+
+    |   NAME    |               IMAGE                | STATUS  | WORKERS |
+    +-----------+------------------------------------+---------+---------+
+    | k3s-local | docker.io/rancher/k3s:v1.17.3-k3s1 | running |   0/0   |
+    +-----------+------------------------------------+---------+---------+
+
 删除集群::
 
     $ k3d delete -n k3s-local
@@ -47,7 +56,7 @@ k3s
     INFO[0000] ...Removing docker image volume
     INFO[0000] Removed cluster [k3s-local]
 
-使用::
+使用k3d集群::
 
     $ export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-local')"
 
@@ -58,8 +67,44 @@ k3s
 
     $ kubectl get pod -n kube-system
 
+停止集群::
 
+    $ k3d stop --name='k3s-local'
 
+启动集群::
+
+    $ k3d start --name='k3s-local'
+
+k3d命令::
+
+    NAME:
+       k3d - Run k3s in Docker!
+
+    USAGE:
+       k3d [global options] command [command options] [arguments...]
+
+    VERSION:
+       v1.7.0
+
+    COMMANDS:
+         check-tools, ct   Check if docker is running
+         shell             Start a subshell for a cluster
+         create, c         Create a single- or multi-node k3s cluster in docker containers
+         add-node          [EXPERIMENTAL] Add nodes to an existing k3d/k3s cluster (k3d by default)
+         delete, d, del    Delete cluster
+         stop              Stop cluster
+         start             Start a stopped cluster
+         list, ls, l       List all clusters
+         get-kubeconfig    Get kubeconfig location for cluster
+         import-images, i  Import a comma- or space-separated list of container images from your local docker daemon into the cluster
+         version           print k3d and k3s version
+         help, h           Shows a list of commands or help for one command
+
+    GLOBAL OPTIONS:
+       --verbose      Enable verbose output
+       --timestamp    Enable timestamps in logs messages
+       --help, -h     show help
+       --version, -v  print the version
 
 
 

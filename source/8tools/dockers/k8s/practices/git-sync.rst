@@ -7,11 +7,16 @@ Using SSH with git-sync [1]_
 Step 1: Create Secret
 --------------------------
 
-Method 1::
+前提::
 
     // Obtain the host keys for your git server:
-    $> ssh-keyscan $YOUR_GIT_HOST > /tmp/known_hosts
-    // 指定git的密钥和known_hosts
+    $ ssh-keyscan $YOUR_GIT_HOST > /tmp/known_hosts
+    // 实例:
+    $ ssh-keyscan git.zhaoweiguo.com > /tmp/known_hosts
+
+Method 1::
+
+    // 指定git的密钥和known_hosts(指定secret名: git-creds)
     $> kubectl create secret generic git-creds \
           --from-file=ssh=/Users/zhaoweiguo/.ssh/gordon.git \
           --from-file=known_hosts=/tmp/known_hosts

@@ -43,8 +43,7 @@ Job has reached the specified backoff limit
     配置选项: spec.backoffLimit不配置默认是6
     即超过6次重启后就不再重启
 
-    后续:
-    先重启起来，继续定位问题
+    说明: 出现这种问题一般都是程序有问题crash了
 
 .. _question_muslibc_glibc:
 

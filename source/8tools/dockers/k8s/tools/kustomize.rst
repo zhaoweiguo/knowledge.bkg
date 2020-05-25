@@ -35,12 +35,12 @@ Mac安装::
 实例1: 简单使用
 ===============
 
-* 实例地址: https://github.com/zhaoweiguo/demo-go/tree/master/k8s/helloWorld/base
+* 实例地址: https://github.com/zhaoweiguo/demo-go/tree/master/k8s/kustomize/helloWorld/base
 
 命令::
 
     $ cd demo-go/tree/master/k8s
-    $ DEMO_HOME=./helloWorld
+    $ DEMO_HOME=./kustomize/helloWorld
     $ BASE=$DEMO_HOME/base
     $ cp $BASE/kustomization_base.yaml $BASE/kustomization.yaml
 
@@ -55,7 +55,7 @@ Mac安装::
 实例2: Overlays使用
 ===================
 
-* 实例地址: https://github.com/zhaoweiguo/demo-go/tree/master/k8s/helloWorld/overlays
+* 实例地址: https://github.com/zhaoweiguo/demo-go/tree/master/k8s/kustomize/helloWorld/overlays
 
 包含 staging 和 production 的 overlay::
 

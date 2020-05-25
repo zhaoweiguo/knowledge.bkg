@@ -12,7 +12,6 @@ kube基本
    normals/volume
    normals/concept
    normals/cluster_testing
-   normals/install_kubectl
    normals/introduce
    normals/svc_catalog
    normals/cAdvisor

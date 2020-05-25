@@ -3,9 +3,11 @@
 
 Istio is composed of these components::
 
-    1. Envoy - Sidecar proxies per microservice to handle ingress/egress traffic between services in the cluster and from a service to external services. The proxies form a secure microservice mesh providing a rich set of functions like discovery, rich layer-7 routing, circuit breakers, policy enforcement and telemetry recording/reporting functions.
-
-    Note: The service mesh is not an overlay network. It simplifies and enhances how microservices in an application talk to each other over the network provided by the underlying platform.
+    1. Envoy - 
+        Sidecar proxies per microservice to handle ingress/egress traffic between services in the cluster 
+            and from a service to external services. 
+        The proxies form a secure microservice mesh providing a rich set of functions like discovery, 
+            rich layer-7 routing, circuit breakers, policy enforcement and telemetry recording/reporting functions.
 
     2. Mixer - 访问控制、遥测
         Central component that is leveraged by the proxies and microservices 
@@ -21,6 +23,10 @@ Istio is composed of these components::
     5. Citadel Agent - A per-node component responsible for certificate issuance and rotation.
 
     6. Galley- Central component for validating, ingesting, aggregating, transforming and distributing config within Istio.
+
+.. note:: Note: The service mesh is not an overlay network. It simplifies and enhances how microservices in an application talk to each other over the network provided by the underlying platform.
+
+
 
 .. image:: /images/istios/architecture.png
 

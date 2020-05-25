@@ -35,7 +35,7 @@ manning can access their Shopping Cart microservice
 Isolating using CIDR notation
 =============================
 
- allow the shopping-cart pods to only be accessible from IPs in the 192.168.1.1 to .255 range::
+allow the shopping-cart pods to only be accessible from IPs in the 192.168.1.1 to .255 range::
 
     ingress: 
     - from:

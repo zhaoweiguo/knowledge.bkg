@@ -12,8 +12,8 @@ SYNOPSIS::
 
 实例::
 
-    // 给默认sa增加imagePullSecrets
-    kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "regcred"}]}'
+    // 给sa增加imagePullSecrets
+    kubectl patch serviceaccount <saName> -p '{"imagePullSecrets": [{"name": "regcred"}]}'
 
     // 为此container增加一个环境变量
     // 注: 如增加一个无用的环境变量, 可用于重启Pod

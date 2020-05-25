@@ -18,7 +18,8 @@ HA测试 [1]_
 
 * 逐个关闭maset1，然后逐个起来，看集，群是否能正常工作::
 
-    现象：关闭master之后，master上面的pod的status也变成unknow，在master1上删除和创建pod都仍然有效。但是发现存活的etcd存在raft status不一致的情况，不知道正不正常。
+    现象：关闭master之后，master上面的pod的status也变成unknow，在master1上删除和创建pod都仍然有效。
+    但是发现存活的etcd存在raft status不一致的情况，不知道正不正常。
     
     健康状态都是正常
     
