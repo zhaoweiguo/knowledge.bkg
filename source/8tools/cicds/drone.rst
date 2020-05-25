@@ -12,10 +12,8 @@ drone
    drones/normal
    drones/configuration
    drones/env
-   drones/specification
-   drones/cli
-   drones/install
    drones/plugin
+   drones/practice
    drones/question
    drones/source
 
