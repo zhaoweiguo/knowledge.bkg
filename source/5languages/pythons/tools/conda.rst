@@ -134,10 +134,6 @@ conda环境::
     $ conda create -n python2 --clone py2
     $ conda remove -n py2 --all
 
-Jupyter
-=======
-
-参见 :ref:`Jupyter <jupyter>`
 
 镜像
 ====

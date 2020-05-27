@@ -15,5 +15,6 @@
 
 
 * :ref:`Python Unicode<python_unicode>`
+* :ref:`Python Binary<python_binary>`
 
 

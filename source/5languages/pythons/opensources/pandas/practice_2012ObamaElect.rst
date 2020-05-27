@@ -276,7 +276,9 @@ DataFrame.sort_values函数用法::
     应用，将一个函数应用到各个分组并产生一个新值
     合并，所有这些函数的执行结果会合并到最终的结果对象中
 
+
 .. image:: /images/languages/pythons/opensources/pandas_demo1.jpg
+
 
 
 透视表(pivot_table)分析党派和职业

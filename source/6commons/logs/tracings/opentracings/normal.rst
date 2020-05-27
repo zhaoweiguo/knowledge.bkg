@@ -70,7 +70,7 @@ References
 
 * FollowFrom::
   
-    父span的执不依赖子span执行结果时，此时子span对父span的引用关系是FollowFrom
+    父span的执行不依赖子span执行结果时，此时子span对父span的引用关系是FollowFrom
     FollowFrom常用于异步调用的表示，例如消息队列中consumerspan与producerspan之间的关系
 
 Trace

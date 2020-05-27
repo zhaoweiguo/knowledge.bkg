@@ -54,8 +54,8 @@
 
 执行如上命令后，会打开 **Android SDK and AVD Manager** 管理页面，见下图:
 
-       .. figure:: /images/languages/androids/android_SDK_and_AVD_Manager.png
-           :width: 100%
+.. figure:: /images/languages/androids/android_SDK_and_AVD_Manager.png
+   :width: 100%
 
 可用组件(Available Components)::
 

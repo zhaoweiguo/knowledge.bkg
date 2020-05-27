@@ -1,10 +1,15 @@
 常见问题
 ##############
 
-KCFErrordomainCFNetWork 303 [1]_
---------------------------------
+KCFErrordomainCFNetWork 303 [1]_ ::
 
-http请求header过大，超过了阈值,这是因为滥用UA和Cookie导致
+    http请求header过大，超过了阈值,这是因为滥用UA和Cookie导致
+
+
+
+node版本太低::
+
+  SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
 
 
 

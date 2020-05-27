@@ -128,14 +128,14 @@ List可以使用 [] 或是 list() 來创建空的，或是直接加入值进去�
 序列::
 
     shoplist = ['apple', 'mango', 'carrot', 'banana']
-    print 'Item 0 is', shoplist[0]          #'apple'
-    print 'Item -2 is', shoplist[-2]        #'carrot'
-    print 'Item 1 to 3 is', shoplist[1:3]   #['mango', 'carrot']
-    print 'Item 0 to 3 is', shoplist[:3]   #['apple', 'mango', 'carrot']
-    print 'Item 1 to 3 is', shoplist[1:]   #['mango', 'carrot', 'banana']
+    print('Item 0 is', shoplist[0])          #'apple'
+    print('Item -2 is', shoplist[-2])        #'carrot'
+    print('Item 1 to 3 is', shoplist[1:3])   #['mango', 'carrot']
+    print('Item 0 to 3 is', shoplist[:3])   #['apple', 'mango', 'carrot']
+    print('Item 1 to 3 is', shoplist[1:])   #['mango', 'carrot', 'banana']
 
     name = 'swaroop'
-    print 'characters 1 to 3 is', name[1:3]     #'wa'
+    print('characters 1 to 3 is', name[1:3])     #'wa'
 
     //参考:
     shoplist = ['apple', 'mango', 'carrot', 'banana']

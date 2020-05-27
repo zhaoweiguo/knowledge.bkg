@@ -15,21 +15,10 @@
    monitors/kibana
    monitors/other
 
-Tracing::
-
-  Jaeger
-  https://github.com/jaegertracing
-
 监控工具::
 
    Zabbix、Nagios 还有 StatsD
    ELK是Elasticsearch、Logstash、Kibana
-
-报警工具::
-
-  Slack
-  Email
-  SMS
 
 
 相关公司::

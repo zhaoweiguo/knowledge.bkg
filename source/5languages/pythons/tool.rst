@@ -16,5 +16,5 @@ Python包管理工具
    tools/conda
 
 
-.. figure:: /images/languages/pythons/python_packet_tool.png
+.. image:: /images/languages/pythons/python_packet_tool.png
    :width:  60%

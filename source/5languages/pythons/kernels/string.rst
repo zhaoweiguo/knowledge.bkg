@@ -139,11 +139,11 @@ python字符串处理
 
     name = 'Swaroop'
     if name.startswith('Swa'):
-        print 'Yes, the string starts with "Swa"'
+        print('Yes, the string starts with "Swa"')
     if 'a' in name:
-        print 'Yes, it contains the string "a"'
+        print('Yes, it contains the string "a"')
     if name.find('war') != -1: #得到字符串里含有子字符串对应的位置,没有为-1
-        print 'Yes, it contains the string "war"'
+        print('Yes, it contains the string "war"')
 
     delimiter = '_*_'
     mylist = ['Brazil', 'Russia', 'India', 'China']
@@ -174,12 +174,12 @@ python字符串处理
 
     自然字符串——不需要如转义符那样的特别处理的字符串:
 
-        r"Newlines are indicated by \n"
-        # '\\1'或r'\1'一样
+    r"Newlines are indicated by \n"
+    # '\\1'或r'\1'一样
 
     Unicode字符串——国际文本的标准方法(要在字符串前加上前缀u或U)::
 
-        u"This is a Unicode string."
+    u"This is a Unicode string."
 
 
 

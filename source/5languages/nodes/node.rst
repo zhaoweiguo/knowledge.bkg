@@ -6,7 +6,6 @@ node基本
 
    nodes/normal
    nodes/node_install
-   nodes/node_questions
 
    nodes/npm
    nodes/nvm

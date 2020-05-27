@@ -7,11 +7,17 @@ Usage::
 
 实例::
 
-    # 添加标签: key=value
-    $> kubectl label po <podName> key=value
+    1. 添加标签: key=value
+    $ kubectl label po <podName> key=value
 
-    # 修改标签: key2=value2
-    $> kubectl label po <podName> key=value2 --overwrite
+    2. 修改标签: key2=value2
+    $ kubectl label po <podName> key=value2 --overwrite
+
+    3. 删除label
+    $ kubectl label po $(node_name)  key-
+
+    4. 查看label
+    kubectl get po --show-labels=true
 
     # node指定标签,一般是区分不同主机:
     # 1.有gpu 2.有ssd硬盘 3.地点等
