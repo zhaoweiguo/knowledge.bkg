@@ -11,11 +11,17 @@ Host 'host_name' is blocked
     Host '192.168.0.6' is blocked because of many connection errors; 
     unblock with 'mysqladmin flush-hosts'
 
-原因:
+原因::
 
-    * The value of the max_connect_errors system variable determines how many successive interrupted connection requests are permitted. (See Section 5.1.4, “Server System Variables”.) After max_connect_errors failed requests without a successful connection, mysqld assumes that something is wrong (for example, that someone is trying to break in), and blocks the host from further connections until you issue a FLUSH HOSTS statement or execute a mysqladmin flush-hosts command.
+    The value of the max_connect_errors system variable determines how many successive interrupted 
+        connection requests are permitted. (See Section 5.1.4, “Server System Variables”.) 
+    After max_connect_errors failed requests without a successful connection, mysqld assumes that
+        something is wrong (for example, that someone is trying to break in), 
+        and blocks the host from further connections until you issue a FLUSH HOSTS statement 
+        or execute a mysqladmin flush-hosts command.
 
-    * By default, mysqld blocks a host after 10 connection errors. You can adjust the value by setting max_connect_errors at server startup:
+    By default, mysqld blocks a host after 10 connection errors. 
+    You can adjust the value by setting max_connect_errors at server startup:
 
 解决方案::
 
@@ -28,10 +34,9 @@ Host 'host_name' is blocked
     If you get the Host 'host_name' is blocked error message for a given host, you should first verify that there is nothing wrong with TCP/IP connections from that host. If you are having network problems, it does you no good to increase the value of the max_connect_errors variable.
 
 查找连接出错的具体原因
-""""""""""""""""""""""""""""
-* bug邮件内容:
+----------------------
 
-    http://bugs.mysql.com/bug.php?id=24761
+* bug邮件内容: http://bugs.mysql.com/bug.php?id=24761
 
 * 察看警告配置::
 
@@ -53,13 +58,14 @@ Host 'host_name' is blocked
     | Aborted_clients  | 3     |
     | Aborted_connects | 4     |
 
-* 在错误日志中出现Aborted connections messages的可能原因有(每次发生 ``Aborted_clients`` 会加1):
+* 在错误日志中出现Aborted connections messages可能原因有(每次发生``Aborted_clients``会加1)::
 
     * 客户端在关闭前没有调用 ``mysql_close()``
-    * 客户端had been sleeping more than ``wait_timeout`` or ``interactive_timeout`` seconds without issuing any requests to the server
+    * 客户端had been sleeping more than ``wait_timeout`` or ``interactive_timeout`` 
+        seconds without issuing any requests to the server
     * 客户端程序在数据传输时意外中止
 
-* 当出现如下4种情况时，服务器 ``Aborted_connects`` 状态变量加1:
+* 当出现如下4种情况时，服务器 ``Aborted_connects`` 状态变量加1::
 
     * client没有权限连接到server
     * client输入错误密码
@@ -137,12 +143,21 @@ Mysql主从不同步问题
 Mysql主从不同步问题2
 ---------------------------
 
-* 网络的延迟
-    由于mysql主从复制是基于binlog的一种异步复制, 通过网络传送binlog文件, 理所当然网络延迟是主从不同步的绝大多数的原因, 特别是跨机房的数据同步出现这种几率非常的大, 所以做读写分离, 注意从业务层进行前期设计
-* 主从两台机器的负载不一致:
-    由于mysql主从复制是主数据库上面启动1个io线程, 而从上面启动1个sql线程和1个io线程, 当中任何一台机器的负载很高, 忙不过来, 导致其中的任何一个线程出现资源不足, 都将出现主从不一致的情况
-* ``max_allowed_packet`` 设置不一致:
-    主数据库上面设置的max_allowed_packet比从数据库大, 当一个大的sql语句, 能在主数据库上面执行完毕, 从数据库上面设置过小, 无法执行, 导致的主从不一致
+* 网络的延迟::
+
+    由于mysql主从复制是基于binlog的一种异步复制, 通过网络传送binlog文件, 理所当然网络延迟是主从不同步的绝大多数的原因, 
+    特别是跨机房的数据同步出现这种几率非常的大, 所以做读写分离, 注意从业务层进行前期设计
+
+* 主从两台机器的负载不一致::
+
+    由于mysql主从复制是主数据库上面启动1个io线程, 而从上面启动1个sql线程和1个io线程, 
+    当中任何一台机器的负载很高, 忙不过来, 导致其中的任何一个线程出现资源不足, 都将出现主从不一致的情况
+
+* ``max_allowed_packet`` 设置不一致::
+
+    主数据库上面设置的max_allowed_packet比从数据库大, 当一个大的sql语句, 能在主数据库上面执行完毕, 
+    从数据库上面设置过小, 无法执行, 导致的主从不一致
+
 * key自增键开始的键值跟自增步长设置不一致引起的主从不一致
 * mysql异常宕机情况下, 如果未设置 ``sync_binlog=1`` 或者 ``innodb_flush_log_at_trx_commit=1`` 很有可能出现 ``binlog`` 或者 ``relaylog`` 文件出现损坏, 导致主从不一致
 * mysql本身的bug引起的主从不同步
@@ -165,36 +180,39 @@ MySQL延迟时间
 
 一般很短在几十ms间,不可能没有延迟, 具体的延迟时间主要和网速和sql的执行时间有关,最少延迟时间为sql的执行时间.
 
-Mysql主从不同步问题3(Slave_IO_Running和Slave_SQL_Running均yes)
-------------------------------------------------------------------
-* 命令::
+Mysql主从不同步问题3
+--------------------
+
+特点::
+
+    Slave_IO_Running和Slave_SQL_Running均yes
+
+命令::
 
     mysql> show slave status
 
-* 错误日志::
+错误日志::
 
     071128 14:54:52 [ERROR] Failed to open the relay log './dev4-relay-bin.003594' (relay_log_pos 235)
     071128 14:54:52 [ERROR] Could not find target log during relay log initialization
 
-* 原因::
+原因::
 
     hostname改变了
 
-* 操作方法1步骤:
+操作方法1步骤::
 
-    * 恢复老数据(?)::
-
+    * 恢复老数据(?):
         mysqlbinlog oldhostname-relay-bin.003594 --start-position=235 | mysql -u root -ppassword;
 
-    * 修改索引日志，使slave日志指向新日志(?如何修改法?)::
-
+    * 修改索引日志，使slave日志指向新日志(?如何修改法?):
         emacs  relay-log.info
 
-* 操作方法2步骤:
+操作方法2步骤::
 
     * 删除掉oldhostname-relay-bin*的文件和relay-log.info文件
 
-* 之后操作::
+之后操作::
 
     Start slave;
     Show slave status;
@@ -203,12 +221,12 @@ Mysql主从不同步问题3(Slave_IO_Running和Slave_SQL_Running均yes)
 mysql update safe model问题
 ----------------------------------
 
-* 在做数据库实验的时候对mysql表进行UPDATE操作时，mysql给了我一个错误::
+在做数据库实验的时候对mysql表进行UPDATE操作时，mysql给了我一个错误::
 
     Error Code: 1175. You are using safe update mode and you tried to 
     update a table without a WHERE that uses a KEY column To disable safe mode
 
-* 原来mysql有个叫SQL_SAFE_UPDATES的变量。上面这么说::
+原来mysql有个叫SQL_SAFE_UPDATES的变量。上面这么说::
 
     MySQL will refuse to run the UPDATE or DELETE query if executed without 
     the WHERE clause or LIMIT clause. MySQL will also refuse the query which 
@@ -222,45 +240,43 @@ mysql update safe model问题
     delete from <table> where name in ("gordon", "hurry")
 
 MySQL占CPU多的情况解决方法
------------------------------------
+--------------------------
 
 最简单的情况是 ``tmp_table_size`` 太小,在配置文件中增加::
 
     tmp_table_size=200M
 
 
-ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000):Too many connections
 -----------------------------------------------
 
-* 检查连接MySQL客户端数::
+检查连接MySQL客户端数::
 
     linux >> netstat -anp  | grep mysql | wc -l
     or
     mysql >> show processlist;
 
-* 解决方案::
+解决方案::
 
     修改 ``my.cnf`` 文件在 ``[mysqld]`` 中增加
     > max_connections=N
     or
     mysql> SET GLOBAL max_connections = 300;
 
-* 另外, wait_timeout默认为8小时,show processlist发现有很多sleep, 说明该参数设置偏大(设置10分钟内该连接没有请求就断开):
+另外, wait_timeout默认为8小时,show processlist发现有很多sleep, 说明该参数设置偏大(设置10分钟内该连接没有请求就断开)::
 
-    * 配置文件下修改(需要重新启动)::
-
+    * 配置文件下修改(需要重新启动):
         wait_timeout = 600
         interactive_timeout = 600
 
-    * 命令修改(无需重启)::
-
+    * 命令修改(无需重启):
         set global wait_timeout = 3600;
         set global interactive_timeout = 3600;
 
 
 
 命令操作时中文乱码解决办法
-----------------------------------
+--------------------------
 
 查看操作::
 
@@ -278,10 +294,8 @@ ERROR 1040 (HY000): Too many connections
 
     default-character-set=utf8
 
-
-
 启用skip-name-resolve模式时出现Warning的处理办法
-----------------------------------------------------------
+------------------------------------------------
 
 在优化MYSQL配置时, 加入 ``skip-name-resolve``, 有警告信息::
 
@@ -302,6 +316,7 @@ ERROR 1040 (HY000): Too many connections
 
 InnoDB: Error: page 213054 log sequence number <xxx>is in the future! 
 -------------------------------------------------------------------------
+
 详情::
    
    InnoDB: Error: page 213054 log sequence number <xxx>is in the future!
@@ -314,7 +329,6 @@ InnoDB: Error: page 213054 log sequence number <xxx>is in the future!
 原因::
 
    1. 删除ib_logfile文件
-   2.
 
 解决方案(待验证)::
 

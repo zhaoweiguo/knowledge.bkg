@@ -13,6 +13,7 @@
    tools/k3s
    tools/fleet
    tools/ksonnet
+   tools/icePanel
    tools/minikube
 
 

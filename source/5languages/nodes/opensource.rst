@@ -6,6 +6,7 @@
    :maxdepth: 2
    :numbered: 2
 
+   opensources/normal
    opensources/vue
    opensources/chart
    opensources/grunt

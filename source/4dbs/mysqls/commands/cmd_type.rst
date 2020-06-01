@@ -3,14 +3,14 @@
 时间类型
 =========
 
-    .. csv-table:: 表1 MySQL日期数据类型
-       :widths: 10, 10, 30, 50
-       :header: 日期类型, 存储空间, 日期格式, 日期范围
+.. csv-table:: 表1 MySQL日期数据类型
+   :widths: 10, 10, 30, 50
+   :header: 日期类型, 存储空间, 日期格式, 日期范围
 
-           datetime, 8 bytes, YYYY-MM-DD HH:MM:SS, 1000-01-01 00:00:00 ~ 9999-12-31 23:59:59
-           timestamp, 4 bytes, YYYY-MM-DD HH:MM:SS, 1970-01-01 00:00:01 ~ 2038-12-31 23:59:59
-           date, 3 bytes, YYYY-MM-DD, 1000-01-01 ~ 9999-12-31
-           year, 1 bytes, YYYY, 1901 ~ 2155
+       datetime, 8 bytes, YYYY-MM-DD HH:MM:SS, 1000-01-01 00:00:00 ~ 9999-12-31 23:59:59
+       timestamp, 4 bytes, YYYY-MM-DD HH:MM:SS, 1970-01-01 00:00:01 ~ 2038-12-31 23:59:59
+       date, 3 bytes, YYYY-MM-DD, 1000-01-01 ~ 9999-12-31
+       year, 1 bytes, YYYY, 1901 ~ 2155
 
 
 timestamp

@@ -11,7 +11,6 @@ MongoDB的使用 [1]_
    mongodbs/mongodb_user
    mongodbs/mongodb_normal
    mongodbs/mongodb_command
-   mongodbs/mongodb_example
    mongodbs/mongodb_data
 
 

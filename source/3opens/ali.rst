@@ -11,6 +11,7 @@ ali开放平台
    alis/ai
    alis/analysis
    alis/iot
+   alis/MQ
    alis/StorageAndCDN
    alis/Security
    alis/ApplicationService

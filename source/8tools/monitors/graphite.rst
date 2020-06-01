@@ -1,3 +1,5 @@
+.. _graphite:
+
 graphite相关 [1]_
 #######################
 
@@ -6,6 +8,7 @@ graphite相关 [1]_
 --------------
 
 * 官网: http://graphite.wikidot.com/
+* 新官网: http://graphiteapp.org/
 * 文档地址: http://graphite.readthedocs.org/en/latest/overview.html
 * github: https://github.com/graphite-project/graphite-web.git
 

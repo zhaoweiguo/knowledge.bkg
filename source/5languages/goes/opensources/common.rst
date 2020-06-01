@@ -165,6 +165,7 @@ DEVOPS
 ------
 
 * 监控&统计: https://github.com/prometheus/prometheus
+* alertmanager: https://github.com/prometheus/alertmanager
 * prometheus规模部署方案: https://github.com/thanos-io/thanos
 * 监控: https://github.com/grafana/grafana
 * 统计: https://github.com/rcrowley/go-metrics

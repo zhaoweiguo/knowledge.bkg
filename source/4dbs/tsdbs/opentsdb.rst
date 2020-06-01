@@ -22,7 +22,8 @@ OpenTSDB存储的一些核心概念::
     譬如假设我们采集1个服务器（hostname=qatest）的CPU使用率，发现该服务器在21:00的时候，CPU使用率达到99%
 
     1）Metric：即平时我们所说的监控项。譬如上面的CPU使用率
-    2）Tags：就是一些标签，在OpenTSDB里面，Tags由tagk和tagv组成，即tagk=tagv。标签是用来描述Metric的，譬如上面为了标记是服务器A的CpuUsage，tags可为hostname=qatest
+    2）Tags：就是一些标签，在OpenTSDB里面，Tags由tagk和tagv组成，即tagk=tagv。
+        标签是用来描述Metric的，譬如上面为了标记是服务器A的CpuUsage，tags可为hostname=qatest
     3）Value：一个Value表示一个metric的实际数值，譬如上面的99%
     4）Timestamp：即时间戳，用来描述Value是什么时候的；譬如上面的21:00
     5）Data Point：即某个Metric在某个时间点的数值。

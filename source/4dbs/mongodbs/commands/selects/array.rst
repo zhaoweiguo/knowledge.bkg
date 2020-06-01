@@ -1,8 +1,25 @@
-Mongo操作相关
+数组相关操作 [1]_
 #####################
 
-数组相关操作 [1]_
-'''''''''''''''''''
+
+数组查询
+========
+
+::
+
+    // 查询字段是数组
+    db.time_info.find({"begin_time":{$size:1}})
+    // 方法2
+    db.time_info.find({ "begin_time.0": {$exists:1} })
+
+    // 数组大小是某个范围(要求数组大小小于3)
+    db.time_info.find({ $where: "this.begin_time.length < 3" })
+    //数组大小小于1，就意味着num[0]不存在
+    db.time_info.find({ "begin_time.0": {$exists:0} })
+
+
+实战
+====
 
 数据插入::
 

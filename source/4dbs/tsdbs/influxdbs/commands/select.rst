@@ -275,15 +275,17 @@ fill()
 
 其他::
 
+    // 多个AND
     SELECT * from (_INNER_QUERY_HERE_) 
     WHERE count_linux = -1 AND count_linux64 = -1 AND count_mac = -1 
         AND count_win = -1 AND count_win64 = -1;
 
+    // 多个OR
     SELECT * from (_INNER_QUERY_HERE_) 
     WHERE count_linux = -1 OR count_linux64 = -1 OR count_mac = -1 
         OR count_win = -1 OR count_win64 = -1;
 
-
+    // And加Or
     > SELECT "water_level" FROM "h2o_feet" 
         WHERE "location" <> 'santa_monica' AND (water_level < -0.59 OR water_level > 9.95)
 

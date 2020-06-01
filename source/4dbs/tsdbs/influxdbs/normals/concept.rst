@@ -57,7 +57,7 @@ retention policy（保留策略，简称RP）
     autogen:无限的存储时间并且复制系数设为1
 
     RP创建语句如下：
-    CREATE RETENTION POLICY ON <retention_policy_name> ON <database_name> 
+    CREATE RETENTION POLICY <retention_policy_name> ON <database_name> 
     DURATION <duration> REPLICATION <n> [SHARD DURATION <duration> ] [DEFAULT]
     实例:
     CREATE RETENTION POLICY "one_day_only" ON "water_database" 
