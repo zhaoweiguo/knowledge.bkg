@@ -9,6 +9,7 @@
    6commons/testing
    6commons/performance
    6commons/notice
+   6commons/devops
    6commons/methodology
    6commons/injection
 

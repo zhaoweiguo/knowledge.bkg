@@ -3,6 +3,13 @@
 
 
 .. toctree::
+   :caption: 常用
+   :maxdepth: 1
+
+   opensources/normal
+
+
+.. toctree::
    :caption: 网络相关
    :maxdepth: 1
 

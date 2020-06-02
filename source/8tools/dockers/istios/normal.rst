@@ -16,3 +16,4 @@ Service mesh 关注的方面::
 
 * Istio Handbook: https://www.servicemesher.com/istio-handbook
 
+* Istio 1.6——迈向极简主义:https://mp.weixin.qq.com/s/CwvVJVT2yokRAsrKIH7ptg

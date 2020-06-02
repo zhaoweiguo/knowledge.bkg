@@ -1,4 +1,4 @@
-Erlang开源项目列表
+其他开源项目列表
 #####################
 
 * Sane, simple release creation for Erlang http://erlware.github.io/relx

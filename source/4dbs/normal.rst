@@ -6,5 +6,6 @@
    :maxdepth: 1
 
    normals/index
+   normals/normal
 
 

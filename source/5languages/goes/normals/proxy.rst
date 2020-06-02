@@ -23,7 +23,6 @@
 
 .. image:: /images/languages/golangs/goproxy1.png
 
-
 Athens [2]_
 
 三、Idea设置:
