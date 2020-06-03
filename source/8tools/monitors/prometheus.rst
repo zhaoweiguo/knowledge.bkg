@@ -14,6 +14,7 @@ Prometheus
    prometheus/prometheus
    prometheus/exporter
    prometheus/alertmanager
+   prometheus/metrics
    prometheus/thanos
    prometheus/port
    prometheus/practice

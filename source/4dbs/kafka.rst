@@ -8,6 +8,7 @@ Kafka的使用 [1]_
 
    kafkas/kafka_introduce
    kafkas/kafka_quickstart
+   kafkas/command
    kafkas/kafka_usecase
    kafkas/kafka_config
    kafkas/kafka_design

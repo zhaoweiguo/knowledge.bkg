@@ -8,6 +8,7 @@
 
   configs/kafka_broker_config
   configs/kafka_topic_config
+  configs/log
 
 
 

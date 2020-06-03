@@ -72,4 +72,4 @@ options::
 
 
 
-.. [1] github.com/apenwarr/sshuttle
+.. [1] https://github.com/apenwarr/sshuttle

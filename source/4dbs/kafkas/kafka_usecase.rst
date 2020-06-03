@@ -24,7 +24,8 @@ Website Activity Tracking::
 Metrics::
 
   Kafka is often used for operational monitoring data. 
-  This involves aggregating statistics from distributed applications to produce centralized feeds of operational data.
+  This involves aggregating statistics from distributed applications 
+    to produce centralized feeds of operational data.
 
 Log Aggregation::
 

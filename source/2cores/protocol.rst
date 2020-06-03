@@ -19,6 +19,7 @@
    protocols/ip
    protocols/udp
    protocols/tcp
+   protocols/dns
    protocols/amqp
    protocols/coap
    protocols/ssl_tls

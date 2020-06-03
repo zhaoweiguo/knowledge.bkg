@@ -11,7 +11,6 @@ tcp相关
    tcps/tcp1
    tcps/tcp2
    tcps/arp
-   tcps/dns
    tcps/icmp
    tcps/igmp
    tcps/dll

@@ -21,6 +21,7 @@
    commands/linux_centos
    commands/linux_debian
    commands/linux_freebsd
+   commands/linux_mac
    commands/linux_buildin
    commands/linux_tmp
 

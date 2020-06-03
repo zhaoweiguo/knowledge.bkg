@@ -118,8 +118,20 @@ iptables——防火墙命令
     emacs  /etc/sysconfig/iptables
 
 
+实战
+====
+
+使用iptables将包含某字符串的域名解析请求重定向至指定dns服务器::
+
+    $ iptables -t nat -A PREROUTING -p udp --dport 53 -m string --hex-string "aabb|03|com" -j DNAT --to-destination 10.168.77.1
+    // 把包含此字符串的发向53端口的udp的包都重定向到10.168.77.1
 
 
+
+参考
+====
+
+* 使用iptables将包含某字符串的域名解析请求重定向至指定dns服务器: https://blog.csdn.net/Chris_Tsai/article/details/82320968
 
 
 

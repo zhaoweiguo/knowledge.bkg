@@ -44,7 +44,8 @@ kt-connect工具
 
 启动::
 
-    $ ktctl -n default -c $HOME/.kube/config connect
+    // 注意需要sudo权限
+    $ sudo ktctl -n default -c $HOME/.kube/config connect
 
 使用::
 
