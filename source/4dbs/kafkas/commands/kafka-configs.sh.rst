@@ -74,6 +74,19 @@ kafka-configs.sh
 修改配置项::
 
     修改配置项与增加语法格式相同，相同参数后端直接覆盖
+    
+    % 更改代理ID为0的当前代理配置(日志清理程序的线程数)
+    > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-name 0 --alter --add-config log.cleaner.threads=2
+    % 查看 
+    > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-name 0 --describe
+
+    % 删除
+    > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-name 0 --alter --delete-config log.cleaner.threads
+
+    % 更新所有brokder的日志清理程序的线程数
+    > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-default --alter --add-config log.cleaner.threads=2
+    % 查看
+    > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-default --describe
 
 列出entity配置描述::
 
@@ -97,6 +110,11 @@ kafka-configs.sh
 
 
 
+Updating Password Configs Dynamically::
+
+  // Updating Password Configs in ZooKeeper Before Starting Brokers
+  > bin/kafka-configs.sh --zookeeper localhost:2181 --entity-type brokers --entity-name 0 --alter 
+    --add-config 'listener.name.internal.ssl.key.password=key-password,password.encoder.secret=secret,password.encoder.iterations=8192'
 
 
 

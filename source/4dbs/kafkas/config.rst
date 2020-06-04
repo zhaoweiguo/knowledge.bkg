@@ -6,9 +6,14 @@
   :caption: 收集
   :maxdepth: 2
 
+  configs/normal
+  configs/cleaner
+  configs/ssl
+  configs/thread
+  configs/zookeeper
+  configs/log
   configs/kafka_broker_config
   configs/kafka_topic_config
-  configs/log
 
 
 

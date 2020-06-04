@@ -1,6 +1,9 @@
 1.Kafka简介
 ############
 
+* 语言支持 [1]_
+* 协议指引 [2]_
+
 一个streaming平台有3个关键作用::
 
     pub/sub记录流,类似消息队列或enterprise messaging system.
@@ -34,11 +37,9 @@ Kafka有4个api::
 
 
 
+参考:
 
-* 语言支持 [1]_
-* 协议指引 [2]_
-
-
+* https://www.zybuluo.com/jewes/note/64450
 
 
 

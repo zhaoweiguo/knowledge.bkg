@@ -11,8 +11,6 @@ collect::
         PLAINTEXT://myhost:9092,SSL://:9091 
         CLIENT://0.0.0.0:9092,REPLICATION://localhost:9093
     num.partitions: 每个topic默认log partitions数,默认值为1
-    zookeeper.connection.timeout.ms: 默认为zookeeper.session.timeout.ms的值
-    zookeeper.session.timeout.ms: 默认为6000
 
     num.network.threads: 服务用于接收请求和向网络发送请求的线程数,默认为3
     num.io.threads: 服务用于处理请求的线程数,包括disk io
@@ -27,62 +25,6 @@ collect::
     delete.retention.ms:
 
     delete.topic.enable: 如关闭,使用admin tool删除topic将不起作用
-
-Updating Broker Configs::
-
-  % 更改代理ID为0的当前代理配置(日志清理程序的线程数)
-  > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-name 0 --alter --add-config log.cleaner.threads=2
-  % 查看 
-  > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-name 0 --describe
-
-  % 删除
-  > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-name 0 --alter --delete-config log.cleaner.threads
-
-  % 更新所有brokder的日志清理程序的线程数
-  > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-default --alter --add-config log.cleaner.threads=2
-  % 查看
-  > bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type brokers --entity-default --describe
-
-配置文件读取顺序::
-
-  Dynamic per-broker config stored in ZooKeeper
-  Dynamic cluster-wide default config stored in ZooKeeper
-  Static broker config from server.properties
-  Kafka default
-
-Updating Password Configs Dynamically::
-
-  // Updating Password Configs in ZooKeeper Before Starting Brokers
-  > bin/kafka-configs.sh --zookeeper localhost:2181 --entity-type brokers --entity-name 0 --alter 
-    --add-config 'listener.name.internal.ssl.key.password=key-password,password.encoder.secret=secret,password.encoder.iterations=8192'
-
-Updating SSL Keystore of an Existing Listener::
-
-  ssl.keystore.type
-  ssl.keystore.location
-  ssl.keystore.password
-  ssl.key.password
-
-Updating Log Cleaner Configs::
-
-  log.cleaner.threads
-  log.cleaner.io.max.bytes.per.second
-  log.cleaner.dedupe.buffer.size
-  log.cleaner.io.buffer.size
-  log.cleaner.io.buffer.load.factor
-  log.cleaner.backoff.ms
-
-Updating Thread Configs::
-
-  % 确保正常更新,范围限定在:currentSize / 2 to currentSize * 2
-  num.network.threads
-  num.io.threads
-  num.replica.fetchers
-  num.recovery.threads.per.data.dir
-  log.cleaner.threads
-  background.threads
-
-
 
   
 
