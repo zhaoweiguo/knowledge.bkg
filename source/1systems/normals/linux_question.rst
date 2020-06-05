@@ -20,7 +20,7 @@ linux问题汇总
 问题
 ^^^^
 
-* 问题1:执行df -h查看文件系统的使用率，可以看到/dev/xvdb1磁盘占用了约27G，挂载目录为/opt::
+问题1:执行df -h查看文件系统的使用率，可以看到/dev/xvdb1磁盘占用了约27G，挂载目录为/opt::
 
     # df -h
     Filesystem      Size  Used Avail Use% Mounted on
@@ -32,7 +32,7 @@ linux问题汇总
     $> du -hs
     14.7G  /
 
-* 问题2:通过df -h命令查看磁盘使用情况显示的是负值，如下图所示::
+问题2:通过df -h命令查看磁盘使用情况显示的是负值，如下图所示::
 
     # df -h
     Filesystem      Size  Used    Avail   Use%    Mounted on

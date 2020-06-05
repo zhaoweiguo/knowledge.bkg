@@ -141,7 +141,8 @@ http://blog.sae.sina.com.cn/archives/3945
 * 有人尝试密码( ``/var/log/secure`` )::
 
     Feb 28 05:14:18 ubuntu196 sshd[10555]: Failed password for root from 183.60.159.21 port 38818 ssh2
-    Feb 28 05:14:18 ubuntu196 sshd[10557]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.60.159.21  user=root
+    Feb 28 05:14:18 ubuntu196 sshd[10557]: pam_unix(sshd:auth): authentication failure; 
+    logname= uid=0 euid=0 tty=ssh ruser= rhost=183.60.159.21  user=root
 
 * cron任务，没关系(/var/log/secure)::
 

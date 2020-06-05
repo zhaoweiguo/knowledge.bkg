@@ -14,6 +14,7 @@ MongoDB簡单用法
    commands/insert
    commands/update
    commands/array
+   commands/sharded
 
 
 其他

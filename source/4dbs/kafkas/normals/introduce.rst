@@ -40,7 +40,7 @@ Kafka有4个api::
 参考:
 
 * https://www.zybuluo.com/jewes/note/64450
-
+* https://blog.csdn.net/CoderBoom/article/details/84845197
 
 
 .. [1] https://cwiki.apache.org/confluence/display/KAFKA/Clients

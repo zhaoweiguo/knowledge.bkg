@@ -1,9 +1,7 @@
 日志相关
 ########
 
-
-
-分段策略属性::
+分段策略属性(详见 :ref:`Kafka存储机制<kafka_storage>`)::
 
     log.roll.{hours,ms}:
        日志滚动的周期时间，到达指定周期时间时，强制生成一个新的segment 
@@ -15,9 +13,11 @@
        日志片段文件检查的周期时间 
        默认值: 60000
 
+
+
 日志刷新策略::
 
-    Kafka的日志实际上是开始是在缓存中的，然后根据策略定期一批一批写入到日志文件中去，以提高吞吐率。
+    Kafka的日志实际上是开始是在缓存中的，然后根据策略定期一批一批写入到日志文件中去，以提高吞吐率
 
     log.flush.interval.messages 
         消息达到多少条时将数据写入到日志文件  
@@ -59,12 +59,6 @@
 
 
 
-
-
-    offsets.retention.check.interval.ms:
-    offsets.retention.minutes:
-
-    log.cleaner.delete.retention.ms:默认86400000ms
 
 
 
