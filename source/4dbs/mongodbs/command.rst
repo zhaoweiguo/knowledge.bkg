@@ -7,6 +7,7 @@ MongoDB簡单用法
 .. toctree::
    :maxdepth: 1
 
+   commands/server
    commands/db
    commands/table
    commands/index

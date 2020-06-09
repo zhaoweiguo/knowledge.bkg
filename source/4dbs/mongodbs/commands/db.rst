@@ -29,6 +29,15 @@ DB相关
     db.createCollection()
 
 
+查看运动的命令列表::
+
+    db.runCommand({listCommands: 1})
+
+查看host信息::
+
+    db.hostInfo()
+
+
 
 
 

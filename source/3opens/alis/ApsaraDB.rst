@@ -7,3 +7,7 @@ ApsaraDB飞天数据库
 
    ApsaraDBs/tsdb
    ApsaraDBs/dts
+   ApsaraDBs/mongodb
+
+
+

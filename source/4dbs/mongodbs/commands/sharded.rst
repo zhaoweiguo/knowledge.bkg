@@ -23,6 +23,20 @@
     use databaseName;
     db.collectionName.stats().sharded #简单的返回true或者false
 
+修改指定表为分片表
+==================
+
+实例::
+
+    use <db>;
+    db.octopus_scale_data_info.createIndex({"_id":"hashed"});
+
+    use admin;
+    db.runCommand({"shardcollection":"<db>.octopus_scale_data_info","key":{"_id" : "hashed"}});
+
+    // 查看
+    use <db>;
+    db.octopus_scale_data_info.getShardDistribution();
 
 
 

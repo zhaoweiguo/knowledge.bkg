@@ -8,14 +8,11 @@ MongoDB的使用 [1]_
 .. toctree::
    :maxdepth: 2
 
-   mongodbs/mongodb_user
-   mongodbs/mongodb_normal
-   mongodbs/mongodb_command
-   mongodbs/mongodb_data
+   mongodbs/normal
+   mongodbs/command
+   mongodbs/mongodump
 
 
 
 
 .. [1] https://docs.mongodb.com/
-
-
