@@ -99,6 +99,33 @@ werf
 * github: https://github.com/flant/werf
 
 
+Spinnaker
+=========
+
+::
+
+    授权协议: Apache
+    开发语言: Python
+    开发厂商: Netflix
+
+
+* 官网: https://www.spinnaker.io/
+
+* Cloud Native Continuous Delivery(Fast, safe, repeatable deployments for every Enterprise)
+
+* Spinnaker 主要包含两大块内容，集群管理和部署管理。
+
+Spinnaker 是 Netflix 的开源项目，是一个持续交付平台，它定位于将产品快速且持续的部署到多种云平台上。Spinnaker 通过将发布和各个云平台解耦，来将部署流程流水线化，从而降低平台迁移或多云品台部署应用的复杂度，它本身内部支持 Google、AWS EC2、Microsoft Azure、Kubernetes和 OpenStack 等云平台，并且它可以无缝集成其他持续集成（CI）流程，如 git、Jenkins、Travis CI、Docker registry、cron 调度器等。简而言之，Spinnaker 是致力于提供在多种平台上实现开箱即用的集群管理和部署功能的平台。
+
+screwdriver
+===========
+
+* https://screwdriver.cd/
+
+
+
+
+
 .. [1] https://travis-ci.com/
 .. [2] https://github.com/kubernetes/test-infra
 .. [3] https://codeship.com/

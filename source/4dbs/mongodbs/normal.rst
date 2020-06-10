@@ -15,6 +15,7 @@ mongo基本
    :maxdepth: 1
 
    normals/basic
+   normals/index
    normals/install
    normals/architecture
    normals/replica_set

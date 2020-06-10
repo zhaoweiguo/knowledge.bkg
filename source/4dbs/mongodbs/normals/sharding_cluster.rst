@@ -51,7 +51,9 @@ Mongoshard::
     存储应用数据记录。一般有多个Mongod节点，达到数据分片目的。
     真正的数据存储位置，以chunk为单位存数据。
 
+
 .. image:: /images/dbs/mongodbs/architecture_shard_cluster2.png
+
 
 集群中数据分布
 ==============

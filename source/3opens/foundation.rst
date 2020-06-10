@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    foundations/cncf
+   foundations/cdf
 
 
 
