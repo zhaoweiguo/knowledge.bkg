@@ -11,6 +11,7 @@
    tools/kubecm
    tools/kubewatch
    tools/k3s
+   tools/k9s
    tools/fleet
    tools/ksonnet
    tools/icePanel

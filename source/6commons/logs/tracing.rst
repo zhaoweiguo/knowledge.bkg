@@ -12,6 +12,7 @@ Tracing相关
    tracings/opentelemetry
    tracings/jaeger
    tracings/zipkin
+   tracings/skywalking
    tracings/dapper
    tracings/other
 

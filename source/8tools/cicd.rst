@@ -10,6 +10,8 @@ CI/CD相关
    cicds/ops
    cicds/jenkins
    cicds/drone
+   cicds/tekton
+   cicds/argo
    cicds/gitlab
    cicds/rancher
    cicds/other

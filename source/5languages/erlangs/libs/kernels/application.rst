@@ -12,8 +12,31 @@ application模块
 
   applictaion:get_all_env().
   applictaion:get_all_env(App).
+
+
+get_env/1/2
+'''''''''''
+
+格式::
+
   applictaion:get_env(Par).
   applictaion:get_env(App, Par).
+
+实例::
+
+    application:get_env(octopus).
+
+
+set_env/2/3
+'''''''''''
+
+格式::
+
+    applictaion:set_env(App, Key, Value).
+
+实例::
+
+    applictaion:set_env(octopus, port, 80).
 
 
 start/1/2
