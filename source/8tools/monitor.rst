@@ -13,6 +13,7 @@
    monitors/zabbix
    monitors/nagios
    monitors/kibana
+   monitors/corp
    monitors/other
 
 监控工具::

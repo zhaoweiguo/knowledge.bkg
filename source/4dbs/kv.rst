@@ -10,4 +10,5 @@ K/V数据库
    kvs/etcd
    kvs/zookeeper
    kvs/consul
+   kvs/nacos
 

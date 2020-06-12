@@ -1,6 +1,22 @@
 other
 ###########
 
+* 对于是否使用一个开源项目的一个很重要的考量指标是 : 是否自己公司的同事能掌握这个项目
+* 沟通从来不是拉关系，沟通的本质是有效的信息传递
+* 社交的最终目的，是建立有意义的人际关系
+* 在做人生大事的时候，坚持自我，听从本心；在放松之际，融入圈子，寻找沙雕网友一起嗨。
+* “唯一不变的是变化”，我的理解里，背后还有一句话，叫做“万变之中，不变至美”。
+
+
+GraphQL
+=======
+
+* 官网 https://www.howtographql.com/
+* github: https://github.com/howtographql/howtographql
+
+其他
+====
+
 
 feedly.com——Read more, know more.
 类似Google Reader的RSS阅读器

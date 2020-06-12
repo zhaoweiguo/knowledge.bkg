@@ -14,7 +14,12 @@
 * yaml: https://github.com/go-yaml/yaml/
 * 兼容 json，toml，yaml，hcl 等格式的日志库: https://github.com/spf13/viper
 
+AI
+-----
 
+* Brings SQL and AI together: https://github.com/sql-machine-learning/sqlflow
+* Kubernetes-native Deep Learning Framework: https://github.com/sql-machine-learning/elasticdl
+* Brings SQL and AI together: https://github.com/sql-machine-learning/sqlflow
 
 Golang工具包
 ------------

@@ -9,6 +9,7 @@ ali开放平台
    alis/Networking
    alis/ApsaraDB
    alis/ai
+   alis/DTplus
    alis/analysis
    alis/iot
    alis/MQ

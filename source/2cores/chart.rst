@@ -8,6 +8,10 @@
    :maxdepth: 2
 
    charts/common
+   charts/visual_component
    charts/other
+
+
+
 
 

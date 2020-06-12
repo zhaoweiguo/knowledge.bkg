@@ -11,6 +11,7 @@ Docker相关
    dockers/istio
    dockers/nomad
    dockers/language
+   dockers/openstack
    dockers/virtualbox
    dockers/vmware
    dockers/vagrant

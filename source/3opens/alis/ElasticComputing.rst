@@ -8,6 +8,7 @@ Elastic Computing
    ElasticComputings/slb
    ElasticComputings/ess
    ElasticComputings/ros
+   ElasticComputings/oos
    ElasticComputings/ContainerService
    ElasticComputings/asm
 
