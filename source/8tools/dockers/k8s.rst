@@ -16,6 +16,7 @@ k8s相关
    k8s/practice
    k8s/future
    k8s/tool
+   k8s/helm
    k8s/history
    k8s/question
 

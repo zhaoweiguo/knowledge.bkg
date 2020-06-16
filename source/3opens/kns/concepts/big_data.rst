@@ -9,6 +9,7 @@
    big_datas/analysis_tool
    big_datas/data_collection
    big_datas/data_warehouse
+   big_datas/data_lake
    big_datas/hadoop
    big_datas/db_hdfs
    big_datas/fulltest_index

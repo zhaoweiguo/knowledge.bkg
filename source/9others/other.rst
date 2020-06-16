@@ -1,12 +1,22 @@
 other
 ###########
 
+
+* 即使针对数据做了分布式存储，单实例容量超过大概5T以后性能也会急剧下滑
+
+
 * 对于是否使用一个开源项目的一个很重要的考量指标是 : 是否自己公司的同事能掌握这个项目
 * 沟通从来不是拉关系，沟通的本质是有效的信息传递
 * 社交的最终目的，是建立有意义的人际关系
 * 在做人生大事的时候，坚持自我，听从本心；在放松之际，融入圈子，寻找沙雕网友一起嗨。
 * “唯一不变的是变化”，我的理解里，背后还有一句话，叫做“万变之中，不变至美”。
 
+混沌工程原则
+============
+
+* 混沌工程原则 - http://principlesofchaos.org : https://github.com/wizardbyron/principlesofchaos_zh-cn
+* ChaosBlade - Github.com: https://github.com/chaosblade-io/chaosblade
+* from: https://developer.aliyun.com/article/763882
 
 GraphQL
 =======
