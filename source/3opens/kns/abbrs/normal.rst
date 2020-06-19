@@ -41,7 +41,7 @@ C
 D
 ----
 
-* NAT: 网络地址转换(Network Address Translation)
+* DBaaS: Database as a Service
 * DHT: Distributed Hash Table，分布式哈希表
 * DNAT: 目的地址转换(Destination NAT)
 * DNN: 深度神经网络（Deep Neural Network, DNN）

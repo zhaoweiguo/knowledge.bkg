@@ -16,12 +16,10 @@
    tools/screen
    tools/pgrep
    tools/pkill
-   tools/lsof
 
    tools/mtr
    tools/curl
    tools/mail
-   tools/sendmail
    tools/ftp
    tools/wget
    tools/aria2c

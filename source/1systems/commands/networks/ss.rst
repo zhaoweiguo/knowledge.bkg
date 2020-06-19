@@ -1,7 +1,7 @@
 ss命令
 #########
 
-ss 是 socket statistics 的缩写。顾名思义，ss 命令可以用来获取socket 统计信息
+ss 是 socket statistics 的缩写。顾名思义，ss 命令可以用来获取tcp socket 统计信息
 ss 的优势在于它能够显示更多更详细的有关TCP和连接状态的信息，而且比netstat更快速更高效
 当服务器的socket连接数量变得非常大时，无论是使用netstat命令还是 cat  /proc/net/tcp，执行速度都会很慢
 当服务器维持的连接达到上万个的时候，使用 netstat 等于浪费生命，而用 ss才是 节省时间

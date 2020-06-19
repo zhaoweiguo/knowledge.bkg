@@ -6,6 +6,7 @@
    :maxdepth: 1
 
    notices/email
+   notices/sendmail
 
 
 报警工具::

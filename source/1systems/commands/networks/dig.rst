@@ -24,16 +24,16 @@ dig命令
 
 ::
 
-  	dig www.zhaoweiguo.com +nocomments +nocmd
-  	// +trace可查看更详细信息
+    dig www.zhaoweiguo.com +nocomments +nocmd
+    // +trace可查看更详细信息
 
-  	dig +trace  @8.8.8.8 www.baidu.com A
+    dig +trace  @8.8.8.8 www.baidu.com A
 
-  	简化命令:
-  	+nocmd
-  	+short
-  	+nocomment
-  	+nostat
+    简化命令:
+    +nocmd
+    +short
+    +nocomment
+    +nostat
 
     dig 全称Domain Information Groper
 

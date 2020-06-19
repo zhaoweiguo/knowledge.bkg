@@ -66,22 +66,11 @@ netstat命令使用
     netstat -antup
 
 
-查看ddos情况::
 
-    netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr
+实操
+====
 
-
-查看php-fpm长连接情况::
-
-    sh> netstat -nap |grep <port>    // 其中<port>为php请求的长连接服务端口
-    tcp        0      0 192.168.35.141:48361    10.1.4.112:4230         TIME_WAIT   -               
-    tcp        0      0 192.168.35.141:48358    10.1.4.112:4230         ESTABLISHED 6582/php-fpm: pool
-    tcp        0      0 192.168.35.141:48357    10.1.4.112:4230         ESTABLISHED 6473/php-fpm: pool
-    // 说明: 
-    // 1. ESTABLISHED: 连接建立后没有释放
-    // 2. TIME_WAIT: 连接关闭后释放资源的过程
-
-::
+基本操作::
 
     netstat -anp | grep 8443 | wc -l
     netstat -anp | grep 8443 | grep -v ESTABLISHED | wc -l
@@ -99,6 +88,23 @@ netstat命令使用
     sudo route add -net 0.0.0.0 10.2.0.1
     # 添加内网网关
     sudo route add -net 194.0.0.0 194.2.100.254
+
+
+查看ddos情况::
+
+    netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr
+
+
+查看php-fpm长连接情况::
+
+    sh> netstat -nap |grep <port>    // 其中<port>为php请求的长连接服务端口
+    tcp        0      0 192.168.35.141:48361    10.1.4.112:4230         TIME_WAIT   -               
+    tcp        0      0 192.168.35.141:48358    10.1.4.112:4230         ESTABLISHED 6582/php-fpm: pool
+    tcp        0      0 192.168.35.141:48357    10.1.4.112:4230         ESTABLISHED 6473/php-fpm: pool
+    // 说明: 
+    // 1. ESTABLISHED: 连接建立后没有释放
+    // 2. TIME_WAIT: 连接关闭后释放资源的过程
+
 
 
 

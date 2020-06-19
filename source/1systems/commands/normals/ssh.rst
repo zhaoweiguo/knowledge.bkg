@@ -3,6 +3,16 @@
 ssh命令
 #########################
 
+各参数含义::
+
+    -C 传输时压缩数据
+    -f 输入密码登陆后，ssh进入后台运行
+    -N 不执行远程命令，只提供端口转发。仅用于ssh2协议
+    -g 允许远程主机连接ssh转发端口
+    -D 设置socks代理地址和监听端口，如果是只允许本地访问则指定IP为127.0.0.1
+    -l ssh登陆用户名
+    -i 指定ssh登陆用的私钥，如果是用公钥、私钥对登陆则需要指定
+
 -L选项
 ------
 
@@ -33,16 +43,6 @@ ssh命令
 
     ssh -CfNg -D 0.0.0.0:1080 -l username xxx.xxx.xxx.xxx
 
-各参数含义::
-
-    -C 传输时压缩数据
-    -f 输入密码登陆后，ssh进入后台运行
-    -N 不执行远程命令，只提供端口转发。仅用于ssh2协议
-    -g 允许远程主机连接ssh转发端口
-    -D 设置socks代理地址和监听端口，如果是只允许本地访问则指定IP为127.0.0.1
-    -l ssh登陆用户名
-    -i 指定ssh登陆用的私钥，如果是用公钥、私钥对登陆则需要指定
-
 
 ssh-keygen命令
 -----------------
@@ -72,18 +72,20 @@ ssh-add命令相关
   ssh-add -s pkcs11
   ssh-add -e pkcs11
 
-  // 选项
-  -D：删除ssh-agent中的所有密钥.
-  -d：从ssh-agent中的删除密钥
-  -e pkcs11：删除PKCS#11共享库pkcs1提供的钥匙。
-  -s pkcs11：添加PKCS#11共享库pkcs1提供的钥匙。
-  -L：显示ssh-agent中的公钥
-  -l：显示ssh-agent中的密钥
-  -t life：对加载的密钥设置超时时间，超时ssh-agent将自动卸载密钥
-  -X：对ssh-agent进行解锁
-  -x：对ssh-agent进行加锁
+选项::
 
-  // 实例
+  -D: 删除ssh-agent中的所有密钥.
+  -d: 从ssh-agent中的删除密钥
+  -e: pkcs11：删除PKCS#11共享库pkcs1提供的钥匙。
+  -s: pkcs11：添加PKCS#11共享库pkcs1提供的钥匙。
+  -L: 显示ssh-agent中的公钥
+  -l: 显示ssh-agent中的密钥
+  -t: life：对加载的密钥设置超时时间，超时ssh-agent将自动卸载密钥
+  -X: 对ssh-agent进行解锁
+  -x: 对ssh-agent进行加锁
+
+实例::
+
   把专用密钥添加到 ssh-agent 的高速缓存中:
   ssh-add ~/.ssh/id_dsa
   2、从ssh-agent中删除密钥:

@@ -10,6 +10,7 @@ Kafka的使用 [1]_
    kafkas/config
    kafkas/command
    kafkas/practice
+   kafkas/tool
    kafkas/question
 
 

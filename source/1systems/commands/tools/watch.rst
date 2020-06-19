@@ -12,9 +12,9 @@ watch命令
 
 实例3：实时查看模拟攻击客户机建立起来的链接数::
 
-  watch 'netstat -an | grep:21 | grep<模拟攻击客户机的IP> wc -l'
+  watch 'netstat -an | grep:21 | grep <模拟攻击客户机的IP> | wc -l'
 
-实例4：检测当前目录中 scf ' 的文件的变化::
+实例4：检测当前目录中含 log 的文件的变化::
 
   watch -d  ' ls -l | grep log '
 

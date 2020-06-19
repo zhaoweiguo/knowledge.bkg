@@ -11,9 +11,9 @@
    networks/nc
    networks/ss
    networks/nmap
-   networks/ngrep
    networks/iftop
 
+   networks/ngrep
    networks/tcpdump
    networks/tcpcopy
    networks/netperf

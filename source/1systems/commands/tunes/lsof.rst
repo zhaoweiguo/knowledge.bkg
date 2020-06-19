@@ -1,5 +1,6 @@
 lsof命令
-================
+########
+
 一个列出当前系统打开文件的工具
 官网: http://people.freebsd.org/~abe/
 
@@ -35,40 +36,40 @@ lsof各列信息::
 
 FD列说明::
 
-  （1）cwd：表示current work dirctory，即：应用程序的当前工作目录，这是该应用程序启动的目录，除非它本身对这个目录进行更改
-  （2）txt ：该类型的文件是程序代码，如应用程序二进制文件本身或共享库，如上列表中显示的 /sbin/init 程序
-  （3）lnn：library references (AIX);
-  （4）er：FD information error (see NAME column);
-  （5）jld：jail directory (FreeBSD);
-  （6）ltx：shared library text (code and data);
-  （7）mxx ：hex memory-mapped type number xx.
-  （8）m86：DOS Merge mapped file;
-  （9）mem：memory-mapped file;
-  （10）mmap：memory-mapped device;
-  （11）pd：parent directory;
-  （12）rtd：root directory;
-  （13）tr：kernel trace file (OpenBSD);
-  （14）v86  VP/ix mapped file;
-  （15）0：表示标准输出
-  （16）1：表示标准输入
-  （17）2：表示标准错误
+    1. cwd：表示current work dirctory，即：应用程序的当前工作目录，这是该应用程序启动的目录，除非它本身对这个目录进行更改
+    2. txt ：该类型的文件是程序代码，如应用程序二进制文件本身或共享库，如上列表中显示的 /sbin/init 程序
+    3. lnn：library references (AIX);
+    4. er：FD information error (see NAME column);
+    5. jld：jail directory (FreeBSD);
+    6. ltx：shared library text (code and data);
+    7. mxx ：hex memory-mapped type number xx.
+    8. m86：DOS Merge mapped file;
+    9. mem：memory-mapped file;
+    10. mmap：memory-mapped device;
+    11. pd：parent directory;
+    12. rtd：root directory;
+    13. tr：kernel trace file (OpenBSD);
+    14. v86  VP/ix mapped file;
+    15. 0：表示标准输出
+    16. 1：表示标准输入
+    17. 2：表示标准错误
   一般在标准输出、标准错误、标准输入后还跟着文件状态模式：r、w、u等
-  （1）u：表示该文件被打开并处于读取/写入模式
-  （2）r：表示该文件被打开并处于只读模式
-  （3）w：表示该文件被打开并处于
-  （4）空格：表示该文件的状态模式为unknow，且没有锁定
-  （5）-：表示该文件的状态模式为unknow，且被锁定
+    1. u：表示该文件被打开并处于读取/写入模式
+    2. r：表示该文件被打开并处于只读模式
+    3. w：表示该文件被打开并处于
+    4. 空格：表示该文件的状态模式为unknow，且没有锁定
+    5. -：表示该文件的状态模式为unknow，且被锁定
   同时在文件状态模式后面，还跟着相关的锁
-  （1）N：for a Solaris NFS lock of unknown type;
-  （2）r：for read lock on part of the file;
-  （3）R：for a read lock on the entire file;
-  （4）w：for a write lock on part of the file;（文件的部分写锁）
-  （5）W：for a write lock on the entire file;（整个文件的写锁）
-  （6）u：for a read and write lock of any length;
-  （7）U：for a lock of unknown type;
-  （8）x：for an SCO OpenServer Xenix lock on part      of the file;
-  （9）X：for an SCO OpenServer Xenix lock on the      entire file;
-  （10）space：if there is no lock.
+    1. N：for a Solaris NFS lock of unknown type;
+    2. r：for read lock on part of the file;
+    3. R：for a read lock on the entire file;
+    4. w：for a write lock on part of the file;（文件的部分写锁）
+    5. W：for a write lock on the entire file;（整个文件的写锁）
+    6. u：for a read and write lock of any length;
+    7. U：for a lock of unknown type;
+    8. x：for an SCO OpenServer Xenix lock on part      of the file;
+    9. X：for an SCO OpenServer Xenix lock on the      entire file;
+    10. space：if there is no lock.
 
 
 TYPE列说明::
@@ -110,12 +111,6 @@ TYPE列说明::
 
    lsof -p ^1   // 取反
 
-   // 列出网络连接
-   lsof -i   // 全部
-   lsof -i tcp
-   lsof -i :25   // 找到使用某个端口的进程
-   lsof -i :smtp
-   lsof -i udp:53
 
    //列出所有UNIX域Socket文件
    lsof -U   // -U就对应UNIX
@@ -125,6 +120,20 @@ TYPE列说明::
    
    // 循环列出文件
    lsof -r 1
+
+实操
+====
+
+
+-i<条件> 列出符合条件的进程。（4、6、协议、:端口、 @ip)::
+
+   // 列出网络连接
+   lsof -i   // 全部
+   lsof -i tcp
+   lsof -i :25   // 找到使用某个端口的进程
+   lsof -i :smtp
+   lsof -i udp:53
+
 
 其他::
 

@@ -14,7 +14,6 @@
    tmps/lspci
    tmps/tput
    tmps/dmesg
-   tmps/split
    tmps/cmp
    tmps/finger
    tmps/hostname

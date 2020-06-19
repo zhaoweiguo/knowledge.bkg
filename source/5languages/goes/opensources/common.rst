@@ -158,6 +158,10 @@ lib工具
 * 文件上传断点续传: https://github.com/tus/tusd
 * websocket: https://github.com/olahol/melody
 
+混沌工程
+--------
+
+* https://github.com/chaosblade-io/chaosblad
 
 web服务器
 ---------

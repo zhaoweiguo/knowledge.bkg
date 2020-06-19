@@ -9,6 +9,7 @@ Contents:
    :maxdepth: 2
 
    tunes/tune_file
+   tunes/tune_tool
    tunes/tune_tmp
 
 

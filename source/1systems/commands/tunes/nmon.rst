@@ -26,9 +26,6 @@ http://nmon.sourceforge.net/pmwiki.php
   2.打开nmon analyser工具（这是个xlsm文件）
   点击Analyse nmon data按钮，加载文件分析
 
-  注:nmon analyser工具下载地址
-  https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Power%20Systems/page/nmon_analyser
-
 
 其他软件::
 

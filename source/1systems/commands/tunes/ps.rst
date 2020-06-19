@@ -114,19 +114,28 @@ To see every process running as root (real & effective ID) in user format::
 展示格式::
 
     rss        RSS
-    resident set size, the non-swapped physical memory that a task has used (in kiloBytes). (alias rssize, rsz).
-    实际驻留"在内存中"的内存数. 不包括已经交换出去的代码. 举一个例子: 如果你有一个程序使用了100K内存, 操作系统交换出40K内存, 那么RSS为60K. RSS还包括了与其它进程共享的内存区域. 这些区域通常用于libc库等
+    resident set size, the non-swapped physical memory that a task has used (in kiloBytes). 
+    (alias rssize, rsz).
+    实际驻留"在内存中"的内存数. 不包括已经交换出去的代码. 举一个例子: 
+    如果你有一个程序使用了100K内存, 操作系统交换出40K内存, 那么RSS为60K. 
+    RSS还包括了与其它进程共享的内存区域. 这些区域通常用于libc库等
 
     vsz        VSZ
-    virtual memory size of the process in KiB (1024-byte units). Device mappings are currently excluded; this is subject to change. (alias vsize).
+    virtual memory size of the process in KiB (1024-byte units). 
+    Device mappings are currently excluded; this is subject to change. (alias vsize).
 
     size       SZ
-    approximate amount of swap space that would be required if the process were to dirty all writable pages and then be swapped out. This number is very rough!
-    进程使用的地址空间, 如果进程映射了100M的内存, 进程的地址空间将报告为100M内存. 事实上, 这个大小不是一个程序实际使用的内存数
+    approximate amount of swap space that would be required if the process were 
+      to dirty all writable pages and then be swapped out. This number is very rough!
+    进程使用的地址空间, 如果进程映射了100M的内存, 进程的地址空间将报告为100M内存. 
+    事实上, 这个大小不是一个程序实际使用的内存数
 
     sz         SZ
-    size in physical pages of the core image of the process. This includes text, data, and stack space. Device mappings are currently excluded; this is subject to change. See vsz and rss.
-    （Private RSS）: 映射到内存中的页面, 这些页面仅由进程单独使用. 这也是我们最关心地方: 进程实际占用的内存数
+    size in physical pages of the core image of the process. 
+    This includes text, data, and stack space. 
+    Device mappings are currently excluded; this is subject to change. See vsz and rss.
+    （Private RSS）: 映射到内存中的页面, 这些页面仅由进程单独使用.
+    这也是我们最关心地方: 进程实际占用的内存数
 
 
 

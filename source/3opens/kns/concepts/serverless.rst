@@ -37,6 +37,10 @@ Serverless 平台的主要特点::
     4. 可观测能力需完善
     5. 研发运维心智需要改变
 
+定义::
+
+    Serverless = FaaS + BaaS
+
 
 
 
