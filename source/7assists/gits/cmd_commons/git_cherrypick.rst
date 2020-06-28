@@ -17,22 +17,6 @@ git cherry-pick可以选择某一个分支中的一个或几个commit(s)来进�
 
     git cherry-pick <commit id>
 
-详细的git log 语法如下::
-
-    git log [<options>] [<since>..<until>] [[--] <path>...]
-    主要参数选项如下:
-    -p：按补丁显示每个更新间的差异
-    --stat：显示每次更新的修改文件的统计信息
-    --shortstat：只显示--stat中最后的行数添加修改删除统计
-    --name-only：尽在已修改的提交信息后显示文件清单
-    --name-status：显示新增、修改和删除的文件清单
-    --abbrev-commit：仅显示SHA-1的前几个字符，而非所有的40个字符
-    --relative-date：使用较短的相对时间显示（例如："two weeks ago"）
-    --graph：显示ASCII图形表示的分支合并历史
-    --pretty：使用其他格式显示历史提交信息
-
-
-
 
 
 

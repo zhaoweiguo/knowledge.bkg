@@ -31,7 +31,8 @@ tsung-recorder——录制::
     tsung-recorder stop:用于停止录制
     会创建文件~/.tsung/tsung_recorderYYYMMDD-HH:MM.xml
     出现错误可以去 ~/.tsung/log/tsung.log-tsung_recorder@hostname察看出错原因
-    在录制的过程中，你也可以在xml文件中增加自定义标签，这在设定事务或评论时十分有用，例如:tsung-recorder record_tag “<transaction name=’login’>”
+    在录制的过程中，你也可以在xml文件中增加自定义标签，这在设定事务或评论时十分有用，
+    例如:tsung-recorder record_tag “<transaction name=’login’>”
 
 tsung——执行压测::
 

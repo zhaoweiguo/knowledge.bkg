@@ -36,6 +36,9 @@ patch::
   // 展示改变的文件名和状态
   git diff --name-status -r
 
+  // 展示修改文件名和修改长度
+  git diff --stat
+
 实例::
 
   git diff > dispatch.diff

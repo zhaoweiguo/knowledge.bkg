@@ -3,8 +3,6 @@
 
 
 * CSRG: Computer Systems Research Group 
-* FSF——Free Software Foundation
-* GE:奇异公司
 * IAB: Internet Architecture Board
 * IANA: Internet Assigned Numbers Authority (manager the well known ports(1-1023))
 * IRTF: internet Research Task Force

@@ -19,6 +19,7 @@
    4dbs/kafka
    4dbs/tsdb
    4dbs/graph
+   4dbs/elasticsearch
    4dbs/hbase
    4dbs/sqlite
    4dbs/other

@@ -20,8 +20,13 @@ Reapply commits on top of another base tip
                 /
    D---E---F---G master
 
+使用::
 
-
+  git rebase:
+  // 可以用来修改commit的内容
+  $git rebase -i <branch>/<tag>/<version>
+  //实例:
+  git rebase -i master
 
 
 定期使用项目仓库内容更新自己仓库内容::

@@ -53,7 +53,7 @@ tsung参考文档说明
 客户端标签与服务端标签(这两个有关联，需对照理解)
 ----------------------------------------------------
 
-* 简单设置::
+简单设置::
 
     <clients>
         <client host=”localhost” use_controller_vm=”true”/>
@@ -62,7 +62,7 @@ tsung参考文档说明
         <server host=”127.0.0.1″ port=”80″ type=”tcp”></server>
     </servers>
 
-* 高级设置::
+高级设置::
 
     <clients>
         <client host=”louxor” weight=”1″ maxusers=”800″>
@@ -93,7 +93,7 @@ tsung监控多个远程服务器.可以在<monitor>标签中配置.可统计的�
 负载标签
 --------
 
-* 随机生成用户::
+随机生成用户::
 
     <load>
         <arrivalphase phase="1" duration=”10″ unit=”minute”>
@@ -147,53 +147,61 @@ arrivalrate::
 
 注: 在这个例子中，有两个session，一个的probability为“0”(因此在第一阶段不会被执行，就是随机生成用户部分)， 而另一个是100。在测试开始之后，我们设置3个用户分别启动，第一个在3分5秒(执行http-example session)启动，第二个在10分钟后启动(http-example session)，最后一个在11分钟后启动(foo session)。
 
-* 负载测试的过程
+负载测试的过程::
 
-    默认情况下，tsung在所有用户都完成他们的session之后结束，因此这会比用户生成的过程要长的多。如果你想要停止tsung而不管阶段是否完成，也不管是否有session正处于激活状态。那么你可以在load标签中增加duration属性(版本1.3.2后有效)::
+    默认情况下，tsung在所有用户都完成他们的session之后结束，因此这会比用户生成的过程要长的多。
+    如果你想要停止tsung而不管阶段是否完成，也不管是否有session正处于激活状态。
+    那么你可以在load标签中增加duration属性(版本1.3.2后有效):
 
-        <load duration=”1″ unit=”hour”>
-            <arrivalphase phase=”1″ duration=”10″ unit=”minute”>
-                <users interarrival=”2″ unit=”second”></users>
-            </arrivalphase>
-        </load>
+    <load duration=”1″ unit=”hour”>
+        <arrivalphase phase=”1″ duration=”10″ unit=”minute”>
+            <users interarrival=”2″ unit=”second”></users>
+        </arrivalphase>
+    </load>
 
-当前最大值是50天，unit可以是”second”, “minute”, “hour”
+    当前最大值是50天，unit可以是”second”, “minute”, “hour”
 
 option标签
 ------------
 
-    全局变量的默认值可以在这儿进行设定，比如:
+全局变量的默认值可以在这儿进行设定，比如::
 
-        * 场景中两次请求间的思考时间
-        * ssl加密算法
-        * tcp/udp缓存大小(默认是32K)
+    * 场景中两次请求间的思考时间
+    * ssl加密算法
+    * tcp/udp缓存大小(默认是32K)
 
-    如果override设置为true，这些值会把session配置文件中的对应值覆盖::
+如果override设置为true，这些值会把session配置文件中的对应值覆盖::
 
-        <option name=”thinktime” value=”3″ random=”false” override=”true”/>
-        <option name=”ssl_ciphers” value=”EXP1024-RC4-SHA,EDH-RSA-DES-CBC3-SHA”/>
-        <option name=”tcp_snd_buffer” value=”16384″></option>
-        <option name=”tcp_rcv_buffer” value=”16384″></option>
-        <option name=”udp_snd_buffer” value=”16384″></option>
-        <option name=”udp_rcv_buffer” value=”16384″></option>
+    <option name=”thinktime” value=”3″ random=”false” override=”true”/>
+    <option name=”ssl_ciphers” value=”EXP1024-RC4-SHA,EDH-RSA-DES-CBC3-SHA”/>
+    <option name=”tcp_snd_buffer” value=”16384″></option>
+    <option name=”tcp_rcv_buffer” value=”16384″></option>
+    <option name=”udp_snd_buffer” value=”16384″></option>
+    <option name=”udp_rcv_buffer” value=”16384″></option>
 
-    * XMPP/Jabber 选项
+XMPP/Jabber 选项::
 
-        暂略…
+    暂略…
 
-    * http 选项
+http 选项::
 
-        对应http，你可以设定UserAgent的值[版本1.1.0后]，对每个user_agent都有一个probability属性(所有的probability值的和是100)，如::
+    对应http，你可以设定UserAgent的值[版本1.1.0后]
+    对每个user_agent都有一个probability属性(所有的probability值的和是100)，如:
 
-            <option type=”ts_http” name=”user_agent”>
-                <user_agent probability=”80″>
-                    Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050513 Galeon/1.3.21
-                </user_agent>
-                <user_agent probability=”20″>
-                    Mozilla/5.0 (Windows; U; Windows NT 5.2; fr-FR; rv:1.7.8) Gecko/20050511 Firefox/1.0.4
-                </user_agent>
-            </option>
+    <option type=”ts_http” name=”user_agent”>
+        <user_agent probability=”80″>
+            Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050513 Galeon/1.3.21
+        </user_agent>
+        <user_agent probability=”20″>
+            Mozilla/5.0 (Windows; U; Windows NT 5.2; fr-FR; rv:1.7.8) Gecko/20050511 Firefox/1.0.4
+        </user_agent>
+    </option>
 
 session标签
 ------------
+
+
+
+
+
 

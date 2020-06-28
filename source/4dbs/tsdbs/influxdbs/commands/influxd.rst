@@ -16,3 +16,11 @@ influxd命令
       https-enabled = false  
       https-certificate = "/etc/ssl/influxdb.pem" 
 
+
+1、数据备份::
+
+    influxd backup -database <mydatabase> <path-to-backup>
+
+
+
+

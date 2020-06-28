@@ -7,6 +7,7 @@
    normals/concept
    normals/protocol
    normals/api
+   normals/docker
    normals/performance
    normals/history
    normals/other

@@ -41,7 +41,9 @@ C
 D
 ----
 
+* DAL: Data Application Layer
 * DBaaS: Database as a Service
+* DCL: Data Cached Layer
 * DHT: Distributed Hash Table，分布式哈希表
 * DNAT: 目的地址转换(Destination NAT)
 * DNN: 深度神经网络（Deep Neural Network, DNN）
@@ -63,11 +65,13 @@ F
 ----
 
 * FaaS: Function as a Service
+* FSF: Free Software Foundation(自由软件基金会)
 
 G
 -----
 
 * GDPR: General Data Protection Regulation, 通用数据保护条例(欧洲联盟的条例)
+* GE: General Electrical(美国通用电气, 又称奇异公司)
 * GNU: GNU is Not Unix 
 * GPL——General Public License
 * GSA: Google Search Appliance
@@ -101,7 +105,7 @@ M
 ----
 
 * MIME: Multipurpose Internet Mail Extensions(rfc2045)
-* MIT:麻省理工学院
+* MIT: Massachusetts Institute of Technology(麻省理工学院)
 * MTU: Maximum Transfer Unit 
 * MLP: multilayer perceptron(多层感知器)
 * MLP: Machine Language Program（机器语言程序）
@@ -120,7 +124,7 @@ O
 
 * OCR: Optical Character Recognition, 文字识别
 * OOM: OutOfMemory
-* OOP: Object Oriented Programming)，面向对象程序设计
+* OOP: Object Oriented Programming, 面向对象程序设计
 * OSI: Open Systems Interconnection 
 
 P
@@ -150,13 +154,13 @@ R
 * RFC: Request for Comments 
 * ROA: Resource Oriented Architecture
 * RPC: Remote Procedure Call 
-* RNN: 循环神经网（Recurrent Neural Network，RNN）
+* RNN: Recurrent Neural Network，RNN, 循环神经网
 
 S
 ----
 
 * SaaS: Software as a Service(软件服务化)
-* SASL: System Architecture Support Libraries)
+* SASL: System Architecture Support Libraries
 * SMTP: Simple Mail Transfer Protocol 
 * SNAT: 源地址转换(Source NAT)
 * SNMP: Simple Network Management Protocol
@@ -187,7 +191,7 @@ V
 W
 ----
 
-WebDAV （Web-based Distributed Authoring and Versioning）
+* WebDAV: Web-based Distributed Authoring and Versioning
 
 Y
 ----

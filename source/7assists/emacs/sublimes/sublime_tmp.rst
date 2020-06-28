@@ -30,7 +30,15 @@ sublime临时相关
 2. 粘贴下面的代码后，回车安装
 3. 参考资料 `Package Control 安装 <https://packagecontrol.io/installation>`_ sublime3的安装代码如下::
 
-    import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+    import urllib.request,os,hashlib; 
+    h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; 
+    pf = 'Package Control.sublime-package'; 
+    ipp = sublime.installed_packages_path(); 
+    urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); 
+    by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); 
+    dh = hashlib.sha256(by).hexdigest(); 
+    print('Error validating download (got %s instead of %s), please try manual install' % (dh, h))
+    if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 
 安装插件
 -----------------
@@ -48,3 +56,11 @@ sublime临时相关
    cd "$env:appdata\Sublime Text 3\Packages\"
 
    git clone git@github.com:divmain/GitSavvy.git
+
+
+
+
+
+
+
+

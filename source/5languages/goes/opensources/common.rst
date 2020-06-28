@@ -188,6 +188,7 @@ DEVOPS
 * rancher: https://github.com/rancher/rancher
 * rancher os: https://github.com/rancher/os
 * k3s: https://github.com/rancher/k3s
+* helm: https://github.com/helm/helm
 
 * docker: https://github.com/docker
 * kubernetes: https://github.com/kubernetes/kubernetes

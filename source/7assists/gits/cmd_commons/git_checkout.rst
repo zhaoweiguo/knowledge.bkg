@@ -15,4 +15,13 @@ git checkout
   git checkout -b v2.9.5 --track origin/v2.9.5
 
 
+实例::
+
+  //如果修改文件后想放弃修改可以使用:
+  git checkout -- <fileName>
+
+
+
+
+
 

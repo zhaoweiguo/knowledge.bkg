@@ -17,5 +17,5 @@
    algorithms/other
 
 
-
+* https://github.com/greyireland/algorithm-pattern
 

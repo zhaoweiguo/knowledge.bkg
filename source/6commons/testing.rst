@@ -10,6 +10,7 @@
    testings/common
    testings/eunit
    testings/code_coverage
+   testings/auto_testing
 
 
 

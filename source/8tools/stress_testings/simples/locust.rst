@@ -1,7 +1,10 @@
 Locust
 ######
 
-
+* github: https://github.com/locustio/locust::
+  
+    开发语言: Python
+    开源协议: MIT
 
 简介::
 

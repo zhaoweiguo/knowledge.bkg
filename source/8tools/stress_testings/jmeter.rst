@@ -3,7 +3,7 @@ Apache JMeter
 
 * 网站: http://jmeter.apache.org
 
-* https://github.com/apache/jmeter::
+* github: https://github.com/apache/jmeter::
 
     开发语言: Java
     开源协议: Apache-2.0
