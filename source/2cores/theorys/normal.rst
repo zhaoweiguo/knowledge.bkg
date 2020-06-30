@@ -4,9 +4,15 @@
 .. toctree::
    :maxdepth: 1
 
+   normals/distributed_sys
    normals/cap
    normals/csp
    normals/rdf
+   normals/Raft
+   normals/Paxos
+   normals/BASE
+   normals/ACID
+   normals/flp
 
 
 

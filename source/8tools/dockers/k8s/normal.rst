@@ -11,6 +11,7 @@ kube基本
    normals/jsonpath
    normals/volume
    normals/concept
+   normals/principle
    normals/cluster_testing
    normals/introduce
    normals/svc_catalog
