@@ -6,6 +6,7 @@
    :maxdepth: 2
 
    vpns/normal
+   vpns/concept
    vpns/fanqiang
    vpns/dnat
    vpns/ngrok

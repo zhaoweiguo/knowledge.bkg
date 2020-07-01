@@ -13,8 +13,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   nginxs/normal
    nginxs/nginx
    nginxs/apache
    nginxs/openresty
+
+
+
 

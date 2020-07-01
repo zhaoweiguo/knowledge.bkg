@@ -8,5 +8,21 @@ android问题汇总
 
 
 
+NDK not configured::
+
+    解决方法：
+      Download the NDK from 
+    http://developer.android.com/tools/sdk/ndk/.
+    Then add 
+    ndk.dir=path/to/ndk
+    in local.properties.
+     (On Windows, make sure you escape backslashes, e.g. C:\\ndk rather than C:\ndk)
+
+    Error:Execution failed for task ':app:processDebugManifest'.
+
+
+
+
+
 
 

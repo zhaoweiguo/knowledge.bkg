@@ -1,5 +1,5 @@
 screen命令使用
-==================
+##############
 
 ::
 
@@ -74,7 +74,15 @@ screen命令使用
       $> screen -L -t window1 -dmS test
       意思是启动test会话，test会话的窗口名称为window1
 
+dtach
+=====
 
+dtach 是用来模拟screen的detach的功能的小工具，其可以让你随意地attach到各种会话上 。下图为dtach+dvtm的样子。
+
+byobu
+=====
+
+byobu是Ubuntu开发的，在Screen的基础上进行包装，使其更加易用的一个工具。最新的Byobu，已经是基于Tmux作为后端了。可通过“byobu-tmux”这个命令行前端来接受各种与tmux一模一样的参数来控制它。Byobu的细节做的非常好，效果图如下：
 
 
 

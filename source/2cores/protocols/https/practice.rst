@@ -1,10 +1,9 @@
-通用
+实践
 ####
-
 
 .. toctree::
    :maxdepth: 2
 
-   normals/real_ip
+   practices/real_ip
 
 

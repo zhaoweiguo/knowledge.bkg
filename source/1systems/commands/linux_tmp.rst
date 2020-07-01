@@ -18,6 +18,12 @@
    tmps/finger
    tmps/hostname
    tmps/mount
+   tmps/other
+
+
+
+
+
 
 
   

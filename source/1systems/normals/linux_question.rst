@@ -11,6 +11,17 @@ linux问题汇总
     > dpkg –get-selections|grep linux
     > apt-get remove <soft_version>
 
+64位ubuntu14.04运行32位程序::
+
+    To run 32bit executable file in a 64 bit multi-arch Ubuntu system, 
+    you have to add i386architecture and install libc6:i386,libncurses5:i386,libstdc++6:i386 these 3 lib packages.
+    sudo dpkg --add-architecture i386
+    sudo apt-get update
+    sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+    sudo apt-get install libz1:i386
+
+
+
 
 .. _linux_question_dudf:
 

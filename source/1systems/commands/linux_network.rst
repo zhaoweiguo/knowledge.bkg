@@ -29,4 +29,6 @@
    networks/telnet
    networks/nslookup
 
+   networks/slurm
+
    networks/network_other

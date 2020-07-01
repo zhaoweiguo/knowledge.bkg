@@ -19,6 +19,7 @@ Erlang使用文档
    erlangs/erlang_tool
    erlangs/erlang_trace
    erlangs/erlang_spec
+   erlangs/introduce
    erlangs/erlang_tmp
    erlangs/erlang_remote_shell
 

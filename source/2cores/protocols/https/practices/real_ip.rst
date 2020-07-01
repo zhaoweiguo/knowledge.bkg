@@ -29,7 +29,7 @@
 
 .. note:: 如果客户端没有通过代理服务器来访问，那么用$_SERVER["HTTP_X_FORWARDED_FOR"] 取到的值将是空的
 
-一、没有使用代理服务 器的情况::
+一、没有使用代理服务器的情况::
 
     REMOTE_ADDR = 您的 IP
     HTTP_VIA = 没数值或不显示

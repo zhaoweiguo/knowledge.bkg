@@ -33,7 +33,11 @@
       就是需要从channel1-chane2 ---...channnel13一直扫描了，
       如果扫描了AP，芯片马上从AP CHANNNEL1 到channel13加快获取到UDP包；
 
+::
 
-
+    ALSA是Advanced Linux Sound Architectur。
+    它在Linux操作系统上提供了音频和MIDI（Musical Instrument Digital Interface，音乐设备数字化接口）的支持。
+    A2DP全名是Advanced Audio Distribution Profile（高级音频分发框架），蓝牙音频传输模型协定！ 
+    A2DP是能够采用耳机内的芯片来堆栈数据，达到声音的高清晰度。
 
 

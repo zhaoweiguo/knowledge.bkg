@@ -16,6 +16,7 @@ Contents:
    https/rest
    https/phrase_polling
    https/http_code
+   https/practice
    https/tmp
    https/tool
 
