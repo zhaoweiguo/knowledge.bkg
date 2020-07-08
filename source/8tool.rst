@@ -21,6 +21,7 @@
    8tools/jumpserver
    8tools/vpn
    8tools/tmp
+   8tools/other
 
 
 

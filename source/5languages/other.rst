@@ -14,4 +14,5 @@
    others/perl
    others/groovy
    others/r
+   others/v
 

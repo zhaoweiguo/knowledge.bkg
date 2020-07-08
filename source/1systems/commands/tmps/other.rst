@@ -39,6 +39,21 @@ newsbeuter & rsstail::
 
     newsbeuter 和 rsstail 是命令行下RSS的阅读工具。
 
+htop & iotop::
+
+    htop 和 iotop用来查看进程，内存和IO负载。
+
+ttyrec & ipbt::
+
+    ttyrec是一个 tty 控制台录制程序，其所录制的数据文件可以使用与之配套的 ttyplay 播放。不管是你在 tty 中的各种操作，还是在 tty 中耳熟能详的软件，都可进行录制。
+    ipbt是一个用来回放 ttyrec 所录制的控制台输入过程的工具。
+    与此类似的还有Shelr和termrec 
+
+socat & netpipes::
+
+    socat是一个多功能的网络工具，名字来由是” Socket CAT”，可以看作是netcat的N倍加强版。
+    netpipes 和socat一样，主要是用来在命令行来进行socket操作的命令，这样你就可以在Shell脚本下行进socket网络通讯了。
+
 
 
 

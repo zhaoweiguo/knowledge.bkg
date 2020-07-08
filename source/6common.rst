@@ -13,5 +13,6 @@
    6commons/methodology
    6commons/injection
    6commons/code_review
+   6commons/other
 
 

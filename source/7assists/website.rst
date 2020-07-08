@@ -36,3 +36,9 @@ katacoda-边看边操作学习网站
 * https://gitstar-ranking.com/
 
 
+大势分析
+========
+
+* Gartner
+
+

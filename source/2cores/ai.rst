@@ -36,6 +36,7 @@ AI相关
 * https://tf.wiki/
 * 天池人工智能基础课程: https://tianchi.aliyun.com/course/courseDetail?courseId=41138
 * https://www.kaggle.com/
+* https://github.com/datawhalechina/pumpkin-book
 
 
 

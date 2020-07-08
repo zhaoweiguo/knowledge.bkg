@@ -35,6 +35,7 @@ Golang工具包
 
 * email: https://gopkg.in/gomail.v2
 * email: https://github.com/jordan-wright/email
+* chat: https://github.com/tinode/chat
 
 
 日志log
@@ -58,7 +59,7 @@ Golang工具包
 环境变量
 -----------
 
-* 可读取文件来设定环境变量: https://github.com/joho/godotenv
+* 可读取文件.env来设定环境变量: https://github.com/joho/godotenv
 * 把环境变量的值自动赋值给自定义类型的变量: https://github.com/kelseyhightower/envconfig
 
 cli命令
@@ -151,6 +152,7 @@ lib工具
 * web框架: https://github.com/astaxie/beego
 * web框架: https://github.com/caddyserver/caddy
 * web框架: https://github.com/go-martini/martini
+* https://github.com/gorilla/mux
 * web框架(cayley): https://github.com/gobuffalo/packr
 * https://github.com/grpc/grpc-go
 
@@ -260,6 +262,11 @@ CI&CD&Git
 * 定时: https://github.com/robfig/cron
 * 自动化运维平台 Gaia: https://github.com/gaia-pipeline/gaia
 
+git版本控制
+-----------
+
+* https://github.com/go-git/go-git
+* 使用sql查git commit: https://github.com/augmentable-dev/gitqlite
 
 P2P
 ---
@@ -276,6 +283,7 @@ P2P
 * updating terminal output in realtime: https://github.com/gosuri/uilive
 * Go CGO cross compiler: https://github.com/karalabe/xgo
 * A JavaScript interpreter in Go: https://github.com/robertkrimen/otto
+* 下载: https://github.com/iawia002/annie
   
 开源项目收集
 ------------

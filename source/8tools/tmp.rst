@@ -1,21 +1,14 @@
-其他工具
-===============
+临时
+####
 
-:作者: 新溪-gordon <programfan.info#gmail.com>
-:时间: 2018-07-12
+二维码
+======
 
-
-.. toctree::
-   :maxdepth: 1
-
-   tmps/freeswitch
-   tmps/asterisk
-   tmps/webqq
-   tmps/dia
-   tmps/sphinx
+* 趣味二维码原理: https://research.swtch.com/qart
+* Python版实现: https://github.com/7sDream/pyqart
 
 
 
-* omifocus：task management for Mac, iPad, and iPhone
-* 文件对比：beyond compare，
+
+
 

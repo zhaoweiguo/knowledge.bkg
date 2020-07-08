@@ -8,6 +8,7 @@ Networking
    Networkings/vpc
    Networkings/vpn
    Networkings/expressconnect
+   Networkings/cen
 
 
 专有网络::

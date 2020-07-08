@@ -6,6 +6,7 @@ Elasticsearch
 
    elasticsearchs/elasticsearch
    elasticsearchs/solr
+   elasticsearchs/sphinx
 
 
 
