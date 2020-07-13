@@ -13,6 +13,7 @@
 * xml: https://github.com/tealeg/xlsx
 * yaml: https://github.com/go-yaml/yaml/
 * 兼容 json，toml，yaml，hcl 等格式的日志库: https://github.com/spf13/viper
+* replacement for Go's flag package: https://github.com/spf13/pflag
 
 AI
 -----
@@ -190,6 +191,7 @@ DEVOPS
 * rancher: https://github.com/rancher/rancher
 * rancher os: https://github.com/rancher/os
 * k3s: https://github.com/rancher/k3s
+* https://github.com/derailed/k9s
 * helm: https://github.com/helm/helm
 
 * docker: https://github.com/docker
@@ -197,6 +199,7 @@ DEVOPS
 * linuxkit: https://github.com/linuxkit/linuxkit
 * 超轻量级: https://github.com/hashicorp/nomad
 * Connect, secure, control, and observe services: https://github.com/istio/istio
+* https://github.com/kubeedge/kubeedge
 * automated deployment and declarative configuration: https://github.com/box/kube-applier
 * kustomize: https://github.com/kubernetes-sigs/kustomize
 * kubedog: https://github.com/flant/kubedog

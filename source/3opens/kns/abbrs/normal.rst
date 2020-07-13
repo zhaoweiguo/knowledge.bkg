@@ -87,6 +87,7 @@ H
 I
 ----
 
+* I18N: internationalization(首末字符i和n，18为中间的字符数), 类似的有L10N, K8S
 * IaaS: Infrastructure as a Service(基础设施即服务)
 * IEEE: Institute for Electrical and Electronics Engineers 
 * IETF: Internet Engineering Task Force
@@ -97,6 +98,7 @@ I
 L
 ---
 
+* L10N: localization(首末字符l和n，10为中间的字符数), 类似的有I18N, K8S
 * LDAP: Lightweight Directory Access Protocol
 * LSTM: 长短时记忆（Long Short Term Memory，LSTM）
 

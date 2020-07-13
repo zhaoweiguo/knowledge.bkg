@@ -19,6 +19,7 @@ Contents:
    sphinxdocs/hugo
    sphinxdocs/gitbook
    sphinxdocs/commit
+   sphinxdocs/search
 
 
 
