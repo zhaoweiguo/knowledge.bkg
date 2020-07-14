@@ -15,7 +15,6 @@ Erlang文档
    erlangs/erlang_lib
    erlangs/erlang_opensource
    erlangs/erlang
-   erlangs/erlang_online_operator
    erlangs/mnesia
    erlangs/rebar
    erlangs/lager

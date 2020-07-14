@@ -157,6 +157,9 @@ lib工具
 * web框架(cayley): https://github.com/gobuffalo/packr
 * https://github.com/grpc/grpc-go
 
+* 后台框架: https://github.com/flipped-aurora/gin-vue-admin
+* https://github.com/wenjianzhang/go-admin
+
 * 爬虫: http://github.com/henrylee2cn/pholcus
 * 文件上传断点续传: https://github.com/tus/tusd
 * websocket: https://github.com/olahol/melody

@@ -16,7 +16,7 @@
    4dbs/kv
    4dbs/mongodb
    4dbs/mysql
-   4dbs/kafka
+   4dbs/MQ
    4dbs/tsdb
    4dbs/graph
    4dbs/elasticsearch

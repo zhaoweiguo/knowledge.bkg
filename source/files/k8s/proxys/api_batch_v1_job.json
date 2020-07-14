@@ -18,7 +18,7 @@
           "app": "redpoint"
         },
         "annotations": {
-          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\",\"namespace\":\"api\"},\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\"},\"spec\":{\"containers\":[{\"command\":[\"/redpoint\"],\"env\":[{\"name\":\"aliyun_logs_service-redpoint-api\",\"value\":\"stdout\"}],\"image\":\"registry.cn-beijing.aliyuncs.com/octopus-tool/redpoint:27\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"redpoint\"}],\"imagePullSecrets\":[{\"name\":\"ali-image-key\"}],\"restartPolicy\":\"OnFailure\"}}}}\n"
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\",\"namespace\":\"api\"},\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\"},\"spec\":{\"containers\":[{\"command\":[\"/redpoint\"],\"env\":[{\"name\":\"aliyun_logs_service-redpoint-api\",\"value\":\"stdout\"}],\"image\":\"registry.cn-beijing.aliyuncs.com/xxxx-tool/redpoint:27\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"redpoint\"}],\"imagePullSecrets\":[{\"name\":\"ali-image-key\"}],\"restartPolicy\":\"OnFailure\"}}}}\n"
         }
       },
       "spec": {
@@ -43,7 +43,7 @@
           "spec": {
             "containers": [{
               "name": "redpoint",
-              "image": "registry.cn-beijing.aliyuncs.com/octopus-tool/redpoint:27",
+              "image": "registry.cn-beijing.aliyuncs.com/xxxx-tool/redpoint:27",
               "command": [
                 "/redpoint"
               ],
@@ -84,7 +84,7 @@
           "app": "redpoint"
         },
         "annotations": {
-          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\",\"namespace\":\"pvt\"},\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\"},\"spec\":{\"containers\":[{\"command\":[\"/redpoint\"],\"env\":[{\"name\":\"aliyun_logs_service-redpoint-pvt\",\"value\":\"stdout\"}],\"image\":\"registry.cn-beijing.aliyuncs.com/octopus-tool/redpoint:25\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"redpoint\"}],\"imagePullSecrets\":[{\"name\":\"ali-image-key\"}],\"restartPolicy\":\"OnFailure\"}}}}\n"
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\",\"namespace\":\"pvt\"},\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"app\":\"redpoint\"},\"name\":\"redpoint\"},\"spec\":{\"containers\":[{\"command\":[\"/redpoint\"],\"env\":[{\"name\":\"aliyun_logs_service-redpoint-pvt\",\"value\":\"stdout\"}],\"image\":\"registry.cn-beijing.aliyuncs.com/xxxx-tool/redpoint:25\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"redpoint\"}],\"imagePullSecrets\":[{\"name\":\"ali-image-key\"}],\"restartPolicy\":\"OnFailure\"}}}}\n"
         }
       },
       "spec": {
@@ -109,7 +109,7 @@
           "spec": {
             "containers": [{
               "name": "redpoint",
-              "image": "registry.cn-beijing.aliyuncs.com/octopus-tool/redpoint:25",
+              "image": "registry.cn-beijing.aliyuncs.com/xxxxxx-tool/redpoint:25",
               "command": [
                 "/redpoint"
               ],

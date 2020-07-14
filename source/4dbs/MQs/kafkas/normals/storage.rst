@@ -43,7 +43,7 @@ Segment file是什么(log和index文件 Segment默认大小1个G)::
 
 Segment文件特点::
 
-​     segment文件命名的规则：partition全局的第一个segment从0（20个0）开始
+    segment文件命名的规则：partition全局的第一个segment从0（20个0）开始
      后续的每一个segment文件名是上一个segment文件中最后一条消息的offset值。
 
     那么这样命令有什么好处呢？:

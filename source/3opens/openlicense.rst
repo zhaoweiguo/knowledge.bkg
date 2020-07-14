@@ -9,6 +9,7 @@
    openlicenses/apache
    openlicenses/mit
    openlicenses/epl
+   openlicenses/GPL
    openlicenses/lgpl
    openlicenses/mpl
    openlicenses/mulanPsl

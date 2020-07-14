@@ -6,7 +6,7 @@
 
 查看::
 
-    db.octopus_gadget_info.getIndexes()
+    db.wei64_gadget_info.getIndexes()
 
 查看索引是否生效::
 

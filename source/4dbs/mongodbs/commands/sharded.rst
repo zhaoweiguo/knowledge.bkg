@@ -29,14 +29,14 @@
 实例::
 
     use <db>;
-    db.octopus_scale_data_info.createIndex({"_id":"hashed"});
+    db.wei64_scale_data_info.createIndex({"_id":"hashed"});
 
     use admin;
-    db.runCommand({"shardcollection":"<db>.octopus_scale_data_info","key":{"_id" : "hashed"}});
+    db.runCommand({"shardcollection":"<db>.wei64_scale_data_info","key":{"_id" : "hashed"}});
 
     // 查看
     use <db>;
-    db.octopus_scale_data_info.getShardDistribution();
+    db.wei64_scale_data_info.getShardDistribution();
 
 
 

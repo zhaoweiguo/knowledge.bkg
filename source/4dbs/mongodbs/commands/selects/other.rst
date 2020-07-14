@@ -30,7 +30,7 @@ like模糊查询::
 
 $in, $and复杂查询::
 
-    db.getCollection('octopus_gadget_info').find({
+    db.getCollection('wei64_gadget_info').find({
         $and : [
           {"time_created": {
               "$gte" : ISODate("2019-01-02"), "$lt" : ISODate("2019-07-03")
