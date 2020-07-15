@@ -7,7 +7,6 @@
 .. toctree::
    :maxdepth: 1
 
-   opensources/common
    opensources/sarama
    opensources/mock
    opensources/delve

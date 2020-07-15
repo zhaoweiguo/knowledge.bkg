@@ -12,7 +12,6 @@
    3opens/foundation
    3opens/openlicense
    3opens/corp
-   3opens/kn
    3opens/other
 
 

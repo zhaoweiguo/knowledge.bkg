@@ -3,4 +3,7 @@
 
 * psychology: 心理学
 * cognitive psychology: 认知心理学
-* 
+
+
+
+

@@ -133,6 +133,7 @@ P
 -----
 
 * PaaS: Platform as a Service(平台即服务)
+* PERN: Postgres, Express, React, Node
 * PCRE: Perl Compatible Regular Expressions
 * POSIX: Portable Operating System Interface 
 * Pull Request (PR)
