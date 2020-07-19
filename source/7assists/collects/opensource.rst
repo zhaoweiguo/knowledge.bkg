@@ -7,7 +7,13 @@
 
    opensources/golang
    opensources/node
+   opensources/python
    opensources/ui
+   opensources/algorithm
+   opensources/course
+   opensources/ml
+   opensources/book
+   opensources/awesome
 
 
 

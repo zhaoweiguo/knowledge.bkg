@@ -10,6 +10,8 @@
    foundations/cdf
    foundations/Apache
    foundations/OUC
+   foundations/OpenJS
+   foundations/Linux
 
 
 

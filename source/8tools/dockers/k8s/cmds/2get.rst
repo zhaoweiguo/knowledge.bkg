@@ -173,6 +173,18 @@ namespace::
     scheduler            Healthy   ok
     etcd-0               Healthy   {"health":"true"}
 
+    以其他格式打印
+    $ k get po -o yaml
+    $ k get po -o json
+    $ k get po <POD> -o jsonpath="Name: {.metadata.name} Status: {.status.phase}"
+    
+    允许的格式有:
+    custom-columns,custom-columns-file,go-template,go-template-file,
+    json,jsonpath,jsonpath-file,name,template,templatefile,wide,yaml
+
+
+
+
 
 
 

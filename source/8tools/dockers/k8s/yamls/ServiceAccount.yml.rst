@@ -11,7 +11,8 @@ ServiceAccount.yaml
 创建sa和clusterrolebinding::
 
     $ kubectl create serviceaccount website-controller
-    $ kubectl create clusterrolebinding website-controller --clusterrole=cluster-admin --serviceaccount=default:website-controller
+    $ kubectl create clusterrolebinding website-controller --clusterrole=cluster-admin \
+      --serviceaccount=default:website-controller
 
 
 

@@ -66,6 +66,13 @@ Examples::
 说明::
 
     1.14版:
-    kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+    kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. 
+    Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+
+
+
+
+
+
 
 

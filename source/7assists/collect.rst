@@ -10,6 +10,7 @@
    collects/concept
    collects/author
    collects/abbr
+   collects/paper
    collects/keyword
 
 

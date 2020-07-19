@@ -35,7 +35,7 @@ mac常用
     /usr/local/homebrew/lib/python2.7/site-packages/
 
 
-
+* https://github.com/jaywcjlove/awesome-mac
 
 
 

@@ -71,8 +71,61 @@ parsing go.mod: unexpected module path
     在go.mod文件中增加:
     replace github.com/h2non/gock => gopkg.in/h2non/gock.v1 v1.0.14
 
+kubernetes client-go依赖报错
+----------------------------
+
+问题::
+
+    cannot find module providing package k8s.io/api/admissionregistration/v1alpha1 when compiling operator-sdk
+
+解决::
+
+    1. 修改go.mod文件
+    替换k8s.io\client-go@v11.0.0+incompatible为k8s.io/client-go v0.18.2，然后在go build就可以了
+    2. 使用go get 命令
+    $ go get k8s.io\client-go@v0.18.2
+
+github issue中解释如下 [2]_ ::
+
+    Related issue is that go get k8s.io/client-go@latest resolves to v11.0.0+incompatible not v0.18.2.
+    Should I break this off as a separate discussion?
+
+    Unfortunately, that is not possible to resolve. 
+    k8s.io/client-go had major versions tagged prior to the introduction of go modules. 
+    go modules require any major version X >= 2 rename the module to k8s.io/client-go/v.
+
+原因应该是这样的::
+
+    go get命令是会自动的下载版本最新的(这儿是v11.0.0)
+    但实际上v12.0.0的下一版本是v1.12.10也就是v0.12.10?
+
+    另: 下面2个tag是同一个commit
+    分支: origin/release-13.0
+    tag: v0.16.13, tag: kubernetes-1.16.13
+
+commit日志::
+
+    commit 9a60e030176b33b0f5e1d6f37d5b2409f5d80422 (HEAD, tag: v0.16.13, tag: kubernetes-1.16.13)
+    Author: Kubernetes Publisher <k8s-publishing-bot@users.noreply.github.com>
+    Date:   Wed Jul 15 21:31:14 2020 +0000
+
+        Update dependencies to v0.16.13 tag
+
+    commit b063729e49a610cb5cfd329fce64b7c736784d83 (origin/release-13.0)
+    Merge: c94387a2 37e11edd
+    Author: Kubernetes Publisher <k8s-publishing-bot@users.noreply.github.com>
+    Date:   Tue Apr 28 14:58:24 2020 -0700
+
+        Merge pull request #90022 from liggitt/json-raw-1.16
+        
+        Manual cherry pick of #89833: preserve integers decoding raw JSON values
+        
+        Kubernetes-commit: 4d8caa7d476ae12f362b031efd765d9d282d337e
+
+
 
 
 
 
 .. [1] http://blog.ipalfish.com/?p=443
+.. [2] https://github.com/kubernetes/client-go/issues/551

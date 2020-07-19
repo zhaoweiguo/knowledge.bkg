@@ -13,10 +13,10 @@ HA测试 [1]_
 
 * node关机，pod是否被在别的node上重新创建::
 
-    现象：get node 可以很快看到对应node 状态变成no ready，但是pod状态还是一直是running，大约持续5分钟后关机的node上的pod状态变成 unknown,同时在其他node重建。
-    重新开机后，刚才的不会恢复新的pod到原来的机器上
+    现象：get node 可以很快看到对应node 状态变成no ready，但是pod状态还是一直是running，
+    大约持续5分钟后关机的node上的pod状态变成 unknown,同时在其他node重建。
 
-* 逐个关闭maset1，然后逐个起来，看集，群是否能正常工作::
+* 逐个关闭maset，然后逐个起来，看集，群是否能正常工作::
 
     现象：关闭master之后，master上面的pod的status也变成unknow，在master1上删除和创建pod都仍然有效。
     但是发现存活的etcd存在raft status不一致的情况，不知道正不正常。

@@ -4,7 +4,7 @@ JSONPath Support [1]_
 实例1
 =====
 
-json input::
+json格式(如: k get po -o json)::
 
     {
       "kind": "List",
@@ -101,7 +101,8 @@ input::
 
 使用::
 
-    $ export PORT=$(kubectl get svc first-deployment -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
+    $ export PORT=$(kubectl get svc first-deployment \
+      -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
 
 
 

@@ -1,6 +1,16 @@
 Node开源项目
 ############
 
+前端
+====
+
+框架&组件
+---------
+
+* https://github.com/Polymer/polymer
+* https://github.com/Tencent/omi
+* https://github.com/storybookjs/storybook
+
 Web后台管理
 -----------
 
@@ -53,11 +63,22 @@ Web后台管理
   
     基于 Bootstrap 4 和 Material 风格的控制面板。
 
+在线表格
+--------
+
+* A web-based JavaScript（canvas） spreadsheet: https://github.com/myliang/x-spreadsheet
 
 
+加密货币&区块链
+===============
+
+* https://github.com/cazala/coin-hive
 
 
+书
+===
 
+* https://github.com/sindresorhus/awesome-nodejs
 
 
 

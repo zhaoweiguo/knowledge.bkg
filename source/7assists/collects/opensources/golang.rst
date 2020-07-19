@@ -168,6 +168,13 @@ lib工具
 --------
 
 * https://github.com/chaosblade-io/chaosblad
+* https://github.com/chaos-mesh/chaos-mesh
+* https://github.com/Netflix/chaosmonkey
+
+SMTP
+----
+
+* https://github.com/sj26/mailcatcher
 
 web服务器
 ---------
@@ -193,15 +200,16 @@ DEVOPS
 
 * rancher: https://github.com/rancher/rancher
 * rancher os: https://github.com/rancher/os
+* https://github.com/cnrancher/octopus
 * k3s: https://github.com/rancher/k3s
 * https://github.com/derailed/k9s
 * helm: https://github.com/helm/helm
 
 * docker: https://github.com/docker
 * kubernetes: https://github.com/kubernetes/kubernetes
+* https://github.com/kubernetes/kubeadm
 * linuxkit: https://github.com/linuxkit/linuxkit
 * 超轻量级: https://github.com/hashicorp/nomad
-* Connect, secure, control, and observe services: https://github.com/istio/istio
 * https://github.com/kubeedge/kubeedge
 * automated deployment and declarative configuration: https://github.com/box/kube-applier
 * kustomize: https://github.com/kubernetes-sigs/kustomize
@@ -212,6 +220,21 @@ DEVOPS
 * cadvisor: https://github.com/google/cadvisor
 * ube-state-metrics: https://github.com/kubernetes/kube-state-metrics
 * node_exporter: https://github.com/prometheus/node_exporter
+* High Performance, Kubernetes Native Object Storage: https://github.com/minio/minio
+
+operator
+--------
+
+* https://github.com/kubernetes-sigs/kubebuilder
+* https://github.com/operator-framework/operator-sdk
+
+
+微服务架构
+----------
+
+* Connect, secure, control, and observe services: https://github.com/istio/istio
+* An awesome dashboard for Istio built: https://github.com/XiaoMi/naftis
+
 
 网络工具
 --------
@@ -290,7 +313,15 @@ P2P
 * Go CGO cross compiler: https://github.com/karalabe/xgo
 * A JavaScript interpreter in Go: https://github.com/robertkrimen/otto
 * 下载: https://github.com/iawia002/annie
-  
+* 推送服务: https://github.com/appleboy/gorush
+
+协议
+----
+
+* https://github.com/golang/protobuf
+* https://github.com/gogo/protobuf
+
+
 开源项目收集
 ------------
 

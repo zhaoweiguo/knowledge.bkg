@@ -14,7 +14,9 @@ git pull命令
     git pull . master
 
 
+拉取tag::
 
+    $ git pull --tags
 
 
 

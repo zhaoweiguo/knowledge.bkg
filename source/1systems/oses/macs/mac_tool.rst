@@ -35,3 +35,10 @@ ios生成ipa安装包::
 
     『Control-Command-空格键』进入“字符检视器”弹出式窗口
     
+
+* 一个为 macOS 设计的快速的 App 启动和切换工具: https://manico.im/
+* https://www.waitsun.com/
+* 小众软件: https://www.appinn.com/
+
+
+

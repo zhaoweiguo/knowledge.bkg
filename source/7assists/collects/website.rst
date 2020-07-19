@@ -30,6 +30,11 @@ katacoda-边看边操作学习网站
 
 * HackerEarth: https://www.hackerearth.com/
 
+开源捐赠
+--------
+
+* https://opencollective.com/
+
 开源项目
 ========
 

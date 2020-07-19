@@ -10,15 +10,33 @@
 * https://github.com/ethersphere/eth-utils
 * https://github.com/ethereum/wiki/wiki/Network-Status
 * https://github.com/ethereum/go-ethereum/wiki/Setting-up-monitoring-on-local-cluster
+* https://github.com/freqtrade/freqtrade
+  
+lib
+===
+
+* https://github.com/bitcoinjs/bitcoinjs-lib
+
+比特币
+======
+
+* Electrum Bitcoin Wallet: https://github.com/spesmilo/electrum
 
 以太坊
 ======
 
 * https://ethereum.gitbooks.io/frontier-guide/content/listing_accounts.html
 
+区块链
+======
+
+* Lightning Network Daemon: https://github.com/lightningnetwork/lnd
+
 他人的收集
 ==========
 
+* https://github.com/yeasy/blockchain_guide
+* https://github.com/Scanate/EthList
 * http://liyuechun.org/2017/09/27/blockchain-relation/
 * https://blog.csdn.net/liyuechun520/article/details/78110394?locationNum=9&fps=1
 * https://github.com/LiuBoyu/blockchain

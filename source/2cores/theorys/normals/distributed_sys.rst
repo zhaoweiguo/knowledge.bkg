@@ -6,6 +6,17 @@
 
     一致性问题 共识问题
 
+分布式计算的8个谬论::
+
+    The network is reliable.
+    Latency is zero.
+    Bandwidth is infinite.
+    The network is secure.
+    Topology doesn't change.
+    There is one administrator.
+    Transport cost is zero.
+    The network is homogeneous.
+
 一致性
 ------
 
@@ -129,5 +140,8 @@ CAP 一致性::
 
 
 
+参考
+====
 
+* https://mp.weixin.qq.com/s/R_43L2bkrSHjnPEaYkK6Tw
 

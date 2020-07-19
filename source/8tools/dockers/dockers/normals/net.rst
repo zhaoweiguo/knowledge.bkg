@@ -49,7 +49,7 @@
 映射容器端口到宿主主机的实现
 ============================
 
-使用 -P 时::
+使用 -P 时(把80端口映射一个随机主机端口49153)::
 
     $ iptables -t nat -nL
     ...
@@ -57,7 +57,7 @@
     target     prot opt source               destination
     DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:49153 to:172.17.0.2:80
 
-使用 -p 80:80 时::
+使用 -p 80:80 时(把80端口映射到主机的80端口)::
 
     $ iptables -t nat -nL
     Chain DOCKER (2 references)

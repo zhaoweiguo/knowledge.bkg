@@ -16,6 +16,7 @@ B
 * BaaS: Backend as a Service，后端即服务
 * BaaS: Blockchain as a Service
 * BI: Business Intelligence
+* BS: Bachelor of Science(理学学士)
 * BSD: Berkeley Software Distribution (加州柏克莱大学)
 
 

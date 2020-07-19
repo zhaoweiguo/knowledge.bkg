@@ -11,6 +11,9 @@ Usage::
     Use "kubectl <command> --help" for more information about a given command.
     Use "kubectl options" for a list of global command-line options (applies to all commands).
 
+调试专用::
+
+    $ k get po -v=12
 
 
 1. Basic Commands (Beginner)::
