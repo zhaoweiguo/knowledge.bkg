@@ -55,7 +55,8 @@ Job has reached the specified backoff limit
     一个域名abc.zhaoweiguo.com在域名配置上指向ip1
     因为一些原因, 想添加自定义hosts指向ip2
     但我在Dockerfile中增加一条
-    RUN echo "ip2 abc.zhaoweiguo.com" >> /etc/hosts不生效
+    RUN echo "ip2 abc.zhaoweiguo.com" >> /etc/hosts
+    但并不生效
 
 问题定位::
 
@@ -65,8 +66,8 @@ Job has reached the specified backoff limit
 
     docker镜像本质上是一个包含了整个操作系统的文件和目录的rootfs
     用户制作镜像的每一步操作都会生成一个层，也就是一个增量的rootfs
-    docker容器的rootfs由只读层，init层和可读写层
-    /etc/hosts和/etc/resolv.conf等只对当前容器生效的信息会保留在init层
+    docker容器的rootfs由只读层，init层和可读写层构成
+    /etc/hosts和/etc/resolv.conf等(只对当前容器生效的信息)会保留在init层
     进行docker commit时不会提交这一层的信息
     所以Dockerfile中修改/etc/hosts,或进入容器中修改后commit都无法真正修改/etc/hosts的内容
 

@@ -47,7 +47,7 @@
 
 测试一下你的graphviz能否支持好中文(在中文label的前面增加一个空白字符):
 
-.. literalinclude:: ./files/sphinxdoc_graphviz.dot
+.. literalinclude:: /files/sphinxdocs/graphviz.dot
 
 显示:
 

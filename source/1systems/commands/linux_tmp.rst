@@ -18,6 +18,7 @@
    tmps/finger
    tmps/hostname
    tmps/mount
+   tmps/cloc
    tmps/other
 
 

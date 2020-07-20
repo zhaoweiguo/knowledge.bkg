@@ -10,11 +10,11 @@ Contents:
 
    sphinxs/normal
    sphinxs/code_file
+   sphinxs/theme
+   sphinxs/plugin
    sphinxs/pygments_language
-   sphinxs/sphinxdoc_advance
    sphinxs/sphinxdoc_install
    sphinxs/sphinxdoc_search
-   sphinxs/sphinxdoc_graphviz
 
 
 

@@ -25,7 +25,16 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo',]
+extensions = [
+    'sphinx.ext.todo',
+    'sphinxcontrib.plantuml',
+    #'sphinx.ext.mathjax',
+    #'sphinx.ext.ifconfig',
+    #'sphinx.ext.viewcode',
+]
+
+# add extra command by Gordon
+plantuml = 'java -jar /path/to/plantuml.jar'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -47,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'新溪-gordon'
-copyright = u'2010-2019, 新溪-gordon'
+copyright = u'2010-2020, 新溪-gordon'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -1,5 +1,5 @@
-sphinx全局设定
-=====================
+通用
+####
 
 配置文件::
 
@@ -32,11 +32,5 @@ html_static_path::
     html_static_path = ['_static', '_static/.htaccess']
 
 
-主题:
-  
-.. toctree::
-   :maxdepth: 2
-
-   themes/sphinx_rtd_theme
 
 

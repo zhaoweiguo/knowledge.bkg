@@ -15,6 +15,7 @@ Contents:
    sphinxdocs/hexo
    sphinxdocs/ablog
    sphinxdocs/md
+   sphinxdocs/AsciiDoc
    sphinxdocs/apidoc
    sphinxdocs/hugo
    sphinxdocs/gitbook

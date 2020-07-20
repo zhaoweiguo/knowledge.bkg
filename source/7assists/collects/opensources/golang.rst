@@ -164,6 +164,14 @@ lib工具
 * 文件上传断点续传: https://github.com/tus/tusd
 * websocket: https://github.com/olahol/melody
 
+web服务器
+---------
+
+* caddy(类nginx,自动支持http2,內建了 Let’s Encrypt): https://github.com/caddyserver/caddy/tree/v2
+* traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
+* Tiny WebSocket library for Go: https://github.com/gobwas/ws
+* https://github.com/wenjianzhang/go-admin
+
 混沌工程
 --------
 
@@ -176,12 +184,6 @@ SMTP
 
 * https://github.com/sj26/mailcatcher
 
-web服务器
----------
-
-* caddy(类nginx,自动支持http2,內建了 Let’s Encrypt): https://github.com/caddyserver/caddy/tree/v2
-* traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
-* Tiny WebSocket library for Go: https://github.com/gobwas/ws
 
 DEVOPS
 ------

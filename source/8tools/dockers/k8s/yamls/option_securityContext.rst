@@ -64,7 +64,7 @@ Adding individual kernel capabilities to a container
 .. literalinclude:: /files/k8s/yamls/option_securityContext_capabilities.yaml
    :language: yaml
 
-默认不是修改时间::
+默认不能修改时间::
 
     $ kubectl exec -it pod-with-defaults -- date +%T -s "12:00:00"
     date: can not set date: Operation not permitted
