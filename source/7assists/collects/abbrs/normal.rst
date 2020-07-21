@@ -45,6 +45,7 @@ D
 * DAL: Data Application Layer
 * DBaaS: Database as a Service
 * DCL: Data Cached Layer
+* DDD: Domain-Driver Design, 领域驱动设计
 * DHT: Distributed Hash Table，分布式哈希表
 * DNAT: 目的地址转换(Destination NAT)
 * DNN: 深度神经网络（Deep Neural Network, DNN）
@@ -90,6 +91,7 @@ I
 
 * I18N: internationalization(首末字符i和n，18为中间的字符数), 类似的有L10N, K8S
 * IaaS: Infrastructure as a Service(基础设施即服务)
+* IaC: Infrastructure as Code
 * IEEE: Institute for Electrical and Electronics Engineers 
 * IETF: Internet Engineering Task Force
 * IOE: IBM, Oracle, EMC 
@@ -113,6 +115,7 @@ M
 * MLP: multilayer perceptron(多层感知器)
 * MLP: Machine Language Program（机器语言程序）
 * MSA: Micro-Service Architecture, 微服务架构(对应CBA)
+* MTBF: Mean Time Between Failure，平均无故障时间(平均故障间隔时间)
 
 N
 ----

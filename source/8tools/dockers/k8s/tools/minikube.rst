@@ -44,8 +44,10 @@ enable RBAC::
 
     --extra-config=apiserver.Authorization.Mode=RBAC
 
+Docker Desktop
+==============
 
-
+* https://blog.csdn.net/shenhonglei1234/article/details/106219257
 
 
 

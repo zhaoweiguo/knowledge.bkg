@@ -11,8 +11,8 @@ Golang开源项目
 
 * https://github.com/go-ini/ini
 * xml: https://github.com/tealeg/xlsx
-* yaml: https://github.com/go-yaml/yaml/
-* 兼容 json，toml，yaml，hcl 等格式的日志库: https://github.com/spf13/viper
+* yaml: https://github.com/go-yaml/yaml/ (gopkg.in/yaml.v2)
+* 便捷的使用配置文件中的数据: https://github.com/spf13/viper
 * replacement for Go's flag package: https://github.com/spf13/pflag
 
 AI
@@ -157,10 +157,7 @@ lib工具
 * web框架(cayley): https://github.com/gobuffalo/packr
 * https://github.com/grpc/grpc-go
 
-* 后台框架: https://github.com/flipped-aurora/gin-vue-admin
-* https://github.com/wenjianzhang/go-admin
 
-* 爬虫: http://github.com/henrylee2cn/pholcus
 * 文件上传断点续传: https://github.com/tus/tusd
 * websocket: https://github.com/olahol/melody
 
@@ -170,7 +167,21 @@ web服务器
 * caddy(类nginx,自动支持http2,內建了 Let’s Encrypt): https://github.com/caddyserver/caddy/tree/v2
 * traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
 * Tiny WebSocket library for Go: https://github.com/gobwas/ws
+
+后台管理
+--------
+
+* 后台框架: https://github.com/flipped-aurora/gin-vue-admin
 * https://github.com/wenjianzhang/go-admin
+* https://github.com/wenjianzhang/go-admin
+* https://github.com/LyricTian/gin-admin
+
+爬虫
+----
+
+* http://github.com/henrylee2cn/pholcus
+* https://github.com/crawlab-team/crawlab
+
 
 混沌工程
 --------

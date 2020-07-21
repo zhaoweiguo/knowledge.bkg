@@ -1,6 +1,8 @@
 kubewatch命令
 #############
 
+* github [1]_
+
 说明
 ====
 
@@ -134,3 +136,5 @@ Resources
 
 
 
+
+.. [1] https://github.com/bitnami-labs/kubewatch
