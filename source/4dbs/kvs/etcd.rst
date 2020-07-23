@@ -9,7 +9,7 @@ etcd
    :maxdepth: 1
 
    etcds/etcdctl
-   etcds/install
+   etcds/normal
    etcds/api
    etcds/history
 

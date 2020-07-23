@@ -5,6 +5,7 @@ A
 ----
 
 * AAA(protocol): Authentication, Authorization and Accounting
+* ACID: 原子性(Atomicity),一致性(Consistency),隔离性(Isolation),持久性(Durability).与BASE对应
 * ADT: Android Development Tools
 * AES: Advanced Encryption Standard
 * AI: Artificial Intelligence
@@ -15,6 +16,7 @@ B
 
 * BaaS: Backend as a Service，后端即服务
 * BaaS: Blockchain as a Service
+* BASE: 基本可用(Basically Available),软状态(Soft State),最终一致性(Eventual Consistency).与ACID对应
 * BI: Business Intelligence
 * BS: Bachelor of Science(理学学士)
 * BSD: Berkeley Software Distribution (加州柏克莱大学)
@@ -50,6 +52,7 @@ D
 * DNAT: 目的地址转换(Destination NAT)
 * DNN: 深度神经网络（Deep Neural Network, DNN）
 * DNS: Domain Name System 
+* DSS: Data Storage Segregation(数据存储隔离)
 * DST: Daylight Saving Time(夏令时)
 * DTLS(Datagram Transport Layer Security)
 
@@ -57,6 +60,7 @@ D
 E
 ----
 
+* EDA: Event Driven Architecture
 * EIPs: Ethereum Improvement Proposals
 * ELK: Elasticsearch、Logstash、Kibana(https://www.elastic.co/cn/)
 * ETL: Extract-Transform-Load(大数据相关)
@@ -92,6 +96,7 @@ I
 * I18N: internationalization(首末字符i和n，18为中间的字符数), 类似的有L10N, K8S
 * IaaS: Infrastructure as a Service(基础设施即服务)
 * IaC: Infrastructure as Code
+* IDL: Interactive Data Language(交互式数据语言)
 * IEEE: Institute for Electrical and Electronics Engineers 
 * IETF: Internet Engineering Task Force
 * IOE: IBM, Oracle, EMC 
@@ -114,6 +119,7 @@ M
 * MTU: Maximum Transfer Unit 
 * MLP: multilayer perceptron(多层感知器)
 * MLP: Machine Language Program（机器语言程序）
+* MS: Master of Science(理学硕士)
 * MSA: Micro-Service Architecture, 微服务架构(对应CBA)
 * MTBF: Mean Time Between Failure，平均无故障时间(平均故障间隔时间)
 

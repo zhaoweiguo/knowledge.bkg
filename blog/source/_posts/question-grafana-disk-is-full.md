@@ -1,3 +1,14 @@
+---
+title: 【常见问题】Grafana一个bug导致磁盘占用近500G
+date: 2020-02-11 13:22:09
+categories:
+- question
+tags:
+- grafana
+- question
+---
+
+
 # 简介
 前段时间grafana监控出问题，定位发现磁盘满了。今天grafana监控又出问题了，是去一看磁盘又满了。肯定是某一个服务在不停的吃磁盘，才7天时间，就吃掉了近200G。
 
