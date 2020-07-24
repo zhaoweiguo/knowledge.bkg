@@ -290,6 +290,7 @@ CI&CD&Git
 
 * debugger: https://github.com/go-delve/delve
 * perf 工具(go版ps命令): https://github.com/google/gops
+* https://github.com/shirou/gopsutil
 * go-torch 工具(deprecated, use pprof): https://github.com/uber-archive/go-torch
 * 打印deep pretty printer: https://github.com/davecgh/go-spew
 * 网络代理工具: https://github.com/snail007/goproxy

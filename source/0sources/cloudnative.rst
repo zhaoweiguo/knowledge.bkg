@@ -6,6 +6,7 @@
 
    cloudnatives/kubernates
    cloudnatives/client-go
+   cloudnatives/kubewatch
 
 
 

@@ -14,6 +14,7 @@
    opensources/ml
    opensources/book
    opensources/awesome
+   opensources/data_analysis
 
 
 
