@@ -46,7 +46,7 @@ SSRF的危害::
 
 利用dict协议查看端口开放
 
-.. image:: /images/vulnerabilitys/ssrf_file1.png
+.. image:: /images/vulnerabilitys/ssrf_dict1.png
 
 
 

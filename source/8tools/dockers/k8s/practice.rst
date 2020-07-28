@@ -13,6 +13,7 @@ k8s实战
    practices/custom_API_objects
    practices/git-sync
    practices/secret_dockerpull
+   practices/skill_docker_load
 
 
 

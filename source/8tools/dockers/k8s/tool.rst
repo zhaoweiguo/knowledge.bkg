@@ -10,6 +10,7 @@
    tools/kustomize
    tools/kubecm
    tools/kubewatch
+   tools/kubeevent
    tools/kubeflow
    tools/k3s
    tools/k9s

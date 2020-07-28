@@ -134,6 +134,7 @@ N
 O
 ----
 
+* OCC: Optimistic concurrency control(乐观并发控制)
 * OCR: Optical Character Recognition, 文字识别
 * OOM: OutOfMemory
 * OOP: Object Oriented Programming, 面向对象程序设计

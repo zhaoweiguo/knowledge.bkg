@@ -13,6 +13,8 @@
    concepts/cloud_native
    concepts/serverless
    concepts/data_center
+   concepts/k8s
+   concepts/concurrency
    concepts/tmp
 
 

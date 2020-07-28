@@ -167,6 +167,17 @@ web服务器
 * caddy(类nginx,自动支持http2,內建了 Let’s Encrypt): https://github.com/caddyserver/caddy/tree/v2
 * traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
 * Tiny WebSocket library for Go: https://github.com/gobwas/ws
+* 7层负载: https://github.com/bfenetworks/bfe
+
+网络模拟器
+----------
+
+* web fuzzer: https://github.com/ffuf/ffuf
+* https://www.gns3.com/
+* https://www.eve-ng.net/
+* Cisco Packet Tracer: Cisco Packet Tracer（以下简称PT）是一款由思科公司开发的，为网络课程的初学者提供辅助教学的实验模拟器。使用者可以在该模拟器中搭建各种网络拓扑，实现基本的网络配置。
+* 华为eNSP: 华为eNSP是一款由华为公司研发的虚拟仿真软件，主要针对网络路由器、交换机进行软件仿真，支持大型网络模拟，让用户在没有真实设备的情况下，使用模拟器也能制作网络拓扑并进行实验。
+* H3C H3C Cloud Lab: H3C H3C Cloud Lab是一款由华三公司研发的网络云平台，模拟真实设备，为用户提供基本的设备信息，并满足初级用户在没有真实设备的条件下进行设备配置的学习需要。
 
 后台管理
 --------
@@ -175,6 +186,12 @@ web服务器
 * https://github.com/wenjianzhang/go-admin
 * https://github.com/wenjianzhang/go-admin
 * https://github.com/LyricTian/gin-admin
+
+GUI
+---
+
+* windows: https://github.com/lxn/walk
+* mac: https://github.com/andlabs/ui
 
 爬虫
 ----
@@ -334,6 +351,18 @@ P2P
 
 * https://github.com/golang/protobuf
 * https://github.com/gogo/protobuf
+
+单元测试
+--------
+
+* https://github.com/smartystreets/goconvey
+* https://github.com/agiledragon/gomonkey
+* http://labix.org/gocheck
+    * gopkg.in/check.v1
+* https://github.com/onsi/ginkgo
+* https://github.com/gavv/httpexpect
+
+
 
 
 开源项目收集

@@ -1,6 +1,6 @@
 .. _serverless:
 
-云原生-Serverless
+Serverless
 #################
 
 原始定义::
