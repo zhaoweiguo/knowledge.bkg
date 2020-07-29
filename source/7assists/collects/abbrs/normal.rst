@@ -127,6 +127,7 @@ N
 ----
 
 * NAT: Network Address Translation(网络地址转换)
+* NTP: Network Time Protocol(网络时间协议)
 
 
 

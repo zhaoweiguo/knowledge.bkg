@@ -12,6 +12,7 @@
    collects/abbr
    collects/paper
    collects/keyword
+   collects/product
 
 
 

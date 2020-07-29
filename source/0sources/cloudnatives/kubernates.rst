@@ -46,6 +46,12 @@ kubernates项目
 
 
 
+.. uml:: /plantumls/sources/cloudnative/kubernetes/struct.puml
 
+
+参考文章
+========
+
+* https://www.yuque.com/baxiaoshi/tyado3
 
 

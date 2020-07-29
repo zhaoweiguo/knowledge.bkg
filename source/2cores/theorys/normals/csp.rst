@@ -32,4 +32,6 @@ Golang并发模式支持并发的元素集::
 ====
 
 * `Golang 高效实践之并发实践channel篇 <https://www.cnblogs.com/makelu/p/11205704.html>`_
+* `【知乎】如何深入浅出地解释并发模型中的 CSP 模型？ <https://www.zhihu.com/question/26192499>`_
+* `并发之痛 Thread，Goroutine，Actor <http://jolestar.com/parallel-programming-model-thread-goroutine-actor/>`_
 

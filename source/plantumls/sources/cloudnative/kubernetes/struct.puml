@@ -1,0 +1,17 @@
+@startmindmap
+
+* Kubernetes
+** Core Lib
+** client-go
+** api-server
+** scheduler
+** controller
+** kubelet
+** kubectl
+** operator
+** Makefile
+** GenCode
+*** api
+*** apimachinery
+
+@endmindmap

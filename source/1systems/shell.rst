@@ -13,8 +13,9 @@ Shell文档
    :maxdepth: 1
 
    shells/shell_example
-   shells/shell_normal
-   shells/shell_question
+   shells/normal
+   shells/question
    shells/shell_expect
-   shells/shell_make
+   shells/make
+   shells/bazel
 

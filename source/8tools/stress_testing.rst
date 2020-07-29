@@ -8,6 +8,7 @@ Contents:
 
    stress_testings/normal
    stress_testings/simple
+   stress_testings/k6
    stress_testings/tsung
    stress_testings/jmeter
    stress_testings/loadRunner

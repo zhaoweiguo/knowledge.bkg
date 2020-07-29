@@ -7,6 +7,7 @@
    normals/distributed_sys
    normals/cap
    normals/csp
+   normals/Actor
    normals/rdf
    normals/Raft
    normals/Paxos

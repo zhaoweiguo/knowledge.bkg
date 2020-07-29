@@ -362,7 +362,10 @@ P2P
 * https://github.com/onsi/ginkgo
 * https://github.com/gavv/httpexpect
 
+Erlang
+------
 
+* https://github.com/AsynkronIT/protoactor-go
 
 
 开源项目收集

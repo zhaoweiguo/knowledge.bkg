@@ -1,0 +1,13 @@
+k6
+###
+
+
+安装::
+
+    $ brew install k6
+    $ docker pull loadimpact/k6
+
+
+
+
+

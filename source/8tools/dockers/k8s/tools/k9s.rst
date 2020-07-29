@@ -10,6 +10,12 @@ Installation::
     $ go get -u github.com/derailed/k9s
     $ docker run --rm -it -v $KUBECONFIG:/root/.kube/config quay.io/derailed/k9s
 
+常用快捷键::
+
+    /           查询
+    :           切换资源类型，如pod -> service
+    其他快捷键详见界面
+
 命令::
 
     # List all available CLI options

@@ -39,4 +39,14 @@ noiseprotocol::
     Noise is a framework for crypto protocols based on Diffie-Hellman key agreement. 
     Noise can describe protocols that consist of a single message as well as interactive protocols.
 
+NTP::
+
+    网络时间协议（英語：Network Time Protocol，缩写：NTP）是在数据网络潜伏时间可变的计算机系统之间通过分组交换进行时钟同步的一个网络协议，位于OSI模型的应用层。 自1985年以来，NTP是目前仍在使用的最古老的互联网协议之一。 NTP由特拉华大学的David L. Mills设计。
+
+
+
+
+
+
+
 
