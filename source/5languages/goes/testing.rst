@@ -12,6 +12,7 @@
    testings/coverage
    testings/emulate
    testings/flags
+   testings/goconvey
 
 
 

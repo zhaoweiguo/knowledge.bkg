@@ -2,10 +2,6 @@
 ######
 
 
-* 文档: https://rancher.com/docs/
-* github: https://github.com/rancher/
-
-
 
 LinuxKit [1]_
 =============

@@ -53,8 +53,11 @@ enable protobuf for native Kubernetes resource clients by modifying the REST con
 +-----------+------------+
 
 
+Kubernetes Objects::
 
-
+    a Go interface called runtime.Object from the package k8s.io/apimachinery/pkg/runtime
+    1. Return and set the GroupVersionKind
+    2. Be deep-copied
 
 
 

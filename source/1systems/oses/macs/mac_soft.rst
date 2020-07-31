@@ -23,6 +23,10 @@ Mac相关软件
     轻量的矢量设计工具
     http://www.sketchcn.com/
 
+视频::
+
+    视频压缩工具: https://handbrake.fr/
+
 gif生成器::
 
     https://getkap.co/

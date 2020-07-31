@@ -17,6 +17,7 @@
    tools/fleet
    tools/ksonnet
    tools/icePanel
+   tools/ingress_controller
    tools/minikube
 
 

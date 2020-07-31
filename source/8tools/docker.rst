@@ -10,6 +10,7 @@ Docker相关
    dockers/k8s
    dockers/istio
    dockers/nomad
+   dockers/rancher
    dockers/language
    dockers/openstack
    dockers/virtualbox

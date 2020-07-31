@@ -7,11 +7,11 @@
 ** scheduler
 ** controller
 ** kubelet
-** kubectl
-** operator
-** Makefile
 ** GenCode
 *** api
 *** apimachinery
+** kubectl
+** operator
+** Makefile
 
 @endmindmap
