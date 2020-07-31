@@ -34,7 +34,7 @@ extensions = [
 ]
 
 # add extra command by Gordon
-plantuml = 'java -jar /Users/zhaoweiguo/bin/design/plantuml.jar'
+plantuml = 'java -jar ./plugins/plantuml.jar'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
