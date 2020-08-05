@@ -1,9 +1,10 @@
-@startuml
+@startmindmap
 
 * client-go
 ** golang.org/x/time/rate
+*** todo
 ** k8s.io/apimachinery
 *** k8s.io/apimachinery/pkg/util/clock
-**** &clock.RealClock{}
+*** clock.RealClock{}
 
-@enduml
+@endmindmap

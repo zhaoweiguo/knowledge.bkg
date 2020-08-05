@@ -27,14 +27,14 @@ import sys, os
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinxcontrib.plantuml',
+    'sphinxcontrib.plantuml',   # plantuml插件
     #'sphinx.ext.mathjax',
     #'sphinx.ext.ifconfig',
     #'sphinx.ext.viewcode',
 ]
 
 # add extra command by Gordon
-plantuml = 'java -jar ./plugins/plantuml.jar'
+plantuml = 'java -jar /usr/local/bin/plantuml.jar'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -63,9 +63,9 @@ copyright = u'2010-2020, 新溪-gordon'
 # built documents.
 #
 # The short X.Y version.
-version = 'V1.3'
+version = 'V1.4'
 # The full version, including alpha/beta/rc tags.
-release = 'V1.3.0'
+release = 'V1.4.0'
 
 html_search_language = 'zh'
 
@@ -178,7 +178,7 @@ html_static_path = ['_static']
 #html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
-html_show_sourcelink = False    # @zwg 不让查看源码出现
+#html_show_sourcelink = False    # @zwg 不让查看源码出现
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #html_show_sphinx = True

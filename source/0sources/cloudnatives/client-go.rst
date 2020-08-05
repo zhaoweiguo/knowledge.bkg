@@ -31,6 +31,9 @@ client-go项目
 
 .. uml:: /plantumls/sources/cloudnative/client-go/client.puml
 
+hih
+
+.. uml:: /plantumls/sources/cloudnative/client-go/deps.puml
 
 
 

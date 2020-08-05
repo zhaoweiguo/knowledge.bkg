@@ -6,6 +6,14 @@ Golang开源项目
 
 * golang: https://github.com/golang/go
 
+代码规范
+--------
+
+* https://github.com/uber-go/guide/blob/master/style.md
+* https://github.com/xxjwxc/uber_go_guide_cn
+* https://github.com/golang-standards/project-layout
+
+
 配置文件相关
 ----------------
 
@@ -251,6 +259,7 @@ DEVOPS
 * ube-state-metrics: https://github.com/kubernetes/kube-state-metrics
 * node_exporter: https://github.com/prometheus/node_exporter
 * High Performance, Kubernetes Native Object Storage: https://github.com/minio/minio
+* Enterprise-grade container platform: https://github.com/kubesphere/kubesphere
 
 operator
 --------
@@ -318,9 +327,14 @@ CI&CD&Git
 * 敏感信息和密钥管理工具: https://github.com/hashicorp/vault
 * 高度可配置化的 http 转发工具，基于 etcd 配置: https://github.com/gojek/weaver
 * 分布式任务系统: https://github.com/shunfei/cronsun/blob/master/README_ZH.md
+* 自动化运维平台 Gaia: https://github.com/gaia-pipeline/gaia
+
+定时
+----
+
 * 定时任务管理系统: https://github.com/ouqiang/gocron
 * 定时: https://github.com/robfig/cron
-* 自动化运维平台 Gaia: https://github.com/gaia-pipeline/gaia
+* https://github.com/gorhill/cronexpr
 
 git版本控制
 -----------
@@ -366,6 +380,12 @@ Erlang
 ------
 
 * https://github.com/AsynkronIT/protoactor-go
+
+filesystem
+----------
+
+* https://github.com/dertuxmalwieder/rssfs
+* https://github.com/polyrabbit/etcdfs
 
 
 开源项目收集

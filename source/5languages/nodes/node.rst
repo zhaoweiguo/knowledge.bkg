@@ -7,9 +7,5 @@ node基本
    nodes/normal
    nodes/node_install
 
-   nodes/npm
-   nodes/nvm
-
-
 
 

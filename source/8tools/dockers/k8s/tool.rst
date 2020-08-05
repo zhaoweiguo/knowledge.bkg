@@ -11,6 +11,7 @@
    tools/kubecm
    tools/kubewatch
    tools/kubeevent
+   tools/kubebuilder
    tools/kubeflow
    tools/k3s
    tools/k9s

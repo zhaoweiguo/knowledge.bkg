@@ -17,6 +17,7 @@ B
 * BaaS: Backend as a Service，后端即服务
 * BaaS: Blockchain as a Service
 * BASE: 基本可用(Basically Available),软状态(Soft State),最终一致性(Eventual Consistency).与ACID对应
+* BDD: 行为驱动开发（Behavior-Driven Development）
 * BI: Business Intelligence
 * BS: Bachelor of Science(理学学士)
 * BSD: Berkeley Software Distribution (加州柏克莱大学)
