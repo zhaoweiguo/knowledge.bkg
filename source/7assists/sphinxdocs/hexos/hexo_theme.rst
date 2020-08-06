@@ -1,11 +1,12 @@
 hexo主题
 ###############
 
+* 主题: https://hexo.io/themes/
+
 ::
 
     https://github.com/pinggod/hexo-theme-jekyll
     https://github.com/litten/hexo-theme-yilia
-    https://hexo.io/themes/
 
 
 使用::
@@ -16,6 +17,9 @@ hexo主题
     
     修改_config.yml中的theme: landscape改为theme: yilia，然后重新执行hexo g来重新生成
     如果出现一些莫名其妙的问题，可以先执行hexo clean来清理一下public的内容，然后再来重新生成和发布。
+
+
+* 实例: https://github.com/godweiyang/hexo-matery-modified
 
 
 NexT主题 [1]_

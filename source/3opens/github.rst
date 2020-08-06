@@ -1,6 +1,7 @@
 GitHub [1]_
 #################
 
+* 代理: https://github.com.cnpmjs.org/
 
 .. toctree::
    :maxdepth: 1
