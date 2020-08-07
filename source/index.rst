@@ -16,7 +16,6 @@
    :name: mastertoc
    :titlesonly:
 
-   0source
    1system
    2core
    3open

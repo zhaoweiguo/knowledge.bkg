@@ -14,6 +14,7 @@ Contents:
    sphinxdocs/rst2pdf
    sphinxdocs/hexo
    sphinxdocs/ablog
+   sphinxdocs/gulp
    sphinxdocs/jekyll
    sphinxdocs/md
    sphinxdocs/AsciiDoc

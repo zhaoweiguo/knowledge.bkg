@@ -19,7 +19,15 @@ hexo主题
     如果出现一些莫名其妙的问题，可以先执行hexo clean来清理一下public的内容，然后再来重新生成和发布。
 
 
-* 实例: https://github.com/godweiyang/hexo-matery-modified
+* matery主题: https://github.com/blinkfox/hexo-theme-matery
+* 实例-matery主题: https://github.com/godweiyang/hexo-matery-modified
+
+
+UI::
+
+    简历: https://xiaodan_yu.gitee.io/resume.io/
+
+
 
 
 NexT主题 [1]_

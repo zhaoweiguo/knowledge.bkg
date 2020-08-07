@@ -1,26 +1,30 @@
 通知
 ###########
 
-常用标志::
+常用标志
+========
 
-    .. note::
 
-    // 警告
-    .. warning::
+.. note::
 
-      这是警告的书写方法
+    这是一个note
 
-    // 函数
-    .. function:: erlang:memory/0
+.. warning::
 
-        这是函数的标志
+  这是警告warning的书写方法
 
-    // 配置文件选项类型:
-    .. program:: sphinx-apidoc
+.. function:: erlang:example/0
 
-    .. option:: -o outputdir
+    这是erlang函数的标志
 
-       这儿写此选项的一些介绍
+.. function:: golang.example/0
+
+    这是golang函数的标志
+
+
+.. option:: -o outputdir
+
+   这儿写此选项的一些介绍
 
 todo
 ====
@@ -34,27 +38,18 @@ todo
     ]
 
 
-使用::
-
-    .. todo::
-
-
 .. todo::
 
-   todo 1
+    todo 1
 
-   todo 2
+    todo 2
 
-   todo 3
+    todo 3
 
-
-
-使用::
-
-    .. seealso::
 
 seealso
 =======
+
 
 .. seealso::
 
@@ -66,10 +61,6 @@ seealso
 
 centered
 ========
-
-使用::
-
-    .. centered::
 
 
 .. centered:: LICENSE AGREEMENT

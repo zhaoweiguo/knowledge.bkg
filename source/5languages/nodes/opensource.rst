@@ -9,7 +9,6 @@
    opensources/vue
    opensources/chart
    opensources/grunt
-   opensources/gulp
    opensources/uglifyjs
    opensources/less
    opensources/bootstrap

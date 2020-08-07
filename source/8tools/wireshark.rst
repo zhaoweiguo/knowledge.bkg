@@ -8,3 +8,4 @@
 
    wiresharks/Wireshark
    wiresharks/Charles
+   wiresharks/Fiddler

@@ -1,5 +1,6 @@
 hexo博客工具
-========================
+############
+
 :作者: 新溪-gordon <programfan.info#gmail.com>
 :时间: 2018-05-22
 
@@ -21,7 +22,8 @@ Contents:
     留言功能:
     https://github.com/gitalk/gitalk
 
-
+    一键自动发布多平台:
+    https://openwrite.cn/
 
 
 
