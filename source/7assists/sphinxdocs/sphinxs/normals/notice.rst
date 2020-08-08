@@ -1,9 +1,31 @@
 通知
 ###########
 
+段落级别的markup::
+
+  .. note::
+  .. warning::
+  .. versionadded:: version
+  .. versionchanged:: version
+  .. deprecated:: version
+  .. seealso::
+  .. rubric:: title
+  .. centered::
+  .. hlist::
+
+
+Glossary::
+
+  .. glossary::
+
+
+Grammar production displays::
+
+  .. productionlist:: [name]
+
+
 常用标志
 ========
-
 
 .. note::
 

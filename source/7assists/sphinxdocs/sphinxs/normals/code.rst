@@ -42,8 +42,9 @@
 
 功能::
 
-    为行数超过5行的自动显示行数
+    1. 为行数超过5行的自动显示行数
     即使不加:linenos:或:lineno-start:标签也显示行数
+    2. 默认一直使用console语法高亮直到遇到下一个highlight
 
 .. highlight:: console
     :linenothreshold: 5

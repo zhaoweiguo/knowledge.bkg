@@ -50,6 +50,11 @@ IT相关网站
 
 * https://gitstar-ranking.com/
 
+Chrome插件
+==========
+
+* https://www.extfans.com/
+
 
 大势分析
 ========

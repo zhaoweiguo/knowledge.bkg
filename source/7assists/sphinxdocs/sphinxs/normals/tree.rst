@@ -2,7 +2,17 @@
 ######
 
 
-toc树相关::
+toc树相关
+=========
+
+常用标签::
+
+  :numbered:
+  :titlesonly:
+  :glob:
+  :hidden:
+
+::
 
     // 普通树
    .. toctree::
@@ -34,7 +44,10 @@ toc树相关::
        :local:
        :backlinks: none
 
-sidebar::
+sidebar
+=======
+
+::
 
     // 普通使用
     .. sidebar:: Sidebar标题

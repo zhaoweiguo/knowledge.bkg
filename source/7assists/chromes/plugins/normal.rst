@@ -23,7 +23,14 @@ GitLab code view插件: 专用于gitlab
 打开好多tab页时，占内存很多，使用此插件可以让暂时不用的插件处于低内存状态
 
 7.Tampermonkey插件
-Chrome上最流行的脚本管理工具，可以去http://greasyfork.org上安装许多实用脚本
+* Chrome上最流行的脚本管理工具
+* 其他类似插件: `暴力猴 <https://www.extfans.com>`_ 搜索
+
+脚本下载地址:
+* 1. 是最受欢迎的后起之秀: http://greasyfork.org
+* 2. 继 GreasyFork 之后开始创办: https://openuserjs.org/
+* 基于github.com的脚本: https://greasyfork.org/zh-CN/scripts/by-site/github.com
+
 
 8.Anything to Qrcode插件
 自动把网址转化为二维码
