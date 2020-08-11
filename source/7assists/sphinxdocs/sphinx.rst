@@ -9,6 +9,7 @@ Contents:
    :maxdepth: 2
 
    sphinxs/normal
+   sphinxs/conf.py
    sphinxs/code_file
    sphinxs/theme
    sphinxs/plugin

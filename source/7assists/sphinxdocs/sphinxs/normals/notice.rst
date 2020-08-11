@@ -51,15 +51,6 @@ Grammar production displays::
 todo
 ====
 
-添加Sphinx支持::
-
-    在conf.py中修改如下配置项
-
-    extensions = [
-        'sphinx.ext.todo',
-    ]
-
-
 .. todo::
 
     todo 1
@@ -67,6 +58,12 @@ todo
     todo 2
 
     todo 3
+
+.. todolist::
+
+    todolist 1
+
+    todolist 2
 
 
 seealso

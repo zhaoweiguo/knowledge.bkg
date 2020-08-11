@@ -98,6 +98,7 @@ exclude_patterns = []
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
+# @zwg 代码高亮相关
 pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
@@ -179,6 +180,7 @@ html_static_path = ['_static']
 
 # If true, links to the reST sources are added to the pages.
 #html_show_sourcelink = False    # @zwg 不让查看源码出现
+
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #html_show_sphinx = True
@@ -271,3 +273,9 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+[extensions]
+
+todo_include_todos = True
+
+
+

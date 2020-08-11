@@ -9,6 +9,7 @@ plantuml [1]_
    plantumls/use-case
    plantumls/deployment
    plantumls/activity
+   plantumls/class
    plantumls/question
 
 
