@@ -167,14 +167,20 @@ lib工具
 
 
 * 文件上传断点续传: https://github.com/tus/tusd
-* websocket: https://github.com/olahol/melody
+
+websocket
+---------
+
+* https://github.com/olahol/melody
+* https://github.com/fasthttp/websocket
+* https://github.com/gorilla/websocket
+* Tiny WebSocket library for Go: https://github.com/gobwas/ws
 
 web服务器
 ---------
 
 * caddy(类nginx,自动支持http2,內建了 Let’s Encrypt): https://github.com/caddyserver/caddy/tree/v2
 * traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
-* Tiny WebSocket library for Go: https://github.com/gobwas/ws
 * 7层负载: https://github.com/bfenetworks/bfe
 
 网络模拟器
@@ -347,12 +353,16 @@ P2P
 
 * https://github.com/libp2p/go-libp2p
 
+静态文件打包到一个go文件
+-------------------------
+
+* https://github.com/bradrydzewski/togo
+* React.js and Go: https://github.com/GeertJohan/go.rice
 
 其他
 ----
 
 * URL短链接服务: https://github.com/andyxning/shortme
-* 静态文件打包到一个go文件: https://github.com/bradrydzewski/togo
 * 从一个源配置为多平台创建相同镜像: https://github.com/hashicorp/packer
 * updating terminal output in realtime: https://github.com/gosuri/uilive
 * Go CGO cross compiler: https://github.com/karalabe/xgo
@@ -393,6 +403,7 @@ filesystem
 
 * A curated list of awesome Go frameworks, libraries and software: https://github.com/avelino/awesome-go
 * 压测工具: https://github.com/link1st/go-stress-testing
+* MonkeyPatch: https://github.com/bouk/monkey
 
 参考
 ----

@@ -9,8 +9,10 @@ netstat命令使用
 
 基本用法::
 
-    netstat -nltp   // debain用法
-    netstat -nlup
+    // debain用法
+    netstat -nltp     // tcp
+    netstat -nlup     // udp
+    netstat -atunlp   // 全部
 
     netstat -anp tpc // freebsd用法
 
@@ -28,26 +30,32 @@ netstat命令使用
    --interface=iface , -i
        Display a table of all network interfaces, or the specified iface).
 
-
 选项说明(linux)::
 
    --numeric , -n
        Show numerical addresses instead of trying to determine symbolic host, port or user names.
+       不进行DNS解析
 
    -c, --continuous
        This will cause netstat to print the selected information every second continuously.
 
    -l, --listening
        Show only listening sockets.  (These are omitted by default.)
+       仅显示监听套接字(LISTEN状态的套接字)
 
    -a, --all
-       Show both listening and non-listening sockets.  With the --interfaces option, show interfaces that are not marked
+       Show both listening and non-listening sockets.  
+       With the --interfaces option, show interfaces that are not marked
+       显示所有连接的端口
 
    -p, --program
        Show the PID and name of the program to which each socket belongs.
+       显示进程标识符和程序名称，每一个套接字/端口都属于一个程序
 
    -u, --udp
+      指明显示UDP端口
    -t, --tcp
+      指明显示TCP端口
 
 
 实例::

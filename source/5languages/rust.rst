@@ -20,6 +20,9 @@ Rust语言
     ~/.cargo/bin
     rustc, cargo, and rustup
 
+常见开源项目
+============
 
+* https://github.com/koute/cargo-web
 
 .. [1] https://www.rust-lang.org/

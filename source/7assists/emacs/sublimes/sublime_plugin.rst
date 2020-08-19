@@ -10,6 +10,7 @@ sublime插件相关
    plugins/plugin_html
    plugins/plugin_plantuml
    plugins/plugin_rst
+   plugins/plugin_increment_selection
    plugins/plugin_sublimeCodeIntel
 
 安装

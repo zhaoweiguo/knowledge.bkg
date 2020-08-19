@@ -1,5 +1,5 @@
 Mac相关软件
-=================
+###########
 
 开发工具::
 
@@ -72,7 +72,10 @@ ntfs for mac::
 
 
 
+其他参考
+========
 
+* https://github.com/changkun/dotfiles
 
 
 

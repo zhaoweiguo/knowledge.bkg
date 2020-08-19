@@ -10,5 +10,7 @@
    laws/peterPrinciple
    laws/conway'slaw
    laws/dunbar'snumber
+   laws/Benford'slaw
+   laws/Zipf'slaw
 
 

@@ -14,6 +14,7 @@
    fanqiangs/fanqiang_git
    fanqiangs/shadowsock
    fanqiangs/outline
+   fanqiangs/V2Ray
 
 
 

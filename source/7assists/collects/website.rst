@@ -60,5 +60,19 @@ Chrome插件
 ========
 
 * Gartner
+* 神策、Ptmind、GrowingIO、国双，还有谷歌分析
+
+github
+======
+
+* github上有贡献的所有人都有记录: https://github.com/all-contributors/all-contributors
+* https://allcontributors.org/
+
+
+
+
+
+
+
 
 

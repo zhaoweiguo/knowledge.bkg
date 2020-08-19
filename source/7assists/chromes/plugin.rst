@@ -6,5 +6,6 @@ chrome插件
    :maxdepth: 2
 
    plugins/normal
+   plugins/analysis
    plugins/develop
 

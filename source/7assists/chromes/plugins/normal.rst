@@ -19,8 +19,8 @@ GitLab code view插件: 专用于gitlab
 5.Color Tab
 打开一个新标签页，会给你一个4色配色方案，方便设计师思枯意竭时找灵感
 
-6.greate suspender插件
-打开好多tab页时，占内存很多，使用此插件可以让暂时不用的插件处于低内存状态
+6.sourcegraph
+* Github版IDE
 
 7.Tampermonkey插件
 * Chrome上最流行的脚本管理工具
@@ -30,7 +30,11 @@ GitLab code view插件: 专用于gitlab
 * 1. 是最受欢迎的后起之秀: http://greasyfork.org
 * 2. 继 GreasyFork 之后开始创办: https://openuserjs.org/
 * 基于github.com的脚本: https://greasyfork.org/zh-CN/scripts/by-site/github.com
-
+* 插件::
+    
+    Github 镜像访问，加速下载
+    Toc Bar
+    百度网盘资源_搜索引擎_聚合
 
 8.Anything to Qrcode插件
 自动把网址转化为二维码

@@ -73,6 +73,18 @@ INTO子句的共同问题
     注: 要将当前measurement的tag保留在目标measurement中的tag中
       GROUP BY相关tag key或INTO查询中的GROUP BY *
 
+为啥是从周四开始
+----------------
+
+为啥不从周一或周日开始::
+
+    So why not start from Monday or Sunday?
+    Is there any special reason?
+
+    It's because the epoch was a Thursday (1 January 1970). 
+    Influx only cares about epoch (a.k.a. unix) time. Which is also why you can't group by month.
+
+
 
 
 
