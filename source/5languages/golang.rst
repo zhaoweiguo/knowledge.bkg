@@ -8,8 +8,9 @@ Golang语言相关
 .. toctree::
    :maxdepth: 1
 
-   goes/normal
+   goes/sum
    goes/command
+   goes/normal
    goes/opensource
    goes/testing
    goes/history

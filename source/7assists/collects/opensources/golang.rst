@@ -18,10 +18,11 @@ Golang开源项目
 ----------------
 
 * https://github.com/go-ini/ini
-* xml: https://github.com/tealeg/xlsx
+* xml: https://github.com/antchfx/xmlquery
 * yaml: https://github.com/go-yaml/yaml/ (gopkg.in/yaml.v2)
 * 便捷的使用配置文件中的数据: https://github.com/spf13/viper
 * replacement for Go's flag package: https://github.com/spf13/pflag
+* xlsx: https://github.com/tealeg/xlsx
 
 AI
 -----
@@ -85,6 +86,11 @@ cli命令
     * 辅助代码生成工具mockgen: github.com/golang/mock/mockgen
 * https://github.com/google/wire
 * https://github.com/jarcoal/httpmock
+
+区块链blockchain
+----------------
+
+* Filecoin protocol in Go: https://github.com/filecoin-project/lotus
 
 
 数据库
@@ -266,6 +272,7 @@ DEVOPS
 * node_exporter: https://github.com/prometheus/node_exporter
 * High Performance, Kubernetes Native Object Storage: https://github.com/minio/minio
 * Enterprise-grade container platform: https://github.com/kubesphere/kubesphere
+* A tool for exploring each layer in a docker image: https://github.com/wagoodman/dive
 
 operator
 --------
@@ -291,6 +298,10 @@ operator
 * 家庭或者企业网络的透明代理,可用来翻墙等: https://github.com/xjdrew/kone
 * 负载工具类似ab: https://github.com/rakyll/hey
 * 高速的 P2P 端口映射工具，同时支持Socks5代理: https://github.com/vzex/dog-tunnel
+* 抓包工具: https://github.com/40t/go-sniffer
+* 网络代理工具: https://github.com/snail007/goproxy
+* 反向代理工具，快捷开放内网端口供外部使用: https://github.com/inconshreveable/ngrok
+* 反向代理: https://github.com/fatedier/frp
 
 CI&CD&Git
 ---------
@@ -325,9 +336,6 @@ CI&CD&Git
 * https://github.com/shirou/gopsutil
 * go-torch 工具(deprecated, use pprof): https://github.com/uber-archive/go-torch
 * 打印deep pretty printer: https://github.com/davecgh/go-spew
-* 网络代理工具: https://github.com/snail007/goproxy
-* 抓包工具: https://github.com/40t/go-sniffer
-* 反向代理工具，快捷开放内网端口供外部使用: https://github.com/inconshreveable/ngrok
 * 配置化生成证书: https://github.com/cloudflare/cfssl
 * 免费的证书获取工具: https://github.com/Neilpang/acme.sh
 * 敏感信息和密钥管理工具: https://github.com/hashicorp/vault
@@ -404,6 +412,12 @@ filesystem
 * A curated list of awesome Go frameworks, libraries and software: https://github.com/avelino/awesome-go
 * 压测工具: https://github.com/link1st/go-stress-testing
 * MonkeyPatch: https://github.com/bouk/monkey
+
+视频流
+------
+
+* https://github.com/gwuhaolin/livego
+
 
 参考
 ----

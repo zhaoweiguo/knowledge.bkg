@@ -17,6 +17,7 @@ Mac相关
    macs/mac_tool
    macs/mac_soft
    macs/brew
+   macs/emoji
    macs/mac_tmp
    macs/mac_question
    macs/mac_uninstall

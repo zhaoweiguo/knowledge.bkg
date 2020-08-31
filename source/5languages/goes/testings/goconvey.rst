@@ -41,6 +41,8 @@ Features::
 
 Code generator::
 
+    注: 这个功能可以通过打开web页面中有个功能进行转换
+
     Test Integer Stuff
       Subject: Integer incrementation and decrementation
         Given a starting integer value

@@ -20,6 +20,9 @@
     // For windows
     $env:GOPROXY = "https://goproxy.io"
 
+    注(默认值):
+    GOPROXY=https://proxy.golang.org,direct
+
 
 .. image:: /images/languages/golangs/goproxy1.png
 

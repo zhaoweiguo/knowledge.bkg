@@ -8,7 +8,7 @@ Golang基本知识
 
    normals/normal
    normals/timer
-   normals/go_concept
+   normals/type
    normals/go_objclass
    normals/go_concurrent
    normals/go_install

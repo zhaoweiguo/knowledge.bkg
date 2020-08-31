@@ -7,7 +7,8 @@
 .. toctree::
    :maxdepth: 2
 
-   regexps/regexp_basic
+   regexps/normal
+   regexps/example
 
 
 * :ref:`参考:Python正则<python_regex>`
