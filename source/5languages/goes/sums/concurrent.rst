@@ -32,6 +32,13 @@
 
 * :ref:`共享资源竞争检测 <go_build>`
 
+::
+
+    runtime.NumCPU()        // 返回当前CPU内核数
+    runtime.GOMAXPROCS(2)   // 设置运行时最大可执行CPU数
+    runtime.NumGoroutine()  // 当前正在运行的goroutine 数
+    runtime.Gosched()       // 用于让出CPU时间片
+
 
 select语法
 ==========

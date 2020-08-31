@@ -394,6 +394,11 @@ P2P
 * https://github.com/onsi/ginkgo
 * https://github.com/gavv/httpexpect
 
+eBPF
+----
+
+* https://github.com/cilium/cilium
+
 Erlang
 ------
 
@@ -417,6 +422,16 @@ filesystem
 ------
 
 * https://github.com/gwuhaolin/livego
+
+学习
+----
+
+* 设计模式: https://github.com/tmrts/go-patterns
+
+机器人robot
+-----------
+
+* Go library for accessing the GitHub API: https://github.com/google/go-github
 
 
 参考

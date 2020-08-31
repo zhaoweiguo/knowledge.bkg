@@ -106,12 +106,17 @@ struct结构
 值接收者和指针接收者
 ====================
 
+纯结构体实现
+------------
+
 在调用方法的时候::
 
     值类型既可以调用值接收者的方法，也可以调用指针接收者的方法；
     指针类型既可以调用指针接收者的方法，也可以调用值接收者的方法
 
-不管方法的接收者是什么类型，该类型的值和指针都可以调用::
+.. note:: 不管方法的接收者是什么类型，该类型的值和指针都可以调用
+
+结构体类型::
 
     type Person struct {
       age int
@@ -124,7 +129,8 @@ struct结构
       p.age += 1
     }
 
-    1. 值类型
+1. 值类型::
+
     func main() {
       qcrao := Person{age: 18}
 
@@ -136,7 +142,8 @@ struct结构
       fmt.Println(qcrao.howOld())     // 19
     }
 
-    2. 指针类型
+2. 指针类型::
+
     func main() {
       stefno := &Person{age: 100}
 
@@ -147,6 +154,49 @@ struct结构
       stefno.growUp()
       fmt.Println(stefno.howOld())    // 101
     }
+
+接口实现
+--------
+
+定义接口::
+
+    type Human interface {
+      howOld() int
+      growUp()
+    }
+
+1. 指针类型请求值类型✅::
+
+    func main() {
+      var c Human = &Person{18}
+      fmt.Println(c.howOld())
+      c.growUp()
+      fmt.Println(c.howOld())
+    }
+
+2. 值类型请求指针类型🚫::
+
+    func main() {
+      var c Human = Person{18}
+      fmt.Println(c.howOld())
+      c.growUp()  // 🚫
+      fmt.Println(c.howOld())
+    }
+    ./prog.go:23:11: cannot use Person literal (type Person) as type Human in assignment:
+      Person does not implement Human (growUp method has pointer receiver)
+
+.. note:: 如果实现了接收者是值类型的方法，会隐含地也实现了接收者是指针类型的方法。如果方法的接收者是值类型，无论调用者是对象还是对象指针，修改的都是对象的副本，不影响调用者；如果方法的接收者是指针类型，则调用者修改的是指针指向的对象本身。
+
+
+值类型&对象指针分别在何时使用
+-----------------------------
+
+* 如果方法的接收者是值类型，无论调用者是对象还是对象指针，修改的都是对象的副本，不影响调用者
+* 如果方法的接收者是指针类型，则调用者修改的是指针指向的对象本身
+
+.. note:: 使用指针作为方法的接收者的理由：1.方法能够修改接收者指向的值。2.避免在每次调用方法时复制该值，在值的类型为大型结构体时，这样做会更加高效。
+
+
 
 
 
@@ -194,6 +244,16 @@ sort包中有这么一个interface，实现了数组的大小比较::
         fmt.Println(arr.Less(0, 1))
         fmt.Println(rarr.Less(0, 1))
     }
+
+匿名嵌入类型方法集提升的规则::
+
+    1. 如果 S 包含一个匿名字段 T，S 和 *S 的方法集都包含接收器为 T 的方法提升
+    2. 如果 S 包含一个匿名字段 T， *S 类型的方法集包含接收器为 *T 的方法提升
+    3. 如果 S 包含一个匿名字段 *T，S 和 *S 的方法集都包含接收器为 T 或者 *T 的方法提升 
+
+
+
+
 
 匿名接口
 --------
