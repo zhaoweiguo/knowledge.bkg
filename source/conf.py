@@ -23,6 +23,10 @@ import sys, os
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 
+# 获取版本号
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'VERSION.txt')) as f:
+    version = release = f.readlines()[0].strip()
+
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
@@ -35,6 +39,8 @@ extensions = [
 
 # add extra command by Gordon
 plantuml = 'java -jar /usr/local/bin/plantuml.jar'
+plantuml_output_format = 'svg'   # default: png
+plantuml_latex_output_format = 'png'  # default: png
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -58,14 +64,6 @@ master_doc = 'index'
 project = u'新溪-gordon'
 copyright = u'2010-2020, 新溪-gordon'
 
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
-#
-# The short X.Y version.
-version = 'V1.4'
-# The full version, including alpha/beta/rc tags.
-release = 'V1.4.0'
 
 html_search_language = 'zh'
 

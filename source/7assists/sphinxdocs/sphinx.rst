@@ -12,7 +12,7 @@ Contents:
    sphinxs/conf.py
    sphinxs/code_file
    sphinxs/theme
-   sphinxs/plugin
+   sphinxs/extensions
    sphinxs/pygments_language
    sphinxs/sphinxdoc_install
    sphinxs/sphinxdoc_search

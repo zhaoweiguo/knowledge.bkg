@@ -70,6 +70,13 @@ ntfs for mac::
     希捷官网查
     https://www.seagate.com
 
+收费软件
+========
+
+* 编辑器: https://ulysses.app/
+* https://bear.app/
+* https://bywordapp.com/
+
 
 
 其他参考

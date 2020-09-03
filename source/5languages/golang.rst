@@ -17,6 +17,7 @@ Golang语言相关
    goes/practice
    goes/question
    goes/tool
+   goes/skill
    goes/tmp
 
 

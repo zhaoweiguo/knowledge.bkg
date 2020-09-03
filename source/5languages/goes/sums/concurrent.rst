@@ -126,7 +126,12 @@ channel的传递::
     chan<- float64 // can only be used to send
     float64s <-chan int // can only be used to receive ints
 
+Channel特点::
 
+    1. goroutine safe
+    2. store and pass value between goroutines
+    3. provide FIFO semantics
+    4. can cause goroutines block and unblock
 
 
 Channel的缺点::

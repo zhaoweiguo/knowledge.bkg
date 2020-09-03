@@ -171,8 +171,9 @@ lib工具
 * web框架(cayley): https://github.com/gobuffalo/packr
 * https://github.com/grpc/grpc-go
 
-
 * 文件上传断点续传: https://github.com/tus/tusd
+
+* 轻量级TCP并发服务器框架: https://github.com/aceld/zinx
 
 websocket
 ---------

@@ -4,6 +4,8 @@ Node开源项目
 前端
 ====
 
+* 桌面应用程序desktop app: https://www.electronjs.org/
+
 框架&组件
 ---------
 

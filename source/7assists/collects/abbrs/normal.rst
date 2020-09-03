@@ -100,6 +100,7 @@ I
 * IDL: Interactive Data Language(交互式数据语言)
 * IEEE: Institute for Electrical and Electronics Engineers 
 * IETF: Internet Engineering Task Force
+* IoC: Inversion of Control(控制反转), 常见的方式:Dependency Injection(依赖注入)
 * IOE: IBM, Oracle, EMC 
 * IP: Internet Protocol 
 * ISO: International Organization of Standardization 

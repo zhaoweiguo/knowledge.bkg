@@ -15,6 +15,7 @@ Contents:
    emacs/vim
    emacs/phpstorm
    emacs/sublime
+   emacs/atom
    emacs/idea
    emacs/vsCode
    emacs/iterm2

@@ -10,7 +10,7 @@ chrome相关
    chromes/plugin
    chromes/tool
    chromes/question
-
+   chromes/google_doc
 
 
 
