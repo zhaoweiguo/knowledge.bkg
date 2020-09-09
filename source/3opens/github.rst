@@ -8,6 +8,8 @@ GitHub [1]_
 
    githubs/normal
    githubs/gitpod
+   githubs/command
+   githubs/plugin
    githubs/history
 
 .. [1] https://developer.github.com/v3/

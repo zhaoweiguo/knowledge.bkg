@@ -11,6 +11,7 @@ IDEA相关
     ideas/idea_folding
     ideas/idea_run
     ideas/idea_pycharm
+    ideas/plantuml
 
 
 

@@ -34,6 +34,7 @@ C
 * CD: 持续部署（continuous deployment）
 * CE: 社区版(Community Edition), 如:Docker社区版（CE）,Docker企业版（EE）
 * CE: 持续探索(Continuous Exploration)
+* CEN: Cloud Enterprise Network(云企业网络，阿里)
 * CI: 持续集成 (Continuous integration)
 * CNN: 卷积神经网络（Convolutional Neural Network, CNN）
 * CQRS: Command Query Responsibility Seperation
@@ -64,9 +65,10 @@ E
 * EDA: Event Driven Architecture
 * EIPs: Ethereum Improvement Proposals
 * ELK: Elasticsearch、Logstash、Kibana(https://www.elastic.co/cn/)
+* ENS: Edge Node Service(边缘结点服务，阿里)
 * ETL: Extract-Transform-Load(大数据相关)
 * ES: Expert System(专家系统,人工智能相关领域)
-* EVM (Ethereum Virtual Machine) 
+* EVM: Ethereum Virtual Machine(以太坊虚拟机)
 
 F
 ----
@@ -77,6 +79,7 @@ F
 G
 -----
 
+* GA: Global Accelerator(全球加速器，阿里)
 * GDPR: General Data Protection Regulation, 通用数据保护条例(欧洲联盟的条例)
 * GE: General Electrical(美国通用电气, 又称奇异公司)
 * GNU: GNU is Not Unix 
@@ -149,7 +152,8 @@ P
 * PaaS: Platform as a Service(平台即服务)
 * PERN: Postgres, Express, React, Node
 * PCRE: Perl Compatible Regular Expressions
-* POSIX: Portable Operating System Interface 
+* POP结点: Point of Presence(入网点，阿里)
+* POSIX: Portable Operating System Interface
 * Pull Request (PR)
 
 Q
@@ -178,11 +182,14 @@ S
 
 * SaaS: Software as a Service(软件服务化)
 * SASL: System Architecture Support Libraries
+* SIG: Special Interest Group
 * SMTP: Simple Mail Transfer Protocol 
 * SNAT: 源地址转换(Source NAT)
 * SNMP: Simple Network Management Protocol
 * SOA: service oriented architecture
 * SOAP: Simple Object Access Protocol
+* SPA: Single Page web Application(单页面应用):不刷新页面, 动态变更html
+* SRE: Site Reliability Engineering(网站可靠性工程师)
 * SSL: Security Socket Layer
 
 T

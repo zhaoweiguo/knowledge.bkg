@@ -5,6 +5,8 @@ Node开源项目
 ====
 
 * 桌面应用程序desktop app: https://www.electronjs.org/
+* https://github.com/electron
+* easy and fast to build beautiful apps for mobile and beyond: https://github.com/flutter
 
 框架&组件
 ---------

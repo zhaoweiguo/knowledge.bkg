@@ -23,24 +23,31 @@ import sys, os
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 
+
+
+
+### ==读取相关配置====================
+
 # 获取版本号
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'VERSION.txt')) as f:
     version = release = f.readlines()[0].strip()
 
+### ================================
+
+
+
+
+
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-    'sphinx.ext.todo',
-    'sphinxcontrib.plantuml',   # plantuml插件
+    'sphinx.ext.todo',          # 内置
+    'sphinxcontrib.plantuml',   # plantuml插件: pip install sphinxcontrib-plantuml
     #'sphinx.ext.mathjax',
     #'sphinx.ext.ifconfig',
     #'sphinx.ext.viewcode',
 ]
 
-# add extra command by Gordon
-plantuml = 'java -jar /usr/local/bin/plantuml.jar'
-plantuml_output_format = 'svg'   # default: png
-plantuml_latex_output_format = 'png'  # default: png
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -271,9 +278,36 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+
+
+
+
+
+
+
 [extensions]
 
+### ==sphinx.ext.todo插件==========================
+
 todo_include_todos = True
+
+### ===============================================
+
+
+
+### ==sphinxcontrib.plantuml插件====================
+
+# add extra command by Gordon
+plantuml = 'java -DPLANTUML_LIMIT_SIZE=24384 -jar /usr/local/bin/plantuml.jar'
+plantuml_output_format = 'svg'   # default: png
+plantuml_latex_output_format = 'png'  # default: png
+
+### ===============================================
+
+
+
+
 
 
 

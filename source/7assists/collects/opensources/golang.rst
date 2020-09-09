@@ -29,7 +29,6 @@ AI
 
 * Brings SQL and AI together: https://github.com/sql-machine-learning/sqlflow
 * Kubernetes-native Deep Learning Framework: https://github.com/sql-machine-learning/elasticdl
-* Brings SQL and AI together: https://github.com/sql-machine-learning/sqlflow
 
 Golang工具包
 ------------
@@ -104,9 +103,11 @@ cli命令
 * A realtime distributed messaging platform: https://github.com/nsqio/nsq
 
 * 分布式k/v数据库: https://github.com/etcd-io/etcd
-* consul: https://github.com/hashicorp/consul
+* distributed, highly available, and data center aware solution: https://github.com/hashicorp/consul
 * Programmatic lb backend(inspired by Hystrix): https://github.com/vulcand/vulcand
 * Global Distributed Client Side Rate Limiting: https://github.com/youtube/doorman
+
+* database clustering system for horizontal scaling of MySQL: https://github.com/vitessio/vitess
 
 数据库驱动
 ----------
@@ -174,6 +175,9 @@ lib工具
 * 文件上传断点续传: https://github.com/tus/tusd
 
 * 轻量级TCP并发服务器框架: https://github.com/aceld/zinx
+* go-zero is a web and rpc framework: https://github.com/tal-tech/go-zero
+
+
 
 websocket
 ---------
@@ -275,6 +279,12 @@ DEVOPS
 * Enterprise-grade container platform: https://github.com/kubesphere/kubesphere
 * A tool for exploring each layer in a docker image: https://github.com/wagoodman/dive
 
+k8s tool
+--------
+
+* Highly extensible platform for developers: https://github.com/vmware-tanzu/octant
+
+
 operator
 --------
 
@@ -285,8 +295,18 @@ operator
 微服务架构
 ----------
 
+* A Go standard library for microservices: https://github.com/micro/go-micro
+* a framework for cloud native development: https://github.com/micro/micro
+* go-micro 到底是个啥？ - 知乎: https://zhuanlan.zhihu.com/p/58985155
+
+Istio微服务架构
+---------------
+
 * Connect, secure, control, and observe services: https://github.com/istio/istio
 * An awesome dashboard for Istio built: https://github.com/XiaoMi/naftis
+* observability for the Istio service mesh: https://github.com/kiali/kiali
+* Service mesh management for Istio: https://kiali.io/
+
 
 
 网络工具
@@ -433,6 +453,11 @@ filesystem
 -----------
 
 * Go library for accessing the GitHub API: https://github.com/google/go-github
+
+history
+-------
+
+* https://github.com/changkun/go-history
 
 
 参考

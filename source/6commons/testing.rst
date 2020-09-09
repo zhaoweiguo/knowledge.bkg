@@ -9,6 +9,7 @@
 
    testings/common
    testings/eunit
+   testings/smoke_test
    testings/code_coverage
    testings/auto_testing
 

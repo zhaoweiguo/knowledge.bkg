@@ -1,6 +1,10 @@
 go1.14 (released 2020/02/25)
 ############################
 
+* 该版本主要改进了 toolchain, runtime, libraries。
+* 该版本支持 go Modules 在生产环境使用。
+
+
 * 官网说明 [1]_
 
 * Most of its changes are in the implementation of the toolchain, runtime, and libraries
