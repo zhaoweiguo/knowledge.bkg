@@ -10,4 +10,5 @@
    simples/http_load
    simples/siege
    simples/locust
+   simples/wrk
 

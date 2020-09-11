@@ -5,6 +5,18 @@ Golang开源项目
 ----
 
 * golang: https://github.com/golang/go
+  
+
+golang基础
+----------
+
+* https://github.com/golang101/golang101
+* https://research.swtch.com/
+* https://research.swtch.com/interfaces
+* https://github.com/quii/learn-go-with-tests
+* https://essential-go.programming-books.io/
+* https://www.freecodecamp.org/news/golang-tutorial-list-free-courses-learn-go-programming-language/
+
 
 代码规范
 --------
@@ -108,6 +120,7 @@ cli命令
 * Global Distributed Client Side Rate Limiting: https://github.com/youtube/doorman
 
 * database clustering system for horizontal scaling of MySQL: https://github.com/vitessio/vitess
+* pingcap可水平扩展、兼容MySQL: https://github.com/pingcap/tidb
 
 数据库驱动
 ----------
@@ -194,6 +207,8 @@ web服务器
 * traefik(可以跟 Docker 很深度的結合): https://github.com/containous/traefik
 * 7层负载: https://github.com/bfenetworks/bfe
 
+
+
 网络模拟器
 ----------
 
@@ -228,7 +243,7 @@ GUI
 混沌工程
 --------
 
-* https://github.com/chaosblade-io/chaosblad
+* https://github.com/chaosblade-io/chaosblade
 * https://github.com/chaos-mesh/chaos-mesh
 * https://github.com/Netflix/chaosmonkey
 
@@ -248,6 +263,8 @@ DEVOPS
 * 统计: https://github.com/rcrowley/go-metrics
 * 统计A well tested and comprehensive Golang statistics library: https://github.com/montanaflynn/stats
 * Status Page for monitoring your websites and applications: https://github.com/hunterlong/statping
+* 小米企业级监控平台: https://github.com/open-falcon/falcon-plus
+  
 
 
 微服务
@@ -279,6 +296,18 @@ DEVOPS
 * Enterprise-grade container platform: https://github.com/kubesphere/kubesphere
 * A tool for exploring each layer in a docker image: https://github.com/wagoodman/dive
 
+* 企业级Kubernetes网络结构: https://github.com/alauda/kube-ovn
+
+k8s集群
+-------
+
+* 轻量级 Kubernetes 发行版: https://github.com/KubeOperator/KubeOperator
+
+k8s lb
+------
+
+* load balancer designed for bare metal Kubernetes clusters: https://github.com/kubesphere/porter
+
 k8s tool
 --------
 
@@ -306,6 +335,7 @@ Istio微服务架构
 * An awesome dashboard for Istio built: https://github.com/XiaoMi/naftis
 * observability for the Istio service mesh: https://github.com/kiali/kiali
 * Service mesh management for Istio: https://kiali.io/
+* cloud native proxy: https://github.com/mosn/mosn
 
 
 
@@ -323,6 +353,8 @@ Istio微服务架构
 * 网络代理工具: https://github.com/snail007/goproxy
 * 反向代理工具，快捷开放内网端口供外部使用: https://github.com/inconshreveable/ngrok
 * 反向代理: https://github.com/fatedier/frp
+  
+* :ref:`文件传输<croc>` https://github.com/schollz/croc
 
 CI&CD&Git
 ---------

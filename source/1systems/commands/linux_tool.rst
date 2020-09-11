@@ -26,6 +26,7 @@
 
    tools/rsync
    tools/rz_sz
+   tools/croc
 
    tools/ufw
    tools/iptables

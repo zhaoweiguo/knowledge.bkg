@@ -58,7 +58,26 @@ webhook
 * webhook: https://developer.github.com/webhooks/
 
 
+命令行工具gh
+============
 
+
+* github: https://github.com/cli/cli
+
+Installation::
+
+    $ brew install gh
+
+
+
+Usage::
+
+    $ gh pr [status, list, view, checkout, create]
+    $ gh issue [status, list, view, create]
+    $ gh repo [view, create, clone, fork]
+    $ gh auth [login, logout, refresh, status]
+    $ gh config [get, set]
+    $ gh help
 
 
 参考

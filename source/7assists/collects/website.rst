@@ -26,6 +26,10 @@ IT相关网站
 * 前端相关?: https://dev.to/
 
 
+* freecodecamp: https://www.freecodecamp.org/
+* https://www.freecodecamp.org/news/author/beau/
+
+
 平台
 ============
 
@@ -67,6 +71,18 @@ github
 
 * github上有贡献的所有人都有记录: https://github.com/all-contributors/all-contributors
 * https://allcontributors.org/
+
+
+好网站
+======
+
+* https://www.crunchbase.com/::
+  
+    Discover innovative companies and the people behind them
+
+* https://bestpractices.coreinfrastructure.org/zh-CN::
+    
+    CII 最佳实践徽章计划
 
 
 
