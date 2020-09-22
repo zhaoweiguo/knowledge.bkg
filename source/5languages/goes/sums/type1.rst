@@ -167,38 +167,6 @@ struct结构::
     fmt.Println(t.H)  // 1 访问结构G的字段H就像访问自己的字段一样
 
 
-数组切片::
-
-    1. 指向原生数组的指针
-    2. 数组切片中元素个数
-    3. 数组切片已分配的存储空间
-
-    1. 基于数组创建切片
-    2. 直接创建切片
-
-    切片是基于数组实现的，它的底层是数组，它自己本身非常小，可以理解为对底层数组的抽象
-
-    // 基于数组创建数组切片
-    var mySlice1 int[] = myArray[:5]   // (前5个元素)
-    var mySlice2 int[] = myArray[:]   // 基于所有元素创建数组
-
-    // 直接创建数组切片
-    var mySlice1 int[] = make([]int, 5)        // 初使元素个数为5, 初始值为0
-    var mySlice2 int[] = make([]int, 5, 10)    // 初使元素个数为5, 初始值为10
-    mySlice3 := []int{1, 2, 3, 4, 5}      // 创建并初使化包含5个元素的数组切片
-
-    //基于数组切片创建数组切片
-    oldSlice := []int{1, 2, 3, 4, 5}
-    newSlice := oldSlice[:3]
-    newSlice2 := oldSlice[:72]   // 超出部分置0(不能超出cap())
-
-    // 内容复制
-    slice1 := []int{1, 2, 3, 4, 5}
-    slice2 := []int{1, 2, 3}
-
-    copy(slice1, slice2)    // 只复制slice2的前3个元素到slice1
-    copy(slice2, slice1)    // 只复制slice1的前3个元素到slice2的前三个位置
-
 
 
 map数据类型::

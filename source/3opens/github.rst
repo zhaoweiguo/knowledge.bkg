@@ -11,6 +11,7 @@ GitHub [1]_
    githubs/command
    githubs/plugin
    githubs/history
+   githubs/other
 
 .. [1] https://developer.github.com/v3/
 

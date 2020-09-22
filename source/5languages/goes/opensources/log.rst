@@ -4,6 +4,11 @@
 logrus
 ======
 
+logrus 的作者观点一样，"核心不是性能"::
+
+    printf 类型字符串格式化的日志格式，不再推荐
+    现在日志的消费，逐渐从人转向了计算机，结构化的数据和友好的解析方式更重要
+
 * logrus功能强大，性能高效，而且具有高度灵活性，提供了自定义插件的功能
 * 很多开源项目，如docker，prometheus等，都是用了logrus来记录其日志
 * github: https://github.com/sirupsen/logrus ::

@@ -60,11 +60,19 @@ Chrome插件
 * https://www.extfans.com/
 
 
+工具
+====
+
+* 自动在汉字与英文间加空格: https://github.com/vinta/pangu.js
+
 大势分析
 ========
 
 * Gartner
 * 神策、Ptmind、GrowingIO、国双，还有谷歌分析
+
+* https://httparchive.org/
+
 
 github
 ======
@@ -86,6 +94,16 @@ github
 
 
 
+
+
+创投
+====
+
+
+* Redpoint Ventures,红点创投: https://redpoint.com/
+* Early stage investors: https://amplifypartners.com/::
+  
+    成立于2002年,是一家早期风险投资机构,主要关注与技术相关的领域
 
 
 

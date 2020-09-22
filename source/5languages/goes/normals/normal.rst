@@ -51,6 +51,17 @@ Code organization::
                  |--util.go
 
 
+适合小白看的项目::
+
+    推荐项目:
+
+    beego
+    BoltDB（不维护了，但是代码不多，注释比较详细，作为学习容易入门）
+    urfave/cli
+    grpc-gateway
+    grpc-go
+
+
 
 
 

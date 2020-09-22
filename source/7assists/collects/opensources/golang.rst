@@ -1,6 +1,9 @@
 Golang开源项目
 ##############
 
+基础
+====
+
 官网
 ----
 
@@ -27,7 +30,7 @@ golang基础
 
 
 配置文件相关
-----------------
+============
 
 * https://github.com/go-ini/ini
 * xml: https://github.com/antchfx/xmlquery
@@ -35,12 +38,6 @@ golang基础
 * 便捷的使用配置文件中的数据: https://github.com/spf13/viper
 * replacement for Go's flag package: https://github.com/spf13/pflag
 * xlsx: https://github.com/tealeg/xlsx
-
-AI
------
-
-* Brings SQL and AI together: https://github.com/sql-machine-learning/sqlflow
-* Kubernetes-native Deep Learning Framework: https://github.com/sql-machine-learning/elasticdl
 
 Golang工具包
 ------------
@@ -75,7 +72,9 @@ Golang工具包
 * rolling log: https://github.com/natefinch/lumberjack
 * Leveled execution logs for Go: https://github.com/golang/glog
 * zerolog: https://github.com/rs/zerolog (项目 https://github.com/alibaba/kt-connect 中使用)
-* go-kit: https://github.com/go-kit/kit (阿里一个人推荐 https://www.cnblogs.com/alisystemsoftware/p/12408258.html)
+* go-kit: https://github.com/go-kit/kit
+    * 阿里一个人推荐 https://www.cnblogs.com/alisystemsoftware/p/12408258.html
+    * `Why I Recommend to Avoid Using the go-kit Library <https://gist.github.com/posener/330c2b08aaefdea6f900ff0543773b2e>`_
 
 环境变量
 -----------
@@ -98,11 +97,6 @@ cli命令
 * https://github.com/google/wire
 * https://github.com/jarcoal/httpmock
 
-区块链blockchain
-----------------
-
-* Filecoin protocol in Go: https://github.com/filecoin-project/lotus
-
 
 数据库
 ------
@@ -112,6 +106,8 @@ cli命令
 * 经济图数据库: https://github.com/degdb/degdb
 * 嵌入式k/v数据库: https://github.com/boltdb/bolt
     * https://github.com/etcd-io/bbolt
+    * 注: 代码不多，注释比较详细，作为学习容易入门
+    * BoltDB的优点与缺点: https://zhuanlan.zhihu.com/p/47214093
 * A realtime distributed messaging platform: https://github.com/nsqio/nsq
 
 * 分布式k/v数据库: https://github.com/etcd-io/etcd
@@ -121,6 +117,7 @@ cli命令
 
 * database clustering system for horizontal scaling of MySQL: https://github.com/vitessio/vitess
 * pingcap可水平扩展、兼容MySQL: https://github.com/pingcap/tidb
+* cloud-native distributed SQL DB: https://github.com/cockroachdb/cockroach
 
 数据库驱动
 ----------
@@ -183,13 +180,17 @@ lib工具
 * web框架: https://github.com/go-martini/martini
 * https://github.com/gorilla/mux
 * web框架(cayley): https://github.com/gobuffalo/packr
-* https://github.com/grpc/grpc-go
 
 * 文件上传断点续传: https://github.com/tus/tusd
 
 * 轻量级TCP并发服务器框架: https://github.com/aceld/zinx
 * go-zero is a web and rpc framework: https://github.com/tal-tech/go-zero
 
+grpc
+----
+
+* https://github.com/grpc/grpc-go
+* https://github.com/grpc-ecosystem/grpc-gateway
 
 
 websocket
@@ -247,6 +248,13 @@ GUI
 * https://github.com/chaos-mesh/chaos-mesh
 * https://github.com/Netflix/chaosmonkey
 
+lua插件
+-------
+
+* https://github.com/aarzilli/golua
+* https://github.com/stevedonovan/luar
+
+
 SMTP
 ----
 
@@ -264,6 +272,7 @@ DEVOPS
 * 统计A well tested and comprehensive Golang statistics library: https://github.com/montanaflynn/stats
 * Status Page for monitoring your websites and applications: https://github.com/hunterlong/statping
 * 小米企业级监控平台: https://github.com/open-falcon/falcon-plus
+* 监控: https://github.com/open-falcon
   
 
 
@@ -297,6 +306,12 @@ DEVOPS
 * A tool for exploring each layer in a docker image: https://github.com/wagoodman/dive
 
 * 企业级Kubernetes网络结构: https://github.com/alauda/kube-ovn
+
+
+k8s网络
+-------
+
+* networking plugins, maintained by the CNI team: https://github.com/containernetworking/plugins
 
 k8s集群
 -------
@@ -347,14 +362,14 @@ Istio微服务架构
 * 简单 HTTP 流量复制工具(原来名gor): https://github.com/buger/goreplay
 * 穿墙的 HTTP 代理服务器: https://github.com/cyfdecyf/cow
 * 家庭或者企业网络的透明代理,可用来翻墙等: https://github.com/xjdrew/kone
-* 负载工具类似ab: https://github.com/rakyll/hey
 * 高速的 P2P 端口映射工具，同时支持Socks5代理: https://github.com/vzex/dog-tunnel
 * 抓包工具: https://github.com/40t/go-sniffer
 * 网络代理工具: https://github.com/snail007/goproxy
 * 反向代理工具，快捷开放内网端口供外部使用: https://github.com/inconshreveable/ngrok
 * 反向代理: https://github.com/fatedier/frp
+* Cloud Native Tunnel for APIs: https://github.com/inlets/inlets
   
-* :ref:`文件传输<croc>` https://github.com/schollz/croc
+* :ref:`文件传输 <croc>` https://github.com/schollz/croc
 
 CI&CD&Git
 ---------
@@ -386,8 +401,7 @@ CI&CD&Git
 
 * debugger: https://github.com/go-delve/delve
 * perf 工具(go版ps命令): https://github.com/google/gops
-* https://github.com/shirou/gopsutil
-* go-torch 工具(deprecated, use pprof): https://github.com/uber-archive/go-torch
+* psutil for golang: https://github.com/shirou/gopsutil
 * 打印deep pretty printer: https://github.com/davecgh/go-spew
 * 配置化生成证书: https://github.com/cloudflare/cfssl
 * 免费的证书获取工具: https://github.com/Neilpang/acme.sh
@@ -446,6 +460,7 @@ P2P
     * gopkg.in/check.v1
 * https://github.com/onsi/ginkgo
 * https://github.com/gavv/httpexpect
+* A toolkit with common assertions and mocks: https://github.com/stretchr/testify
 
 eBPF
 ----
@@ -463,18 +478,30 @@ filesystem
 * https://github.com/dertuxmalwieder/rssfs
 * https://github.com/polyrabbit/etcdfs
 
+压测工具
+--------
+
+* https://github.com/link1st/go-stress-testing
+* https://github.com/wg/wrk
+* 负载工具类似ab: https://github.com/rakyll/hey
+* HTTP load testing tool and library. It's over 9000!: https://github.com/tsenart/vegeta
+
+pprof
+-----
+
+* A wrapper for golang web framework gin to use net/http/pprof easily: https://github.com/DeanThompson/ginpprof
+* go-torch 工具(deprecated, use pprof): https://github.com/uber-archive/go-torch
 
 开源项目收集
 ------------
 
 * A curated list of awesome Go frameworks, libraries and software: https://github.com/avelino/awesome-go
-* 压测工具: https://github.com/link1st/go-stress-testing
 * MonkeyPatch: https://github.com/bouk/monkey
 
 视频流
 ------
 
-* https://github.com/gwuhaolin/livego
+* rtmp 协议: https://github.com/gwuhaolin/livego
 
 学习
 ----
@@ -485,6 +512,13 @@ filesystem
 -----------
 
 * Go library for accessing the GitHub API: https://github.com/google/go-github
+
+颜色
+----
+
+* https://github.com/gookit/color
+* 实例说明: https://github.com/talkgo/night/blob/master/content/discuss/2019-03-07-wechat-discuss.md
+
 
 history
 -------
@@ -497,4 +531,18 @@ history
 
 * https://juejin.im/post/5de082a95188256f9a25384f
 
+
+其他功能
+========
+
+AI
+--
+
+* Brings SQL and AI together: https://github.com/sql-machine-learning/sqlflow
+* Kubernetes-native Deep Learning Framework: https://github.com/sql-machine-learning/elasticdl
+
+区块链blockchain
+----------------
+
+* Filecoin protocol in Go: https://github.com/filecoin-project/lotus
 

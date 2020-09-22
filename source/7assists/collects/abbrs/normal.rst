@@ -198,6 +198,7 @@ T
 * TCP: Transmission Control Portocol 
 * TDD: Test-Driven Development(测试驱动开发)
 * TLS: Transport Layer Security
+* TOC: Technical Oversight Committee(技术监督委员会)
 * TTS: Text to Speech
 
 U

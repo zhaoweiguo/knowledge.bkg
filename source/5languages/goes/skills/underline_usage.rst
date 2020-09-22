@@ -15,9 +15,6 @@
 
 .. note:: pprof 和 MySQL 是常见用法。它会引入包，会先调用包中的 init() 函数，这种使用方式仅让导入的包做初始化，而不使用包中其他函数。
 
-.. figure:: /images/languages/golangs/skill_import_init_order.png
-
-   import包&init函数执行顺序
 
 用在返回值
 ==========

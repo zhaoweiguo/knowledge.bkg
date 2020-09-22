@@ -184,6 +184,6 @@ export GOSUMDB=sum.golang.google.cn
 export GOPRIVATE=gitlab.com  # 这儿改成你的私有git域名
 ```
 
+## 扩展阅读
 
-
-
+* https://github.com/hyper0x/go_command_tutorial/blob/master/0.3.md
