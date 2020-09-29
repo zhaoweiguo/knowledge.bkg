@@ -20,12 +20,14 @@
     
    <script type="text/javascript">
         var gitalk = new Gitalk({
-          clientID: '{{ theme.gitalk.client_id }}',
-          clientSecret: '{{ theme.gitalk.client_secret }}',
+          clientID: '{{ theme.gitalk.ClientID }}',
+          clientSecret: '{{ theme.gitalk.ClientSecret }}',
           repo: '{{ theme.gitalk.repo }}',
-          owner: '{{ theme.gitalk.github_id }}',
-          admin: ['{{ theme.gitalk.admin_user }}'],
-          id: md5(location.pathname),
+          owner: '{{ theme.gitalk.owner }}',
+          admin: {{ theme.gitalk.adminUser }},
+          //id: md5(location.pathname),
+          id: {{ theme.gitalk.id }},
+          createIssueManually: '{{ theme.gitalk.createIssueManually }}',
           distractionFreeMode: '{{ theme.gitalk.distraction_free_mode }}'
         })
         gitalk.render('gitalk-container')           

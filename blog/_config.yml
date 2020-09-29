@@ -301,18 +301,42 @@ theme_config:
     mathjax:
       cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-# Disqus
-  disqus:
-    enable: true
-    shortname: zhaoweiguo
-    count: true
-    lazyload: true
-
 # local search
   local_search:
     enable: false
     trigger: auto
     top_n_per_article: 1
+
+# ---------------------------------------------------------------
+# Comment Settings  注: 其他comment插件详见theme
+# ---------------------------------------------------------------
+
+# Disqus
+  disqus:
+    enable: false
+    shortname: zhaoweiguo
+    count: true
+    lazyload: true
+
+
+# Gitalk 
+# Demo: https://gitalk.github.io
+# Reference: https://asdfv1929.github.io/2018/01/20/gitalk/, https://liujunzhou.cn/2018/8/10/gitalk-error/#more,  https://iochen.com/post/use-gitalk-in-hexo/
+  gitalk:
+    enable: true
+    ClientID: 74ff30da6cc8deafe946
+    ClientSecret: 65ff50b923a60ef39f312c2014035b6285eff2d5
+    owner: zhaoweiguo
+    repo: zhaoweiguo.github.io
+    adminUser: "['zhaoweiguo']"
+    id: location.pathname   #id: md5(location.pathname),   # https://github.com/gitalk/gitalk/issues/115
+    labels: "['Gitalk']"
+    perPage: 15
+    pagerDirection: last
+    createIssueManually: false
+    distractionFreeMode: true  # Facebook-like distraction free mode
+
+
 
 # ---------------------------------------------------------------
 # Tags Settings
