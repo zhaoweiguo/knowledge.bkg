@@ -12,18 +12,9 @@ Contents:
    hexos/hexo_normal
    hexos/hexo_command
    hexos/hexo_theme
-   hexos/hexo_usage
    hexos/hexo_question
 
 
-
-其他::
-
-    留言功能:
-    https://github.com/gitalk/gitalk
-
-    一键自动发布多平台:
-    https://openwrite.cn/
 
 
 

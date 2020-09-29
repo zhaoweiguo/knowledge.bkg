@@ -12,17 +12,11 @@ Contents:
 
    sphinxdocs/sphinx
    sphinxdocs/rst2pdf
-   sphinxdocs/hexo
-   sphinxdocs/ablog
-   sphinxdocs/gulp
-   sphinxdocs/jekyll
    sphinxdocs/md
    sphinxdocs/AsciiDoc
    sphinxdocs/apidoc
-   sphinxdocs/hugo
-   sphinxdocs/gitbook
-   sphinxdocs/commit
-   sphinxdocs/search
+   sphinxdocs/tool
+   sphinxdocs/plugin
 
 
 

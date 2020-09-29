@@ -16,7 +16,10 @@
     微服务化: 明确服务间的依赖，互相解耦
 
 
+两个清晰的容器技术趋势::
 
+    容器的部署密度越来越高（increasing Pod density）。
+    容器的生命周期越来越短（decreasing Pod lifespan）。甚至短到秒级或毫秒级。
 
 
 

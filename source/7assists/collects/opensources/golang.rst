@@ -55,6 +55,17 @@ Golang工具包
 * email: https://github.com/jordan-wright/email
 * chat: https://github.com/tinode/chat
 
+安全
+----
+
+* https://github.com/theupdateframework/notary
+
+uuid
+----
+
+* https://github.com/satori/go.uuid
+* https://github.com/google/uuid
+* https://code.google.com/archive/p/go-uuid/ -> https://github.com/pborman/uuid
 
 日志log
 -------
@@ -461,6 +472,7 @@ P2P
 * https://github.com/onsi/ginkgo
 * https://github.com/gavv/httpexpect
 * A toolkit with common assertions and mocks: https://github.com/stretchr/testify
+* allure工具golang版: https://github.com/dailymotion/allure-go
 
 eBPF
 ----

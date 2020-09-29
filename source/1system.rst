@@ -14,6 +14,7 @@
 
    1systems/linux_command
    1systems/linux_file
+   1systems/core
    1systems/os
    1systems/normal
    1systems/shell

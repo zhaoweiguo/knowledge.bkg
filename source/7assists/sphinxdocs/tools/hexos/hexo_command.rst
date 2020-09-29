@@ -1,7 +1,7 @@
 hexo命令
 ===============
 
-基本配置:https://hexo.io/docs/configuration.html
+基本配置: https://hexo.io/docs/configuration.html
 
 基本命令::
 

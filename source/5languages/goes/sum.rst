@@ -14,6 +14,7 @@
    sums/spec
    sums/confuse
    sums/variable
+   sums/context
 
 
 

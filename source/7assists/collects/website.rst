@@ -16,7 +16,23 @@ katacoda-边看边操作学习网站
 * 技术相关的课程学习/创建工具: https://katacoda.com/
 * 参考: https://developer.aliyun.com/article/752183
 
+图片压缩
+----------------
 
+* Tinypng: https://tinypng.com/ ::
+  
+    Tinypng 采用的是有损压缩算法，选择性减少图片中的一些肉眼几乎分别不出来的颜色点，起到压缩图片的作用
+
+
+网络
+----
+
+* https://www.vx.link/ ::
+    
+    vxTrans: 点对点加速您的网络
+    vxDNS: 高品质的域名解析服务
+    DB Service: 基于大规模集群的数据库服务
+    vxPing: 网络性能全球监测
 
 
 IT相关网站
