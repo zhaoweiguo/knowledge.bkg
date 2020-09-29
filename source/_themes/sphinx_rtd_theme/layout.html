@@ -100,6 +100,12 @@ var _hmt = _hmt || [];
   gtag('config', 'UA-178653440-2');
 </script>
 
+<!-- 评论插件 start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<!-- 评论插件 end -->
+
 
 </head>
 
@@ -234,6 +240,19 @@ var _hmt = _hmt || [];
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
       });
+
+
+      var gitalk = new Gitalk({
+              clientID: '565177626b5d46427009',
+              clientSecret: 'b2a36e67e1d2a73e43667f46d571c2624f8e1026',
+              repo: 'knowledge-comment',
+              owner: 'zhaoweiguo',
+              admin: ['zhaoweiguo'],
+              id: location.pathname,      // Ensure uniqueness and length less than 50
+              distractionFreeMode: false  // Facebook-like distraction free mode
+            })
+      gitalk.render('gitalk-container')
+
   </script>
 
   {%- block footer %} {% endblock %}
