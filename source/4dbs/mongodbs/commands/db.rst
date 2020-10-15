@@ -38,6 +38,10 @@ DB相关
     db.hostInfo()
 
 
+删除DB::
+
+    > db.dropDatabase()
+    { "dropped" : "runoob", "ok" : 1 }
 
 
 

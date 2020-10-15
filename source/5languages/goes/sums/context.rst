@@ -8,6 +8,8 @@ context
     2. 超时处理
     3. 传参数
 
+    用来设置截止日期、同步信号，传递请求相关值的结构体
+
 ::
 
     type Context interface {

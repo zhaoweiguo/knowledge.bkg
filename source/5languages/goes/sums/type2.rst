@@ -10,6 +10,14 @@
     int int8 int16 int32 int64 rune string
     uint uint8 uint16 uint32 uint64 uintptr
 
+原始的数值类型包括::
+
+    bool, 
+    uint, uint8, uint16, uint32, uint64, 
+    int, int8, int16, int32, int64, 
+    float32, float64
+
+
 自定义类型
 ==========
 

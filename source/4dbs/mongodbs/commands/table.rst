@@ -17,6 +17,11 @@
     printjson()
 
 
+删除表(集合)::
+
+    db.collection.drop()
+
+
 
 
 

@@ -7,6 +7,7 @@
 
    normals/normal
    normals/concept
+   normals/qps
 
 
 

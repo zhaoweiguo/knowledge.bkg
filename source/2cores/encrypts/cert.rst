@@ -7,6 +7,7 @@
    certs/normal
    certs/cert_ca
    certs/letsencrypt
+   certs/hpkp
    certs/question
 
 

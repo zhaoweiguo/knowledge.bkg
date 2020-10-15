@@ -20,7 +20,6 @@
    8tools/wireshark
    8tools/jumpserver
    8tools/vpn
-   8tools/design
    8tools/tmp
    8tools/other
 

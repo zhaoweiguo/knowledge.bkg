@@ -10,7 +10,10 @@ MongoDB的使用 [1]_
 
    mongodbs/normal
    mongodbs/command
-   mongodbs/mongodump
+   mongodbs/index
+   mongodbs/optimize
+   mongodbs/select
+   mongodbs/extend
 
 
 

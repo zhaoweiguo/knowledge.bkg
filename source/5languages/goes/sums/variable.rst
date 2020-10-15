@@ -1,7 +1,7 @@
 变量
 ####
 
-关键字::
+25个关键字::
 
     break default func  interface select
     case  defer go  map struct

@@ -8,6 +8,7 @@ Contents:
 
    testings/stress_testing
    testings/auto_testing
+   testings/performance_testing
 
 
 

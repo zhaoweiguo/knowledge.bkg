@@ -16,7 +16,6 @@ mongo基本
 
    normals/basic
    normals/index
-   normals/install
    normals/architecture
    normals/replica_set
    normals/sharding_cluster

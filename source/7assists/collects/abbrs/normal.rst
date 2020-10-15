@@ -108,6 +108,11 @@ I
 * IP: Internet Protocol 
 * ISO: International Organization of Standardization 
 
+J
+---
+
+* JD: job description
+
 L
 ---
 

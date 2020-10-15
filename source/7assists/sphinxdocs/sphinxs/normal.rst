@@ -7,6 +7,8 @@
 
    normals/basic
    normals/link
+   normals/image
+   normals/include
    normals/code
    normals/color
    normals/notice

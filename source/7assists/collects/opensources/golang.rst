@@ -319,6 +319,13 @@ DEVOPS
 * 企业级Kubernetes网络结构: https://github.com/alauda/kube-ovn
 
 
+podman
+------
+
+* building OCI images: https://github.com/containers/buildah
+* Dockerfile-agnostic builder toolkit: https://github.com/moby/buildkit
+
+
 k8s网络
 -------
 
@@ -473,6 +480,7 @@ P2P
 * https://github.com/gavv/httpexpect
 * A toolkit with common assertions and mocks: https://github.com/stretchr/testify
 * allure工具golang版: https://github.com/dailymotion/allure-go
+        * https://github.com/allure-framework/allure1/wiki
 
 eBPF
 ----
@@ -531,6 +539,28 @@ pprof
 * https://github.com/gookit/color
 * 实例说明: https://github.com/talkgo/night/blob/master/content/discuss/2019-03-07-wechat-discuss.md
 
+画图
+----
+
+* https://github.com/blushft/go-diagrams (基于dot)
+* https://github.com/mingrammer/diagrams (python版)
+
+屏幕共享
+--------
+
+* https://github.com/screego/server
+    * https://app.screego.net/
+
+队列queue
+---------
+
+* asynchronous task queue/job queue: https://github.com/RichardKnop/machinery
+
+论坛bbs
+-------
+
+* https://github.com/mlogclub/bbs-go
+
 
 history
 -------
@@ -557,4 +587,14 @@ AI
 ----------------
 
 * Filecoin protocol in Go: https://github.com/filecoin-project/lotus
+* 比原链: https://github.com/Bytom/bytom
+
+
+资料
+----
+
+* 基于 Go 构建滴滴核心业务平台的实践.pdf: https://github.com/gopherchina/conference
+
+
+
 

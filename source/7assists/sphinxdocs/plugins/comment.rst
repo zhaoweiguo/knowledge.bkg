@@ -63,6 +63,10 @@ gitalk
           // 设置项
         }} />
 
+参考:
+
+* https://iochen.com/post/use-gitalk-in-hexo/
+
 其它相关插件:
 
 * https://github.com/imsun/gitment

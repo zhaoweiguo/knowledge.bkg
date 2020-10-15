@@ -11,6 +11,7 @@
    abbrs/ai
    abbrs/architecture
    abbrs/psychology
+   abbrs/job
    abbrs/tmp
 
 
