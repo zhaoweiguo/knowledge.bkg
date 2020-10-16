@@ -9,11 +9,15 @@ MongoDB的使用 [1]_
    :maxdepth: 2
 
    mongodbs/normal
+   mongodbs/select
    mongodbs/command
    mongodbs/index
    mongodbs/optimize
-   mongodbs/select
    mongodbs/extend
+   mongodbs/server
+   mongodbs/practice
+   mongodbs/question
+   mongodbs/sharded-cluster
 
 
 

@@ -1,5 +1,5 @@
 常用命令
-========
+########
 
 查看当前数据库的可用连接数::
 
@@ -62,26 +62,56 @@
       "ok" : 1
     }
 
-表查询::
+普通表查询::
 
-    > db.posts.stats();
+    > db.log.stats();
     {
-      "ns" : "test.posts",
-      "count" : 1,
-      "size" : 56,
-      "avgObjSize" : 56,
-      "storageSize" : 8192,
-      "numExtents" : 1,
-      "nindexes" : 1,
-      "lastExtentSize" : 8192,
-      "paddingFactor" : 1,
-      "systemFlags" : 1,
-      "userFlags" : 0,
-      "totalIndexSize" : 8176,
-      "indexSizes" : {
-        "_id_" : 8176
-      },
-      "ok" : 1
+        sharded: false,                     // 此表为非shard表
+        primary: "d-2ze15bc9e0a5c484",
+        capped: false,
+        ns: "api.log",                      // 表名
+        count: 639909865,                   // 条数: 6.39亿
+        size: 3.58750408577E11,             // 未压缩的数据(raw document size): 350G
+        storageSize: 1.5874340864E11,       // 数据占存储量: 150G(data on disk is compressed)
+        totalIndexSize: 8.442488832E10,     // 索引占存储量: 84G
+        indexSizes: {                       // 各索引分别占多少存储
+            _id_: 2.8398866432E10,
+            event_source_type_1_user_id_1_time_created_-1: 9.11304704E9,
+            is_delete_1_is_read_1_event_type_1_event_source_type_1_user_id_1: 4.870557696E9,
+            is_delete_1_user_id_1_time_created_-1: 9.08275712E9,
+            source_id_1: 4.208246784E9,
+            source_id_1_user_id_1_is_delete_1_is_read_1: 5.08647424E9,
+            source_id_1_user_id_1_is_delete_1_is_read_1_time_created_-1: 1.1746791424E10,
+            time_created_1: 7.15108352E9,
+            user_id_1: 4.767064064E9
+        },
+        avgObjSize: 560.0,
+        maxSize: NumberLong(0),
+        nindexes: 9,
+        nchunks: 1
+    }
+
+shard cluster表查询::
+
+    {
+        sharded: true,                          // 此表为shard表
+        capped: false,
+        ns: "api.update_gadget_statistic",      // 表名
+        count: 893400504,                       // 表条数, 这儿是8.9亿
+        size: NumberLong(1152228969217),        // 未压缩的数据(raw document size)
+        storageSize: 3.76780988416E11,          // 数据占存储量: 376G(data on disk is compressed)
+        totalIndexSize: 8.8084123648E10,        // 索引占存储量: 88G
+        indexSizes: {                           // 各索引分别占多少存储
+            _id_: 3.8060089344E10,
+            gadget_id_1_time_created_1: 1.5656927232E10,
+            hub_type_1: 5.212393472E9,
+            hub_type_1_time_created_1: 1.47602432E10,
+            time_created_1: 1.43944704E10
+        },
+        avgObjSize: 1289.0,
+        maxSize: NumberLong(0),
+        nindexes: 5,
+        nchunks: 25558
     }
 
 以 KB 为单位显示::
@@ -98,5 +128,10 @@
 other
 =====
 
-db.system.profile.find({millis:{$gt:5000}})
+::
+
+    db.system.profile.find({millis:{$gt:5000}})
+
+
+
 

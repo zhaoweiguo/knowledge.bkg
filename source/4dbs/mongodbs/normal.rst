@@ -14,7 +14,7 @@ mongo基本
 .. toctree::
    :maxdepth: 1
 
-   normals/basic
+   normals/normal
    normals/index
    normals/architecture
    normals/replica_set

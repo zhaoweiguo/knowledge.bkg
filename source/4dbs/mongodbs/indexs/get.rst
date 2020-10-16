@@ -5,6 +5,10 @@
 
     db.wei64_gadget_info.getIndexes()
 
+    // 查看集合中的索引大小
+    db.COLLECTION_NAME.totalIndexSize()
+
+
 查看索引是否生效::
 
     db.index_test.find({"sex":1}).explain("executionStats")
@@ -29,6 +33,14 @@
      db.index_test.find({"age":20}).sort({"sex":-1}).explain()
      1. 返回中的winningPlan.stage=SORT 即查询后需要在内存中排序再返回
      2. winningPlan.stage变为了FETCH(使用索引)
+
+查看数据库中所有索引::
+
+    db.system.indexes.find()
+
+
+
+
 
 
 

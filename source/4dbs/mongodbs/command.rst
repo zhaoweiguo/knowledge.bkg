@@ -7,7 +7,6 @@
 .. toctree::
    :maxdepth: 1
 
-   commands/server
    commands/db
    commands/table
    commands/insert
@@ -15,6 +14,8 @@
    commands/array
    commands/sharded
    commands/view
+   commands/aggregate
+   commands/user
 
 
 

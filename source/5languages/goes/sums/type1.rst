@@ -77,23 +77,28 @@
     切片: slice
     字典: map
     通道: chan
-    结构体: struct
-    接口: interface
-    函数类型
-    指针: pointer
 
-3. 结构类型::
+
+4. 结构体类型(struct)::
 
     type person struct {
-        age int
-        name string
+        age int         // 值传递
+        name []string   // 指针传递
     }
 
-4. 自定义类型::
+5. 自定义类型::
 
     type A int64
     type B int64
     // Go这种强类型语言，A和B是不能相互赋值的
+
+3. 其他类型::
+
+    接口: interface
+    函数类型
+    指针: pointer
+
+
 
 嵌入类型-或者嵌套类型
 =====================

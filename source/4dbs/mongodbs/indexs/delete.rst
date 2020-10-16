@@ -4,9 +4,11 @@
 
 删除单个索引::
 
-    db.collection.dropIndex({filed:1/-1});
+    db.COLLECTION_NAME.dropIndex("INDEX-NAME")
 
-    // 一下删除所有索引:
+
+删除所有索引::
+
     db.collection.dropIndexes();
 
 重建索引::
@@ -16,6 +18,9 @@
 
     类似mysql中的optimize table
     db.collection.reIndex()
+
+
+
 
 
 

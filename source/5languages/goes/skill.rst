@@ -11,6 +11,7 @@
    skills/param_faq
    skills/color
    skills/run_order
+   skills/deep_copy
 
 
 

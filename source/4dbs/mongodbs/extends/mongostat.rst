@@ -10,7 +10,7 @@ mongostat
 
     > mongostat [--host {ip}:{port}] [-u {user} -p {password} --authenticationDatabase {dbName}]
 
-.. image:: /images/dbs/mongos/mongostat1.png
+.. image:: /images/dbs/mongodbs/mongostat1.png
 
 说明::
 

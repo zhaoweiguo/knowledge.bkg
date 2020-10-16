@@ -38,22 +38,8 @@ Mongo 常见的执行步骤stage::
     SKIP 从结果集中跳过部分条目
     IDHACK _id 查询
 
-    SINGLE_SHARD
-
-
-常用知识
-========
-
-_id 字段其值为一个 12 字节的 ObjectId 类型::
-
-    ObjectId = 4 个字节的 unix 时间戳 + 3 个字节的机器信息 + 2 个字节的进程 id + 3 个字节的自增随机数
-
-    实例:
-    5b72c9169db571c8ab7ee374
-    前4个字节为: 5b72c916
-    16进制转10进制后为: 1,534,249,238
-    timestamp转为日期为: 2018/8/14 20:20:38
-
+    SINGLE_SHARD:   数据在一个shard中
+    SHARD_MERGE:    数据分布在多个shard中
 
 
 
