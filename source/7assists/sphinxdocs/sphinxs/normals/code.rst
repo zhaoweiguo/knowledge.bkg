@@ -37,6 +37,28 @@
    with line numbering starting 
    at 10.
 
+multiple code examples::
+
+    extensions = ['sphinx.ext.autosectionlabel',
+              'sphinxcontrib.osexample']
+
+    .. example-code::
+
+      .. code-block:: JSON
+
+        {
+          "key": "value"
+        }
+
+      .. code-block:: python
+
+        pygments_style = 'sphinx'
+
+
+      .. code-block:: ruby
+
+        print "Hello, World!\n"
+
 全局
 ====
 

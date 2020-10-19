@@ -8,6 +8,7 @@
    opensources/golang
    opensources/node
    opensources/python
+   opensources/rust
    opensources/ui
    opensources/algorithm
    opensources/course

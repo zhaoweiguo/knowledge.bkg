@@ -15,7 +15,6 @@ mongo基本
    :maxdepth: 1
 
    normals/normal
-   normals/index
    normals/architecture
    normals/replica_set
    normals/sharding_cluster

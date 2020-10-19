@@ -26,7 +26,7 @@ explain返回字段说明::
 
 Mongo 常见的执行步骤stage::
 
-    COLLSCAN 文档扫描(Collection Scan)
+    COLLSCAN 文档扫描(Collection Scan)即:未命中索引
     IXSCAN 索引扫描
     FETCH 检索文档
     SORT 内存排序
@@ -42,6 +42,28 @@ Mongo 常见的执行步骤stage::
     SHARD_MERGE:    数据分布在多个shard中
 
 
+    COLLSCAN：全表扫描
+    IXSCAN：索引扫描
+    FETCH：根据索引去检索指定 document
+    SHARD_MERGE：将各个分片返回数据进行 merge
+    SORT：表明在内存中进行了排序
+    LIMIT：使用 limit 限制返回数
+    SKIP：使用 skip 进行跳过
+    IDHACK：针对_id 进行查询
+    SHARDING_FILTER：通过 mongos 对分片数据进行查询
+    COUNT：利用 db.coll.explain ().count () 之类进行 count 运算
+    COUNTSCAN：count 不使用 Index 进行 count 时的 stage 返回
+    COUNT_SCAN：count 使用了 Index 进行 count 时的 stage 返回
+    SUBPLA：未使用到索引的 $or 查询的 stage 返回
+    TEXT：使用全文索引进行查询时候的 stage 返回
+    PROJECTION：限定返回字段时候 stage 的返回
+    对于普通查询，我希望看到 stage 的组合 (查询的时候尽可能用上索引)：
+    Fetch+IDHACK
+    Fetch+ixscan
+    Limit+（Fetch+ixscan）
+    PROJECTION+ixscan
+    SHARDING_FITER+ixscan
+    COUNT_SCAN
 
 @todo::
 

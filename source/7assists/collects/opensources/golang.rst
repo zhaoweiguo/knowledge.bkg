@@ -413,6 +413,8 @@ CI&CD&Git
 * 代码调用链可视化工具: https://github.com/TrueFurby/go-callvis
 * 开发流程改进工具: https://github.com/oxequa/realize
 * 自动生成测试用例工具(已集成至各ide): https://github.com/cweill/gotests
+  
+* a tool to build, deploy, and release any application on any platform: https://github.com/hashicorp/waypoint
 
 调试工具
 --------
@@ -560,6 +562,11 @@ pprof
 -------
 
 * https://github.com/mlogclub/bbs-go
+
+ftp
+---
+
+* SFTP server can serve local filesystem, S3, GCS: https://github.com/drakkan/sftpgo
 
 
 history

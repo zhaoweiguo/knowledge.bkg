@@ -16,6 +16,7 @@
    normals/tree
    normals/table
    normals/symbol
+   normals/raw
    normals/other
 
 

@@ -6,6 +6,7 @@ k8s相关
 
 * 官网 [1]_
 * github [2]_
+* 文档 [3]_
 
 .. toctree::
    :maxdepth: 2
@@ -29,3 +30,4 @@ k8s相关
 
 .. [1] https://kubernetes.io/zh/
 .. [2] https://github.com/kubernetes/kubernetes
+.. [3] https://kubernetes.io/docs/home/

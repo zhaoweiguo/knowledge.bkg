@@ -1,7 +1,7 @@
 创建索引
 ########
 
-.. note:: 从3.0版本后使用 db.collection.createIndex()代替db.collection.createIndex(). createIndex () 还能用, 但只是 createIndex () 的别名
+.. note:: 从3.0版本后使用 db.collection.createIndex()代替db.collection.ensureIndex(). ensureIndex() 还能用, 但只是 createIndex() 的别名
 
 语法::
 

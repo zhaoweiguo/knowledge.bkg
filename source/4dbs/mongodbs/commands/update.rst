@@ -13,7 +13,7 @@
 数据更新::
 
     //格式:
-    db.<tableName>.update(<newValue>, <oldValue>)     # 更新一条数据
+    db.<tableName>.update(<condition>, <newValue>)     # 更新一条数据
 
     //文档替换:
     db.user.update({"_id" : ObjectId("4217490312794ifdj344")},
@@ -26,12 +26,12 @@
         {"$set" : {"book" : "Learning Python and Mongo"} })
     # 修改书名——"Effective Python Programming"
     db.users.update({"_id" : ObjectId("4217490312794ifdj344")},
-        {"$set" : {"book" : "Learning Python and Mongo"} })
+        {"$set" : {"book" : "Effective Python Programming"} })
     # 删除书的信息
     db.users.update({"_id" : ObjectId("4217490312794ifdj344")},
         {"$unset" : {"book" : 1}}
 
-增加和减少::
+"$inc"增加和减少::
 
     # 初始数据
     db.games.insert({"game" : "pinball", "user" : "gordon"})
@@ -39,3 +39,12 @@
     db.games.update({"game" : "pinball", "user" : "gordon"}, {"$inc" : {"score" : 50}})
     # 得分增加100
     db.games.update({"game" : "pinball", "user" : "gordon"}, {"$inc" : {"score" : 100}})
+
+
+
+
+
+
+
+
+
