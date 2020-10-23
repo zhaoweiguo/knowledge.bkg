@@ -12,12 +12,12 @@ MongoDB的使用 [1]_
    mongodbs/select
    mongodbs/command
    mongodbs/index
+   mongodbs/sharded-cluster
    mongodbs/optimize
-   mongodbs/extend
    mongodbs/server
    mongodbs/practice
    mongodbs/question
-   mongodbs/sharded-cluster
+   mongodbs/extend
 
 
 

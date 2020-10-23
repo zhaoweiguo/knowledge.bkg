@@ -19,6 +19,7 @@ golang基础
 * https://github.com/quii/learn-go-with-tests
 * https://essential-go.programming-books.io/
 * https://www.freecodecamp.org/news/golang-tutorial-list-free-courses-learn-go-programming-language/
+* https://github.com/overnote/over-golang
 
 
 代码规范
@@ -235,7 +236,6 @@ web服务器
 --------
 
 * 后台框架: https://github.com/flipped-aurora/gin-vue-admin
-* https://github.com/wenjianzhang/go-admin
 * https://github.com/wenjianzhang/go-admin
 * https://github.com/LyricTian/gin-admin
 

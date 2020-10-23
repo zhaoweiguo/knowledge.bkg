@@ -1,6 +1,8 @@
 创建索引
 ########
 
+.. warning:: 线上创建索引时一定要写{background: true}。否则会对线上造成影响
+
 .. note:: 从3.0版本后使用 db.collection.createIndex()代替db.collection.ensureIndex(). ensureIndex() 还能用, 但只是 createIndex() 的别名
 
 语法::
@@ -15,16 +17,16 @@
 
     这种索引创建方式会阻塞数据库的所有读写操作，直到索引建立完成
 
-    db.col.createIndex({"title":1})   // 1是升续 2是降续
+    db.col.createIndex({"title":1}, {background: true})   // 1是升续 2是降续
 
     创建唯一索引:
-    db.collection.createIndex({filed.subfield:1/-1}, {unique:true});
+    db.collection.createIndex({filed.subfield:1}, {unique:true, background: true});
 
     // 创建多列索引:
-    db.collection.createIndex({field1:1/-1, field2:1/-1});
+    db.collection.createIndex({field1:1, field2:1}, {background: true});
 
     // 创建子文档索引:
-    db.collection.createIndex({filed.subfield:1/-1});
+    db.collection.createIndex({filed.subfield:1}, {background: true});
 
 后台创建方式::
 
@@ -38,7 +40,6 @@
 
 
 
-.. warning:: 线上创建索引时一定要写{background: true}。否则会对线上造成影响
 
 限制::
 

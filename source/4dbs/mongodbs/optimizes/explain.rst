@@ -29,21 +29,7 @@ find函数的explain::
     cursor.explain(verbosity)   为一个游标返回其查询执行计划(Reports on the query execution plan for a cursor)
     cursor.explain(verbosity) 最通常的行式为db.collection.find().explain()。其中verbosity说明返回信息的粒度。
 
-db.collection.explain().find()::
 
-    该方法与db.collection.find().explain()类似，但是存在以下关键差异
-
-    The db.collection.explain() method wraps the explain command and is the preferred way to run explain.
-    db.collection.explain().find() is similar to db.collection.find().explain() with the following key differences:
-
-    The db.collection.explain().find() construct allows for the additional chaining of query modifiers. 
-    For list of query modifiers, see db.collection.explain().find().help().
-
-    The db.collection.explain().find() returns a cursor, which requires a call to .next(), or its alias .finish(), 
-    to return the explain() results. If run interactively in the mongo shell, the mongo shell
-     automatically calls .finish() to return the results. For scripts, however, you must explicitly call .next(), 
-     or .finish(), to return the results. For list of cursor-related methods, see db.collection.explain().find().help().
-    db.collection.explain().aggregate() is equivalent to passing the explain option to the db.collection.aggregate() method.
 
 获取explain的支持的运算方法::
 
@@ -88,7 +74,7 @@ db.collection.explain().find()::
 
 
 
-
+executionStats 就是执行 queryPlanner.winningPlan 这个计划时的统计信息
 
 
 

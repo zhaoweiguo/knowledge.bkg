@@ -19,8 +19,28 @@ MongoDB 分片集群的三个组件::
    MongoDB 分片集群的架构图
 
 
+查看集合是否分片 [1]_
+=====================
+
+在config 库中查询::
+
+    db.collections.find({$and:
+        [
+        {'dropped':{$ne:true}},  // 没有被删除的
+         {'name':'/dbname/'}]  // 根据数据库名进行模糊查询
+    })
+
+查看数据分布::
+
+    use dbname
+    db.colname.getShardDistribution() #可以查看数据分布
+
+最简单的方法::
+
+    use databaseName;
+    db.collectionName.stats().sharded #简单的返回true或者false
 
 
 
 
-
+.. [1] https://blog.csdn.net/zhanaolu4821/article/details/88198905

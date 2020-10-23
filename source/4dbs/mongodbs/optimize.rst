@@ -8,6 +8,7 @@
    optimizes/normal
    optimizes/command
    optimizes/explain
+   optimizes/query_plan
 
 
 

@@ -93,6 +93,7 @@
 
 shard cluster表查询::
 
+    > db.log.stats();
     {
         sharded: true,                          // 此表为shard表
         capped: false,
@@ -128,7 +129,7 @@ shard cluster表查询::
 other
 =====
 
-::
+查看此DB下慢查询大于5s的::
 
     db.system.profile.find({millis:{$gt:5000}})
 

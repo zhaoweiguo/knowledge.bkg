@@ -167,3 +167,7 @@ Welcome to the Geth JavaScript console!
 看到最后的
 Welcome to the Geth JavaScript console!
 说明启动成功
+
+
+
+
