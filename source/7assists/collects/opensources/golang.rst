@@ -190,6 +190,7 @@ lib工具
 * web框架: https://github.com/astaxie/beego
 * web框架: https://github.com/caddyserver/caddy
 * web框架: https://github.com/go-martini/martini
+* https://github.com/kataras/iris
 * https://github.com/gorilla/mux
 * web框架(cayley): https://github.com/gobuffalo/packr
 

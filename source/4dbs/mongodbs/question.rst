@@ -44,9 +44,22 @@ db.collection.explain().find()方法与db.collection.find().explain()类似，�
     db.collection.explain().aggregate() is equivalent 
         to passing the explain option to the db.collection.aggregate() method.
 
+创建索引时注意不要有空格::
 
+    当使用db.<table>.createIndex({"user_id ":1}, {background: true})
+    [
+        {
+            v: 2,
+            key: {
+                user_id: 1
+            },
+            name: "user_id_ 1",
+            ns: "db.<table>",
+            background: true
+        }
+    ]
 
-
+    这样索引使用的key是"user_id "而不是"user_id"
 
 
 

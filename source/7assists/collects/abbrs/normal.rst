@@ -188,6 +188,9 @@ S
 * SaaS: Software as a Service(软件服务化)
 * SASL: System Architecture Support Libraries
 * SIG: Special Interest Group
+* SLA: Service Level Agreement(服务等级协议)
+* SLI: Service Level Indicator(服务等级对象)
+* SLO: Service Level Objective(服务等级目标)
 * SMTP: Simple Mail Transfer Protocol 
 * SNAT: 源地址转换(Source NAT)
 * SNMP: Simple Network Management Protocol

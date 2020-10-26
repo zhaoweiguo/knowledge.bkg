@@ -9,6 +9,7 @@
    optimizes/command
    optimizes/explain
    optimizes/query_plan
+   optimizes/origin_explain
 
 
 
