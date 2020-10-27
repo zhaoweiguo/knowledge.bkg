@@ -14,6 +14,7 @@
    normals/Paxos
    normals/BASE
    normals/ACID
+   normals/consistent_hash
 
 
 

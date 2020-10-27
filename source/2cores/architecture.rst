@@ -15,7 +15,6 @@
    architectures/network_agent
    architectures/message_bus
    architectures/design_mode
-   architectures/distributed_system
    architectures/sla
    architectures/other
 
