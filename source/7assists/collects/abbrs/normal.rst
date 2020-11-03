@@ -1,6 +1,12 @@
 常用
 ####
 
+
+3
+---
+
+* 3GPP: 3rd Generation Partnership Project，也就是第三代合作伙伴计划
+
 A
 ----
 

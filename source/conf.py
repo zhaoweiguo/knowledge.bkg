@@ -299,7 +299,9 @@ todo_include_todos = True
 ### ==sphinxcontrib.plantuml插件====================
 
 # add extra command by Gordon
-plantuml = 'java -DPLANTUML_LIMIT_SIZE=24384 -jar /usr/local/bin/plantuml.jar'
+cwd = os.getcwd()
+plantuml = 'java -DPLANTUML_LIMIT_SIZE=24384 -jar %s' % os.path.join(cwd, "plantuml.jar")
+# plantuml = "java -DPLANTUML_LIMIT_SIZE=24384 -jar "+ os.environ.get("PLANTUML_JAR")
 plantuml_output_format = 'svg'   # default: png
 plantuml_latex_output_format = 'png'  # default: png
 

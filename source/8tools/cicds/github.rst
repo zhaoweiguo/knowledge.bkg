@@ -49,6 +49,20 @@ Download-Artifact
     - name: Display structure of downloaded files
       run: ls -R
 
+webhook
+-------
+
+* 官网: https://github.com/marketplace/actions/fast-webhook
+
+实例::
+
+    uses: jasongitmail/fast-webhook@v1
+    with:
+      url: ${{ secrets.WEBHOOK_URL }}
+      json: '{"foo": "bar"}'
+
+
+
 Sphinx Build
 ------------
 

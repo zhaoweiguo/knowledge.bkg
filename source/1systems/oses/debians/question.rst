@@ -31,3 +31,15 @@
   查看cpu是多少位的:
     #more /proc/cpuinfo
 
+
+error: error creating symbolic link '/usr/share/man/man1/xxx' [1]_ ::
+
+    在debian中安装软件时报上面错误，解决方法:
+    $ mkdir -p /usr/share/man/man1
+
+
+
+
+
+
+.. [1] https://github.com/ammaraskar/sphinx-action/issues/18

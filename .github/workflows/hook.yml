@@ -9,7 +9,7 @@ jobs:
       uses: jasongitmail/fast-webhook@v1
       with:
         url: ${{ secrets.WEBHOOK_URL }}
-        json: '{"path":"/var/www/knowledge", "branch": "master", "actions": ["pull", "make", "make clean"]}'
+        json: '{"path":"/var/www/knowledge", "branch": "master", "actions": ["pull", "make"]}'
 
 
 
