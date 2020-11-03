@@ -1,6 +1,9 @@
 镜像源
 ############
 
+debian镜像源
+============
+
 修改镜像源操作::
 
     $> tee /etc/apt/sources.list <<-'EOF'

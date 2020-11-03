@@ -12,5 +12,6 @@
    laws/dunbar'snumber
    laws/Benford'slaw
    laws/Zipf'slaw
+   laws/ruleofthree
 
 

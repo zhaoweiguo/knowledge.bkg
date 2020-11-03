@@ -1,4 +1,4 @@
-k3s
+k3s&k3d
 #######
 
 * github [1]_
@@ -10,12 +10,12 @@ k3s
 
 使用脚本安装::
 
-    $ wget -q -O - https://raw.githubusercontent.com/rancher/k3d/master/install.sh | bash
+    $ wget -q -O - https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
     # 或
-    $ curl -s https://raw.githubusercontent.com/rancher/k3d/master/install.sh | bash
+    $ curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
 
     # 安装指定版本
-    $ curl -s https://raw.githubusercontent.com/rancher/k3d/master/install.sh | TAG=v1.3.4 bash
+    $ curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v1.3.4 bash
 
 使用 Homebrew 安装::
 

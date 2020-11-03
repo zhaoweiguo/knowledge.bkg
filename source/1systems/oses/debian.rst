@@ -8,13 +8,10 @@ ubuntu/debian专用
    :maxdepth: 2
 
    debians/proxy
-   debians/apt-get
-   debians/debian_dpkg
-   debians/debian_aptitude
-   debians/debian_question
-   debians/debian_upgrade
-   debians/ubuntu_upgrade
-   debians/debian_desktop
+   debians/apt
+   debians/question
+   debians/upgrade
+   debians/desktop
 
 
 debian::

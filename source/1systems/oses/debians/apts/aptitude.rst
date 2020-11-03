@@ -1,4 +1,4 @@
-.. _os_ubuntu_aptitude:
+.. _os_aptitude:
 
 aptitude使用快速参考
 ======================

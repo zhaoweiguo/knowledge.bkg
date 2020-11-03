@@ -14,8 +14,8 @@ logrus 的作者观点一样，"核心不是性能"::
 * github: https://github.com/sirupsen/logrus ::
 
     logrus是目前Github上star数量最多的日志库
-    star数量: 8.1k(201808) -> 13.4k(20191024)
-    fork数: 1031(201808) -> 1.5k
+    star数量: 8.1k(201808) -> 13.4k(20191024) -> 16.3k(20201027)
+    fork数: 1031(201808) -> 1.5k -> 1.8k
     开源协议: MIT
 
 设置打印格式::
@@ -67,9 +67,13 @@ logrus 的作者观点一样，"核心不是性能"::
 * zap是Uber推出的一个快速、结构化的分级日志库 https://github.com/uber-go/zap::
   
     具有强大的ad-hoc分析功能，并且具有灵活的仪表盘
-    star数量: 4.3k(201808) -> 8.6k(20191024)
+    star数量: 4.3k(201808) -> 8.6k(20191024)  -> 11k(20201027)
     开源协议: MIT
 
 * seelog提供了灵活的异步调度、格式化和过滤功能: 
 * zerolog: https://github.com/rs/zerolog
+
+
+
+
 

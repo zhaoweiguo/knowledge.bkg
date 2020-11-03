@@ -1,5 +1,5 @@
 pip的使用
-=================
+#########
 
 
 
@@ -73,4 +73,19 @@ PS -- 包安装后的py文件路径：/usr/local/lib/python2.7/dist-packages
     $ pip config unset global.index-url
 
 
+requirements.txt
+================
+
+生成requirements.txt的方法::
+
+    1. 适用于「单虚拟环境」
+    pip freeze > requirements.txt
+    说明: 会将环境中的依赖包全都加入，所以只适合「单虚拟环境」
+    2. 推荐用法: 使用pipreqs
+    pip install pipreqs
+    pipreqs . --encoding=utf8 --force
+
+使用requirements.txt安装依赖的方法::
+
+    $ pip install -r requirements.txt
 

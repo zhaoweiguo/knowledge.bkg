@@ -1,5 +1,6 @@
 常见问题
 =============
+
 64位ubuntu14.04运行32位程序::
 
   sudo dpkg --add-architecture i386

@@ -10,6 +10,7 @@ CI/CD相关
    cicds/ops
    cicds/jenkins
    cicds/drone
+   cicds/github
    cicds/tekton
    cicds/argo
    cicds/gitlab

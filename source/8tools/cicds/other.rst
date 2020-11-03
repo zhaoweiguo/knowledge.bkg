@@ -122,7 +122,10 @@ screwdriver
 
 * https://screwdriver.cd/
 
+CircleCI
+========
 
+* https://circleci.com/
 
 
 

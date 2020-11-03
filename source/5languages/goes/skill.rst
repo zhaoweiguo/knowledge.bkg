@@ -12,6 +12,7 @@
    skills/color
    skills/run_order
    skills/deep_copy
+   skills/gc
 
 
 

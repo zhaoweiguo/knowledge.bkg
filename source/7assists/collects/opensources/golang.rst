@@ -40,6 +40,8 @@ golang基础
 * replacement for Go's flag package: https://github.com/spf13/pflag
 * xlsx: https://github.com/tealeg/xlsx
 
+* json优化版: https://github.com/json-iterator/go
+
 Golang工具包
 ------------
 
@@ -178,6 +180,7 @@ lib工具
     https://github.com/sony/gobreaker
 
 * 表格: https://github.com/chenjiandongx/go-echarts
+* https://github.com/go-echarts/go-echarts
 * tail 工具库: https://github.com/hpcloud/taglshi
 
 
@@ -197,7 +200,12 @@ lib工具
 * 文件上传断点续传: https://github.com/tus/tusd
 
 * 轻量级TCP并发服务器框架: https://github.com/aceld/zinx
+
+微服务框架
+----------
+
 * go-zero is a web and rpc framework: https://github.com/tal-tech/go-zero
+* jupiter: https://github.com/douyu/jupiter
 
 grpc
 ----
@@ -285,8 +293,10 @@ DEVOPS
 * Status Page for monitoring your websites and applications: https://github.com/hunterlong/statping
 * 小米企业级监控平台: https://github.com/open-falcon/falcon-plus
 * 监控: https://github.com/open-falcon
-  
 
+* 监控,Top-like interface for container metrics: https://github.com/bcicen/ctop
+  
+* Like Prometheus, but for logs: https://github.com/grafana/loki
 
 微服务
 ------
@@ -319,6 +329,9 @@ DEVOPS
 
 * 企业级Kubernetes网络结构: https://github.com/alauda/kube-ovn
 
+* Kubernetes Operations (kops): https://github.com/kubernetes/kops
+* Purpose-built OS for Kubernetes: https://github.com/rancher/k3os
+* Application Deployment Engine for Kubernetes: https://github.com/rancher/rio
 
 podman
 ------
@@ -548,11 +561,12 @@ pprof
 * https://github.com/blushft/go-diagrams (基于dot)
 * https://github.com/mingrammer/diagrams (python版)
 
-屏幕共享
+共享
 --------
 
-* https://github.com/screego/server
+* 屏幕共享: https://github.com/screego/server
     * https://app.screego.net/
+* 文件共享: https://github.com/bitepeng/b0pass
 
 队列queue
 ---------
@@ -596,6 +610,11 @@ AI
 
 * Filecoin protocol in Go: https://github.com/filecoin-project/lotus
 * 比原链: https://github.com/Bytom/bytom
+
+电信相关
+--------
+
+* https://github.com/free5gc/free5gc
 
 
 资料

@@ -26,7 +26,10 @@ debian服务器安装依赖
     sudo apt-get install g++ libboost-dev libevent-dev python-dev 
     automake autoconf pkg-config libtool flex bison
 
+DEBIAN_FRONTEND 环境变量::
 
+    RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install nginx
+    如果设置为 "noninteractive"，你就可以直接运行命令，而无需向用户请求输入
 
 
 

@@ -1,3 +1,23 @@
+版本升级
+#####################
+
+Ubuntu版本升级
+==============
+
+::
+
+    查看Ubuntu 版本指令:
+    $ lsb_release -a
+
+    执行更新命令
+    $ apt-get update && apt-get dist-upgrade
+
+    升级
+    $ do-release-upgrade
+
+    重启服务器
+    $ reboot
+
 Debian升级
 ==========
 
@@ -21,6 +41,11 @@ Debian 8 直接升级到 Debian 9::
   apt-cdrom -m -d /cdrom/ add
   4.更新系统
   aptitude update && sudo aptitude dist-upgrade
+
+
+
+
+
 
 
 
