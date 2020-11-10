@@ -14,6 +14,16 @@ Rijndael密码的设计力求满足以下3条标准：
 ③ 设计简单。
 
 
+数字签名
+--------
+
+.. image:: /images/encrypts/digital_signature1.png
+
+
+
+
+
+
 
 
 

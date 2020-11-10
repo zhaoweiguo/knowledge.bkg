@@ -161,8 +161,9 @@ P
 -----
 
 * PaaS: Platform as a Service(平台即服务)
-* PERN: Postgres, Express, React, Node
 * PCRE: Perl Compatible Regular Expressions
+* PERN: Postgres, Express, React, Node
+* PFS: Perfect Forward Secrecy(前向安全性, SSL/TLS协议)
 * POP结点: Point of Presence(入网点，阿里)
 * POSIX: Portable Operating System Interface
 * Pull Request (PR)

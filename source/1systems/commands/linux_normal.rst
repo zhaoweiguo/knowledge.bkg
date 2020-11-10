@@ -24,6 +24,7 @@
    normals/find
    normals/exec
    normals/xargs
+   normals/json_pp
 
    normals/diff
    normals/sort

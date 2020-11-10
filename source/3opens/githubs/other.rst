@@ -20,8 +20,11 @@
   
     A tool for communities to measure and reward value creation
 
+团队
+====
 
-
+* github上有贡献的所有人都有记录: https://github.com/all-contributors/all-contributors
+* https://allcontributors.org/
 
 
 

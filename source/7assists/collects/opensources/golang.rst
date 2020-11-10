@@ -101,6 +101,9 @@ cli命令
 
 * https://github.com/urfave/cli
 * https://github.com/spf13/cobra
+* https://github.com/chriswalz/bit
+
+* beautiful terminal output: https://github.com/pterm/pterm
 
 辅助代码生成工具
 ----------------
@@ -298,6 +301,9 @@ DEVOPS
   
 * Like Prometheus, but for logs: https://github.com/grafana/loki
 
+
+* Prometheus Operator: https://github.com/prometheus-operator/prometheus-operator
+
 微服务
 ------
 
@@ -308,7 +314,6 @@ DEVOPS
 * https://github.com/derailed/k9s
 * helm: https://github.com/helm/helm
 
-* docker: https://github.com/docker
 * kubernetes: https://github.com/kubernetes/kubernetes
 * https://github.com/kubernetes/kubeadm
 * linuxkit: https://github.com/linuxkit/linuxkit
@@ -332,6 +337,15 @@ DEVOPS
 * Kubernetes Operations (kops): https://github.com/kubernetes/kops
 * Purpose-built OS for Kubernetes: https://github.com/rancher/k3os
 * Application Deployment Engine for Kubernetes: https://github.com/rancher/rio
+* Build and deploy Go applications on Kubernetes: https://github.com/google/ko
+* https://github.com/temporalio/temporal
+
+容器
+----
+
+* docker: https://github.com/docker
+* https://github.com/opencontainers/runc
+
 
 podman
 ------
@@ -344,6 +358,7 @@ k8s网络
 -------
 
 * networking plugins, maintained by the CNI team: https://github.com/containernetworking/plugins
+* flannel is a network fabric for containers, designed for Kubernetes: https://github.com/coreos/flannel
 
 k8s集群
 -------
@@ -497,6 +512,7 @@ P2P
 * A toolkit with common assertions and mocks: https://github.com/stretchr/testify
 * allure工具golang版: https://github.com/dailymotion/allure-go
         * https://github.com/allure-framework/allure1/wiki
+* https://github.com/DATA-DOG/go-sqlmock
 
 eBPF
 ----

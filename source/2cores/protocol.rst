@@ -12,6 +12,7 @@
 
 
    protocols/http
+   protocols/ssl_tls
    protocols/http2
    protocols/http3
    protocols/websocket
@@ -22,7 +23,6 @@
    protocols/dns
    protocols/amqp
    protocols/coap
-   protocols/ssl_tls
    protocols/dtls
    protocols/auth1
    protocols/auth2
