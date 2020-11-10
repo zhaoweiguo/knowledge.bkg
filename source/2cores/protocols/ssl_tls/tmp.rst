@@ -20,8 +20,11 @@ tls 协议的实现有多种，如::
 
     openssl, gnutls, nss, libressl, cyassl, polarssl, botan
 
-    openssl 的代码算是其中最混乱的，但是也是最久经考验的。 ( 请参见此打脸文： http://blog.csdn.net/dog250/article/details/24552307 )
-    个人觉得 polarssl 和 botan 的架构最清晰，代码风格清新可爱，便于学习理解协议（但是不建议在生产环境下用，例如 polarssl 功能尚有欠缺）。
+    openssl 的代码算是其中最混乱的，但是也是最久经考验的。 
+    请参见此打脸文： http://blog.csdn.net/dog250/article/details/24552307
+    
+    个人觉得 polarssl 和 botan 的架构最清晰，代码风格清新可爱，便于学习理解协议
+    但是不建议在生产环境下用，例如 polarssl 功能尚有欠缺
 
 
 

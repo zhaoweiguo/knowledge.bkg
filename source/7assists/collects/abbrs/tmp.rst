@@ -18,3 +18,10 @@
 * dash: --
 * hyphen: -
 * slash: /
+
+
+
+* CSHIA: China Smart Home Industry Alliance(智能家居产业联盟)
+
+
+

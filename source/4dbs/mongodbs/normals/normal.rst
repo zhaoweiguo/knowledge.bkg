@@ -4,7 +4,8 @@
 
 MongoDB Atlas::
 
-  a cloud-hosted service for provisioning, running, monitoring, and maintaining MongoDB deployments.
+  a cloud-hosted service for provisioning, running, monitoring, 
+    and maintaining MongoDB deployments.
 
 
 ::

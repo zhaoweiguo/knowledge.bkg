@@ -16,8 +16,6 @@ mongo基本
 
    normals/normal
    normals/architecture
-   normals/replica_set
-   normals/sharding_cluster
    normals/history
 
 

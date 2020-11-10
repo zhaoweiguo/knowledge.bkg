@@ -12,6 +12,7 @@ MongoDB的使用 [1]_
    mongodbs/select
    mongodbs/command
    mongodbs/index
+   mongodbs/replica-set
    mongodbs/sharded-cluster
    mongodbs/optimize
    mongodbs/server

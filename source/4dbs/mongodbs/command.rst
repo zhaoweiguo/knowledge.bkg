@@ -12,7 +12,6 @@
    commands/insert
    commands/update
    commands/array
-   commands/sharded
    commands/view
    commands/aggregate
    commands/user
