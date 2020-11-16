@@ -25,7 +25,7 @@ struct结构
         x, y int    // 字段名 x 和 y
     }
 
-实使化::
+实例化::
 
     var t T         // 给 t 分配内存，并零值化内存，这时 t 是类型T
     t := new(T)     // 变量 t 是一个指向 T的指针, 即*T
@@ -48,7 +48,7 @@ struct结构
         Room int    `json:"Roomid"` // 结构体标签
     }
     func main() {
-        st := Student{"Titan", 14, 102}
+        st := Student{"Titan", 14}
         fmt.Println(reflect.TypeOf(st).Field(0).Tag)  // 学生名字
         fmt.Println(reflect.TypeOf(st).Field(1).Tag)  // json:"Roomid"
     }

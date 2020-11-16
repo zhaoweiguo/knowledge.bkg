@@ -13,7 +13,6 @@ Mac相关
    :maxdepth: 2
 
    macs/mac_normal
-   macs/mac_develop
    macs/mac_tool
    macs/mac_soft
    macs/brew

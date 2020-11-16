@@ -12,9 +12,11 @@
 .. toctree::
    :maxdepth: 1
 
+   8tools/k8s
    8tools/docker
    8tools/cicd
    8tools/monitor
+   8tools/servicemesh
    8tools/testing
    8tools/mqtt
    8tools/wireshark

@@ -64,10 +64,23 @@ Your connection is not private [1]_ [2]_ ::
     存盲打「thisisunsafe」解决
     In the chrome browser whilst on the page, type “thisisunsafe”
 
+如何开启一个热点
+================
+
+第一步，先连上有线
+第二步，共享wifi设置
+
+.. image:: /images/macs/wifi_hotpot1.png
 
 
 
+第3步，设置WiFi密码：
 
+.. image:: /images/macs/wifi_hotpot2.png
+
+备注:
+
+.. image:: /images/macs/wifi_hotpot2.png
 
 
 

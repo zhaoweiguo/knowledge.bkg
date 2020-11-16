@@ -7,8 +7,6 @@ Docker相关
 
    dockers/normal
    dockers/docker
-   dockers/k8s
-   dockers/istio
    dockers/nomad
    dockers/rancher
    dockers/language

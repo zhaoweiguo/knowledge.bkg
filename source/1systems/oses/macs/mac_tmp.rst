@@ -50,7 +50,12 @@ mac计算器::
   REC（x,y）作用与之相反
 
 
+多屏显示
+========
 
+* Mac 外接显示器的显示模式及设置教程: http://www.pc6.com/edu/80824.html
+* Mac 多屏幕设置主屏幕的小技巧: https://www.v2ex.com/t/166489
+* 6 款好用的 Mac 分屏软件推荐: https://www.v1tx.com/post/best-mac-split-screen-app/
 
 
 

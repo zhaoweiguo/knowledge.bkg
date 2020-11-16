@@ -444,6 +444,8 @@ CI&CD&Git
 * 自动生成测试用例工具(已集成至各ide): https://github.com/cweill/gotests
   
 * a tool to build, deploy, and release any application on any platform: https://github.com/hashicorp/waypoint
+  
+* A command line tool to execute Go functions: https://github.com/shurcooL/goexec
 
 调试工具
 --------
@@ -534,7 +536,7 @@ filesystem
 --------
 
 * https://github.com/link1st/go-stress-testing
-* https://github.com/wg/wrk
+* c语言版: https://github.com/wg/wrk
 * 负载工具类似ab: https://github.com/rakyll/hey
 * HTTP load testing tool and library. It's over 9000!: https://github.com/tsenart/vegeta
 

@@ -6,6 +6,7 @@ k8s 原理
    :maxdepth: 1
    :caption: k8s 原理
 
+   principles/normal
    principles/api-server
    principles/scheduler
    principles/client-go

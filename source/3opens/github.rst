@@ -10,6 +10,7 @@ GitHub [1]_
    githubs/gitpod
    githubs/command
    githubs/plugin
+   githubs/GitHubAction
    githubs/history
    githubs/other
 

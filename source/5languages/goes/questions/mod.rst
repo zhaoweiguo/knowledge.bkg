@@ -76,7 +76,8 @@ kubernetes client-go依赖报错
 
 问题::
 
-    cannot find module providing package k8s.io/api/admissionregistration/v1alpha1 when compiling operator-sdk
+    cannot find module providing package k8s.io/api/xxxx/v1alpha1 
+        when compiling operator-sdk
 
 解决::
 
@@ -87,7 +88,8 @@ kubernetes client-go依赖报错
 
 github issue中解释如下 [2]_ ::
 
-    Related issue is that go get k8s.io/client-go@latest resolves to v11.0.0+incompatible not v0.18.2.
+    Related issue is that go get k8s.io/client-go@latest 
+        resolves to v11.0.0+incompatible not v0.18.2.
     Should I break this off as a separate discussion?
 
     Unfortunately, that is not possible to resolve. 
@@ -97,7 +99,7 @@ github issue中解释如下 [2]_ ::
 原因应该是这样的::
 
     go get命令是会自动的下载版本最新的(这儿是v11.0.0)
-    但实际上v12.0.0的下一版本是v1.12.10也就是v0.12.10?
+    但实际上v12.0.0的下一版本是v0.12.10也就是kubernetes-1.12.10
 
     另: 下面2个tag是同一个commit
     分支: origin/release-13.0
