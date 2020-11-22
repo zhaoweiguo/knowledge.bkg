@@ -204,6 +204,8 @@ lib工具
 
 * 轻量级TCP并发服务器框架: https://github.com/aceld/zinx
 
+* rendering JSON, XML: https://github.com/unrolled/render
+
 微服务框架
 ----------
 

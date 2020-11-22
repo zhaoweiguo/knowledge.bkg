@@ -2,6 +2,8 @@ Fiddler
 #######
 
 * 官网: https://www.telerik.com/fiddler
+* Fiddler Everywhere: https://www.telerik.com/download/fiddler-everywhere
+* Fiddler Classic: https://www.telerik.com/download/fiddler
 
 说明::
 

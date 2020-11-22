@@ -1,3 +1,4 @@
-sphinx==1.6.5
-sphinx-rtd-theme==0.2.4
-sphinx-sitemap==0.2
+sphinx==3.1.2
+sphinx-rtd-theme==0.5.0
+sphinx-sitemap==2.2.0
+recommonmark==0.6.0

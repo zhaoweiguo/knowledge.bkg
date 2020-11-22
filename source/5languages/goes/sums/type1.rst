@@ -325,9 +325,8 @@ map数据类型::
     select {
         case v := <-c:
             println(v)
-        case <- time.After(5 * time.Second):
+        case <- time.After(5 * time.Second):   // 因为有default,所以永远不会执行到这儿
             println("time out")
-            o <- true
             break
         default:
             println("default")

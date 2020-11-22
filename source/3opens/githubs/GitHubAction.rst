@@ -14,6 +14,7 @@ Github Action
    GitHubActions/normal
    GitHubActions/plugin_normal
    GitHubActions/plugin_issue
+   GitHubActions/plugin_db
 
 
 

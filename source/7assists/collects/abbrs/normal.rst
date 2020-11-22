@@ -56,10 +56,12 @@ D
 * DBaaS: Database as a Service
 * DCL: Data Cached Layer
 * DDD: Domain-Driver Design, 领域驱动设计
+* DDoS: Distributed DoS(分布式拒绝服务)
 * DHT: Distributed Hash Table，分布式哈希表
 * DNAT: 目的地址转换(Destination NAT)
 * DNN: 深度神经网络（Deep Neural Network, DNN）
 * DNS: Domain Name System 
+* DoS: Denial of Service(拒绝服务)
 * DSS: Data Storage Segregation(数据存储隔离)
 * DST: Daylight Saving Time(夏令时)
 * DTLS(Datagram Transport Layer Security)
@@ -89,6 +91,7 @@ G
 * GDPR: General Data Protection Regulation, 通用数据保护条例(欧洲联盟的条例)
 * GE: General Electrical(美国通用电气, 又称奇异公司)
 * GNU: GNU is Not Unix 
+* GPG: GnuPG(加密)
 * GPL——General Public License
 * GSA: Google Search Appliance
 * GUI——Graphical User Interface
@@ -99,6 +102,7 @@ H
 ---
 
 * HTTP: HyperText Transfer Protocol 
+* HTML: HyperText Markup Language
 
 I
 ----
@@ -164,6 +168,7 @@ P
 * PCRE: Perl Compatible Regular Expressions
 * PERN: Postgres, Express, React, Node
 * PFS: Perfect Forward Secrecy(前向安全性, SSL/TLS协议)
+* PGP: Pretty Good Privacy(1991, 加密)
 * POP结点: Point of Presence(入网点，阿里)
 * POSIX: Portable Operating System Interface
 * Pull Request (PR)

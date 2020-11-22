@@ -13,6 +13,7 @@
    collects/paper
    collects/keyword
    collects/product
+   collects/resource
 
 
 
