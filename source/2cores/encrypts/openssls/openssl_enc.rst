@@ -1,3 +1,5 @@
+.. _openssl_enc:
+
 openssl enc命令
 ###############
 
