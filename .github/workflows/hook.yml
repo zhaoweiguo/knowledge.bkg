@@ -5,11 +5,11 @@ jobs:
     name: Hook
     runs-on: ubuntu-latest
     steps:
-    - name: Hook
-      uses: jasongitmail/fast-webhook@v1
-      with:
-        url: ${{ secrets.WEBHOOK_URL }}
-        json: '{"path":"/var/www/knowledge", "branch": "master", "actions": ["pull", "make"]}'
+    # - name: Hook
+    #   uses: jasongitmail/fast-webhook@v1
+    #   with:
+    #     url: ${{ secrets.WEBHOOK_URL }}
+    #     json: '{"path":"/var/www/knowledge", "branch": "master", "actions": ["pull", "make"]}'
 
 
     - name: Start
