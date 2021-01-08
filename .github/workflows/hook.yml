@@ -57,7 +57,7 @@ jobs:
             "msgtype": "link",
             "link": {
                 "title": "GitHubAction",
-                "text": "[GitHubAction]knowledge is done!",
+                "text": "[GitHubAction]knowledge src is done!",
                 "picUrl": "",
                 "messageUrl": "https://knowledge.zhaoweiguo.com"
             }
