@@ -11,7 +11,6 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
-   mysqls/mysql_command
    mysqls/mysql_user
    mysqls/mysql_question
 
