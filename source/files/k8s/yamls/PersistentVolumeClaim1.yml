@@ -3,6 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: disk-ssd-ruler-eureka0
   namespace: default
+  annotations:
+    pv.kubernetes.io/provisioned-by: alicloud/disk
 spec:
   accessModes:
     - ReadWriteOnce
@@ -14,6 +16,9 @@ spec:
       alicloud-pvname: d-2zeetkf4u46w1vj3r2jf
   storageClassName: disk
   volumeName: d-2zeetkf4u46w1vj3r2jf
+status:
+  phase: Bound
+
 
 
 
