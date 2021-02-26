@@ -170,6 +170,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
+html_sidebars = { '**': ['localtoc.html', 'globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }  # 2021-02在sphinx_rtd_theme下不起作用但在default下有作用
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
