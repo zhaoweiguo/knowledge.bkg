@@ -1,8 +1,26 @@
-数据索引index
+API-index
 #############
 
+结构::
 
-通过索引值或索引标签获取数据::
+    Index(data=None, dtype=None, copy=False, name=None, tupleize_cols=True, **kwargs)
+    参数:
+    data: array-like (1-dimensional)
+    dtype: NumPy dtype (default: object)
+    copy: bool
+    name: object
+    tupleize_cols: bool (default: True)
+
+说明::
+
+    Immutable sequence used for indexing and alignment. 
+    The basic object storing axis labels for all pandas objects.
+
+
+
+
+
+实例::
 
     In [57]: s4 = pd.Series(np.array([1,1,2,3,5,8]))
         ...: print(s4.index)

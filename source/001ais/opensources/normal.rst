@@ -1,8 +1,9 @@
-机器学习
-########
+常用
+####
 
 快速学习
 ========
+
 
 * https://github.com/Avik-Jain/100-Days-Of-ML-Code
 
@@ -10,4 +11,8 @@
 * https://github.com/askmike/gekko
 * Decentralized websites using Bitcoin crypto and BitTorrent network: https://github.com/HelloZeroNet/ZeroNet
 * https://github.com/d2l-ai/d2l-en
+
+
+
+
 

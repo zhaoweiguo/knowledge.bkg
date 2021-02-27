@@ -13,7 +13,8 @@
 
 
 * 快速学习——Comparison with SQL: https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html
-
+* API reference: https://pandas.pydata.org/docs/reference/index.html
+* User Guide: https://pandas.pydata.org/docs/user_guide/index.html
 
 
 

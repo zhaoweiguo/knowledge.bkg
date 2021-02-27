@@ -1,7 +1,56 @@
-实现Excel的数据透视表功能
-#########################
+API-General functions
+#####################
 
-pivot_table函数的语法和参数::
+.. sidebar:: Contents
+
+    .. contents::
+
+
+Constructor
+===========
+
+简介::
+
+    One-dimensional ndarray with axis labels (including time series).
+
+结构::
+
+    Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
+
+参数::
+
+    data: array-like, Iterable, dict, or scalar value
+    index: array-like or Index (1d)
+    dtype: str, numpy.dtype, or ExtensionDtype, optional
+    name: str, optional
+    copy: bool, default False
+
+实例::
+
+    >>> d = {'a': 1, 'b': 2, 'c': 3}
+    >>> ser = pd.Series(data=d, index=['a', 'b', 'c'])
+    >>> ser
+    a   1
+    b   2
+    c   3
+    dtype: int64
+
+实例::
+
+    >>> d = {'a': 1, 'b': 2, 'c': 3}
+    >>> ser = pd.Series(data=d, index=['x', 'y', 'z'])
+    >>> ser
+    x   NaN
+    y   NaN
+    z   NaN
+    dtype: float64
+
+
+
+pivot_table
+===========
+
+语法::
 
     pivot_table(data,values=None,
                 index=None,
@@ -20,6 +69,10 @@ pivot_table函数的语法和参数::
     margins：是否进行行或列的汇总，默认不汇总
     dropna：默认所有观测为缺失的列
     margins_name：默认行汇总或列汇总的名称为'All'
+
+实例
+----
+
 
 
 仍然以 :ref:`student <pandas_example_subset>` 表为例，来认识一下数据透视表pivot_table函数的用法::
@@ -88,6 +141,12 @@ pivot_table函数的语法和参数::
     Sex             F       M      F       M          F          M
     Height  60.588889   63.91   62.5   64.15   5.018328   4.937937
     Weight  90.111111  108.95   90.0  107.25  19.383914  22.727186
+
+
+
+
+
+
 
 
 

@@ -14,17 +14,23 @@ Pandas
    :maxdepth: 2
 
    pandas/normal
-   pandas/Series
-   pandas/DataFrame
-   pandas/index
-   pandas/example_file
    pandas/example_subset
    pandas/example_analysis
    pandas/example_sql
    pandas/example_default_value
-   pandas/example_excel
    pandas/example_multi_index
-   pandas/practice_2012ObamaElect
+   pandas/practice
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: API
+
+   pandas/api_input_output
+   pandas/api_General
+   pandas/api_Series
+   pandas/api_DataFrame
+   pandas/api_Index
 
 
 

@@ -1,7 +1,7 @@
-导入,导出数据
-#############
+API-输入输出
+############
 
-导入数据
+Flat file
 =============
 
 csv文档：read_csv函数::
@@ -15,34 +15,6 @@ csv文档：read_csv函数::
     header=None — csv自动识别第一行为表头，若第一行不是表头，需要指定None
     nrows=500 — 指定读取的行数
     encoding='utf-8' — 若导入中文，需设置该参数
-
-excel文档：read_excel函数::
-
-    dataset = pd.read_excel('winequality-red.xlsx', index_col=0, parse_dates=True)
-
-    *args:
-    同read_csv函数
-
-txt文档：open函数::
-
-    with open('winequality-red.txt', mode='r') as f:
-       print(f.read())  #返回文档全部内容
-       print(f.readlines())  #逐行返回文档全部内容
-       print(f.readline())  #返回一行内容
-
-json文档：json包::
-
-    import json
-    with open('winequality-red.json') as f:
-       data = json.load(f)
-       for dict_data in data:  #遍历每个字典
-          print(dict_data)
-
-遍历文件夹中的文档：os包::
-
-    import os
-    path = os.getcwd()
-    os.listdir(path)  #生成文件名的list
 
 Special Case：数据量过大 — 使用chunk size::
 
@@ -62,6 +34,31 @@ Special Case：数据量过大 — 使用chunk size::
           print('Iteration is stopped')
     print('开始合并')
     data = pd.concat(chunks, ignore_index=True)  #将小块合并起来
+
+
+Excel
+=====
+
+
+excel文档：read_excel函数::
+
+    dataset = pd.read_excel('winequality-red.xlsx', index_col=0, parse_dates=True)
+
+    *args:
+    同read_csv函数
+
+
+JSON
+====
+
+
+json文档：json包::
+
+    import json
+    with open('winequality-red.json') as f:
+       data = json.load(f)
+       for dict_data in data:  #遍历每个字典
+          print(dict_data)
 
 导出数据
 ========
@@ -90,9 +87,22 @@ Special Case：数据量过大 — 使用chunk size::
 
 
 
+其他
+====
+
+txt文档：open函数::
+
+    with open('winequality-red.txt', mode='r') as f:
+       print(f.read())  #返回文档全部内容
+       print(f.readlines())  #逐行返回文档全部内容
+       print(f.readline())  #返回一行内容
 
 
+遍历文件夹中的文档：os包::
 
+    import os
+    path = os.getcwd()
+    os.listdir(path)  #生成文件名的list
 
 
 

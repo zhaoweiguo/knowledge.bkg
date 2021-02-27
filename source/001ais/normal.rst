@@ -1,19 +1,13 @@
-AI相关
+常用
 #########
 
 .. toctree::
    :glob:
    :maxdepth: 1
 
-   ais/ml
-   ais/deep_learning
-   ais/tensorflow
-   ais/pytorch
-   ais/mxnet
-   ais/alphaGo
-   ais/kubeflow
-   ais/bi
-   ais/other
+   normals/ml
+   normals/bi
+   normals/other
 
 
 * Artificial Intelligence

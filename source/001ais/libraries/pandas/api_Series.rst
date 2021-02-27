@@ -1,5 +1,17 @@
-Series的创建
+API-Series
 ############
+
+Constructor
+===========
+
+结构::
+
+    Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
+
+说明::
+
+    Read a comma-separated values (csv) file into DataFrame.
+
 
 Series的创建::
 
@@ -28,6 +40,22 @@ Series的创建::
       {'a': 10, 'b': 20, 'c': 30, 'd': 40, 'e': 50}
       <class 'dict'>
     3. 通过DataFrame中的某一行或某一列创建序列
+
+
+
+Attributes
+==========
+
+Series.index::
+
+    The index (axis labels) of the Series.
+    返回值类型:
+      Series.index
+
+
+
+
+
 
 
 
