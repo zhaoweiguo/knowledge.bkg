@@ -43,6 +43,46 @@ list,tuple,dict实例::
     print(dict_of_lists['Marxes'][1])   # Chico
 
 
+判断一个数据类型 X 是不是可变类型
+=================================
+
+说明::
+
+    1. 麻烦方法
+        先使用 id(X) 函数，再对 X 进行某种操作，再使用id(X)函数，比较操作前后的 id，
+        a. 如果不一样，则 X 不可变，
+        b. 如果一样，则 X 可变。
+    2. 便捷方法
+        用 hash(X)，
+        a. 只要不报错，证明 X 可被哈希，即不可变，
+        b. 反过来不可被哈希，即可变
+
+id函数实例::
+
+    i = 1
+    print(id(i))  # 140732167000896
+    i = i + 2
+    print(id(i))  # 140732167000960
+
+    l = [1, 2]
+    print(id(l))  # 4300825160
+    l.append('Python')
+    print(id(l))  # 4300825160
+
+hash函数实例::
+
+    print(hash('Name'))  # 7047218704141848153
+
+    print(hash((1, 2, 'Python')))  # 1704535747474881831
+
+    print(hash([1, 2, 'Python']))
+    # TypeError: unhashable type: 'list'
+    
+    print(hash({1, 2, 3}))
+    # TypeError: unhashable type: 'set'
+
+.. note:: 数值、字符和元组 都能被哈希，因此它们是不可变类型。列表、集合、字典不能被哈希，因此它是可变类型。
+
 
 
 

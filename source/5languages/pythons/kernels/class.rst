@@ -124,7 +124,7 @@
 属性getter 和 setter方法
 ========================
 
-若沒有给定setter函数，则无法通过property()來改变属性值::
+方法一: 若沒有给定setter函数，则无法通过property()來改变属性值::
 
     class Duck():
         def __init__(self, input_name):
@@ -150,7 +150,7 @@
 
     print('\n设定名称时，则调用set函数')
     fowl.name = 'Daffy'
-    print('nname被改成Daffy')
+    print('nname被改成Daffy:')
     print(fowl.name)
 
     print('\n当然也可以通过原始的set_name()与get_name()进行修改私有属性')
@@ -158,7 +158,26 @@
     fowl.set_name('Daffyyyy')
     print(fowl.get_name())
 
-通过装饰器::
+    输出:
+    提取名称时，则调用get函数
+    ---使用get函数---
+    Howard!!
+
+    设定名称时，则调用set函数
+    ---使用set函数---
+    nname被改成Daffy
+    ---使用get函数---
+    Daffy??!!
+
+    当然也可以通过原始的set_name()与get_name()进行修改私有属性
+    ---使用get函数---
+    Daffy??!!
+    ---使用set函数---
+    ---使用get函数---
+    Daffyyyy??!!
+
+
+方法二: 通过装饰器::
 
     class Duck():
         def __init__(self, input_name):
@@ -228,11 +247,12 @@ classmethod::
         
         @classmethod        #类方法(methond)
         def kids(cls):
-            print("A has", cls.count, "little objects.")
+            print("A has", cls.count, " objects.")  # A has 3 objects.
+            print("A has", A.count, " objects.")    # A has 3 objects.
             
         @classmethod        #类方法(methond)
         def kids2(A):
-            print("A has", A.count, "little objects.")
+            print("A has", A.count, " objects.")    # A has 3 objects.
 
     easy_a = A()
     breezy_a = A()
@@ -248,6 +268,31 @@ staticmethod::
             print('This CoyoteWeapon has been brought to you by Acme')
             
     CoyoteWeapon.commercial()
+
+公有和私有变量
+==============
+
+.. note:: 在 Python 中定义私有变量只需要在变量名或函数名前加上“__”两个下划线，那么这个函数或变量就会为私有的了。
+
+实例::
+
+    class JustCounter:
+        __secretCount = 0  # 私有变量
+        publicCount = 0  # 公开变量
+
+        def __foo(self):  # 私有方法
+            print('这是私有方法')
+
+    # 调用: 
+    counter = JustCounter()
+
+    # 直接调用私有函数会报错
+    print(counter.__secretCount)  
+    # AttributeError: 'JustCounter' object has no attribute '__secretCount'
+
+    # Python的私有为伪私有
+    print(counter._JustCounter__secretCount)  # 2 
+
 
 
 多态
@@ -283,72 +328,6 @@ staticmethod::
     who_says(hunter)    # Elmer says wabbits.
     who_says(brook)     # Brook says Babble
 
-特殊方法
-========
-
-比较用::
-
-    方法名称                       使用
-    __eq__(self, other)         self == other
-    __ne__(self, other)         self != other
-    __lt__(self, other)         self < other
-    __gt__(self, other)         self > other
-    __le__(self, other)         self <= other
-    __ge__(self, other)         self >= other
-
-数学用::
-
-    方法名                         使用
-    __add__(self, other)        self + other
-    __sub__(self, other)        self - other
-    __mul__(self, other)        self * other
-    __floordiv__(self, other)   self // other
-    __truediv__(self, other)    self / other
-    __mod__(self, other)        self % other
-    __pow__(self, other)        self ** other
-
-其他常用::
-
-    方法名             使用
-    __str__(self)     str(self)
-    __repr__(self)    repr(self)
-    __len__(self)     len(self)
-
-采用一般方法写法::
-
-    class Word():
-        def __init__(self, text):
-            self.text = text
-
-        def equals(self, word2):
-            return self.text.lower() == word2.text.lower()
-
-    #创建3个字符Object
-    first = Word('ha')
-    second = Word('HA')
-    third = Word('eh')
-
-    #进行比较
-    first.equals(second)  #True
-    first.equals(third)   #False
-
-采用特殊方法写法::
-
-    class Word():
-        def __init__(self, text):
-            self.text = text
-
-        def __eq__(self, word2):
-            return self.text.lower() == word2.text.lower()
-
-    #创建3个字符对象
-    first = Word('ha')
-    second = Word('HA')
-    third = Word('eh')
-
-    #进行比较
-    first == second  #True
-    first == third   #False
 
 组合
 ====
