@@ -1,5 +1,7 @@
-架构设计
+中英对照
 ########
+
+
 
 * circuit breaking: 融断
 * fault injection: 故障植入
@@ -12,8 +14,6 @@
 
 
 * Cloud Native: 云原生
-
-
 
 
 
