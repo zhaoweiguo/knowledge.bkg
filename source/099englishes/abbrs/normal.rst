@@ -32,7 +32,9 @@ B
 * BaaS: Blockchain as a Service
 * BASE: 基本可用(Basically Available),软状态(Soft State),最终一致性(Eventual Consistency).与ACID对应
 * BDD: 行为驱动开发（Behavior-Driven Development）
+* BFF: Backend For Frontend
 * BI: Business Intelligence
+* BLAS: basic linear algebra subroutine(基本线性代数运算)
 * BS: Bachelor of Science(理学学士)
 * BSD: Berkeley Software Distribution (加州柏克莱大学)
 
@@ -50,7 +52,7 @@ C
 * CE: 持续探索(Continuous Exploration)
 * CEN: Cloud Enterprise Network(云企业网络，阿里)
 * CI: 持续集成 (Continuous integration)
-* CNN: 卷积神经网络（Convolutional Neural Network, CNN）
+* CNN: 卷积神经网络 (Convolutional Neural Network, convnet)
 * COTS: Commercial Off-The-Shelf(“商用现成品或技术” 或者 “商用货架产品”)
 * CQRS: Command Query Responsibility Seperation
 * CRI: Container Runtime Interface(容器运行时接口, k8s)
@@ -116,8 +118,11 @@ G
 H
 ---
 
+* HMAC: Hash-based Message Authentication Code(security)
+* HOTP: HMAC-Based One-time Password(security, rfc4226)
 * HTTP: HyperText Transfer Protocol 
 * HTML: HyperText Markup Language
+* HSV: hue-saturation-value
 
 I
 ----
@@ -137,6 +142,7 @@ J
 ---
 
 * JD: job description
+* JWT: JSON Web Token
 
 L
 ---
@@ -149,9 +155,10 @@ L
 M
 ----
 
+* MAC: Message Authentication Code(消息验证码, security)
+* MFA: Multi-factor authentication(多因素认证, security, SFA)
 * MIME: Multipurpose Internet Mail Extensions(rfc2045)
 * MIT: Massachusetts Institute of Technology(麻省理工学院)
-* MTU: Maximum Transfer Unit 
 * MLP: multilayer perceptron(多层感知器)
 * MLP: Machine Language Program（机器语言程序）
 * mMTC: massive Machine Type Communication
@@ -159,12 +166,14 @@ M
 * MS: Master of Science(理学硕士)
 * MSA: Micro-Service Architecture, 微服务架构(对应CBA)
 * MTBF: Mean Time Between Failure，平均无故障时间(平均故障间隔时间)
+* MTU: Maximum Transfer Unit 
 * MVCC: Multiversion concurrency control(多版本并发控制)
 
 N
 ----
 
 * NAT: Network Address Translation(网络地址转换)
+* MFA: Multi-factor Authentication(多因子身份验证)
 * NTP: Network Time Protocol(网络时间协议)
 
 
@@ -187,6 +196,7 @@ P
 -----
 
 * PaaS: Platform as a Service(平台即服务)
+* PAM: Pluggable Authentication Module(可插拔认证模块)
 * PCRE: Perl Compatible Regular Expressions
 * PERN: Postgres, Express, React, Node
 * PFS: Perfect Forward Secrecy(前向安全性, SSL/TLS协议)
@@ -206,7 +216,6 @@ Q
 R
 ----
 
-
 * RBAC: Role-Based Access Control
 * REPL: Read-Eval-Print Loop(读取-求值-输出-循环,  一种「交互式解释器」)
 * REST: Representational State Transfer
@@ -215,7 +224,7 @@ R
 * REST: Representational State Transfer
 * PFS: Perfect Forward Secrecy
 * RFC: Request for Comments 
-* RGB: Red, Green, Blue(三元色)
+* RGB: Red, Green, Blue(三元色, color)
 * RL: Reinforcement Learning(强化学习, AI)
 * ROA: Resource Oriented Architecture
 * RPC: Remote Procedure Call 
@@ -227,6 +236,7 @@ S
 * SaaS: Software as a Service(软件服务化)
 * SASL: System Architecture Support Libraries
 * SDK: Soft Development Kit
+* SFA: Single-factor authentication(单因素认证, security, MFA)
 * SIG: Special Interest Group
 * SIP: System Integrity Protection (MacOS)
 * SLA: Service Level Agreement(服务等级协议)
@@ -240,6 +250,7 @@ S
 * SPA: Single Page web Application(单页面应用):不刷新页面, 动态变更html
 * SRE: Site Reliability Engineering(网站可靠性工程师)
 * SSL: Security Socket Layer
+* SVM: Support Vector Machine(支持向量机, ai)
 
 T
 ----
@@ -248,6 +259,7 @@ T
 * TDD: Test-Driven Development(测试驱动开发)
 * TLS: Transport Layer Security
 * TOC: Technical Oversight Committee(技术监督委员会)
+* TOTP: Time-based One-time Password(security, rfc6238)
 * TTS: Text to Speech
 
 U

@@ -1,5 +1,11 @@
-中英对照
-########
+数学
+####
+
+
+* addition: 加
+* subtraction: 减
+* multiplication: 乘
+* product: 乘积
 
 
 * Linear Algebra[ˈældʒɪbrə]: 线性代数
@@ -59,12 +65,11 @@
 * stochastic gradient descent: 随机梯度下降
 * multi-layer perceptrons: 多层感知器
 
-* pixel: 像素,分辨率
+* pixel  /'pɪks(ə)l/ /'pɪksl/: 像素,分辨率
 
 * the  𝐿2  loss corresponds to the assumption that our data was corrupted by Gaussian noise, whereas the  𝐿1  loss corresponds to an assumption of noise from a Laplace distribution.
 
-* deep learning: 深度学习
-* deep reinforcement learning: 深度强化学习
+* Bayesian analysis: 贝叶斯分析
 
 
 

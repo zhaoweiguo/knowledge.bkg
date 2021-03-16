@@ -1,14 +1,12 @@
-常用
+通用
 ####
 
 
-
 .. toctree::
+   :glob:
    :maxdepth: 1
 
-   normals/normal
-
-
+   normals/objection
 
 
 

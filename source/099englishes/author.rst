@@ -20,6 +20,18 @@ Mike Amundsen
 * Author of 「Designing APIs for the Web」
 
 
+Alan Turing
+===========
+
+
+* `Alan Turing (1912-1954) <https://en.wikipedia.org/wiki/Alan_Turing>`_
+
+::
+
+    /'tjuəriŋ/ /'tjuəriŋ/
+    Turing test 
+    《Computing Machinery and Intelligence》
+
 Other
 =====
 
@@ -28,7 +40,15 @@ Other
 * Ohm’s law: 欧姆定律
 * `Jacob Bernoulli (1655-1705) <https://en.wikipedia.org/wiki/Jacob_Bernoulli>`_
 * `Carl Friedrich Gauss (1777-1855) <https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss>`_
-* `Alan Turing (1912-1954) <https://en.wikipedia.org/wiki/Alan_Turing>`_
+
+
+* Alex Krizhevsky 
+* Geoffrey Hinton
+* Dan Ciresan 
+* 多伦多大学 Geoffrey Hinton 的小组、蒙特利尔大学的 Yoshua Bengio、纽约大学的 Yann LeCun 和瑞士的 IDSIA
+
+
+
 
 
 .. [1] https://app.yinxiang.com/fx/1d4a3db5-5221-46bf-9fbf-8e2d8805b2c8

@@ -1,12 +1,10 @@
-性能相关
-###########
+常用
+####
 
 
-.. toctree::
-   :maxdepth: 2
+* `Mysql.8.0 与 MongoDB.4.2大数据量查询性能对比 <https://blog.csdn.net/weixin_41715077/article/details/102879357>`_
+* `MongoDB.4.2 大表分片查询性能对比 <https://www.cnblogs.com/dobal/p/12039769.html>`_
 
-   performances/db
-   performances/tmp
 
 
 功夫在诗外::
@@ -17,6 +15,7 @@
     关于优化:
       你不能优化你没有测量的系统
       You can't optimize what you don't have measure for
+
 
 
 

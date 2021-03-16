@@ -7,8 +7,7 @@
    :maxdepth: 1
 
    normals/normal
-
-
+   normals/mfa
 
 
 
