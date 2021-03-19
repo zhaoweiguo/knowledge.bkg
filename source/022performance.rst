@@ -8,6 +8,7 @@
    :caption: 分布式系统
 
    022performances/normal
+   022performances/stress_testing
 
 
 

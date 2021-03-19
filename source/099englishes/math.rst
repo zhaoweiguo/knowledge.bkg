@@ -6,6 +6,13 @@
 * subtraction: 减
 * multiplication: 乘
 * product: 乘积
+* differentiable: 可微
+  * differentiability: 可微性
+  * 反向传播从最终损失值开始，从最顶层反向作用至最底层，利用链式法则计算每个参数对损失值的贡献大小。
+  * Backpropagation starts with the final loss value and works backward from the top layers to the bottom layers, applying the chain rule to compute the contribution that each parameter had in the loss value.
+* derivate: n. 导数；派生词；派生的事物
+  * derivative:  n. [数] 导数 [化学] 衍生物；金融衍生产品；派生词；
+  * Partial derivative: 偏导数
 
 
 * Linear Algebra[ˈældʒɪbrə]: 线性代数
@@ -13,12 +20,13 @@
 * probability: 概率论
 * Calculus: 微积分学
 * deviation: 偏差
+  * Standard deviation: 标准偏差
 * Covariance: 协方差
 * Entropy: 熵
 * Multivariable Calculus: 多元微积分
-* Standard deviation: 标准偏差
 * squared error: 平方误差
-* differentiability: 可微性
+
+* Geometric: 几何
 
 
 * scalar: n. [数] 标量, adj. 标量的；数量的；梯状的，分等级的
@@ -27,9 +35,11 @@
 * tensor: n. [数] 张量；[解剖] 张肌
 * logarithm: n. [数] 对数
 * exponential: n. [数] 指数
-* derivative:  n. [数] 导数 [化学] 衍生物；金融衍生产品；派生词；
-* Partial derivative: 偏导数
 * Gradient: n. [数] 梯度；坡度；倾斜度
+  * stochastic gradient descent（SGD）
+  * mini-batch SGD: 小批量随机梯度下降
+  * true SGD: 真SGD
+  * batch SGD: 批量 SGD
 
 
 * Hadamard: 阿达玛（Hadamard）矩阵：简称H矩阵. ®H矩阵是一个方阵，仅有元素+1和-1构成，而且其各行（和列） 是互相正交的

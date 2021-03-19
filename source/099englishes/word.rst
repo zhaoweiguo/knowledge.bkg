@@ -9,6 +9,9 @@
    words/succeed
    words/notion
    words/intellect
+   words/interrupt
+   words/interpret
+   words/objection
 
 
 

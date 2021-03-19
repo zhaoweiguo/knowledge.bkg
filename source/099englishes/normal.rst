@@ -6,7 +6,7 @@
    :glob:
    :maxdepth: 1
 
-   normals/objection
+   normals/org
 
 
 
