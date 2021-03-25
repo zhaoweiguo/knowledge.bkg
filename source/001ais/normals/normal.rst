@@ -81,7 +81,11 @@ two essential characteristics of how deep learning learns from data::
     对于序列学习问题，可以用联结主义 时序分类(CTC，connectionist temporal classification)损失函数
     connectionist temporal classification (CTC) for a sequence-learning problem
 
+多分类(multiclass classification)::
 
+    单标签、多分类(single-label, multiclass classification)
+        每个数据点只能划分到一个类别
+    多标签、多分类(multilabel, multiclass classification)
 
 
 

@@ -136,6 +136,7 @@ I
 * IoC: Inversion of Control(控制反转), 常见的方式:Dependency Injection(依赖注入)
 * IOE: IBM, Oracle, EMC 
 * IP: Internet Protocol 
+* IPC: Inter-Process Communication
 * ISO: International Organization of Standardization 
 
 J
@@ -221,7 +222,7 @@ R
 * REST: Representational State Transfer
 * RDF: Resource Description Framework(资源描述框架)
 * RDBMS: Relational DataBase Management System
-* REST: Representational State Transfer
+* REST: Representational State Transfer(表征状态转移)
 * PFS: Perfect Forward Secrecy
 * RFC: Request for Comments 
 * RGB: Red, Green, Blue(三元色, color)
@@ -250,6 +251,7 @@ S
 * SPA: Single Page web Application(单页面应用):不刷新页面, 动态变更html
 * SRE: Site Reliability Engineering(网站可靠性工程师)
 * SSL: Security Socket Layer
+* SSR: Server-Side Rendering
 * SVM: Support Vector Machine(支持向量机, ai)
 
 T

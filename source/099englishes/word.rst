@@ -3,7 +3,6 @@
 
 .. toctree::
 
-   words/intellect
    words/represent
    words/project
    words/succeed
