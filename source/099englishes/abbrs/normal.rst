@@ -88,6 +88,7 @@ E
 * EDA: Event Driven Architecture
 * EIPs: Ethereum Improvement Proposals
 * ELK: Elasticsearch、Logstash、Kibana(https://www.elastic.co/cn/)
+* EMA: Exponential Moving Average(指数移动平均值, math)
 * ENS: Edge Node Service(边缘结点服务，阿里)
 * ETL: Extract-Transform-Load(大数据相关)
 * ES: Expert System(专家系统,人工智能相关领域)
@@ -157,6 +158,7 @@ M
 ----
 
 * MAC: Message Authentication Code(消息验证码, security)
+* MAE: Mean Absolute Error(平均绝对误差, math)
 * MFA: Multi-factor authentication(多因素认证, security, SFA)
 * MIME: Multipurpose Internet Mail Extensions(rfc2045)
 * MIT: Massachusetts Institute of Technology(麻省理工学院)
@@ -166,6 +168,7 @@ M
 * MR: Mixed Reality(AR/VR)
 * MS: Master of Science(理学硕士)
 * MSA: Micro-Service Architecture, 微服务架构(对应CBA)
+* MSE: Mean Squared Error(均方误差, math)
 * MTBF: Mean Time Between Failure，平均无故障时间(平均故障间隔时间)
 * MTU: Maximum Transfer Unit 
 * MVCC: Multiversion concurrency control(多版本并发控制)
@@ -289,6 +292,7 @@ W
 
 * WebDAV: Web-based Distributed Authoring and Versioning
 * WGS84: World Geodetic System 1984(为 GPS 全球定位系统使用而建立的坐标系统)
+* WSDL: Web Services Description Language(网络服务描述语言)
 
 X
 ---

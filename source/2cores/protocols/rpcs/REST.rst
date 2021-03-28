@@ -25,7 +25,8 @@ REST
 
 『思想』上::
 
-    REST 与 RPC 在思想上存在差异的核心，是抽象的目标不一样，也就是『面向资源』的编程思想与『面向过程』的编程思想之间的区别。
+    REST 与 RPC 在思想上存在差异的核心，是抽象的目标不一样，
+    也就是『面向资源』的编程思想与『面向过程』的编程思想之间的区别。
 
 
 『概念』上::
@@ -68,7 +69,7 @@ REST
 REST概念
 ========
 
-REST 概念的提出来自于罗伊・菲尔丁（Roy Fielding）在 2000 年发表的博士论文：`《Architectural Styles and the Design of Network-based Software Architectures》 <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm>`_（架构风格与网络的软件架构设计）。中文版参见 `这儿 <https://www.infoq.cn/article/2007/07/dlee-fielding-rest/>`_
+REST 概念的提出来自于罗伊・菲尔丁（Roy Fielding）在 2000 年发表的博士论文: `《Architectural Styles and the Design of Network-based Software Architectures》(架构风格与网络的软件架构设计) <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm>`_ 。中文版参见 `这儿 <https://www.infoq.cn/article/2007/07/dlee-fielding-rest/>`_
 
 罗伊・菲尔丁（Roy Fielding）简介::
 
@@ -154,7 +155,8 @@ REST 中的关键概念
     一种被广泛采用的自描述方法，是在名为 “Content-Type” 的 HTTP Header 中标识出互联网媒体类型（MIME type）
     比如 “Content-Type : application/json; charset=utf-8”
 
-    互联网媒体类型: https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B
+    互联网媒体类型（MIME type）:
+    https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B
 
 RESTful 风格的系统六个特征
 --------------------------
@@ -163,6 +165,8 @@ RESTful 风格的系统六个特征
 
     分离开用户界面和数据存储所关注的逻辑，有助于提高用户界面跨平台的可移植性。
 
+    不分离的情况如: 原始的jsp, php，服务代码与html混在一起
+    风水轮流转:
     由于前端的日渐强势，开始出现前端代码反过来驱动服务端进行渲染的 SSR 技术
 
 2. 无状态（Stateless）::
@@ -182,9 +186,9 @@ RESTful 风格的系统六个特征
 
     无状态服务，虽然提升了系统的可见性、可靠性和可伸缩性，但也降低了系统的网络性。
       即: 无状态的服务则可能会需要多个请求，或者在请求中带有冗余的信息。
-    为了缓解这个矛盾，REST 希望软件系统能够像万维网一样，客户端和中间的通讯传递者（代理）可以将部分服务端的应答缓存起来
+    为缓解这矛盾，REST 希望软件系统能像万维网一样，客户端和中间的通讯传递者（代理）可将部分服务端的应答缓存
 
-    运作良好的缓存机制可以减少客户端、服务器之间的交互，甚至有些场景中可以完全避免交互，这就进一步提高了性能。
+    运作良好的缓存机制可以减少客户端、服务器之间的交互，甚至有些场景中可以完全避免交互，这就进一步提高了性能
 
 4. 分层系统（Layered System）::
 
@@ -216,7 +220,7 @@ RESTful 风格的系统六个特征
     要在架构设计中合理恰当地利用统一接口，Fielding 给出了三个建议：
       第一，系统要能做到每次请求中都包含资源的 ID，所有操作均通过资源 ID 来进行；
       第二，每个资源都应该是自描述的消息；
-      第三，通过超文本来驱动应用状态的转移。
+      第三，通过「超文本」来驱动应用状态的转移。
 
 
 6. 按需代码（Code-On-Demand）::
