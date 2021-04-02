@@ -24,6 +24,7 @@ A
 * ANSI: American National Standards Institute
 * API: Application Programming Interface(应用程序接口)
 * AR: Augmented Reality(AR/VR, 增强现实)
+* ARIES: Algorithms for Recovery and Isolation Exploiting Semantics(基于语义的恢复与隔离算法, transaction)
 
 B
 ----
@@ -77,7 +78,8 @@ D
 * DoS: Denial of Service(拒绝服务)
 * DSS: Data Storage Segregation(数据存储隔离)
 * DST: Daylight Saving Time(夏令时)
-* DTLS(Datagram Transport Layer Security)
+* DTLS: Datagram Transport Layer Security)
+* DTP: Distributed Transaction Processing(分布式事务处理, transaction)
 
 
 E
@@ -171,7 +173,7 @@ M
 * MSE: Mean Squared Error(均方误差, math)
 * MTBF: Mean Time Between Failure，平均无故障时间(平均故障间隔时间)
 * MTU: Maximum Transfer Unit 
-* MVCC: Multiversion concurrency control(多版本并发控制)
+* MVCC: Multiversion concurrency control(多版本并发控制, transaction)
 
 N
 ----
@@ -186,7 +188,7 @@ N
 O
 ----
 
-* OCC: Optimistic concurrency control(乐观并发控制)
+* OCC: Optimistic Concurrency Control(乐观并发控制, transaction)
 * OCI: Open Container Initiative-based(开放式容器计划, k8s)
 * OCR: Optical Character Recognition, 文字识别
 * OOM: OutOfMemory
@@ -260,6 +262,7 @@ S
 T
 ----
 
+* TCC: Try-Confirm-Cancel(transaction)
 * TCP: Transmission Control Portocol 
 * TDD: Test-Driven Development(测试驱动开发)
 * TLS: Transport Layer Security
@@ -290,6 +293,7 @@ V
 W
 ----
 
+* WAL: Write-Ahead Logging(db, 事务)
 * WebDAV: Web-based Distributed Authoring and Versioning
 * WGS84: World Geodetic System 1984(为 GPS 全球定位系统使用而建立的坐标系统)
 * WSDL: Web Services Description Language(网络服务描述语言)
@@ -297,6 +301,7 @@ W
 X
 ---
 
+* XA: eXtended Architecture(transaction)
 * XSS: Cross-site scripting(跨站脚本攻击, http)
 
 

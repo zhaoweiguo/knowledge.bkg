@@ -3,6 +3,7 @@
 
 .. toctree::
 
+   words/durable
    words/represent
    words/project
    words/succeed

@@ -15,5 +15,8 @@
    laws/ruleofthree
    laws/Clarke's3laws
    laws/KISS_Principle
+   laws/Occam'sRazor
+
+
 
 

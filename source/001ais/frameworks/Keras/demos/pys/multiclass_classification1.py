@@ -46,6 +46,27 @@ model.add(layers.Dense(64, activation='relu', input_shape=(10000,)))
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(46, activation='softmax'))
 
+# 5. 权重系数
+model.add(layers.Dense(16, 
+          kernel_regularizer=regularizers.l2(0.001),
+          activation='relu', input_shape=(10000,))) 
+model.add(layers.Dense(16, 
+          kernel_regularizer=regularizers.l2(0.001),
+          activation='relu'))
+
+# 5. 3种权重系数
+from keras import regularizers 
+regularizers.l1(0.001)                  # L1 regularization 
+regularizers.l2(0.001)                  # L2 regularization 
+regularizers.l1_l2(l1=0.001, l2=0.001)  # Simultaneous L1 and L2 regularization
+
+# 5. Adding dropout
+model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
+model.add(layers.Dropout(0.5))
+model.add(layers.Dense(16, activation='relu'))
+model.add(layers.Dropout(0.5))
+model.add(layers.Dense(1, activation='sigmoid'))
+
 
 # 6. 留出验证集
 x_val = x_train[:1000]
