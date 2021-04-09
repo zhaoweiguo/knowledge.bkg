@@ -8,7 +8,7 @@ rpc相关
    :maxdepth: 2
 
    rpcs/normal
-   rpcs/REST
+   rpcs/HTTP-REST
    rpcs/gRPC
    rpcs/thrift
    rpcs/JSON-RPC
@@ -18,9 +18,4 @@ rpc相关
    rpcs/IPC
 
 
-
-参考
-====
-
-* 周志明的软件架构课: https://time.geekbang.org/opencourse/intro/100064201
 

@@ -1,21 +1,28 @@
 如何使用ca证书签名证书
 #########################
+
 私有 CA 签名 [2]_ ::
 
     # 1.创建 CA 私钥
     $ openssl genrsa -out ca.key 2048
 
     # 2.生成 CA 的自签名证书
-    $ openssl req -subj "/C=CN/ST=Beijing/L=Beijing/O=Wei64/OU=Wei64 Software/CN=Server CA/emailAddress=gordon@zhaoweiguo.com" -new -x509 -days 3650 -key ca.key -out ca.crt
+    $ openssl req -subj \
+      "/C=CN/ST=Beijing/L=Beijing/O=Wei64/OU=Wei64 Corp./CN=Server CA/emailAddress=ca@zwg.com" \
+      -new -x509 -days 3650 -key ca.key -out ca.crt
 
     # 3.生成需要颁发证书的私钥
-    $ openssl genrsa -out server.key 2048
+    $ openssl genrsa -out s.key 2048
 
     # 4.生成要颁发证书的证书签名请求，证书签名请求当中的 Common Name 必须区别于 CA 的证书里面的 Common Name
-    $ openssl req -subj "/C=CN/ST=Beijing/L=Beijing/O=Wei64/OU=Wei64 Software/CN=www.zhaoweiguo.com/emailAddress=test@zhaoweiguo.com" -new -key server.key -out server.csr
+    $ openssl req -subj \
+      "/C=CN/ST=Beijing/L=Beijing/O=Wei64/OU=Wei64 Corp./CN=www.zwg.com/emailAddress=s@zwg.com" \
+      -new -key s.key -out s.csr
 
     # 5.用 2 创建的 CA 证书给 4 生成的 签名请求 进行签名
-    $ openssl x509 -req -days 3650 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
+    $ openssl x509 -req -days 3650 -in s.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out s.crt
+
+.. note:: 上面openssl命令上的缩写: C: Country, ST: State, O: Organization, CN: Common Name
 
 
 

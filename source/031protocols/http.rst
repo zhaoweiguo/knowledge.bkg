@@ -13,11 +13,12 @@ Contents:
 
    https/protocol
    https/normal
-   https/rest
-   https/phrase_polling
    https/http_code
    https/practice
-   https/tmp
+   https/http2
+   https/http3
+   https/websocket
+   https/other
 
 
 

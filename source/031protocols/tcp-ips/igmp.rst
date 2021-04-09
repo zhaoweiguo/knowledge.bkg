@@ -1,5 +1,13 @@
-广播和多播, IGMP协议
+IGMP协议
 ####################
+
+::
+
+    IGMP: Internet Group Management Protocol
+    互联网组管理协议
+
+    广播和多播
+
 
 1.1.单播(unicast)
 =================

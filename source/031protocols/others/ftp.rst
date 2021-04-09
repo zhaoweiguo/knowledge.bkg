@@ -1,6 +1,6 @@
-.. _ftp_code:
+.. _prottocol_ftp:
 
-FTP返回码
+FTP协议
 =============
 
 1xx-肯定的初步答复
