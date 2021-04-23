@@ -741,7 +741,8 @@ ftp
 k8s工具
 -------
 
-* https://github.com/derailed/k9s
+* k8s 管理: https://github.com/derailed/k9s
+* k8s 管理: https://github.com/TNK-Studio/lazykube
 * Faster way to switch between clusters and namespaces in kubectl: https://github.com/ahmetb/kubectx
     * kubectx
     * kubens

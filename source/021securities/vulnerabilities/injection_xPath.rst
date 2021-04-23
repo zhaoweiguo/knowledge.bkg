@@ -103,7 +103,8 @@ XPath注入说明::
 查询基本语句::
 
     //users/user[loginID/text()=’abc’ and password/text()=’test123’]
-    如果黑客在loginID 字段中输入：' or 1=1 并在 password 中输入：' or 1=1   就能绕过校验，成功获取所有user数据
+    如果黑客在loginID 字段中输入：' or 1=1 并在 password 中输入：' or 1=1
+    就能绕过校验，成功获取所有user数据
     //users/user[LoginID/text()=''or 1=1 and password/text()=''or 1=1]
 
 
