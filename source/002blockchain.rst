@@ -1,17 +1,17 @@
-区块链
-================
+区块链相关
+##########
 
 :作者: 新溪-gordon <ai#zhaoweiguo.com>
 :时间: 2018-05-16
 
-内容:
-
 .. toctree::
-   :maxdepth: 2
+   :name: blockchain
+   :titlesonly:
+   :caption: BlockChain
 
-   blockchains/normal
-   blockchains/ethereum
-   blockchains/other
+   002blockchains/normal
+   002blockchains/ethereum
+   002blockchains/other
 
 
 三大原则::
@@ -33,6 +33,8 @@
     Zcash (Privacy Coin)
     Neo (Chinese Ethereum)
     Qtum (Value transfers and Decentralized Apps)
+
+
 
 
 

@@ -1,21 +1,107 @@
-tcp2 [1]_
-###########
+TCP状态
+#######
 
-linux查看tcp的状态命令::
 
-    1）netstat -nat  查看TCP各个状态的数量
-    2）lsof  -i:port  可以检测到打开套接字的状况
-    3) sar -n SOCK 查看tcp创建的连接数
-    4) tcpdump -iany tcp port 9000 对tcp端口为9000的进行抓包
+.. figure:: /images/protocols/tcp_flow.png
+   :width: 80%
 
-网络测试常用命令::
+   TCP 的整体流程
 
-    1）ping:检测网络连接的正常与否,主要是测试延时、抖动、丢包率
-    2）traceroute：raceroute 跟踪数据包到达网络主机所经过的路由工具
-    3）pathping：是一个路由跟踪工具
-        它将 ping 和 tracert 命令的功能与这两个工具所不提供的其他信息结合起来
-    4）mtr：以结合ping nslookup tracert 来判断网络的相关特性
-    5) nslookup:用于解析域名，一般用来检测本机的DNS设置是否配置正确
+说明::
+
+    连接阶段: 3次握手
+      维护一定的数据结构和对方的信息，确认了该信息：
+        我发的内容对方会接收，对方发的内容我也会接收，直到连接断开
+    断开阶段: 4次挥手
+      确保双方都知道且同意对方断开连接，然后在 remove 为对方维护的数据结构和信息
+      对方之后发送的包也不会接收，直到再次连接
+
+    保证连接的原因是有心跳包
+
+TCP 建立连接
+============
+
+
+.. figure:: /images/protocols/tcp_connect.png
+
+   TCP连接建立的过程（三次握手）
+
+.. figure:: /images/protocols/tcp_protocol8.png
+   :width: 70%
+
+TCP的建立::
+
+  如上图,可以简单的称为三次握手:
+  首先,客户端向服务器申请打开某一个端口(用SYN段等于1的TCP报文)
+  然后,服务器端发回一个ACK报文通知客户端请求报文收到
+  客户端收到确认报文以后再次发出确认报文,确认刚才服务器端发出的确认报文
+
+  如果再加上TCP的超时重传机制，那么TCP就完全可以保证一个数据包被送到目的地
+
+
+TCP 断开连接
+============
+
+.. figure:: /images/protocols/tcp_disconnect.png
+
+   TCP连接断开的过程（四次挥手）
+
+
+
+.. figure:: /images/protocols/tcp_protocol9.png
+   :width: 70%
+
+TCP的终止::
+
+  建立一个连接需要三次握手,而终止一个连接要经过4次握手,这是由TCP的半关闭（half close）造成的
+  既然一个 TCP连接是全双工（即数据在两个方向上能同时传递）,因此每个方向必须单独地进行关闭
+  这原则就是当一方完成它的数据发送任务后就能发送一个 FIN来终止这个方向连接
+  当一端收到一个 FIN，它必须通知应用层另一端几经终止了那个方向的数据传送
+
+  客户机给服务器一个FIN为1的TCP报文，然后服务器返回给客户端一个确认ACK报文
+  并且发送一个FIN报文，当客户机回复ACK报文后（四次握手），连接就结束了
+
+
+
+和服务器的通信结束后，套接字并不会立即被删除，而是等待一段时间之后再被删除原因::
+
+    断开的操作顺序如下:
+    1. 客户端发送 FIN 
+    2. 服务器返回 ACK 号 
+    3. 服务器发送 FIN 
+    4. 客户端返回 ACK 号
+
+    如果最后客户端返回的 ACK 号丢失了，结果会如何呢:
+      服务 器没有接收到 ACK 号，可能会重发一次 FIN
+      客户端的套接字已 经删除了，对应的端口号就会被释放出来
+      别的应用程序新创建的套接字，碰巧又被分配了同一个端口号
+      这时，服务器重发的 FIN 正好到达，新套接字就开始执行断开操作
+
+    注: 一般来说会等待几分钟之后再删除套接字
+
+
+
+
+
+TCP 状态迁移路线图
+==================
+
+
+TCP状态迁移路线图:
+
+.. figure:: /images/protocols/tcp_handshake1.png
+    :width: 80%
+
+
+
+.. figure:: /images/protocols/tcp_state_machine.png
+
+   TCP 状态机
+
+
+
+TCP各状态详解
+=============
 
 .. option:: LISTENING
 
@@ -120,10 +206,24 @@ linux查看tcp的状态命令::
     /* The socket is not being used. 没有任何连接状态 */
 
 
-TCP状态迁移路线图:
+命令查看TCP状态
+===============
 
-.. figure:: /images/protocols/tcp_handshake1.png
-    :width: 80%
+linux查看tcp的状态命令::
+
+    1）netstat -nat  查看TCP各个状态的数量
+    2）lsof  -i:port  可以检测到打开套接字的状况
+    3) sar -n SOCK 查看tcp创建的连接数
+    4) tcpdump -iany tcp port 9000 对tcp端口为9000的进行抓包
+
+网络测试常用命令::
+
+    1）ping:检测网络连接的正常与否,主要是测试延时、抖动、丢包率
+    2）traceroute：raceroute 跟踪数据包到达网络主机所经过的路由工具
+    3）pathping：是一个路由跟踪工具
+        它将 ping 和 tracert 命令的功能与这两个工具所不提供的其他信息结合起来
+    4）mtr：以结合ping nslookup tracert 来判断网络的相关特性
+    5) nslookup:用于解析域名，一般用来检测本机的DNS设置是否配置正确
 
 
 
@@ -131,7 +231,4 @@ TCP状态迁移路线图:
 
 
 
-
-
-.. [1] https://blog.csdn.net/hguisu/article/details/38700899
 
