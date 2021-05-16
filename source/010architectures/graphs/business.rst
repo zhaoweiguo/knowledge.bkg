@@ -1,6 +1,3 @@
-架构图
-######
-
 业务架构图
 ==========
 
@@ -156,6 +153,4 @@
 
 * 如何绘制业务架构图(李鸿君): https://blog.csdn.net/lihognjun/article/details/110732496
 * 怎么画业务架构图: https://www.pianshen.com/article/16871857598/
-
-
 
