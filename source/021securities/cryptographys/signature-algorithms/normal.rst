@@ -1,5 +1,6 @@
-数字签名
-########
+常用
+####
+
 
 简介::
 
@@ -49,6 +50,11 @@
     前提: 验证签名的公钥必须是属于真正的发送者
     方法: 让公钥和签名技术成为一种社会性基础设施
     即: 公钥基础设施(Public Key Infrastructure, PKI)
+
+
+
+
+.. image:: /images/encrypts/digital_signature1.png
 
 
 

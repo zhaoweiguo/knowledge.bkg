@@ -1,10 +1,26 @@
 好的网站
 ########
 
+it趋势相关
+==========
+
+
+* 语言趋势分析: https://www.tiobe.com/tiobe-index/
+* github: https://github.com/trending
+
+
+
 写开源书籍
 ==========
 
 * 参考1: https://www.servicemesher.com/istio-handbook
+
+官方
+====
+
+* 中国软件评测中心: https://www.cstc.org.cn/
+
+
 
 
 开发专用

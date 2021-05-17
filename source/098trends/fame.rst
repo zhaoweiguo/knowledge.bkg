@@ -32,4 +32,15 @@
 
 
 
+.. _person_Tony-Hoare:
+
+东尼・霍尔
+
+英国计算机科学家，图灵奖得主，他设计了牛气冲天的快速排序算法、霍尔逻辑以及 CSP 模型。2011 年获颁约翰・冯诺依曼奖。
+
+.. image:: /images/collects/fames/Tony-Hoare.png
+
+
+
+
 
