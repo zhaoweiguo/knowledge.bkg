@@ -28,14 +28,14 @@ Istio is composed of these components::
 
 
 
-.. image:: /images/istios/architecture.png
+.. image:: /images/k8s/istios/architecture.png
 
 Data Plane
 ==========
 
 The data plane is responsible for translating, forwarding, and monitoring every network packet flowing to and from an instance.
 
-.. image:: /images/istios/architecture_data.png
+.. image:: /images/k8s/istios/architecture_data.png
 
 Control Plane
 =============

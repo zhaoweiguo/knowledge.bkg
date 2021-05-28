@@ -8,6 +8,7 @@
    :caption: 服务治理
 
    041governances/normal
+   041governances/service_protection
 
 
 

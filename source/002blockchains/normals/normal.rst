@@ -31,7 +31,16 @@
     第六层“应用层”，封装了区块链的各种应用场景和案例，比如:
       搭建在以太坊上的各类区块链应用即部署在应用层，而未来的可编程金融和可编程社会也将会是搭建在应用层。
 
+区块链的几个基本特性::
 
+    1. Decentralized（去中心化）
+    2. Trustless（去信任）
+    3. Collectively Maintain（集体维护）
+    4. Reliable Database（可靠数据库）
+    5. Open Source（开放原始码）
+    6. Anonymity（隐私保护）
+    7. Time Stamp（时间戳）
+    8. Asymmetric cryptography（非对称加密）
 
 
 

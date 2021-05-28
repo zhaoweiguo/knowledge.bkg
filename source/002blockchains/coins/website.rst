@@ -23,6 +23,23 @@
 * KuCoin: https://www.kucoin.com
 * Bithumb: https://www.bithumb.com/
 
+去中心化交易所
+==============
+
+Uniswap
+-------
+
+* https://uniswap.org/
+* 通证: Uniswap(简称UNI)
+* 说明::
+  
+    最大的去中心化交易所
+    2020年8月30日(4.26亿美元)首次超过传统中心化交易所Coinbase(3.46亿美元)
+
+PancakeSwap
+-----------
+
+* https://pancakeswap.finance/
 
 
 

@@ -41,9 +41,11 @@
         v := v // create a new 'v'.
         go func() {
             fmt.Println(v)
-            done <- true
         }()
     }
+
+.. note:: In Go, the loop iterator variable is a single variable that takes different values in each loop iteration. This is very efficient, but might lead to unintended behavior when used incorrectly.
+
 
 同样类似 ``loop iteration variable`` 的问题还有这种::
 
@@ -63,6 +65,33 @@
     output:
     // Values: 3 3 3
     // Addresses: 0xc000014188 0xc000014188 0xc000014188
+
+    原因:
+        range 中的 value 使用相同的指针地址
+    解决方法:
+    for  _, v := range in {
+        v = v // create a new 'v'.
+        out = append(out, &v)
+    }
+
+
+.. note:: This behavior of the language, not defining a new variable for each iteration, may have been a mistake in retrospect. It may be addressed in a later version but, for compatibility, cannot change in Go version 1.
+
+关于 ``single variable`` 的说明::
+
+    a := 123
+    fmt.Printf("%v\n", a)
+    fmt.Printf("%v\n", &a)
+    a = 456
+    fmt.Printf("%v\n", a)
+    fmt.Printf("%v\n", &a)
+
+    // 打印:
+    123
+    0xc000018050
+    456
+    0xc000018050
+
 
 
 * 扩展阅读:

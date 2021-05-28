@@ -1,5 +1,10 @@
-on: [push,pull_request]
-
+on:
+  push:
+    branches:
+      - deploy
+  pull_request:
+    branches:
+      - deploy
 jobs:
   build:
     name: Hook

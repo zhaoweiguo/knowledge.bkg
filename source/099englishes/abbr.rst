@@ -7,7 +7,7 @@
    :maxdepth: 1
 
    abbrs/normal
-   abbrs/cluster
+   abbrs/blockchain
    abbrs/job
    abbrs/tmp
 
