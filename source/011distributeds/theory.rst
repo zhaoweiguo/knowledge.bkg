@@ -12,6 +12,7 @@
    theorys/Raft
    theorys/Paxos
    theorys/Gossip
+   theorys/BASE
    theorys/consistent_hash
 
 

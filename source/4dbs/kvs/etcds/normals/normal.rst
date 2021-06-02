@@ -10,7 +10,7 @@ etcd is a distributed reliable key-value store for the most critical data of a d
     Reliable: properly distributed using Raft
 
 
-.. image:: /images/etcds/architecture1.png
+.. image:: /images/dbs/etcds/architecture1.png
 
 
 

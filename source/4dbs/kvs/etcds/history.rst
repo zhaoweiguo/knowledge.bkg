@@ -16,12 +16,12 @@ The minimum recommended etcd versions to run in production are 3.2.28+, 3.3.18+,
    historys/v4.0
 
 
-.. image:: /images/etcds/history1.png
+.. image:: /images/dbs/etcds/history1.png
 
 
 
 
-.. figure:: /images/etcds/history2.png
+.. figure:: /images/dbs/etcds/history2.png
    
    etcd3 重要特性及版本发布时间
 

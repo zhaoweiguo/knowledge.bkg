@@ -13,10 +13,19 @@ SSL 终止: SSL termination
 * OWASP（Open Web Application Security Project，开放式 Web 应用程序安全项目: https://www.owasp.org/
 
 
+网络攻击手段::
+
+    xss 攻击、
+    注入攻击、 
+    CSRF 攻击、
+    文件上传漏洞
+    DDoS攻击
+
+
+
+
 safe检测
 ============
-
-
 
 * https://myssl.com/
 * https://httpsecurityreport.com/

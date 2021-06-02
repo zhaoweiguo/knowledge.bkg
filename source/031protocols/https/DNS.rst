@@ -9,6 +9,7 @@ DNS
    DNS/normal
    DNS/root
    DNS/type
+   DNS/httpdns
 
 
 DNS（Domain Name System）是一个全球化的分布式数据库，用于存储域名与互联网 IP 地址的映射关系。

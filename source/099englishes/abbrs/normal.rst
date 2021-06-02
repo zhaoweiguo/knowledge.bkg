@@ -52,6 +52,7 @@ C
 * CAP: Consistency Availability Partition-tolerance
 * CBA: Cell-Based Architecture, 基于单元格的架构(对应MSA)
 * CD: continuous deployment(持续部署)
+* CDC: Consumer Driven Contract(消费者驱动契约, testing)
 * CDN: Content Delivery Network 或 Content Distribution Network
 * CE: Community Edition(社区版), 如:Docker社区版(CE), Docker企业版(EE)
 * CE: Continuous Exploration(持续探索)
@@ -94,6 +95,7 @@ D
 E
 ----
 
+* EAI: Enterprise Application Integration(企业应用集成)
 * EC: Edge Computing
 * ECS: Edge Configuration Server, ECS
 * EDA: Event Driven Architecture
@@ -110,6 +112,7 @@ F
 
 * FaaS: Function as a Service
 * FSF: Free Software Foundation(自由软件基金会)
+* FSM: finite-state machine(有限状态机)
 
 G
 -----

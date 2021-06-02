@@ -13,7 +13,8 @@
     .. _SO: http://stackoverflow.com/
 
 
-    站内链接:
+站内链接::
+
         :ref:`链接显示，右面是文件开头的索引 <header_1>`
 
         这是链接的另一形式,链接到ablog.rst
@@ -32,16 +33,20 @@
     This is the text of the section.
     It refers to the section itself, see :ref:`my-reference-label`.
 
-    // 图片引用 
+下载专用::
+
+    :download:`图片/文件下载 <image/photo.jpg>`
+
+    会呈现出点击后下载文件的效果。
+    注意这种引用方式在生成 pdf 文件时链接会无效
+
+
+图片引用(:ref:`参考 <sphinx_img>`)::
+
     .. _my-figure:
 
     .. figure:: whatever
 
        Figure caption
-
-下载专用::
-
-    :download:`图片/文件下载 <image/photo.jpg>`
-
 
 

@@ -17,6 +17,31 @@ devops
     Sidecar
     Service Mesh
 
+安全
+====
+
+::
+
+    认证(Authentication)
+    授权(Authorization)
+
+    加盐( Salt)
+
+    消息摘要( Message Digest )
+
+
+云原生
+======
+
+::
+
+    云原生
+
+    不可变基础设施
+    声明式API
+    服务网格
+
+
 
 other
 =====
@@ -38,7 +63,7 @@ other
     Serverless
     产品矩阵
 
-    云原生、中台、微服务、CI/CD、Devops、SaaS
+    、中台、微服务、CI/CD、Devops、SaaS
 
 
 ::
@@ -88,6 +113,30 @@ other
             设计服务接口并规范服务依赖关系
 
     跨职能的( Cross-Functional )
+
+    幂等性 ( Idempotency )
+    补偿模式( Compensation Pattern )
+
+    服务「雪崩效应」的产生是一种「扩散效应」
+
+
+    应对失败的基本策略:
+        舱壁隔离
+        服务熔断 (circuit-breaker)
+        超时/重试
+        异步解耦
+        快速失败
+
+    更为系统的方法和机制确保服务的可靠性:
+        服务容错( Fault Tolerance )、
+        服务隔离、
+        服务限频、RateLimiter
+        限流限流、
+        服务降级
+
+
+    粘滞( Sticky )机制
+
 
 
 
